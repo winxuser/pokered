@@ -635,12 +635,12 @@ AICureStatus:
 	res BADLY_POISONED, [hl]
 	ret
 
-AIUseXAccuracy: ; unreferenced
-	call AIPlayRestoringSFX
-	ld hl, wEnemyBattleStatus2
-	set USING_X_ACCURACY, [hl]
-	ld a, X_ACCURACY
-	jp AIPrintItemUse
+;AIUseXAccuracy: ; unreferenced
+;	call AIPlayRestoringSFX
+;	ld hl, wEnemyBattleStatus2
+;	set USING_X_ACCURACY, [hl]
+;	ld a, X_ACCURACY
+;	jp AIPrintItemUse
 
 AIUseGuardSpec:
 	call AIPlayRestoringSFX
@@ -649,12 +649,12 @@ AIUseGuardSpec:
 	ld a, GUARD_SPEC
 	jp AIPrintItemUse
 
-AIUseDireHit: ; unreferenced
-	call AIPlayRestoringSFX
-	ld hl, wEnemyBattleStatus2
-	set GETTING_PUMPED, [hl]
-	ld a, DIRE_HIT
-	jp AIPrintItemUse
+;AIUseDireHit: ; unreferenced
+;	call AIPlayRestoringSFX
+;	ld hl, wEnemyBattleStatus2
+;	set GETTING_PUMPED, [hl]
+;	ld a, DIRE_HIT
+;	jp AIPrintItemUse
 
 AICheckIfHPBelowFraction:
 ; return carry if enemy trainer's current HP is below 1 / a of the maximum
