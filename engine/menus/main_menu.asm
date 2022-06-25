@@ -50,6 +50,11 @@ MainMenu:
 	ld de, NewGameText
 	call PlaceString
 .next2
+	;NEW: - print the game version
+	coord hl, $00, $11
+	ld de, VersionText
+	call PlaceString
+
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]
 	call UpdateSprites
@@ -84,6 +89,7 @@ MainMenu:
 	jr z, .choseContinue
 	cp 1
 	jp z, StartNewGame
+	call ClearScreen ; remove version text before displaying options
 	call DisplayOptionMenu
 	ld a, TRUE
 	ld [wOptionsInitialized], a
@@ -353,6 +359,14 @@ CableClubOptionsText:
 	db   "TRADE CENTER"
 	next "COLOSSEUM"
 	next "CANCEL@"
+
+VersionText:
+IF DEF(_RED)
+	db " Red Plus v0.0.1@"
+ENDC
+IF DEF(_BLUE)
+	db " Blue Plus v0.0.1@"
+ENDC
 
 DisplayContinueGameInfo:
 	xor a
