@@ -787,3 +787,11 @@ SECTION "bank2F", ROMX, BANK[$2F]
 
 INCLUDE "data/sgb/sgb_palettes.asm"
 INCLUDE "engine/mon_gender.asm"
+
+
+
+SECTION "Batteryless Save Bank 1", ROMX, BANK[$3D]
+ ; don't put anything in this bank ever
+
+SECTION "Batteryless Save Bank 2", ROMX, BANK[$3F]
+ ; don't put anything in this bank ever
