@@ -76,6 +76,9 @@ Winxusers Changes and fixes
     - Free some space in the Home BANK
     - Experience System & Exp. All Enhancements
     - Trainers are not Pokemon
+    - Trader NPC in Celedon City
+    - Merge all version exclusives
+    - Add some previously unobtainable pokemon to the wild
 
 - Battle Engine Changes:
     
