@@ -20,8 +20,8 @@ CanLearnTM:
 	ld b, FLAG_TEST
 	predef_jump FlagActionPredef
 
-; converts TM/HM number in [wTempTMHM] into move number
-; HMs start at 51
+; converts TM/HM number in wd11e into move number
+; HMs start at 52 ; dereknote - edited, was 51
 TMToMove:
 	ld a, [wTempTMHM]
 	dec a
