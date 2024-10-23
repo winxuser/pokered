@@ -22,8 +22,8 @@ ENDC
 	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
 	     RAGE,         SOLARBEAM,    DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      \
 	     PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SKULL_BASH,   REST,         PSYWAVE,      SUBSTITUTE,   SURF,         \
-	     STRENGTH
+	     SKULL_BASH,   DREAM_EATER,  REST,         PSYWAVE,      SUBSTITUTE,   \
+		 SURF,         STRENGTH
 	; end
 
 	db BANK(LaprasPicFront)

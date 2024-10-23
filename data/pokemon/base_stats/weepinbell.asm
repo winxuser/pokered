@@ -20,7 +20,7 @@ ENDC
 	; tm/hm learnset
 	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
 	     MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         REST,         SUBSTITUTE,   CUT,			 FLASH
+	     BIDE,         REST,         SUBSTITUTE,   CUT,          FLASH
 	; end
 
 	db BANK(WeepinbellPicFront)
