@@ -25,7 +25,7 @@ ENDC
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
 	     SELFDESTRUCT, FIRE_BLAST,   SWIFT,        SKULL_BASH,   DREAM_EATER,  \
 		 REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
-		 STRENGTH,     FLASH
+		 FLAMETHROWER, STRENGTH,     FLASH
 	; end
 
 	db BANK(MewtwoPicFront)

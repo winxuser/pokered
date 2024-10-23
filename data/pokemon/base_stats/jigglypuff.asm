@@ -24,7 +24,7 @@ ENDC
 	     THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   SKULL_BASH,   \
 	     DREAM_EATER,  REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   \
-		 SUBSTITUTE,   STRENGTH,     FLASH
+		 SUBSTITUTE,   FLAMETHROWER, STRENGTH,     FLASH
 	; end
 
 	db BANK(JigglypuffPicFront)
