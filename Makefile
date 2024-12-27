@@ -102,7 +102,7 @@ $(pokeblue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 $(pokered_vc_obj):     RGBASMFLAGS += -D _RED -D _RED_VC
 $(pokeblue_vc_obj):    RGBASMFLAGS += -D _BLUE -D _BLUE_VC
 
-%.patch: vc/%.constants.sym %_vc.gbc %.gbc vc/%.patch.template
+%.patch: %_vc.gbc %.gbc vc/%.patch.template
 	tools/make_patch $*_vc.sym $^ $@
 
 rgbdscheck.o: rgbdscheck.asm
@@ -130,10 +130,6 @@ $(foreach obj, $(pokegreen_obj), $(eval $(call DEP,$(obj),$(obj:_green.o=.asm)))
 $(foreach obj, $(pokeblue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
 $(foreach obj, $(pokered_vc_obj), $(eval $(call DEP,$(obj),$(obj:_red_vc.o=.asm))))
 $(foreach obj, $(pokeblue_vc_obj), $(eval $(call DEP,$(obj),$(obj:_blue_vc.o=.asm))))
-
-# Dependencies for VC files that need to run scan_includes
-%.constants.sym: %.constants.asm $(shell tools/scan_includes %.constants.asm) $(preinclude_deps) | rgbdscheck.o
-	$(RGBASM) $(RGBASMFLAGS) $< > $@
 
 endif
 
