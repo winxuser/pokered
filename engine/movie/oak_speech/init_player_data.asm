@@ -34,7 +34,6 @@ DEF START_MONEY EQU $3000
 
 	ld hl, wObtainedBadges
 	ld [hli], a
-
 	ld [hl], a
 
 	ld hl, wPlayerCoins
