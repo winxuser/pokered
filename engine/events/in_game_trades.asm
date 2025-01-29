@@ -162,7 +162,7 @@ InGameTrade_DoTrade:
  	dec a
  	ld [wWhichPokemon], a
 .skip_swap_mons
-	callfar EvolveTradeMon
+	callfar InGameTrade_CheckForTradeEvo
 	call ClearScreen
 	call InGameTrade_RestoreScreen
 	farcall RedrawMapView
