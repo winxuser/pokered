@@ -198,3 +198,28 @@ _UsedCutText::
 	text " hacked"
 	line "away with CUT!"
 	prompt
+
+_WannaTrade4Text::
+ 	text "I'm the TRADER!"
+ 	para "If you trade me a"
+	line "#MON, I can"
+ 	cont "trade it right"
+ 	para "back to you!"
+ 	para "Certain #MON"
+ 	line "evolve this way."
+	para "So, do you want to"
+ 	line "trade a #MON?"
+ 	done
+
+ _NoTrade4Text::
+ 	text "OK! Just let me"
+ 	line "know if you need"
+ 	cont "my help."
+ 	done
+
+ _Thanks4Text::
+ 	text "All done!"
+ 	para "Let me know if"
+ 	line "you ever need my"
+ 	cont "help again."
+ 	done
