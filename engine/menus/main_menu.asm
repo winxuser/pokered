@@ -367,6 +367,9 @@ ENDC
 IF DEF(_BLUE)
 	db " Blue Plus v0.0.1@"
 ENDC
+IF DEF(_GREEN)
+	db " Green Plus v0.0.1@"
+ENDC
 
 DisplayContinueGameInfo:
 	xor a
