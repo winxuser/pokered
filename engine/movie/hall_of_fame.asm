@@ -195,12 +195,10 @@ HoFLoadPlayerPics:
 	ld de, RedPicBack
 	ld a, BANK(RedPicBack)
 	call UncompressSpriteFromDE
+	ld a, $66
 	call LoadHoFPlayerBackSprite
 	ld de, vBackPic
 	push de
-	jp LoadUncompressedBackSprite
-	nop
-	ld c, $1
 
 HoFLoadMonPlayerPicTileIDs:
 ; c = base tile ID
