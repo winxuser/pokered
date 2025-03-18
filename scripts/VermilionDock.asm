@@ -340,6 +340,7 @@ VermilionDockTrainerHeaders:
  	ld [wNewTileBlockID], a ; used to be wd09f
  	ld bc, $9
  	predef ReplaceTileBlock
+	callfar AnimateBoulderDust
  	call ShowMew
  	jp FinishShowMew
  	; show mew and print its dialogue
