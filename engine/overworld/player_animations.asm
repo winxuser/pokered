@@ -88,6 +88,7 @@ PlayerSpinWhileMovingDown:
 	ld [hli], a ; wPlayerSpinWhileMovingUpOrDownAnimMaxY
 	call GetPlayerTeleportAnimFrameDelay
 	ld [hl], a ; wPlayerSpinWhileMovingUpOrDownAnimFrameDelay
+	ld hl, wFacingDirectionList ; FIXED: on GBC or GB there was a visual glitch while this animation happened.
 	jp PlayerSpinWhileMovingUpOrDown
 
 _LeaveMapAnim::
@@ -108,6 +109,7 @@ _LeaveMapAnim::
 	ld [hli], a ; wPlayerSpinWhileMovingUpOrDownAnimMaxY
 	call GetPlayerTeleportAnimFrameDelay
 	ld [hl], a ; wPlayerSpinWhileMovingUpOrDownAnimFrameDelay
+	ld hl, wFacingDirectionList ; FIXED: on GBC or GB there was a visual glitch while this animation happened.
 	call PlayerSpinWhileMovingUpOrDown
 	call IsPlayerStandingOnWarpPadOrHole
 	ld a, b
@@ -492,6 +494,10 @@ _HandleMidJump::
 	ld a, [wPlayerJumpingYScreenCoordsIndex]
 	ld c, a
 	inc a
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ ;60fps - only update every other tick
+ 	call Ledge60fps
+ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	cp $10
 	jr nc, .finishedJump
 	ld [wPlayerJumpingYScreenCoordsIndex], a
@@ -519,6 +525,18 @@ _HandleMidJump::
 	xor a
 	ld [wJoyIgnore], a
 	ret
+	
+Ledge60fps:
+ 	push hl
+ 	push af
+ 	ld h, $c2
+ 	ld l, $0a
+ 	ld a, [hl]
+ 	xor $01
+ 	pop af
+ 	sub [hl]
+ 	pop hl
+ 	ret
 
 PlayerJumpingYScreenCoords:
 ; Sequence of y screen coordinates for player's sprite when jumping over a ledge.
