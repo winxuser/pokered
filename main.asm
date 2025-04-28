@@ -788,6 +788,9 @@ SECTION "bank2F", ROMX, BANK[$2F]
 INCLUDE "data/sgb/sgb_palettes.asm"
 INCLUDE "engine/mon_gender.asm"
 
+SECTION "Engine Spillover", ROMX
+
+INCLUDE "engine/menus/item_descriptions.asm"
 
 
 SECTION "Batteryless Save Bank 1", ROMX, BANK[$3D]
