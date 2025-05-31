@@ -12,11 +12,6 @@ UsedStrengthText:
 	ld a, [wCurPartySpecies]
 	call PlayCry
 	call Delay3
-	jp TextScriptEnd
-
-CanMoveBouldersText:
-	text_far _CanMoveBouldersText
-	text_end
 
 IsSurfingAllowed:
 ; Returns whether surfing is allowed in BIT_SURF_ALLOWED of wStatusFlags1.
