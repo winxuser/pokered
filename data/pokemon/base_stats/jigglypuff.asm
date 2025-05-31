@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/jigglypuff.pic", 0, 1 ; sprite dimensions
 	dw JigglypuffPicFront, JigglypuffPicBack
 
-	db SING, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SING, CHARM, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_FAST ; growth rate
 
 	; tm/hm learnset
@@ -21,7 +21,7 @@
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   SKULL_BASH,   \
 	     DREAM_EATER,  REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   \
 		 SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, \
-		 STRENGTH,     FLASH
+		 STRENGTH,     FLASH,        CHARM
 	; end
 
 	db BANK(JigglypuffPicFront)

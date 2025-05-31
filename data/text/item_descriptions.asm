@@ -597,6 +597,32 @@ _TM50Description::
 	next "1/4 user's max HP."
 	prompt
 
+_TM51Description::
+	text "A powerful FIRE"
+	next "attack. May burn."
+	prompt
+
+_TM52Description::
+	text "A powerful firey"
+	next "punch. May burn."
+	prompt
+
+_TM53Description::
+	text "A powerful icey"
+	next "punch. May freeze."
+	prompt
+
+_TM54Description::
+	text "A powerful thundery"
+	next "punch. May paralyze."
+	prompt
+
+
+_TM55Description::
+	text "Charm the foe and"
+	next "sharplylowers attack."
+	prompt
+
 _UnusedItemDescription::
 	text "?"
 	prompt

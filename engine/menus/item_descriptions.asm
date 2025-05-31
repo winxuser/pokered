@@ -287,3 +287,11 @@ DisplayItemDescription::
  	text_end
  	text_far _TM50Description
  	text_end
+	text_far _TM51Description
+	text_end
+	text_far _TM52Description
+	text_end
+	text_far _TM53Description
+	text_end
+	text_far _TM54Description
+	text_end

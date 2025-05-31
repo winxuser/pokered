@@ -3,7 +3,7 @@
 	db  95,  70,  73,  60,  85
 	;   hp  atk  def  spd  spc
 
-	db FAIRY, NORMAL ; type
+	db FAIRY, FAIRY ; type
 	db 25 ; catch rate
 	db 129 ; base exp
 
@@ -21,7 +21,7 @@
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
 	     FIRE_BLAST,   SKULL_BASH,   DREAM_EATER,  REST,         THUNDER_WAVE, \
 		 PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   \
-		 ICE_PUNCH,    THUNDERPUNCH, STRENGTH,     FLASH
+		 ICE_PUNCH,    THUNDERPUNCH, STRENGTH,     FLASH,        CHARM
 	; end
 
 	db BANK(ClefablePicFront)

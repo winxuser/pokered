@@ -1720,6 +1720,7 @@ ClefableEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 34, CHARM
 	db 0
 
 WeezingEvosMoves:
