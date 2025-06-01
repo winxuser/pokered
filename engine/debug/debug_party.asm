@@ -113,6 +113,9 @@ IF DEF(_DEBUG)
 	call DebugSetPokedexEntries
 	SetEvent EVENT_GOT_POKEDEX
 
+	; Enable Town Map
+	SetEvent EVENT_GOT_TOWN_MAP
+
 	; Rival chose Squirtle,
 	; Player chose Charmander.
 	ld hl, wRivalStarter
@@ -142,7 +145,6 @@ DebugNewGameItemsList:
 	db ESCAPE_ROPE, 99
 	db RARE_CANDY, 99
 	db MASTER_BALL, 99
-	db TOWN_MAP, 1
 	db SECRET_KEY, 1
 	db CARD_KEY, 1
 	db S_S_TICKET, 1
