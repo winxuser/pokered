@@ -1572,7 +1572,7 @@ wMonHeaderEnd::
 ; saved at the start of a battle and then written back at the end of the battle
 wSavedTileAnimations:: db
 
-	ds 1 ; dereknote - was 2, decreased to make room for 4 more TMs in the wMonHLearnset bytes
+	ds 0 ; dereknote - was 2, decreased to make room for 4 more TMs in the wMonHLearnset bytes
 
 wDamage:: dw
 

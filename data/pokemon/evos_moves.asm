@@ -40,8 +40,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw EspeonEvosMoves
+	dw UmbreonEvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -558,16 +558,27 @@ TangelaEvosMoves:
 	db 46, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+EspeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 8, SAND_ATTACK
+	db 16, CONFUSION
+	db 20, QUICK_ATTACK
+	db 30, SWIFT
+	db 36, PSYBEAM
+	db 47, PSYCHIC_M
 	db 0
 
-MissingNo20EvosMoves:
+UmbreonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 8, SAND_ATTACK
+	db 23, QUICK_ATTACK
+	db 30, CONFUSE_RAY
+	db 42, TAKE_DOWN
+	db 47, SCREECH
 	db 0
 
 GrowlitheEvosMoves:
@@ -1310,6 +1321,8 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, FIRE_STONE, 1, FLAREON
 	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
+	db EVOLVE_ITEM, SUN_SHARD, 1, ESPEON
+	db EVOLVE_ITEM, MOON_STONE, 1, UMBREON
 	db 0
 ; Learnset
 	db 8, SAND_ATTACK

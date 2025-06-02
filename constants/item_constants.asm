@@ -52,7 +52,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const DOME_FOSSIL   ; $29
 	const HELIX_FOSSIL  ; $2A
 	const SECRET_KEY    ; $2B
-	const ITEM_2C       ; $2C ; unused
+	const SUN_SHARD     ; $2C ; unused
 	const BIKE_VOUCHER  ; $2D
 	const X_ACCURACY    ; $2E
 	const LEAF_STONE    ; $2F
@@ -218,7 +218,7 @@ ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the 
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 
-; 54 (dereknote - was 50) TMs + 5 HMs = 59 (dereknote - was 55) learnable TM/HM flags per Pokémon.
+; 55 (dereknote - was 50) TMs + 5 HMs = 59 (dereknote - was 55) learnable TM/HM flags per Pokémon.
 ; These now fit in 8 bytes, with five unused bits left over.
 ; dereknote - now the final unused bit is used, from the additional TM51, and 3 more bits in the next byte are used
 DEF __tmhm_value__ = NUM_TM_HM + 1

@@ -151,4 +151,6 @@ MonPartyData:
 	nybble ICON_SNAKE     ; Dragonite
 	nybble ICON_MON       ; Mewtwo
 	nybble ICON_MON       ; Mew
+	nybble ICON_MON       ; Espeon
+	nybble ICON_MON       ; Umbreon
 	end_nybble_array NUM_POKEMON

@@ -43,7 +43,7 @@ ItemNames::
 	li "DOME FOSSIL"
 	li "HELIX FOSSIL"
 	li "SECRET KEY"
-	li "?????" ; ITEM_2C
+	li "SUN SHARD" ; ITEM_2C, GEN II to evolve eevee
 	li "BIKE VOUCHER"
 	li "X ACCURACY"
 	li "LEAF STONE"

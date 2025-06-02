@@ -1507,3 +1507,23 @@ _VictreebelDexEntry::
 	next "has ever returned"
 	next "from there"
 	dex
+
+_EspeonDexEntry::
+	text "It uses the fine"
+	next "hair that covers"
+	next "its body to sense"
+
+	page "air currents and"
+	next "predict it's"
+	next "enemy's actions"
+	dex
+
+_UmbreonDexEntry::	; Entry alludes to its scrapped Poison type, and I thought it was a neat touch. ~M
+	text "When this #MON"
+	next "becomes angry, its"
+	next "pores secrete a"
+
+	page "poisonous sweat,"
+	next "which it sprays at"
+	next "its foe's eyes"
+	dex

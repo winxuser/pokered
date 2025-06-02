@@ -617,7 +617,6 @@ _TM54Description::
 	next "punch. May paralyze."
 	prompt
 
-
 _TM55Description::
 	text "Charm the foe and"
 	next "sharplylowers attack."

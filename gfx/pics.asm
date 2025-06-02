@@ -316,3 +316,10 @@ AgathaPic::        INCBIN "gfx/trainers/agatha.pic"
 LancePic::         INCBIN "gfx/trainers/lance.pic"
 
 	ds $355
+
+SECTION "Pics 7", ROMX
+
+EspeonPicFront::      INCBIN "gfx/pokemon/front/espeon.pic"
+EspeonPicBack::       INCBIN "gfx/pokemon/back/espeonb.pic"
+UmbreonPicFront::     INCBIN "gfx/pokemon/front/umbreon.pic"
+UmbreonPicBack::      INCBIN "gfx/pokemon/back/umbreonb.pic"
