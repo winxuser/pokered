@@ -994,6 +994,7 @@ NEXTU
 wTownMapCoords::
 ; whether WriteMonMoves is being used to make a mon learn moves from day care
 ; non-zero if so
+wSum:: ; a temp store for 16 bit values created by addition, used with PrintNumber to display the sum on screen
 wLearningMovesFromDayCare::
 	db
 
