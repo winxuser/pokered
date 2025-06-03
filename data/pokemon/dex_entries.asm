@@ -407,6 +407,20 @@ TangelaDexEntry:
 	text_far _TangelaDexEntry
 	text_end
 
+EspeonDexEntry:
+	db "SUN@"
+	db 2,11
+	dw 584
+	text_far _EspeonDexEntry
+	text_end
+
+UmbreonDexEntry:
+    db "MOONLIGHT@"
+	db 3,3
+	dw 600
+	text_far _UmbreonDexEntry
+	text_end
+
 GrowlitheDexEntry:
 	db "PUPPY@"
 	db 2,4
@@ -1252,20 +1266,6 @@ VictreebelDexEntry:
 	db 5,7
 	dw 340
 	text_far _VictreebelDexEntry
-	text_end
-
-EspeonDexEntry:
-	db "SUN@"
-	db 2,11
-	dw 584
-	text_far _EspeonDexEntry
-	text_end
-
-UmbreonDexEntry:
-    db "MOONLIGHT@"
-	db 3,3
-	dw 600
-	text_far _UmbreonDexEntry
 	text_end
 
 MissingNoDexEntry:
