@@ -59,13 +59,13 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw LeafeonEvosMoves
 	dw MagmarEvosMoves
-	dw MissingNo34EvosMoves
+	dw GlaceonEvosMoves
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
-	dw MissingNo38EvosMoves
+	dw SylveonEvosMoves
 	dw MankeyEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
@@ -801,10 +801,18 @@ GolemEvosMoves:
 	db 48, EXPLOSION
 	db 0
 
-MissingNo32EvosMoves:
+LeafeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 27, QUICK_ATTACK
+	db 31, ABSORB
+	db 37, TAIL_WHIP
+	db 40, BITE
+	db 42, LEER
+	db 44, RAZOR_LEAF
+	db 48, SWORDS_DANCE
+	db 54, SOLARBEAM
 	db 0
 
 MagmarEvosMoves:
@@ -820,10 +828,18 @@ MagmarEvosMoves:
 	db 57, FIRE_BLAST
 	db 0
 
-MissingNo34EvosMoves:
+GlaceonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 27, QUICK_ATTACK
+	db 31, MIST
+	db 37, TAIL_WHIP
+	db 40, BITE
+	db 42, AURORA_BEAM
+	db 44, ICE_BEAM
+	db 48, BARRIER
+	db 54, BLIZZARD
 	db 0
 
 ElectabuzzEvosMoves:
@@ -864,10 +880,17 @@ KoffingEvosMoves:
 	db 41, EXPLOSION
 	db 0
 
-MissingNo38EvosMoves:
+SylveonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, QUICK_ATTACK
+	db 27, PSYCHIC_M
+	db 37, TAIL_WHIP
+	db 40, SWIFT
+	db 42, LIGHT_SCREEN
+	db 44, REFLECT
+	db 48, PSYBEAM
 	db 0
 
 MankeyEvosMoves:
@@ -1322,7 +1345,10 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
 	db EVOLVE_ITEM, SUN_SHARD, 1, ESPEON
-	db EVOLVE_ITEM, MOON_STONE, 1, UMBREON
+	db EVOLVE_ITEM, DARK_SHARD, 1, UMBREON
+	db EVOLVE_ITEM, LEAF_STONE, 1, LEAFEON
+	db EVOLVE_ITEM, ICE_STONE, 1, GLACEON
+	db EVOLVE_ITEM, MOON_STONE, 1, SYLVEON
 	db 0
 ; Learnset
 	db 8, SAND_ATTACK

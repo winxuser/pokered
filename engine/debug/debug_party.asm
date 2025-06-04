@@ -19,12 +19,12 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
 	db EEVEE, 90
 IF DEF(_DEBUG)
-	db MEW, 5
+	db LEAFEON, 5
 ELSE
 	db MEW, 20
 ENDC
 	db JOLTEON, 56
-	db EEVEE, 56
+	db VAPOREON, 56
 	db ESPEON, 57
 IF DEF(_DEBUG)
 	db UMBREON, 40
@@ -150,7 +150,9 @@ DebugNewGameItemsList:
 	db S_S_TICKET, 1
 	db LIFT_KEY, 1
 	db MOON_STONE, 2
+	db ICE_STONE, 2
 	db SUN_SHARD, 2
+	db DARK_SHARD, 2
 	db -1 ; end
 
 DebugUnusedList: ; unreferenced

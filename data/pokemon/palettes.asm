@@ -154,6 +154,9 @@ MonsterPalettes:
 	db PAL_MEW
 	db PAL_PURPLEMON ; Espeon
 	db PAL_PURPLEMON ; Umbreon
+	db PAL_PURPLEMON ; Leafeon
+	db PAL_PURPLEMON ; Glaceon
+	db PAL_PURPLEMON ; Sylveon
 	assert_table_length NUM_POKEMON + 1
 
 TrainerPalettes:

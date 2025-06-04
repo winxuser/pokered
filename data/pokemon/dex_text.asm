@@ -488,6 +488,16 @@ _GolemDexEntry::
 	next "without damage"
 	dex
 
+_LeafeonDexEntry::
+	text "Just like a plant"
+	next "it uses"
+	next "photosynthesis"
+
+	page "As a result, it is"
+	next "always enveloped"
+	next "in clean air"
+	dex
+
 _MagmarDexEntry::
 	text "Its body always"
 	next "burns with an"
@@ -496,6 +506,16 @@ _MagmarDexEntry::
 	page "enables it to"
 	next "hide perfectly"
 	next "among flames"
+	dex
+
+_GlaceonDexEntry::
+	text "As a protective"
+	next "technique, it can"
+	next "completely freeze"
+
+	page "its fur to make"
+	next "it stand like"
+	next "needles"
 	dex
 
 _ElectabuzzDexEntry::
@@ -526,6 +546,16 @@ _KoffingDexEntry::
 	page "its body, it is"
 	next "prone to exploding"
 	next "without warning"
+	dex
+
+_SylveonDexEntry::
+	text "Its sends a"
+	next "soothing aura from"
+	next "its ribbonlike"
+
+	page "feelers to calm"
+	next "fights. It can"
+	next "stop any conflict"
 	dex
 
 _MankeyDexEntry::

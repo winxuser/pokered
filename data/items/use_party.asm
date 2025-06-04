@@ -37,4 +37,6 @@ UsableItems_PartyMenu:
 	db MAX_ETHER
 	db ELIXER
 	db MAX_ELIXER
+	db ICE_STONE
+	db DARK_SHARD
 	db -1 ; end
