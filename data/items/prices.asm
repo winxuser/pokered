@@ -85,6 +85,7 @@ ItemPrices::
 	bcd3 0     ; MAX_ELIXER
 	bcd3 2000  ; ICE_STONE
 	bcd3 2000  ; DARK_SHARD
+	bcd3 2000  ; METAL_COAT
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

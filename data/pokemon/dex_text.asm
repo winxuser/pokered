@@ -598,6 +598,16 @@ _TaurosDexEntry::
 	next "long tails"
 	dex
 
+_SteelixDexEntry::
+	text "Its body has been"
+	next "compressed deep"
+	next "under the ground"
+
+	page "As a result, it"
+	next "is even harder"
+	next "than diamond"
+	dex
+
 _FarfetchdDexEntry::
 	text "The sprig of"
 	next "green onions it"

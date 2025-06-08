@@ -102,6 +102,7 @@ ItemUsePtrTable:
 	dw ItemUsePPRestore  ; MAX_ELIXER
 	dw ItemUseEvoStone   ; ICE_STONE
 	dw ItemUseEvoStone   ; DARK_SHARD
+	dw ItemUseEvoStone   ; METAL_COAT
 
 ItemUseBall:
 

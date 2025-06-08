@@ -39,4 +39,5 @@ UsableItems_PartyMenu:
 	db MAX_ELIXER
 	db ICE_STONE
 	db DARK_SHARD
+	db METAL_COAT
 	db -1 ; end

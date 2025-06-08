@@ -157,6 +157,7 @@ MonsterPalettes:
 	db PAL_PURPLEMON ; Leafeon
 	db PAL_PURPLEMON ; Glaceon
 	db PAL_PURPLEMON ; Sylveon
+	db PAL_GRAYMON   ; STEELIX
 	assert_table_length NUM_POKEMON + 1
 
 TrainerPalettes:

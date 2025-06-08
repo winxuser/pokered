@@ -70,7 +70,7 @@ EvosMovesPointerTable:
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
-	dw MissingNo3DEvosMoves
+	dw SteelixEvosMoves
 	dw MissingNo3EEvosMoves
 	dw MissingNo3FEvosMoves
 	dw FarfetchdEvosMoves
@@ -596,7 +596,7 @@ GrowlitheEvosMoves:
 
 OnixEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_ITEM, METAL_COAT, 1, STEELIX
 ; Learnset
 	db 10, BIND
 	db 14, ROCK_THROW
@@ -944,10 +944,16 @@ TaurosEvosMoves:
 	db 53, TAKE_DOWN
 	db 0
 
-MissingNo3DEvosMoves:
+SteelixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, BIND
+	db 14, ROCK_THROW
+	db 23, HARDEN
+	db 39, RAGE
+	db 40, SLAM
+	db 49, BITE
 	db 0
 
 MissingNo3EEvosMoves:

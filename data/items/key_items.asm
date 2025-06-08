@@ -85,4 +85,5 @@ KeyItemFlags:
 	dbit FALSE ; MAX_ELIXER
 	dbit FALSE ; ICE_STONE
 	dbit FALSE ; DARK_SHARD
+	dbit FALSE ; METAL_COAT
 	end_bit_array NUM_ITEMS

@@ -82,6 +82,7 @@ TypeEffects:
 	db GRASS,        DRAGON,       NOT_VERY_EFFECTIVE
 	db ICE,          DRAGON,       SUPER_EFFECTIVE
 	db DRAGON,       DRAGON,       SUPER_EFFECTIVE
+; Start of addon types
 	db DARK,         GHOST,        SUPER_EFFECTIVE
 	db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db DARK,         DARK,         NOT_VERY_EFFECTIVE
@@ -94,4 +95,11 @@ TypeEffects:
 	db FAIRY,        DRAGON,       SUPER_EFFECTIVE
 	db FAIRY,        FIGHTING,     SUPER_EFFECTIVE
 	db FAIRY,        POISON,       NOT_VERY_EFFECTIVE
+	db FAIRY,        STEEL,        NOT_VERY_EFFECTIVE
+	db STEEL,        FAIRY,        SUPER_EFFECTIVE
+	db STEEL,        ICE,          SUPER_EFFECTIVE
+	db STEEL,        ROCK,         SUPER_EFFECTIVE
+	db FIGHTING,     STEEL,        SUPER_EFFECTIVE
+	db FIRE,         STEEL,        SUPER_EFFECTIVE
+	db GROUND,       STEEL,        SUPER_EFFECTIVE
 	db -1 ; end
