@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(PersianPicFront)
+	assert BANK(PersianPicFront) == BANK(PersianPicBack)

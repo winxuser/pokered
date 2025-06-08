@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(PikachuPicFront)
+	assert BANK(PikachuPicFront) == BANK(PikachuPicBack)

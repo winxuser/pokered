@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(BeedrillPicFront)
+	assert BANK(BeedrillPicFront) == BANK(BeedrillPicBack)

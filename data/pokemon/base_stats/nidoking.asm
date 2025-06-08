@@ -25,3 +25,4 @@
 	; end
 
 	db BANK(NidokingPicFront)
+	assert BANK(NidokingPicFront) == BANK(NidokingPicBack)

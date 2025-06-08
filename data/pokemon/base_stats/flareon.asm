@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(FlareonPicFront)
+	assert BANK(FlareonPicFront) == BANK(FlareonPicBack)

@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(JynxPicFront)
+	assert BANK(JynxPicFront) == BANK(JynxPicBack)

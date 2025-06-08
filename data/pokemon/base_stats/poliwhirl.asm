@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(PoliwhirlPicFront)
+	assert BANK(PoliwhirlPicFront) == BANK(PoliwhirlPicBack)

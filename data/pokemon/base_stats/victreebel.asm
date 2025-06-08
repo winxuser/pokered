@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VictreebelPicFront)
+	assert BANK(VictreebelPicFront) == BANK(VictreebelPicBack)

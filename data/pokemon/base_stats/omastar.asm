@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(OmastarPicFront)
+	assert BANK(OmastarPicFront) == BANK(OmastarPicBack)

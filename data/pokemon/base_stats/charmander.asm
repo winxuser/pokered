@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(CharmanderPicFront)
+	assert BANK(CharmanderPicFront) == BANK(CharmanderPicBack)

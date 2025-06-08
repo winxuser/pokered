@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(TentacruelPicFront)
+	assert BANK(TentacruelPicFront) == BANK(TentacruelPicBack)

@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(GolduckPicFront)
+	assert BANK(GolduckPicFront) == BANK(GolduckPicBack)

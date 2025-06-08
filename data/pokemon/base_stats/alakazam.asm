@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(AlakazamPicFront)
+	assert BANK(AlakazamPicFront) == BANK(AlakazamPicBack)

@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(GrimerPicFront)
+	assert BANK(GrimerPicFront) == BANK(GrimerPicBack)

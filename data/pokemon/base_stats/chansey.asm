@@ -25,3 +25,4 @@
 	; end
 
 	db BANK(ChanseyPicFront)
+	assert BANK(ChanseyPicFront) == BANK(ChanseyPicBack)

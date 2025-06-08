@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VulpixPicFront)
+	assert BANK(VulpixPicFront) == BANK(VulpixPicBack)

@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(PorygonPicFront)
+	assert BANK(PorygonPicFront) == BANK(PorygonPicBack)

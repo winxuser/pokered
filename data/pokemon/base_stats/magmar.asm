@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(MagmarPicFront)
+	assert BANK(MagmarPicFront) == BANK(MagmarPicBack)

@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(MachopPicFront)
+	assert BANK(MachopPicFront) == BANK(MachopPicBack)

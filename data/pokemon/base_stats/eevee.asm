@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(EeveePicFront)
+	assert BANK(EeveePicFront) == BANK(EeveePicBack)

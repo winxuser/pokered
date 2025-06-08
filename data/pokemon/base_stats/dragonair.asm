@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(DragonairPicFront)
+	assert BANK(DragonairPicFront) == BANK(DragonairPicBack)

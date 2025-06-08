@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ShellderPicFront)
+	assert BANK(ShellderPicFront) == BANK(ShellderPicBack)

@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(GolemPicFront)
+	assert BANK(GolemPicFront) == BANK(GolemPicBack)

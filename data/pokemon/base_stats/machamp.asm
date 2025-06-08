@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(MachampPicFront)
+	assert BANK(MachampPicFront) == BANK(MachampPicBack)

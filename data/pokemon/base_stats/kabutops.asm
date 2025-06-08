@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(KabutopsPicFront)
+	assert BANK(KabutopsPicFront) == BANK(KabutopsPicBack)

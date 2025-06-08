@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(BlastoisePicFront)
+	assert BANK(BlastoisePicFront) == BANK(BlastoisePicBack)

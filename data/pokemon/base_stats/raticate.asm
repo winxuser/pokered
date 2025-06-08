@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(RaticatePicFront)
+	assert BANK(RaticatePicFront) == BANK(RaticatePicBack)

@@ -25,3 +25,4 @@
 	; end
 
 	db BANK(ClefairyPicFront)
+	assert BANK(ClefairyPicFront) == BANK(ClefairyPicBack)

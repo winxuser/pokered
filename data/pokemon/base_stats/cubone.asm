@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(CubonePicFront)
+	assert BANK(CubonePicFront) == BANK(CubonePicBack)

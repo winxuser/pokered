@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(GloomPicFront)
+	assert BANK(GloomPicFront) == BANK(GloomPicBack)

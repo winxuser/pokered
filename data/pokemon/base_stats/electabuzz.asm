@@ -24,3 +24,4 @@
 	; end
 
 	db BANK(ElectabuzzPicFront)
+	assert BANK(ElectabuzzPicFront) == BANK(ElectabuzzPicBack)

@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(HitmonchanPicFront)
+	assert BANK(HitmonchanPicFront) == BANK(HitmonchanPicBack)

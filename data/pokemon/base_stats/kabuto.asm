@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(KabutoPicFront)
+	assert BANK(KabutoPicFront) == BANK(KabutoPicBack)

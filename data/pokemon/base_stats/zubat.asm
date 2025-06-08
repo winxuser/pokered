@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(ZubatPicFront)
+	assert BANK(ZubatPicFront) == BANK(ZubatPicBack)

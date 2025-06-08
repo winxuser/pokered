@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(MoltresPicFront)
+	assert BANK(MoltresPicFront) == BANK(MoltresPicBack)

@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(PidgeyPicFront)
+	assert BANK(PidgeyPicFront) == BANK(PidgeyPicBack)

@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(RaichuPicFront)
+	assert BANK(RaichuPicFront) == BANK(RaichuPicBack)

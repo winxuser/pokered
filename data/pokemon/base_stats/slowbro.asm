@@ -25,3 +25,4 @@
 	; end
 
 	db BANK(SlowbroPicFront)
+	assert BANK(SlowbroPicFront) == BANK(SlowbroPicBack)

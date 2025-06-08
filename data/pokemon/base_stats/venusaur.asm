@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VenusaurPicFront)
+	assert BANK(VenusaurPicFront) == BANK(VenusaurPicBack)

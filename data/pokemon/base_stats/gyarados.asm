@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(GyaradosPicFront)
+	assert BANK(GyaradosPicFront) == BANK(GyaradosPicBack)

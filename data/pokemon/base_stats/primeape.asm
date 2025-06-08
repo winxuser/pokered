@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(PrimeapePicFront)
+	assert BANK(PrimeapePicFront) == BANK(PrimeapePicBack)

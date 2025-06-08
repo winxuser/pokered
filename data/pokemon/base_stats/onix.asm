@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(OnixPicFront)
+	assert BANK(OnixPicFront) == BANK(OnixPicBack)

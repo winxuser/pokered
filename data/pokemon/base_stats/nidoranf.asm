@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(NidoranFPicFront)
+	assert BANK(NidoranFPicFront) == BANK(NidoranFPicBack)

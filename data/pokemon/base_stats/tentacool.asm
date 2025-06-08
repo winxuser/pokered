@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(TentacoolPicFront)
+	assert BANK(TentacoolPicFront) == BANK(TentacoolPicBack)

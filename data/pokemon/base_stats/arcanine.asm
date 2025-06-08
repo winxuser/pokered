@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ArcaninePicFront)
+	assert BANK(ArcaninePicFront) == BANK(ArcaninePicBack)

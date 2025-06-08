@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(KoffingPicFront)
+	assert BANK(KoffingPicFront) == BANK(KoffingPicBack)

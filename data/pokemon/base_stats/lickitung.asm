@@ -24,3 +24,4 @@
 	; end
 
 	db BANK(LickitungPicFront)
+	assert BANK(LickitungPicFront) == BANK(LickitungPicBack)

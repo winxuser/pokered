@@ -18,3 +18,4 @@
 	; end
 
 	db BANK(MagikarpPicFront)
+	assert BANK(MagikarpPicFront) == BANK(MagikarpPicBack)

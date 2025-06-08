@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(DodrioPicFront)
+	assert BANK(DodrioPicFront) == BANK(DodrioPicBack)

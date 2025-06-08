@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(AbraPicFront)
+	assert BANK(AbraPicFront) == BANK(AbraPicBack)

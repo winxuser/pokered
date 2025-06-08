@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ElectrodePicFront)
+	assert BANK(ElectrodePicFront) == BANK(ElectrodePicBack)

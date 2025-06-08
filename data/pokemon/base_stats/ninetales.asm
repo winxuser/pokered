@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(NinetalesPicFront)
+	assert BANK(NinetalesPicFront) == BANK(NinetalesPicBack)

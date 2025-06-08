@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(TangelaPicFront)
+	assert BANK(TangelaPicFront) == BANK(TangelaPicBack)

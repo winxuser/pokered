@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(EspeonPicFront)
+	assert BANK(EspeonPicFront) == BANK(EspeonPicBack)

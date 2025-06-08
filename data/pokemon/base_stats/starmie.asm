@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(StarmiePicFront)
+	assert BANK(StarmiePicFront) == BANK(StarmiePicBack)

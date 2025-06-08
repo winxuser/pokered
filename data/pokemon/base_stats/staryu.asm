@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(StaryuPicFront)
+	assert BANK(StaryuPicFront) == BANK(StaryuPicBack)

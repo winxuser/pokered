@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(PinsirPicFront)
+	assert BANK(PinsirPicFront) == BANK(PinsirPicBack)

@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(SeakingPicFront)
+	assert BANK(SeakingPicFront) == BANK(SeakingPicBack)

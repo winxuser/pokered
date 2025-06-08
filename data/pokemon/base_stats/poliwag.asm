@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(PoliwagPicFront)
+	assert BANK(PoliwagPicFront) == BANK(PoliwagPicBack)

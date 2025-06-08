@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(RapidashPicFront)
+	assert BANK(RapidashPicFront) == BANK(RapidashPicBack)

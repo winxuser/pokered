@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(OmanytePicFront)
+	assert BANK(OmanytePicFront) == BANK(OmanytePicBack)

@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(HorseaPicFront)
+	assert BANK(HorseaPicFront) == BANK(HorseaPicBack)

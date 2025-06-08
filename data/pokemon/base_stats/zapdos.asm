@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ZapdosPicFront)
+	assert BANK(ZapdosPicFront) == BANK(ZapdosPicBack)

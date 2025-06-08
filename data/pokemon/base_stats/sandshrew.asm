@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(SandshrewPicFront)
+	assert BANK(SandshrewPicFront) == BANK(SandshrewPicBack)

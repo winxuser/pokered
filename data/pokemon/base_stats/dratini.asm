@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(DratiniPicFront)
+	assert BANK(DratiniPicFront) == BANK(DratiniPicBack)

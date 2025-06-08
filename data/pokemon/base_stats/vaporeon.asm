@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VaporeonPicFront)
+	assert BANK(VaporeonPicFront) == BANK(VaporeonPicBack)

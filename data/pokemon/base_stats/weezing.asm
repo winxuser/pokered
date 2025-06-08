@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(WeezingPicFront)
+	assert BANK(WeezingPicFront) == BANK(WeezingPicBack)

@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(DoduoPicFront)
+	assert BANK(DoduoPicFront) == BANK(DoduoPicBack)

@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(KadabraPicFront)
+	assert BANK(KadabraPicFront) == BANK(KadabraPicBack)

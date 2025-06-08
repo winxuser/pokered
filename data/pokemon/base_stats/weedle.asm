@@ -18,3 +18,4 @@
 	; end
 
 	db BANK(WeedlePicFront)
+	assert BANK(WeedlePicFront) == BANK(WeedlePicBack)

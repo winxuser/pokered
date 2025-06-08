@@ -24,3 +24,4 @@
 	; end
 
 	db BANK(KangaskhanPicFront)
+	assert BANK(KangaskhanPicFront) == BANK(KangaskhanPicBack)

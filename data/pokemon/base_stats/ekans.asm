@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(EkansPicFront)
+	assert BANK(EkansPicFront) == BANK(EkansPicBack)

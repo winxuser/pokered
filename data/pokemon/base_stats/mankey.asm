@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(MankeyPicFront)
+	assert BANK(MankeyPicFront) == BANK(MankeyPicBack)

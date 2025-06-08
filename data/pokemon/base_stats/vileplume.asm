@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VileplumePicFront)
+	assert BANK(VileplumePicFront) == BANK(VileplumePicBack)

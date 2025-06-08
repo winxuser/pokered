@@ -25,3 +25,4 @@
 	; end
 
 	db BANK(WigglytuffPicFront)
+	assert BANK(WigglytuffPicFront) == BANK(WigglytuffPicBack)

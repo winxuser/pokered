@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(FarfetchdPicFront)
+	assert BANK(FarfetchdPicFront) == BANK(FarfetchdPicBack)

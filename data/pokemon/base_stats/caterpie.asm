@@ -18,3 +18,4 @@
 	; end
 
 	db BANK(CaterpiePicFront)
+	assert BANK(CaterpiePicFront) == BANK(CaterpiePicBack)

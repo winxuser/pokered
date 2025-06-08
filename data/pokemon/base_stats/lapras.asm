@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(LaprasPicFront)
+	assert BANK(LaprasPicFront) == BANK(LaprasPicBack)

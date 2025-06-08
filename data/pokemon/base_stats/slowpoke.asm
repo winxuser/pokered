@@ -24,3 +24,4 @@
 	; end
 
 	db BANK(SlowpokePicFront)
+	assert BANK(SlowpokePicFront) == BANK(SlowpokePicBack)

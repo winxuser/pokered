@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(ExeggutorPicFront)
+	assert BANK(ExeggutorPicFront) == BANK(ExeggutorPicBack)

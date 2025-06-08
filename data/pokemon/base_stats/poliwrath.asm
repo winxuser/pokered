@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(PoliwrathPicFront)
+	assert BANK(PoliwrathPicFront) == BANK(PoliwrathPicBack)

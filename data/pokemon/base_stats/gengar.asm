@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(GengarPicFront)
+	assert BANK(GengarPicFront) == BANK(GengarPicBack)

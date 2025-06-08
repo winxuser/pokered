@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(RattataPicFront)
+	assert BANK(RhydonPicFront) == BANK(RhydonPicBack)

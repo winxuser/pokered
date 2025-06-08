@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(PsyduckPicFront)
+	assert BANK(PsyduckPicFront) == BANK(PsyduckPicBack)

@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ArticunoPicFront)
+	assert BANK(ArticunoPicFront) == BANK(ArticunoPicBack)

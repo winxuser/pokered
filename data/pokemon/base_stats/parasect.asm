@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ParasectPicFront)
+	assert BANK(ParasectPicFront) == BANK(ParasectPicBack)

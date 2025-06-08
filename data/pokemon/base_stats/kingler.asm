@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(KinglerPicFront)
+	assert BANK(KinglerPicFront) == BANK(KinglerPicBack)

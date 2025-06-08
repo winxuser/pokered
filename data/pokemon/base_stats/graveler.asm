@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(GravelerPicFront)
+	assert BANK(GravelerPicFront) == BANK(GravelerPicBack)

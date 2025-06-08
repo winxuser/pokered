@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VoltorbPicFront)
+	assert BANK(VoltorbPicFront) == BANK(VoltorbPicBack)

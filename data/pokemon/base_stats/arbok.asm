@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ArbokPicFront)
+	assert BANK(ArbokPicFront) == BANK(ArbokPicBack)

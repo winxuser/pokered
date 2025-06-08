@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(PidgeotPicFront)
+	assert BANK(PidgeotPicFront) == BANK(PidgeotPicBack)

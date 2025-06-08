@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(HaunterPicFront)
+	assert BANK(HaunterPicFront) == BANK(HaunterPicBack)

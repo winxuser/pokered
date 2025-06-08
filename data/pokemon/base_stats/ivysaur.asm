@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(IvysaurPicFront)
+	assert BANK(IvysaurPicFront) == BANK(IvysaurPicBack)

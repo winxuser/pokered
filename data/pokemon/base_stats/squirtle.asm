@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(SquirtlePicFront)
+	assert BANK(SquirtlePicFront) == BANK(SquirtlePicBack)

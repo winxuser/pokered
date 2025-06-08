@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(GeodudePicFront)
+	assert BANK(GeodudePicFront) == BANK(GeodudePicBack)

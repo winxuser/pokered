@@ -24,3 +24,4 @@
 	; end
 
 	db BANK(DragonitePicFront)
+	assert BANK(DragonitePicFront) == BANK(DragonitePicBack)

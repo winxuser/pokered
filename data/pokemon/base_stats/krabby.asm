@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(KrabbyPicFront)
+	assert BANK(KrabbyPicFront) == BANK(KrabbyPicBack)

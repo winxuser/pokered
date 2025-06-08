@@ -22,3 +22,4 @@
 	; end
 
 	db BANK(WartortlePicFront)
+	assert BANK(WartortlePicFront) == BANK(WartortlePicBack)

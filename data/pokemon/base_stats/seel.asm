@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(SeelPicFront)
+	assert BANK(SeelPicFront) == BANK(SeelPicBack)

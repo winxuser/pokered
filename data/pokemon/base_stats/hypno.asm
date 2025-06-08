@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(HypnoPicFront)
+	assert BANK(HypnoPicFront) == BANK(HypnoPicBack)

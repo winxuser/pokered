@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(AerodactylPicFront)
+	assert BANK(AerodactylPicFront) == BANK(AerodactylPicBack)

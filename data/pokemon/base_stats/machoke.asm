@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(MachokePicFront)
+	assert BANK(MachokePicFront) == BANK(MachokePicBack)

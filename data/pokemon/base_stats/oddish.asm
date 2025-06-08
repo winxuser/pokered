@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(OddishPicFront)
+	assert BANK(OddishPicFront) == BANK(OddishPicBack)

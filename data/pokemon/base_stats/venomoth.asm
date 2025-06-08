@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(VenomothPicFront)
+	assert BANK(VenomothPicFront) == BANK(VenomothPicBack)

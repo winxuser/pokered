@@ -23,3 +23,4 @@
 	; end
 
 	db BANK(DrowzeePicFront)
+	assert BANK(DugtrioPicFront) == BANK(DugtrioPicBack)

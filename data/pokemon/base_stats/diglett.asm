@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(DiglettPicFront)
+	assert BANK(DiglettPicFront) == BANK(DiglettPicBack)

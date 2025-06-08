@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(MagnemitePicFront)
+	assert BANK(MagnemitePicFront) == BANK(MagnemitePicBack)

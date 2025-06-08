@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(MeowthPicFront)
+	assert BANK(MeowthPicFront) == BANK(MeowthPicBack)

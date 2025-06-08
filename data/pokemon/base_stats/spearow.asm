@@ -20,3 +20,4 @@
 	; end
 
 	db BANK(SpearowPicFront)
+	assert BANK(SpearowPicFront) == BANK(SpearowPicBack)

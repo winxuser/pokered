@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(PonytaPicFront)
+	assert BANK(PonytaPicFront) == BANK(PonytaPicBack)

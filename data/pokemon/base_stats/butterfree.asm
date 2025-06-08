@@ -21,3 +21,4 @@
 	; end
 
 	db BANK(ButterfreePicFront)
+	assert BANK(ButterfreePicFront) == BANK(ButterfreePicBack)

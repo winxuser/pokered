@@ -30,3 +30,4 @@
 	; end
 
 	db BANK(MewPicFront)
+	assert BANK(MewPicFront) == BANK(MewPicBack)
