@@ -40,4 +40,6 @@ UsableItems_PartyMenu:
 	db ICE_STONE
 	db DARK_SHARD
 	db METAL_COAT
+	db SUN_STONE
+	db KINGS_ROCK
 	db -1 ; end

@@ -155,10 +155,46 @@
 	const DEX_DRAGONITE  ; 149
 	const DEX_MEWTWO     ; 150
 	const DEX_MEW        ; 151
-	const DEX_ESPEON     ; 152
-	const DEX_UMBREON    ; 153
-	const DEX_LEAFEON    ; 154
-	const DEX_GLACEON    ; 155
-	const DEX_SYLVEON    ; 156
-	const DEX_STEELIX    ; 157
+; Start of Gen 2
+	const DEX_CHIKORITA  ; 152
+	const DEX_BAYLEEF    ; 153
+	const DEX_MEGANIUM   ; 154
+	const DEX_CYNDAQUIL  ; 155
+	const DEX_QUILAVA    ; 156
+	const DEX_TYPHLOSION ; 157
+	const DEX_TOTODILE   ; 158
+	const DEX_CROCONAW   ; 159
+	const DEX_FERALIGATR ; 160
+	const DEX_SENTRET    ; 161
+	const DEX_FURRET     ; 162
+	const DEX_HOOTHOOT   ; 163
+	const DEX_NOCTOWL    ; 164
+	const DEX_LEDYBA     ; 165
+	const DEX_LEDIAN     ; 166
+	const DEX_SPINARAK   ; 167
+	const DEX_ARIADOS    ; 168
+	const DEX_CROBAT     ; 169
+	const DEX_CHINCHOU   ; 170
+	const DEX_LANTURN    ; 171
+	const DEX_PICHU      ; 172
+	const DEX_CLEFFA     ; 173
+	const DEX_IGGLYBUFF  ; 174
+	const DEX_TOGEPI     ; 175
+	const DEX_TOGETIC    ; 176
+	const DEX_NATU       ; 177
+	const DEX_XATU       ; 178
+	const DEX_MAREEP     ; 179
+	const DEX_FLAAFFY    ; 180
+	const DEX_AMPHAROS   ; 181
+	const DEX_BELLOSSOM  ; 182
+	const DEX_MARILL     ; 183
+	const DEX_AZUMARILL  ; 184
+	const DEX_SUDOWOODO  ; 185
+	const DEX_POLITOED   ; 186
+	const DEX_ESPEON     ;
+	const DEX_UMBREON    ;
+	const DEX_LEAFEON    ;
+	const DEX_GLACEON    ;
+	const DEX_SYLVEON    ;
+	const DEX_STEELIX    ;
 DEF NUM_POKEMON EQU const_value - 1

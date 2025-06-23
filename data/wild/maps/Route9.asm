@@ -6,12 +6,12 @@ Route9WildMons:
 	db 11, SANDSHREW
 	db 13, SPEAROW
 	db 14, RATTATA
-	db 13, EKANS
-	db 13, SANDSHREW
+	db 13, VENONAT
+	db 13, MANKEY
 	db 17, RATTATA
 	db 17, SPEAROW
 	db 17, EKANS
-	db 17, SANDSHREW
+	db 17, PRIMEAPE
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

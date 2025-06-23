@@ -151,6 +151,42 @@ MonPartyData:
 	nybble ICON_SNAKE     ; Dragonite
 	nybble ICON_MON       ; Mewtwo
 	nybble ICON_MON       ; Mew
+; Start of gen 2
+	nybble ICON_MON       ; Chikorita
+	nybble ICON_MON       ; Bayleef
+	nybble ICON_MON       ; Meganium
+	nybble ICON_QUADRUPED ; Cyndaquil
+	nybble ICON_QUADRUPED ; Quilava
+	nybble ICON_QUADRUPED ; Typhlosion
+	nybble ICON_WATER     ; Totodile
+	nybble ICON_WATER     ; Croconaw
+	nybble ICON_WATER     ; Feraligatr
+	nybble ICON_MON       ; Sentret
+	nybble ICON_MON       ; Furret
+	nybble ICON_BIRD      ; Hoothoot
+	nybble ICON_BIRD      ; Noctowl
+	nybble ICON_BUG       ; Ledyba
+	nybble ICON_BUG       ; Ledian
+	nybble ICON_BUG       ; Spinarak
+	nybble ICON_BUG       ; Ariados
+	nybble ICON_MON       ; Crobat
+	nybble ICON_MON       ; Chinchou
+	nybble ICON_MON       ; Lanturn
+	nybble ICON_FAIRY     ; Pichu
+	nybble ICON_FAIRY     ; Cleffa
+	nybble ICON_FAIRY     ; Igglybuff
+	nybble ICON_MON       ; Togepi
+	nybble ICON_MON       ; Togetic
+	nybble ICON_GRASS     ; Natu
+	nybble ICON_GRASS     ; Xatu
+	nybble ICON_MON       ; Mareep
+	nybble ICON_MON       ; Flaaffy
+	nybble ICON_MON       ; Ampharos
+	nybble ICON_GRASS     ; Bellossom
+	nybble ICON_WATER     ; Marill
+	nybble ICON_WATER     ; Azumarill
+	nybble ICON_GRASS     ; Sudowoodo
+	nybble ICON_GRASS     ; Politoed
 	nybble ICON_MON       ; Espeon
 	nybble ICON_MON       ; Umbreon
 	nybble ICON_MON       ; Leafeon

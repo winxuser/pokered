@@ -3,11 +3,11 @@ MtMoonB1FWildMons:
 	db  8, ZUBAT
 	db  7, ZUBAT
 	db  7, GEODUDE
-	db  8, GEODUDE
+	db  8, CLEFFA
 	db  9, ZUBAT
 	db 10, PARAS
 	db 10, ZUBAT
-	db 11, ZUBAT
+	db 11, CLEFFA
 	db  9, CLEFAIRY
 	db  7, GEODUDE
 	db  7, GEODUDE

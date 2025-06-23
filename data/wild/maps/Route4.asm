@@ -3,11 +3,11 @@ Route4WildMons:
 	db 10, RATTATA
 	db 10, SPEAROW
 	db  9, RATTATA
-	db  9, SPEAROW
+	db  9, PICHU
 	db  8, EKANS
 	db  8, SANDSHREW
-	db  8, SPEAROW
-	db  8, RATTATA
+	db  8, CLEFAIRY
+	db  8, JIGGLYPUFF
 	db 12, RATTATA
 	db 12, SPEAROW
 	db 12, EKANS

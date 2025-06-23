@@ -608,6 +608,26 @@ _SteelixDexEntry::
 	next "than diamond"
 	dex
 
+_ChikoritaDexEntry::
+	text "It loves to bask"
+	next "in the sunlight."
+	next "It uses the leaf"
+
+	page "on its head to"
+	next "seek out warm"
+	next "places"
+	dex
+
+_BayleefDexEntry::
+	text "The scent that"
+	next "wafts from the"
+	next "leaves on its neck"
+
+	page "causes anyone who"
+	next "smells it to"
+	next "become energetic"
+    dex
+
 _FarfetchdDexEntry::
 	text "The sprig of"
 	next "green onions it"
@@ -636,6 +656,36 @@ _DragoniteDexEntry::
 	page "Its intelligence"
 	next "is said to match"
 	next "that of humans"
+	dex
+
+_MeganiumDexEntry::
+	text "Anyone who stands"
+	next "beside it becomes"
+	next "refreshed, just as"
+
+	page "if they were"
+	next "relaxing in a"
+	next "sunny forest"
+	dex
+
+_CyndaquilDexEntry::
+	text "The fire that"
+	next "spouts from its"
+	next "back burns hottest"
+
+	page "when it is angry."
+	next "The flaring flames"
+	next "intimidate foes"
+	dex
+
+_QuilavaDexEntry::
+	text "Before battle, it"
+	next "turns its back on"
+	next "its opponent to"
+
+	page "demonstrate how"
+	next "ferociously its"
+	next "fire blazes"
 	dex
 
 _DoduoDexEntry::
@@ -728,6 +778,36 @@ _KrabbyDexEntry::
 	next "sideways"
 	dex
 
+_TyphlosionDexEntry::
+	text "When heat from its"
+	next "body causes the"
+	next "air around it to"
+
+	page "shimmer, this is a"
+	next "sign that it is"
+	next "ready to battle"
+	dex
+
+_TotodileDexEntry::
+	text "This rough critter"
+	next "chomps at any"
+	next "moving object it"
+
+	page "sees. Turning your"
+	next "back on it is not"
+	next "recommended"
+	dex
+
+_CroconawDexEntry::
+	text "The tips of its"
+	next "fangs are slanted"
+	next "backward. Once"
+
+	page "those fangs clamp"
+	next "down, the prey has"
+	next "no hope of escape"
+	dex
+
 _VulpixDexEntry::
 	text "At the time of"
 	next "birth, it has"
@@ -766,6 +846,26 @@ _RaichuDexEntry::
 	page "itself from its"
 	next "own high voltage"
 	next "power"
+	dex
+
+_FeraligatrDexEntry::
+	text "Although it has a"
+	next "massive body, its"
+	next "powerful hind legs"
+
+	page "enable it to move"
+	next "quickly, even on"
+	next "the ground"
+	dex
+
+_SentretDexEntry::
+	text "When acting as a"
+	next "lookout, it warns"
+	next "others of danger"
+
+	page "by screeching and"
+	next "hitting the ground"
+	next "with its tail"
 	dex
 
 _DratiniDexEntry::
@@ -826,6 +926,26 @@ _SeadraDexEntry::
 	page "its wing-like"
 	next "pectoral fins and"
 	next "stout tail"
+	dex
+
+_FurretDexEntry::
+	text "It lives in narrow"
+	next "burrows that fit"
+	next "its slim body. The"
+
+	page "deeper the nests"
+	next "go, the more maze-"
+	next "like they become"
+	dex
+
+_HoothootDexEntry::
+	text "It begins to hoot"
+	next "at the same time"
+	next "every day. Some"
+
+	page "trainers use them"
+	next "in place of"
+	next "clocks"
 	dex
 
 _SandshrewDexEntry::
@@ -1016,6 +1136,16 @@ _BeedrillDexEntry::
 	page "venomous stingers"
 	next "on its forelegs"
 	next "and tail"
+	dex
+
+_NoctowlDexEntry::
+	text "Its extremely soft"
+	next "feathers make no"
+	next "sound in flight."
+
+	page "It silently sneaks"
+	next "up on prey without"
+	next "being detected"
 	dex
 
 _DodrioDexEntry::

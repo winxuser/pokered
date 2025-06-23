@@ -17,17 +17,17 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db EEVEE, 90
+	db CHIKORITA, 90
 IF DEF(_DEBUG)
-	db LEAFEON, 5
+	db SQUIRTLE, 5
 ELSE
 	db MEW, 20
 ENDC
-	db JOLTEON, 56
+	db BULBASAUR, 56
 	db VAPOREON, 56
-	db ESPEON, 57
+	db MEWTWO, 57
 IF DEF(_DEBUG)
-	db UMBREON, 40
+	db PICHU, 40
 ENDC
 	db -1 ; end
 
@@ -151,7 +151,7 @@ DebugNewGameItemsList:
 	db LIFT_KEY, 1
 	db MOON_STONE, 2
 	db ICE_STONE, 2
-	db SUN_SHARD, 2
+	db SUN_STONE, 2
 	db DARK_SHARD, 2
 	db -1 ; end
 
