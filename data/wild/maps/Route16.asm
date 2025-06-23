@@ -5,9 +5,9 @@ Route16WildMons:
 	db 18, RATTATA
 	db 20, DODUO
 	db 20, RATTATA
-	db 18, DODUO
+	db 18, GRIMER
 	db 22, DODUO
-	db 22, RATTATA
+	db 22, FEAROW
 	db 23, RATICATE
 	db 18, RATTATA
 	db 18, RATTATA

@@ -8,9 +8,9 @@ Route6WildMons:
 	db 12, MEOWTH
 	db 15, BELLSPROUT
 	db 15, ODDISH
-	db 15, PIDGEY
-	db 16, PIDGEY
-	db 16, MEOWTH
+	db 15, DROWZEE
+	db 16, MAGNEMITE
+	db 16, PSYDUCK
 	db 16, MANKEY
 	end_grass_wildmons ; dereknote: version exclusives merged
 

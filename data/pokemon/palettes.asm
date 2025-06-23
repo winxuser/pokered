@@ -152,12 +152,48 @@ MonsterPalettes:
 	db PAL_DRAGONITE
 	db PAL_MEWTWO
 	db PAL_MEW
+	; Start of Gen 2 Pokemon
+	db PAL_GREENMON  ; Chikorita
+	db PAL_GREENMON  ; Bayleef
+	db PAL_GREENMON  ; Meganium
+	db PAL_REDMON    ; Cyndaquil
+	db PAL_REDMON    ; Quilava
+	db PAL_REDMON    ; Typhlosion
+	db PAL_BLUEMON   ; Totodile
+	db PAL_BLUEMON   ; Croconaw
+	db PAL_BLUEMON   ; Feraligatr
+	db PAL_BROWNMON  ; Sentret
+	db PAL_BROWNMON  ; Furret
+	db PAL_BROWNMON  ; Hoothoot
+	db PAL_BROWNMON  ; Noctowl
+	db PAL_REDMON    ; Ledyba
+	db PAL_REDMON    ; Ledian
+	db PAL_GREENMON  ; Spinarak
+	db PAL_GREENMON  ; Ariados
+	db PAL_ZUBAT     ; Crobat
+	db PAL_BLUEMON   ; Chinchou
+	db PAL_BLUEMON   ; Lanturn
+	db PAL_PIKACHU   ; Pichu
+	db PAL_CLEFAIRY  ; Cleffa
+	db PAL_CLEFAIRY  ; Igglybuff
+	db PAL_BUTTERFREE; Togepi
+	db PAL_BUTTERFREE; Togetic
+	db PAL_GREENMON  ; Natu
+	db PAL_GREENMON  ; Xatu
+	db PAL_PIKACHU   ; Mareep
+	db PAL_PINKMON   ; Flaaffy
+	db PAL_YELLOWMON ; Ampharos
+	db PAL_GREENMON  ; Bellossom
+	db PAL_BLUEMON   ; Marill
+	db PAL_BLUEMON   ; Azumarill
+	db PAL_BROWNMON  ; Sudowoodo
+	db PAL_GREENMON  ; Politoed
 	db PAL_PURPLEMON ; Espeon
 	db PAL_PURPLEMON ; Umbreon
 	db PAL_PURPLEMON ; Leafeon
 	db PAL_PURPLEMON ; Glaceon
 	db PAL_PURPLEMON ; Sylveon
-	db PAL_GRAYMON   ; STEELIX
+	db PAL_GRAYMON   ; Steelix
 	assert_table_length NUM_POKEMON + 1
 
 TrainerPalettes:

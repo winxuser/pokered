@@ -10,8 +10,8 @@ Route14WildMons:
 	db 28, PIDGEOTTO
 	db 30, GLOOM
 	db 30, WEEPINBELL
-	db 30, PIDGEOTTO
-	db 26, PIDGEY
+	db 30, NOCTOWL
+	db 26, CHANSEY
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

@@ -216,7 +216,6 @@ INCLUDE "engine/battle/stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
-INCLUDE "gfx/trade.asm"
 INCLUDE "engine/pokemon/evos_moves.asm"
 
 PlayerPartyUpdated:
@@ -509,6 +508,7 @@ INCLUDE "engine/battle/move_effects/paralyze.asm"
 INCLUDE "engine/battle/move_effects/heal.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
+INCLUDE "gfx/trade.asm" ; moved from battle engine 7 for space for gen 2 mons
 
 SECTION "Hidden Objects 2", ROMX
 
@@ -791,6 +791,7 @@ INCLUDE "engine/mon_gender.asm"
 SECTION "Engine Spillover", ROMX
 
 INCLUDE "engine/menus/item_descriptions.asm"
+INCLUDE "data/pokemon/dex_text2.asm"
 
 
 SECTION "Batteryless Save Bank 1", ROMX, BANK[$3D]

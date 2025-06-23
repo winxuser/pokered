@@ -6,12 +6,12 @@ Route10WildMons:
 	db 13, SPEAROW
 	db 13, EKANS
 	db 13, SANDSHREW
-	db 16, EKANS
+	db 16, ZUBAT
 	db 16, SANDSHREW
-	db 17, VOLTORB
-	db 17, SPEAROW
+	db 17, MAROWAK
+	db 17, VENONAT
 	db 17, EKANS
-	db 17, SANDSHREW
+	db 17, ELECTABUZZ
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

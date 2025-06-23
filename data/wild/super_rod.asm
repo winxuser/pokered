@@ -58,13 +58,15 @@ SuperRodData:
 	db 15, KRABBY
 
 .Group4:
-	db 2
+	db 3
 	db 15, KRABBY
 	db 15, SHELLDER
+	db 14, POLIWAG
 
 .Group5:
-	db 2
+	db 3
 	db 23, POLIWHIRL
+	db 18, SEAKING
 	db 15, SLOWPOKE
 
 .Group6:
