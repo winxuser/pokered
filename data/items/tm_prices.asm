@@ -56,6 +56,6 @@ TechnicalMachinePrices:
 	nybble 3 ; TM52 FIRE_PUNCH
 	nybble 3 ; TM53 ICE_PUNCH
 	nybble 3 ; TM54 THUNDERPUNCH
-	nybble 1 ; TM55 CHARM
+	nybble 1 ; TM55 DYNAMIC PUNCH
 	; end new TMs
 	end_nybble_array NUM_TMS

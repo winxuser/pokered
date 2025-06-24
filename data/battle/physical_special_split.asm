@@ -4,11 +4,24 @@ PhysicalToSpecialMoves:
 ; Poison
         db ACID
         db SLUDGE
+; Rock
+        db ANCIENT_POWR
 ; Normal
         db HYPER_BEAM
         db RAZOR_WIND
         db SWIFT
         db TRI_ATTACK
+; Ice
+        db AURORA_BEAM
+        db BLIZZARD
+        db POWDER_SNOW
+; Water
+        db BUBBLEBEAM
+        db WHIRLPOOL
+; Electric
+        db ZAP_CANNON
+; Dragon
+        db TWISTER
         db -1 ; end
 
 SpecialToPhysicalMoves:

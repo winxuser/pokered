@@ -171,8 +171,25 @@
 	const SLASH        ; a3
 	const SUBSTITUTE   ; a4
 	const CHARM        ; a5
-	const STRUGGLE     ; a6
-DEF NUM_ATTACKS EQU const_value - 1
+	; Start of Gen 2 moves
+	const ANCIENT_POWR
+	const BEAT_UP
+	const BONE_RUSH
+	const COTTON_SPORE
+	const CROSS_CHOP
+	const CRUNCH
+	const DYNAM_PUNCH
+	const FLAMEWHEEL
+	const GIGA_DRAIN
+	const MEGA_HORN
+	const METAL_CLAW
+	const POWDER_SNOW
+	const PURSUIT
+	const ZAP_CANNON
+	const WHIRLPOOL
+	const TWISTER
+	const STRUGGLE
+DEF NUM_ATTACKS EQU const_value -1
 
 DEF CANNOT_MOVE EQU $ff
 

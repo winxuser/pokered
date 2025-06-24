@@ -23,7 +23,7 @@ IF DEF(_DEBUG)
 ELSE
 	db MEW, 20
 ENDC
-	db BULBASAUR, 56
+	db BULBASAUR, 6
 	db VAPOREON, 56
 	db MEWTWO, 57
 IF DEF(_DEBUG)
@@ -68,7 +68,7 @@ IF DEF(_DEBUG)
 
 	; Jolteon gets Thunderbolt.
 	ld hl, wPartyMon3Moves + 3
-	ld a, THUNDERBOLT
+	ld a, TWISTER
 	ld [hl], a
 	ld hl, wPartyMon3PP + 3
 	ld a, 15

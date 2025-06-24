@@ -1,6 +1,6 @@
 ItemPrices::
 	table_width 3
-	bcd3 0     ; MASTER_BALL
+	bcd3 2000  ; MASTER_BALL
 	bcd3 1200  ; ULTRA_BALL
 	bcd3 600   ; GREAT_BALL
 	bcd3 200   ; POKE_BALL
@@ -81,7 +81,7 @@ ItemPrices::
 	bcd3 0     ; PP_UP
 	bcd3 0     ; ETHER
 	bcd3 0     ; MAX_ETHER
-	bcd3 0     ; ELIXER
+	bcd3 400   ; ELIXER
 	bcd3 0     ; MAX_ELIXER
 	bcd3 2000  ; ICE_STONE
 	bcd3 2000  ; DARK_SHARD

@@ -166,6 +166,22 @@ MoveSoundTable:
 	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SLASH
 	db SFX_BATTLE_2C,          $d8, $04 ; SUBSTITUTE
 	db SFX_BATTLE_09,          $88, $10 ; CHARM
+	db SFX_BATTLE_36,          $f0, $20 ; ANCIENT_POWR
+	db SFX_BATTLE_0D,          $00, $40 ; BEAT UP
+	db SFX_BATTLE_32,          $00, $80 ; BONE RUSH
+	db SFX_BATTLE_1C,          $11, $a0 ; COTTON SPORE
+	db SFX_BATTLE_0C,          $10, $80 ; CROSS CHOP
+	db SFX_BATTLE_1E,          $00, $80 ; CRUNCH
+	db SFX_BATTLE_0B,          $01, $80 ; DYNAMIC PUNCH
+	db SFX_BATTLE_29,          $1f, $20 ; FLAME WHEEL
+	db SFX_BATTLE_24,          $40, $c0 ; GIGA DRAIN
+	db SFX_BATTLE_1E,          $00, $60 ; MEGA HORN
+	db SFX_NOT_VERY_EFFECTIVE, $00, $a0 ; METAL CLAW
+	db SFX_BATTLE_0F,          $f8, $10 ; POWDER SNOW
+	db SFX_BATTLE_2B,          $1f, $60 ; PURSUIT
+	db SFX_BATTLE_2F,          $00, $20 ; ZAP CANNON
+	db SFX_BATTLE_2C,          $00, $80 ; WHIRLPOOL
+	db SFX_BATTLE_12,          $00, $c0 ; TWISTER
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

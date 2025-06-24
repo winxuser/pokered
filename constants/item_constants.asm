@@ -121,7 +121,7 @@ DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
-DEF NUM_TMS EQU 55 ; dereknote - increased to 55
+DEF NUM_TMS EQU 55 ; will be adding more from gen 2
 
 DEF __tmhm_value__ = NUM_TMS + 1
 
@@ -214,16 +214,16 @@ DEF TM01 EQU const_value
 	add_tm SUBSTITUTE   ; $FA
 	; dereknote - new Solus TMs below
 	add_tm FLAMETHROWER ; $FB (TM51)
-	add_tm FIRE_PUNCH ; $FC (TM52)
-	add_tm ICE_PUNCH ; $FD (TM53)
+	add_tm FIRE_PUNCH   ; $FC (TM52)
+	add_tm ICE_PUNCH    ; $FD (TM53)
 	add_tm THUNDERPUNCH ; $FE (TM54)
-	add_tm CHARM ; $FF (TM55)
+	add_tm DYNAM_PUNCH  ; $G2 (TM58)
 
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 
-; 55 (dereknote - was 50) TMs + 5 HMs = 59 (dereknote - was 55) learnable TM/HM flags per Pokémon.
+; 56 (dereknote - was 50) TMs + 5 HMs = 62 (dereknote - was 55) learnable TM/HM flags per Pokémon.
 ; These now fit in 8 bytes, with five unused bits left over.
 ; dereknote - now the final unused bit is used, from the additional TM51, and 3 more bits in the next byte are used
 DEF __tmhm_value__ = NUM_TM_HM + 1

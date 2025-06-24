@@ -19,7 +19,7 @@
 	     RAGE,         DRAGON_RAGE,  DIG,          MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
 	     REST,         SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   CUT,          \
-		 STRENGTH     
+		 STRENGTH
 	; end
 
 	db BANK(CharmanderPicFront)

@@ -702,7 +702,6 @@ INCLUDE "data/battle_anims/subanimations.asm"
 INCLUDE "data/battle_anims/frame_blocks.asm"
 INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
-INCLUDE "engine/items/tm_prices.asm"
 
 
 SECTION "bank2D", ROMX, BANK[$2D]
@@ -787,15 +786,9 @@ SECTION "bank2F", ROMX, BANK[$2F]
 
 INCLUDE "data/sgb/sgb_palettes.asm"
 INCLUDE "engine/mon_gender.asm"
+INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "Engine Spillover", ROMX
 
 INCLUDE "engine/menus/item_descriptions.asm"
 INCLUDE "data/pokemon/dex_text2.asm"
-
-
-SECTION "Batteryless Save Bank 1", ROMX, BANK[$3D]
- ; don't put anything in this bank ever
-
-SECTION "Batteryless Save Bank 2", ROMX, BANK[$3F]
- ; don't put anything in this bank ever

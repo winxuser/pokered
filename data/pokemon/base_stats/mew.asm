@@ -26,7 +26,6 @@
 	     PSYWAVE,      EXPLOSION,    ROCK_SLIDE,   TRI_ATTACK,   SUBSTITUTE,   \
 		 FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, CUT,          \          
 		 FLY,          SURF,         STRENGTH,     FLASH
-	     
 	; end
 
 	db BANK(MewPicFront)

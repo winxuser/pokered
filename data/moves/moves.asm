@@ -175,6 +175,23 @@ Moves:
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10
-	move CHARM,        ATTACK_DOWN1_EFFECT,          0, FAIRY,        100, 20 ;Move from GEN II
+	; Start of Gen 2 moves
+	move CHARM,        ATTACK_DOWN1_EFFECT,          0, FAIRY,        100, 20
+	move ANCIENT_POWR, ATTACK_UP1_EFFECT,           60, ROCK,         100, 5
+	move BEAT_UP,      NO_ADDITIONAL_EFFECT,        10, DARK,         100, 10
+	move BONE_RUSH,    TWO_TO_FIVE_ATTACKS_EFFECT,  25, GROUND,        90, 10
+	move COTTON_SPORE, SPEED_DOWN2_EFFECT,           0, GRASS,         85, 40
+	move CROSS_CHOP,   NO_ADDITIONAL_EFFECT,       100, FIGHTING,      80, 5
+	move CRUNCH,       SPECIAL_DOWN_SIDE_EFFECT,    80, DARK,         100, 15
+	move DYNAM_PUNCH,  CONFUSION_SIDE_EFFECT,      100, FIGHTING,      50, 5
+	move FLAMEWHEEL,   BURN_SIDE_EFFECT2,           60, FIRE,         100, 25
+	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             75, GRASS,        100, 10
+	move MEGA_HORN,    NO_ADDITIONAL_EFFECT,       120, BUG,           85, 10
+	move METAL_CLAW,   ATTACK_DOWN_SIDE_EFFECT,     50, STEEL,         95, 35
+	move POWDER_SNOW,  FREEZE_SIDE_EFFECT1,         40, ICE,          100, 25
+	move PURSUIT,      NO_ADDITIONAL_EFFECT,        40, DARK,         100, 20
+	move ZAP_CANNON,   PARALYZE_SIDE_EFFECT1,      100, ELECTRIC,      50, 5
+	move WHIRLPOOL,    TRAPPING_EFFECT,             35, WATER,         85, 15
+	move TWISTER,      FLINCH_SIDE_EFFECT1,         40, DRAGON,       100, 20
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS
