@@ -1844,7 +1844,9 @@ wSpriteSetID:: db
 
 wObjectDataPointerTemp:: dw
 
-	ds 2
+wAltAnimationID:: db
+
+	ds 1
 
 ; the tile shown outside the boundaries of the map
 wMapBackgroundTile:: db

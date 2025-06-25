@@ -122,7 +122,6 @@ StartMenu_Pokemon::
 	dw .cut
 	dw .fly
 	dw .surf
-	dw .surf
 	dw .strength
 	dw .flash
 	dw .dig
