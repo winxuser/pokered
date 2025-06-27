@@ -11,3 +11,10 @@ DefaultNamesRival:
 	next "GARY"
 	next "SHIGERU"
 	db   "@"
+
+DefaultNamesGirl:
+	db   "NEW NAME"
+	next "GREEN"
+	next "LEAF"
+	next "AMANDA"
+	db   "@"

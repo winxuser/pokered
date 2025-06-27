@@ -218,6 +218,7 @@ KrabbyPicBack::      INCBIN "gfx/pokemon/back/krabbyb.pic"
 	ds $19d
 
 RedPicBack::           INCBIN "gfx/player/redb.pic"
+GreenPicBack::         INCBIN "gfx/player/greenb.pic"
 OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"
 
 

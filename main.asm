@@ -193,10 +193,6 @@ INCLUDE "engine/slots/game_corner_slots2.asm"
 
 SECTION "Battle Engine 6", ROMX
 
-INCLUDE "engine/battle/move_effects/mist.asm"
-INCLUDE "engine/battle/move_effects/one_hit_ko.asm"
-
-
 SECTION "Slot Machines", ROMX
 
 INCLUDE "engine/movie/title2.asm"
@@ -792,3 +788,5 @@ SECTION "Engine Spillover", ROMX
 INCLUDE "engine/menus/item_descriptions.asm"
 INCLUDE "data/pokemon/dex_text2.asm"
 INCLUDE "gfx/fishing.asm"
+INCLUDE "engine/battle/move_effects/mist.asm"
+INCLUDE "engine/battle/move_effects/one_hit_ko.asm"

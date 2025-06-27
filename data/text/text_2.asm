@@ -1759,6 +1759,11 @@ _TextIDErrorText::
 	text " ERROR."
 	done
 
+_BoyGirlText::
+    text "Play as a boy, or"
+    line "as a girl?"
+    done
+
 _ContCharText::
 	text "<_CONT>@"
 	text_end
