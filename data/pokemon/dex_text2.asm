@@ -217,3 +217,63 @@ _PolitoedDexEntry::
 	next "ing from far and"
 	next "wide"
 	dex
+
+_HoppipDexEntry::
+	text "To keep from being"
+	next "blown away by the"
+	next "wind, they gather"
+
+	page "in clusters. They"
+	next "do enjoy gentle"
+	next "breezes, though"
+	dex
+
+_SkiploomDexEntry::
+	text "The bloom on top"
+	next "of its head opens"
+	next "and closes as the"
+
+	page "temperature fluc-"
+	next "tuates up and"
+	next "down"
+	dex
+
+_JumpluffDexEntry::
+	text "Once it catches"
+	next "the wind, it deft-"
+	next "ly controls its"
+
+	page "cotton-puff spores"
+	next "to float, even"
+	next "around the world.@"
+	dex
+
+_AipomDexEntry::
+	text "Its tail is so"
+	next "powerful that it"
+	next "can use it to grab"
+
+	page "a tree branch and"
+	next "hold itself up in"
+	next "the air"
+	dex
+
+_SunkernDexEntry::
+	text "It may drop out of"
+	next "the sky suddenly."
+	next "If attacked by a"
+
+	page "SPEAROW, it will"
+	next "violently shake"
+	next "its leaves"
+	dex
+
+_SunfloraDexEntry::
+	text "It converts sun-"
+	next "light into energy."
+	next "In the darkness"
+
+	page "after sunset, it"
+	next "closes its petals"
+	next "and becomes still"
+	dex

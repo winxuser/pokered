@@ -202,7 +202,12 @@
 	const AZUMARILL          ; $C1
 	const SUDOWOODO          ; $C2
 	const POLITOED           ; $C3
-
+	const HOPPIP             ; $C4
+	const SKIPLOOM			 ; $C5
+	const JUMPLUFF			 ; $C6
+	const AIPOM				 ; $C5
+	const SUNKERN			 ; $C6
+	const SUNFLORA			 ; $C7
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 
 ; starters

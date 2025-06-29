@@ -205,6 +205,12 @@ EvosMovesPointerTable:
 	dw AzumarillEvosMoves
 	dw SudowoodoEvosMoves
 	dw PolitoedEvosMoves
+	dw HoppipEvosMoves
+	dw SkiploomEvosMoves
+	dw JumpluffEvosMoves
+	dw AipomEvosMoves
+	dw SunkernEvosMoves
+	dw SunfloraEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -2060,13 +2066,13 @@ BulbasaurEvosMoves:
 	db EVOLVE_LEVEL, 16, IVYSAUR
 	db 0
 ; Learnset
-	db 3, VINE_WHIP
+	db 4, GROWL
 	db 7, LEECH_SEED
 	db 10, VINE_WHIP
 	db 15, POISONPOWDER
 	db 17, SLEEP_POWDER
 	db 20, RAZOR_LEAF
-	db 26, GROWTH
+	db 32, GROWTH
 	db 46, SOLARBEAM
 	db 0
 
@@ -2541,4 +2547,76 @@ PolitoedEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 0
+
+HoppipEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, SKIPLOOM
+	db 0
+; Learnset
+	db 5, TAIL_WHIP
+	db 10, TACKLE
+	db 13, POISONPOWDER
+	db 15, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 20, LEECH_SEED
+	db 30, MEGA_DRAIN
+	db 0
+
+SkiploomEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 27, SKIPLOOM
+	db 0
+; Learnset
+	db 5, TAIL_WHIP
+	db 10, TACKLE
+	db 13, POISONPOWDER
+	db 15, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 22, LEECH_SEED
+	db 36, MEGA_DRAIN
+	db 0
+
+JumpluffEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 5, TAIL_WHIP
+	db 10, TACKLE
+	db 13, POISONPOWDER
+	db 15, STUN_SPORE
+	db 17, SLEEP_POWDER
+	db 22, LEECH_SEED
+	db 44, MEGA_DRAIN
+	db 0
+
+AipomEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 6, SAND_ATTACK
+	db 19, FURY_SWIPES
+	db 27, SWIFT
+	db 36, SCREECH
+	db 46, AGILITY
+	db 0
+
+SunkernEvosMoves:
+; Evolutions
+	db EVOLVE_ITEM, SUN_STONE, 1, SUNFLORA
+	db 0
+; Learnset
+	db 4, GROWTH
+	db 10, MEGA_DRAIN
+	db 46, GIGA_DRAIN
+	db 0
+
+SunfloraEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 4, GROWTH
+	db 10, RAZOR_LEAF
+	db 31, PETAL_DANCE
+	db 46, SOLARBEAM
 	db 0

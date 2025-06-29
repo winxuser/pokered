@@ -203,4 +203,10 @@ CryData::
 	mon_cry SFX_CRY_04, $20, $40 ; Azumarill
 	mon_cry SFX_CRY_11, $00, $80 ; Sudowoodo
 	mon_cry SFX_CRY_11, $00, $80 ; Politoed
+	mon_cry SFX_CRY_11, $00, $80 ; Hoppip
+	mon_cry SFX_CRY_11, $00, $80 ; Skiploom
+	mon_cry SFX_CRY_11, $00, $80 ; Jumpluff
+	mon_cry SFX_CRY_11, $00, $80 ; Aipom
+	mon_cry SFX_CRY_11, $00, $80 ; Sunkern
+	mon_cry SFX_CRY_11, $00, $80 ; Sunflora
 	assert_table_length NUM_POKEMON_INDEXES

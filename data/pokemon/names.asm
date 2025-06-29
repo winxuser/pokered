@@ -195,4 +195,10 @@ MonsterNames::
 	db "AZUMARILL@"
 	db "SUDOWOODO@"
 	db "POLITOED@@"
+	db "HOPPIP@@@@"
+	db "SKIPLOOM@@"
+	db "JUMPLUFF@@"
+	db "AIPOM@@@@@"
+	db "SUNKERN@@@"
+	db "SUNFLORA@@"
 	assert_table_length NUM_POKEMON_INDEXES

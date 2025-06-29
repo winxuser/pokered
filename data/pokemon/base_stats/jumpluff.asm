@@ -1,16 +1,16 @@
-	db DEX_CHIKORITA ; pokedex id
+	db DEX_JUMPLUFF ; pokedex id
 
-	db  45,  49,  65,  45,  49
+	db  55,  45,  50,  80,  65
 	;   hp  atk  def  spd  spc
 
-	db GRASS, GRASS ; type
+	db GRASS, FLYING ; type
 	db 45 ; catch rate
-	db 64 ; base exp
+	db 176 ; base exp
 
-	INCBIN "gfx/pokemon/front/chikorita.pic", 0, 1 ; sprite dimensions
-	dw ChikoritaPicFront, ChikoritaPicBack
+	INCBIN "gfx/pokemon/front/jumpluff.pic", 0, 1 ; sprite dimensions
+	dw JumpluffPicFront, JumpluffPicBack
 
-	db TACKLE, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SPLASH, TAIL_WHIP, TACKLE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
@@ -20,6 +20,5 @@
 		 FLASH,        STRENGTH
 	; end
 
-
-	db BANK(ChikoritaPicFront)
-	assert BANK(ChikoritaPicFront) == BANK(ChikoritaPicBack)
+	db BANK(JumpluffPicFront)
+	assert BANK(JumpluffPicFront) == BANK(JumpluffPicBack)

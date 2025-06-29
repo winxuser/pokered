@@ -191,6 +191,12 @@
 	const DEX_AZUMARILL  ; 184
 	const DEX_SUDOWOODO  ; 185
 	const DEX_POLITOED   ; 186
+	const DEX_HOPPIP     ; 187
+	const DEX_SKIPLOOM   ; 188
+	const DEX_JUMPLUFF   ; 189
+	const DEX_AIPOM		 ; 190
+	const DEX_SUNKERN	 ; 191
+	const DEX_SUNFLORA   ; 192
 	const DEX_ESPEON     ;
 	const DEX_UMBREON    ;
 	const DEX_LEAFEON    ;

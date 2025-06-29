@@ -188,6 +188,12 @@ MonsterPalettes:
 	db PAL_BLUEMON   ; Azumarill
 	db PAL_BROWNMON  ; Sudowoodo
 	db PAL_GREENMON  ; Politoed
+	db PAL_PINKMON   ; Hoppip
+	db PAL_GREENMON  ; Skiploom
+	db PAL_BLUEMON   ; Jumpluff
+	db PAL_PURPLEMON ; Aipom
+	db PAL_ELECTABUZZ; Sunkern
+	db PAL_GREENMON  ; Sunflora
 	db PAL_PURPLEMON ; Espeon
 	db PAL_PURPLEMON ; Umbreon
 	db PAL_PURPLEMON ; Leafeon

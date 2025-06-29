@@ -105,9 +105,6 @@ INCLUDE "engine/menus/start_sub_menus.asm"
 INCLUDE "engine/items/tms.asm"
 INCLUDE "engine/battle/end_of_battle.asm"
 INCLUDE "engine/battle/wild_encounters.asm"
-INCLUDE "engine/battle/move_effects/recoil.asm"
-INCLUDE "engine/battle/move_effects/conversion.asm"
-INCLUDE "engine/battle/move_effects/haze.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
 
@@ -121,9 +118,6 @@ INCLUDE "engine/gfx/load_pokedex_tiles.asm"
 INCLUDE "engine/overworld/map_sprites.asm"
 INCLUDE "engine/overworld/emotion_bubbles.asm"
 INCLUDE "engine/events/evolve_trade.asm"
-INCLUDE "engine/battle/move_effects/substitute.asm"
-INCLUDE "engine/menus/pc.asm"
-
 
 SECTION "Play Time", ROMX
 
@@ -188,7 +182,6 @@ INCLUDE "gfx/trainer_card.asm"
 INCLUDE "engine/items/tmhm.asm"
 INCLUDE "engine/battle/scale_sprites.asm"
 INCLUDE "engine/battle/move_effects/pay_day.asm"
-INCLUDE "engine/slots/game_corner_slots2.asm"
 
 
 SECTION "Battle Engine 6", ROMX
@@ -201,6 +194,7 @@ INCLUDE "engine/slots/slot_machine.asm"
 INCLUDE "engine/events/pewter_guys.asm"
 INCLUDE "engine/math/multiply_divide.asm"
 INCLUDE "engine/slots/game_corner_slots.asm"
+INCLUDE "engine/slots/game_corner_slots2.asm"
 
 
 SECTION "Battle Engine 7", ROMX
@@ -212,7 +206,6 @@ INCLUDE "engine/battle/stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
-INCLUDE "engine/pokemon/evos_moves.asm"
 
 PlayerPartyUpdated:
 	ld hl, PartyTileMap
@@ -776,6 +769,7 @@ MewtwoPicBack::       INCBIN "gfx/pokemon/back/mewtwob.pic"
 MewPicFront::         INCBIN "gfx/pokemon/front/mew.pic"
 MewPicBack::          INCBIN "gfx/pokemon/back/mewb.pic"
 
+INCLUDE "engine/pokemon/evos_moves.asm"
 
 SECTION "bank2F", ROMX, BANK[$2F]
 
@@ -790,3 +784,8 @@ INCLUDE "data/pokemon/dex_text2.asm"
 INCLUDE "gfx/fishing.asm"
 INCLUDE "engine/battle/move_effects/mist.asm"
 INCLUDE "engine/battle/move_effects/one_hit_ko.asm"
+INCLUDE "engine/battle/move_effects/recoil.asm"
+INCLUDE "engine/battle/move_effects/conversion.asm"
+INCLUDE "engine/battle/move_effects/haze.asm"
+INCLUDE "engine/battle/move_effects/substitute.asm"
+INCLUDE "engine/menus/pc.asm"

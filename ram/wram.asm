@@ -276,12 +276,7 @@ wPlayerMonNumber:: db
 wMenuCursorLocation:: dw
 
 
-wPlayerGender::
-	; $00 = male
-	; $01 = female
-	ds 1
-
-	ds 1
+	ds 2
 
 ; how many times should HandleMenuInput poll the joypad state before it returns?
 wMenuJoypadPollCount:: db
@@ -1852,6 +1847,9 @@ wObjectDataPointerTemp:: dw
 
 wAltAnimationID:: db
 
+wPlayerGender::
+	; $00 = male
+	; $01 = female
 	ds 1
 
 ; the tile shown outside the boundaries of the map
@@ -2304,7 +2302,7 @@ wEXPBarKeepFullFlag:: ds 1
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $100 - 1
+	ds $100 - 4
 wStack:: db
 
 ENDSECTION

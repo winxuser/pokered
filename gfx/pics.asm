@@ -408,5 +408,15 @@ PolitoedPicBack::     INCBIN "gfx/pokemon/back/politoedb.pic"
 
 SECTION "Pics 9", ROMX
 
-HoppipPicFront::    INCBIN "gfx/pokemon/front/hoppip.pic"
-HoppipPicBack::     INCBIN "gfx/pokemon/back/hoppipb.pic"
+HoppipPicFront::      INCBIN "gfx/pokemon/front/hoppip.pic"
+HoppipPicBack::       INCBIN "gfx/pokemon/back/hoppipb.pic"
+SkiploomPicFront::    INCBIN "gfx/pokemon/front/skiploom.pic"
+SkiploomPicBack::     INCBIN "gfx/pokemon/back/skiploomb.pic"
+JumpluffPicFront::    INCBIN "gfx/pokemon/front/jumpluff.pic"
+JumpluffPicBack::     INCBIN "gfx/pokemon/back/jumpluffb.pic"
+AipomPicFront::       INCBIN "gfx/pokemon/front/aipom.pic"
+AipomPicBack::        INCBIN "gfx/pokemon/back/aipomb.pic"
+SunkernPicFront::     INCBIN "gfx/pokemon/front/sunkern.pic"
+SunkernPicBack::      INCBIN "gfx/pokemon/back/sunkernb.pic"
+SunfloraPicFront::     INCBIN "gfx/pokemon/front/sunflora.pic"
+SunfloraPicBack::      INCBIN "gfx/pokemon/back/sunflorab.pic"

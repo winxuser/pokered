@@ -187,6 +187,12 @@ MonPartyData:
 	nybble ICON_WATER     ; Azumarill
 	nybble ICON_GRASS     ; Sudowoodo
 	nybble ICON_GRASS     ; Politoed
+	nybble ICON_GRASS     ; Hoppip
+	nybble ICON_GRASS     ; Skiploom
+	nybble ICON_GRASS     ; Jumpluff
+	nybble ICON_MON       ; Aipom
+	nybble ICON_GRASS     ; Sunkern
+	nybble ICON_GRASS     ; Sunflora
 	nybble ICON_MON       ; Espeon
 	nybble ICON_MON       ; Umbreon
 	nybble ICON_MON       ; Leafeon

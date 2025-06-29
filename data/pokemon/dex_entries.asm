@@ -195,6 +195,12 @@ PokedexEntryPointers:
 	dw AzumarillDexEntry
 	dw SudowoodoDexEntry
 	dw PolitoedDexEntry
+	dw HoppipDexEntry
+	dw SkiploomDexEntry
+	dw JumpluffDexEntry
+	dw AipomDexEntry
+	dw SunkernDexEntry
+	dw SunfloraDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1544,6 +1550,48 @@ PolitoedDexEntry:
 	db 3,11
 	dw 838
 	text_far _PolitoedDexEntry
+	text_end
+
+HoppipDexEntry:
+	db "COTTONWEED@"
+	db 1,4
+	dw 11
+	text_far _HoppipDexEntry
+	text_end
+
+SkiploomDexEntry:
+	db "COTTONWEED@"
+	db 2,0
+	dw 22
+	text_far _SkiploomDexEntry
+	text_end
+
+JumpluffDexEntry:
+	db "COTTONWEED@"
+	db 2,7
+	dw 66
+	text_far _JumpluffDexEntry
+	text_end
+
+AipomDexEntry:
+	db "LONG TAIL@"
+	db 2,7
+	dw 254
+	text_far _AipomDexEntry
+	text_end
+
+SunkernDexEntry:
+	db "SEED@"
+	db 1,0
+	dw 40
+	text_far _SunkernDexEntry
+	text_end
+
+SunfloraDexEntry:
+	db "SUN FLOWER@"
+	db 1,0
+	dw 40
+	text_far _SunfloraDexEntry
 	text_end
 
 MissingNoDexEntry:

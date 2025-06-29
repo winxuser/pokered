@@ -27,7 +27,8 @@ ClipboardSprite::        INCBIN "gfx/sprites/clipboard.2bpp"
 SnorlaxSprite::          INCBIN "gfx/sprites/snorlax.2bpp"
 OldAmberSprite::         INCBIN "gfx/sprites/old_amber.2bpp"
 GamblerAsleepSprite::    INCBIN "gfx/sprites/gambler_asleep.2bpp"
-
+GameboyKidSprite::       INCBIN "gfx/sprites/gameboy_kid.2bpp"
+FairySprite::            INCBIN "gfx/sprites/fairy.2bpp"
 
 SECTION "NPC Sprites 2", ROMX
 
@@ -63,6 +64,8 @@ WaiterSprite::           INCBIN "gfx/sprites/waiter.2bpp"
 SilphWorkerFSprite::     INCBIN "gfx/sprites/silph_worker_f.2bpp"
 MiddleAgedWomanSprite::  INCBIN "gfx/sprites/middle_aged_woman.2bpp"
 BrunetteGirlSprite::     INCBIN "gfx/sprites/brunette_girl.2bpp"
+BaldingGuySprite::       INCBIN "gfx/sprites/balding_guy.2bpp"
+LittleBoySprite::        INCBIN "gfx/sprites/little_boy.2bpp"
 LanceSprite::            INCBIN "gfx/sprites/lance.2bpp"
 MomSprite::              INCBIN "gfx/sprites/mom.2bpp"
 AgathaSprite::           INCBIN "gfx/sprites/agatha.2bpp"
@@ -81,7 +84,3 @@ SECTION "NPC Sprites 3", ROMX
  BlaineSprite::          INCBIN "gfx/sprites/blaine.2bpp"
  BillSprite::            INCBIN "gfx/sprites/bill.2bpp"
  MewSprite::             INCBIN "gfx/sprites/mew.2bpp"
-GameboyKidSprite::       INCBIN "gfx/sprites/gameboy_kid.2bpp"
-FairySprite::            INCBIN "gfx/sprites/fairy.2bpp"
-BaldingGuySprite::       INCBIN "gfx/sprites/balding_guy.2bpp"
-LittleBoySprite::        INCBIN "gfx/sprites/little_boy.2bpp"
