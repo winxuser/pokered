@@ -80,7 +80,7 @@ StatusScreen:
 	ld hl, wStatusFlags2
 	set BIT_NO_AUDIO_FADE_OUT, [hl]
 	ld a, $33
-	ldh [rNR50], a ; Reduce the volume
+	ldh [rAUDVOL], a ; Reduce the volume
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
 	call UpdateSprites
@@ -490,12 +490,12 @@ PrintGenderStatusScreen:
  	ldh a, [hTileAnimations]
  	push af
  	call StatusScreen
- 	ld b, A_BUTTON | B_BUTTON
+ 	ld b, PAD_A | PAD_B
  	call PokedexStatusWaitForButtonPressLoop
- 	bit BIT_B_BUTTON, a
+ 	bit B_PAD_B, a
  	jr nz, ExitStatusScreen
  	call StatusScreen2
- 	ld b, A_BUTTON | B_BUTTON
+ 	ld b, PAD_A | PAD_B
  	call PokedexStatusWaitForButtonPressLoop
  ExitStatusScreen:
  	pop af
@@ -516,17 +516,17 @@ PrintGenderStatusScreen:
  .displayNextMon
  	call StatusScreen
  	call PokemonStatusWaitForButtonPress
- 	bit BIT_D_UP, a
+ 	bit B_PAD_UP, a
  	jr nz, .prevMon
- 	bit BIT_D_DOWN, a
+ 	bit B_PAD_DOWN, a
  	jr nz, .nextMon
- 	bit BIT_B_BUTTON, a
+ 	bit B_PAD_B, a
  	jr nz, .exitStatus
  	call StatusScreen2
  	call PokemonStatusWaitForButtonPress
- 	bit BIT_D_UP, a
+ 	bit B_PAD_UP, a
  	jr nz, .prevMon
- 	bit BIT_D_DOWN, a
+ 	bit B_PAD_DOWN, a
  	jr nz, .nextMon
  .exitStatus
  	jp ExitStatusScreen
@@ -545,13 +545,13 @@ PrintGenderStatusScreen:
 
  PokemonStatusWaitForButtonPress:
  .decideButtons
- 	ld a, A_BUTTON | B_BUTTON
+ 	ld a, PAD_A | PAD_B
  	ld b, a
  	ld a, [wWhichPokemon]
  	and a
  	jr z, .checkRight
  	ld a, b
- 	or D_UP
+ 	or PAD_UP
  	ld b, a
  .checkRight
  	ld a, [wPartyCount]
@@ -561,7 +561,7 @@ PrintGenderStatusScreen:
  	cp c
  	jr z, PokedexStatusWaitForButtonPressLoop
  	ld a, b
- 	or D_DOWN
+ 	or PAD_DOWN
  	ld b, a
  PokedexStatusWaitForButtonPressLoop:
  .waitForButtonPress

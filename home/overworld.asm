@@ -5,7 +5,7 @@ HandleMidJump::
 
 EnterMap::
 ; Load a new map.
-	ld a, A_BUTTON | B_BUTTON | SELECT | START | D_RIGHT | D_LEFT | D_UP | D_DOWN
+	ld a, PAD_A | PAD_B | PAD_SELECT | PAD_START | PAD_RIGHT | PAD_LEFT | PAD_UP | PAD_DOWN
 	ld [wJoyIgnore], a
 	call LoadMapData
 	farcall ClearVariablesOnEnterMap
@@ -72,14 +72,14 @@ OverworldLoopLessDelay::
 .notSimulating
 	ldh a, [hJoyPressed]
 .checkIfStartIsPressed
-	bit BIT_START, a
+	bit B_PAD_START, a
 	jr z, .startButtonNotPressed
 ; if START is pressed
 	xor a ; TEXT_START_MENU
 	ldh [hTextID], a
 	jp .displayDialogue
 .startButtonNotPressed
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jp z, .checkIfDownButtonIsPressed
 ; if A is pressed
 	ld a, [wStatusFlags5]
@@ -150,7 +150,7 @@ OverworldLoopLessDelay::
 
 .checkIfDownButtonIsPressed
 	ldh a, [hJoyHeld] ; current joypad state
-	bit BIT_D_DOWN, a
+	bit B_PAD_DOWN, a
 	jr z, .checkIfUpButtonIsPressed
 	ld a, 1
 	ld [wSpritePlayerStateData1YStepVector], a
@@ -158,7 +158,7 @@ OverworldLoopLessDelay::
 	jr .handleDirectionButtonPress
 
 .checkIfUpButtonIsPressed
-	bit BIT_D_UP, a
+	bit B_PAD_UP, a
 	jr z, .checkIfLeftButtonIsPressed
 	ld a, -1
 	ld [wSpritePlayerStateData1YStepVector], a
@@ -166,7 +166,7 @@ OverworldLoopLessDelay::
 	jr .handleDirectionButtonPress
 
 .checkIfLeftButtonIsPressed
-	bit BIT_D_LEFT, a
+	bit B_PAD_LEFT, a
 	jr z, .checkIfRightButtonIsPressed
 	ld a, -1
 	ld [wSpritePlayerStateData1XStepVector], a
@@ -174,7 +174,7 @@ OverworldLoopLessDelay::
 	jr .handleDirectionButtonPress
 
 .checkIfRightButtonIsPressed
-	bit BIT_D_RIGHT, a
+	bit B_PAD_RIGHT, a
 	jr z, .noDirectionButtonsPressed
 	ld a, 1
 	ld [wSpritePlayerStateData1XStepVector], a
@@ -297,7 +297,7 @@ OverworldLoopLessDelay::
 	jr z, .surfFaster
 	; Holding B makes you run at 2x walking speed
 	ld a, [hJoyHeld]
-	and B_BUTTON
+	and PAD_B
 	jr z, .notRunning
 .surfFaster
 	call DoBikeSpeedup
@@ -401,7 +401,7 @@ DoBikeSpeedup::
 	cp ROUTE_17 ; Cycling Road
 	jr nz, .goFaster
 	ldh a, [hJoyHeld]
-	and D_UP | D_LEFT | D_RIGHT
+	and PAD_UP | PAD_LEFT | PAD_RIGHT
 	ret nz
 .goFaster
 	jp AdvancePlayerSprite
@@ -451,7 +451,7 @@ CheckWarpsNoCollisionLoop::
 	pop bc
 	pop de
 	ldh a, [hJoyHeld]
-	and D_DOWN | D_UP | D_LEFT | D_RIGHT
+	and PAD_DOWN | PAD_UP | PAD_LEFT | PAD_RIGHT
 	jr z, CheckWarpsNoCollisionRetry2 ; if directional buttons aren't being pressed, do not pass through the warp
 	jr WarpFound1
 
@@ -782,7 +782,7 @@ HandleBlackOut::
 	res BIT_BATTLE_OVER_OR_BLACKOUT, [hl]
 	ld a, BANK(ResetStatusAndHalveMoneyOnBlackout) ; also BANK(PrepareForSpecialWarp) and BANK(SpecialEnterMap)
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	call ResetStatusAndHalveMoneyOnBlackout
 	call PrepareForSpecialWarp
 	call PlayDefaultMusicFadeOutCurrent
@@ -812,7 +812,7 @@ HandleFlyWarpOrDungeonWarp::
 	call LeaveMapAnim
 	ld a, BANK(PrepareForSpecialWarp)
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	call PrepareForSpecialWarp
 	jp SpecialEnterMap
 
@@ -1378,7 +1378,7 @@ LoadCurrentMapView::
 	push af
 	ld a, [wTilesetBank] ; tile data ROM bank
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a ; switch to ROM bank that contains tile data
+	ld [rROMB], a ; switch to ROM bank that contains tile data
 	ld a, [wCurrentTileBlockMapViewPointer] ; address of upper left corner of current map view
 	ld e, a
 	ld a, [wCurrentTileBlockMapViewPointer + 1]
@@ -1460,7 +1460,7 @@ LoadCurrentMapView::
 	jr nz, .rowLoop2
 	pop af
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a ; restore previous ROM bank
+	ld [rROMB], a ; restore previous ROM bank
 	ret
 
 AdvancePlayerSprite::
@@ -1857,9 +1857,9 @@ JoypadOverworld::
 	cp ROUTE_17 ; Cycling Road
 	jr nz, .notForcedDownwards
 	ldh a, [hJoyHeld]
-	and D_DOWN | D_UP | D_LEFT | D_RIGHT | B_BUTTON | A_BUTTON
+	and PAD_DOWN | PAD_UP | PAD_LEFT | PAD_RIGHT | PAD_B | PAD_A
 	jr nz, .notForcedDownwards
-	ld a, D_DOWN
+	ld a, PAD_DOWN
 	ldh [hJoyHeld], a ; on the cycling road, if there isn't a trainer and the player isn't pressing buttons, simulate a down press
 .notForcedDownwards
 	ld a, [wStatusFlags5]
@@ -2312,7 +2312,7 @@ LoadMapHeader::
 	push af
 	ld a, BANK(MapSongBanks)
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ld hl, MapSongBanks
 	add hl, bc
 	add hl, bc
@@ -2326,7 +2326,7 @@ LoadMapHeader::
 	ld [wMapMusicROMBank], a ; music 2
 	pop af
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ret
 
 ; function to copy map connection data from ROM to WRAM
@@ -2374,7 +2374,7 @@ LoadMapData::
 	inc e
 	dec c
 	jr nz, .vramCopyInnerLoop
-	ld a, BG_MAP_WIDTH - SCREEN_WIDTH
+	ld a, TILEMAP_WIDTH - SCREEN_WIDTH
 	add e
 	ld e, a
 	jr nc, .noCarry
@@ -2399,7 +2399,7 @@ LoadMapData::
 .restoreRomBank
 	pop af
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ret
 
 ; function to switch to the ROM bank that a map is stored in
@@ -2418,7 +2418,7 @@ SwitchToMapRomBank::
 	call BankswitchBack
 	ldh a, [hMapROMBank]
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	pop bc
 	pop hl
 	ret
@@ -2453,14 +2453,14 @@ CheckForUserInterruption::
 	pop bc
 
 	ldh a, [hJoyHeld]
-	cp D_UP + SELECT + B_BUTTON
+	cp PAD_UP + PAD_SELECT + PAD_B
 	jr z, .input
 
 	ldh a, [hJoy5]
 IF DEF(_DEBUG)
-	and START | SELECT | A_BUTTON
+	and PAD_START | PAD_SELECT | PAD_A
 ELSE
-	and START | A_BUTTON
+	and PAD_START | PAD_A
 ENDC
 	jr nz, .input
 
@@ -2483,7 +2483,7 @@ LoadDestinationWarpPosition::
 	push af
 	ld a, [wPredefParentBank]
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ld a, b
 	add a
 	add a
@@ -2495,5 +2495,5 @@ LoadDestinationWarpPosition::
 	call CopyData
 	pop af
 	ldh [hLoadedROMBank], a
-	ld [MBC1RomBank], a
+	ld [rROMB], a
 	ret
