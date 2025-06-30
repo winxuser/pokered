@@ -69,7 +69,7 @@ PokemonTower2FDefeatedRivalScript:
 	jp z, PokemonTower2FResetRivalEncounter
 	xor a
 	ld [wIsTrainerBattle], a
-	ld a, PAD_RIGHT | PAD_LEFT | PAD_UP | PAD_DOWN
+	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_POKEMON_TOWER_RIVAL
 	ld a, TEXT_POKEMONTOWER2F_RIVAL
