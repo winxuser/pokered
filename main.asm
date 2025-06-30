@@ -191,8 +191,6 @@ SECTION "Slot Machines", ROMX
 INCLUDE "engine/movie/title2.asm"
 INCLUDE "engine/battle/link_battle_versus_text.asm"
 INCLUDE "engine/slots/slot_machine.asm"
-INCLUDE "engine/events/pewter_guys.asm"
-INCLUDE "engine/math/multiply_divide.asm"
 INCLUDE "engine/slots/game_corner_slots.asm"
 INCLUDE "engine/slots/game_corner_slots2.asm"
 
@@ -462,6 +460,8 @@ INCLUDE "engine/menus/pokedex.asm"
 INCLUDE "engine/movie/trade.asm"
 INCLUDE "engine/movie/intro.asm"
 INCLUDE "engine/movie/trade2.asm"
+INCLUDE "engine/events/pewter_guys.asm"
+INCLUDE "engine/math/multiply_divide.asm"
 
 DexPalBankswitch:
 	ld hl, SendDexPal

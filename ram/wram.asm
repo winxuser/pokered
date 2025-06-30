@@ -1850,7 +1850,7 @@ wAltAnimationID:: db
 wPlayerGender::
 	; $00 = male
 	; $01 = female
-	ds 1
+	db
 
 ; the tile shown outside the boundaries of the map
 wMapBackgroundTile:: db

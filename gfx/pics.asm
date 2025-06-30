@@ -212,8 +212,6 @@ DrowzeePicFront::    INCBIN "gfx/pokemon/front/drowzee.pic"
 DrowzeePicBack::     INCBIN "gfx/pokemon/back/drowzeeb.pic"
 HypnoPicFront::      INCBIN "gfx/pokemon/front/hypno.pic"
 HypnoPicBack::       INCBIN "gfx/pokemon/back/hypnob.pic"
-KrabbyPicFront::     INCBIN "gfx/pokemon/front/krabby.pic"
-KrabbyPicBack::      INCBIN "gfx/pokemon/back/krabbyb.pic"
 
 	ds $19d
 
@@ -224,6 +222,8 @@ OldManPicBack::        INCBIN "gfx/battle/oldmanb.pic"
 
 SECTION "Pics 5", ROMX
 
+KrabbyPicFront::     INCBIN "gfx/pokemon/front/krabby.pic"
+KrabbyPicBack::      INCBIN "gfx/pokemon/back/krabbyb.pic"
 KinglerPicFront::      INCBIN "gfx/pokemon/front/kingler.pic"
 KinglerPicBack::       INCBIN "gfx/pokemon/back/kinglerb.pic"
 VoltorbPicFront::      INCBIN "gfx/pokemon/front/voltorb.pic"
