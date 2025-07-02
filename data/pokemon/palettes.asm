@@ -194,13 +194,29 @@ MonsterPalettes:
 	db PAL_PURPLEMON ; Aipom
 	db PAL_ELECTABUZZ; Sunkern
 	db PAL_GREENMON  ; Sunflora
+	db PAL_GREENMON  ; Yanma
+	db PAL_BLUEMON   ; Wooper
+	db PAL_BLUEMON   ; Quagsire
 	db PAL_PURPLEMON ; Espeon
 	db PAL_PURPLEMON ; Umbreon
+	db PAL_PURPLEMON ; Murkrow
+	db PAL_PINKMON   ; Slowking
+	db PAL_GRAYMON   ; Misdreavous
+	db PAL_GRAYMON   ; Unown
+	db PAL_BLUEMON   ; Wobbuffet
+	db PAL_YELLOWMON ; Girafarig
+	db PAL_GRAYMON   ; Pineco
+	db PAL_PURPLEMON ; Forretress
+	db PAL_YELLOWMON ; Dunsparce
+	db PAL_PURPLEMON ; Gliger
+	db PAL_PINKMON   ; Snubbull
+	db PAL_PURPLEMON ; Granbull
+	db PAL_GRAYMON   ; Qwilfish
+	db PAL_REDMON    ; Scizor
 	db PAL_PURPLEMON ; Leafeon
 	db PAL_PURPLEMON ; Glaceon
 	db PAL_PURPLEMON ; Sylveon
 	db PAL_GRAYMON   ; Steelix
-	assert_table_length NUM_POKEMON + 1
 
 TrainerPalettes:
 	db PAL_HERO
@@ -251,3 +267,4 @@ TrainerPalettes:
 	db PAL_CHANNELER
 	db PAL_AGATHA
 	db PAL_LANCE
+assert_table_length NUM_POKEMON + 1 + NUM_TRAINERS + 1

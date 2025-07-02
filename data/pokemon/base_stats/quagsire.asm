@@ -1,0 +1,24 @@
+	db DEX_QUAGSIRE ; pokedex id
+
+	db  95,  85,  85,  35,  65
+	;   hp  atk  def  spd  spc
+
+	db WATER, GROUND ; type
+	db 90 ; catch rate
+	db 137 ; base exp
+
+	INCBIN "gfx/pokemon/front/quagsire.pic", 0, 1 ; sprite dimensions
+	dw QuagsirePicFront, QuagsirePicBack
+
+	db WATER_GUN, TAIL_WHIP, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_FAST ; growth rate
+
+	; tm/hm learnset
+	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
+	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     RAGE,         PSYCHIC_M,    \
+	     MIMIC,        DOUBLE_TEAM,  BIDE,         SKULL_BASH,   REST,         \
+	     PSYWAVE,      SUBSTITUTE,   SURF
+	; end
+
+	db BANK(QuagsirePicFront)
+	assert BANK(QuagsirePicFront) == BANK(QuagsirePicBack)

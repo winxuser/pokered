@@ -182,6 +182,7 @@ ROMX $2F
 	"Pics 7"
 ROMX $30
 	"Pics 8"
+ROMX $31
 	"Pics 9"
 WRAM0
 	"Audio RAM"
@@ -194,7 +195,7 @@ WRAM0
 	"Party Data"
 	"Main Data"
 	"Current Box Data"
-	org $df02
+	org $df04
 	"Stack"
 VRAM
 	"VRAM"

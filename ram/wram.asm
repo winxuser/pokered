@@ -1574,11 +1574,11 @@ wMonHeaderEnd::
 ; saved at the start of a battle and then written back at the end of the battle
 wSavedTileAnimations:: db
 
-	;ds 1
+	;ds 2
 
 wDamage:: dw
 
-	ds 2
+	;ds 2
 
 wRepelRemainingSteps:: db
 
@@ -2302,7 +2302,7 @@ wEXPBarKeepFullFlag:: ds 1
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $100 - 4
+	ds $100 - 5
 wStack:: db
 
 ENDSECTION

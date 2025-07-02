@@ -211,6 +211,23 @@ EvosMovesPointerTable:
 	dw AipomEvosMoves
 	dw SunkernEvosMoves
 	dw SunfloraEvosMoves
+	dw YanmaEvosMoves
+	dw WooperEvosMoves
+	dw QuagsireEvosMoves
+	dw MurkrowEvosMoves
+	dw SlowkingEvosMoves
+	dw MisdreavousEvosMoves
+	dw UnownEvosMoves
+	dw WobbuffetEvosMoves
+	dw GirafarigEvosMoves
+	dw PinecoEvosMoves
+	dw ForretressEvosMoves
+	dw DunsparceEvosMoves
+	dw GligerEvosMoves
+	dw SnubbullEvosMoves
+	dw GranbullEvosMoves
+	dw QwilfishEvosMoves
+	dw ScizorEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -511,6 +528,7 @@ GastlyEvosMoves:
 
 ScytherEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, METAL_COAT, 1, SCIZOR
 	db 0
 ; Learnset
 	db 6, FOCUS_ENERGY
@@ -655,6 +673,7 @@ PidgeyEvosMoves:
 
 SlowpokeEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, KINGS_ROCK, 1, SLOWKING
 	db EVOLVE_LEVEL, 37, SLOWBRO
 	db 0
 ; Learnset
@@ -2619,4 +2638,205 @@ SunfloraEvosMoves:
 	db 10, RAZOR_LEAF
 	db 31, PETAL_DANCE
 	db 46, SOLARBEAM
+	db 0
+
+YanmaEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, QUICK_ATTACK
+	db 13, DOUBLE_TEAM
+	db 19, SONICBOOM
+	db 31, SUPERSONIC
+	db 37, SWIFT
+	db 39, WING_ATTACK
+	db 43, SCREECH
+	db 0
+
+WooperEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 20, QUAGSIRE
+	db 0
+; Learnset
+	db 11, SLAM
+	db 21, AMNESIA
+	db 31, EARTHQUAKE
+	db 51, MIST
+	db 52, HAZE
+	db 0
+
+QuagsireEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 11, SLAM
+	db 23, AMNESIA
+	db 35, EARTHQUAKE
+	db 59, MIST
+	db 60, HAZE
+	db 0
+
+MurkrowEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 11, PURSUIT
+	db 16, HAZE
+	db 26, NIGHT_SHADE
+;	db 31, FAINT_ATTACK
+	db 0
+
+SlowkingEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 6, GROWL
+	db 15, WATER_GUN
+	db 20, CONFUSION
+	db 29, DISABLE
+	db 34, HEADBUTT
+	db 43, AMNESIA
+	db 48, PSYCHIC_M
+	db 0
+
+MisdreavousEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 12, CONFUSE_RAY
+	db 27, PSYBEAM
+	db 29, CONFUSION
+	db 32, DISABLE
+	db 34, HEADBUTT
+	db 43, AMNESIA
+	db 48, PSYCHIC_M
+	db 0
+
+UnownEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 0
+
+WobbuffetEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, CONFUSION
+	db 13, STOMP
+	db 20, AGILITY
+	db 41, PSYBEAM
+	db 55, CRUNCH
+	db 0
+
+GirafarigEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, CONFUSION
+	db 13, STOMP
+	db 20, AGILITY
+	db 41, PSYBEAM
+	db 54, CRUNCH
+	db 0
+
+PinecoEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 31, FORRETRESS
+	db 0
+; Learnset
+	db 8, SELFDESTRUCT
+	db 15, TAKE_DOWN
+;	db 22, RAPID_SPIN
+	db 29, BIDE
+	db 36, EXPLOSION
+	db 50, DOUBLE_EDGE
+	db 0
+
+ForretressEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 8, SELFDESTRUCT
+	db 15, TAKE_DOWN
+;	db 22, RAPID_SPIN
+	db 29, BIDE
+	db 39, EXPLOSION
+	db 59, DOUBLE_EDGE
+	db 0
+
+DunsparceEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 5, DEFENSE_CURL
+	db 13, GLARE
+	db 26, PURSUIT
+	db 30, SCREECH
+	db 38, TAKE_DOWN
+	db 0
+
+GligerEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 6, SAND_ATTACK
+	db 13, HARDEN
+	db 20, QUICK_ATTACK
+;	db 28, FAINT_ATTACK
+	db 36, SLASH
+	db 44, SCREECH
+	db 52, GUILLOTINE
+	db 0
+
+SnubbullEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 23, GRANBULL
+	db 0
+; Learnset
+	db 4, TAIL_WHIP
+	db 8, CHARM
+	db 13, BITE
+	db 19, LICK
+	db 26, ROAR
+	db 34, RAGE
+	db 43, TAKE_DOWN
+	db 0
+
+GranbullEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 4, TAIL_WHIP
+	db 8, CHARM
+	db 13, BITE
+	db 19, LICK
+	db 28, ROAR
+	db 38, RAGE
+	db 51, TAKE_DOWN
+	db 0
+
+QwilfishEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 10, HARDEN
+	db 12, MINIMIZE
+	db 19, WATER_GUN
+	db 28, PIN_MISSILE
+	db 37, TAKE_DOWN
+	db 46, HYDRO_PUMP
+	db 0
+
+ScizorEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 6, FOCUS_ENERGY
+	db 12, PURSUIT
+	db 24, AGILITY
+	db 30, METAL_CLAW
+	db 36, SLASH
+	db 42, SWORDS_DANCE
+	db 48, DOUBLE_TEAM
 	db 0

@@ -193,8 +193,25 @@ MonPartyData:
 	nybble ICON_MON       ; Aipom
 	nybble ICON_GRASS     ; Sunkern
 	nybble ICON_GRASS     ; Sunflora
+	nybble ICON_BUG       ; Yanma
+	nybble ICON_WATER     ; Wooper
+	nybble ICON_WATER     ; Quagsire
 	nybble ICON_MON       ; Espeon
 	nybble ICON_MON       ; Umbreon
+	nybble ICON_BIRD      ; Murkrow
+	nybble ICON_MON       ; Slowking
+	nybble ICON_MON       ; Misdreavous
+	nybble ICON_MON       ; Unown
+	nybble ICON_MON       ; Wobbuffet
+	nybble ICON_MON       ; Girafarig
+	nybble ICON_MON       ; Pineco
+	nybble ICON_MON       ; Forretress
+	nybble ICON_MON       ; Dunsparce
+	nybble ICON_MON       ; Gliger
+	nybble ICON_MON       ; Snubbull
+	nybble ICON_MON       ; Granbull
+	nybble ICON_WATER     ; Qwilfish
+	nybble ICON_BUG       ; Scizor
 	nybble ICON_MON       ; Leafeon
 	nybble ICON_MON       ; Glaceon
 	nybble ICON_MON       ; Sylveon

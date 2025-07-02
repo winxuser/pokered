@@ -208,6 +208,23 @@
 	const AIPOM				 ; $C5
 	const SUNKERN			 ; $C6
 	const SUNFLORA			 ; $C7
+	const YANMA
+	const WOOPER
+	const QUAGSIRE
+	const MURKROW
+	const SLOWKING
+	const MISDREAVOUS
+	const UNOWN
+	const WOBBUFFET
+	const GIRAFARIG
+	const PINECO
+	const FORRETRESS
+	const DUNSPARCE
+	const GLIGER
+	const SNUBBULL
+	const GRANBULL
+	const QWILFISH
+	const SCIZOR
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 
 ; starters

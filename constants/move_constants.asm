@@ -188,6 +188,7 @@
 	const ZAP_CANNON
 	const WHIRLPOOL
 	const TWISTER
+	const HIDDEN_POWER
 	const STRUGGLE
 DEF NUM_ATTACKS EQU const_value -1
 

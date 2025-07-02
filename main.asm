@@ -777,6 +777,9 @@ INCLUDE "engine/items/tm_prices.asm"
 INCLUDE "engine/pokemon/learn_move.asm"
 INCLUDE "data/items/prices.asm"
 
+SECTION "bank30", ROMX, BANK[$30]
+
+SECTION "bank31", ROMX, BANK[$31]
 
 SECTION "Engine Spillover", ROMX
 

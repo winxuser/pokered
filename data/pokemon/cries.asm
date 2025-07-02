@@ -209,4 +209,21 @@ CryData::
 	mon_cry SFX_CRY_11, $00, $80 ; Aipom
 	mon_cry SFX_CRY_11, $00, $80 ; Sunkern
 	mon_cry SFX_CRY_11, $00, $80 ; Sunflora
+	mon_cry SFX_CRY_11, $00, $80 ; Yanma
+	mon_cry SFX_CRY_11, $00, $80 ; Wooper
+	mon_cry SFX_CRY_11, $00, $80 ; Quagsire
+	mon_cry SFX_CRY_11, $00, $80 ; Murkrow
+	mon_cry SFX_CRY_11, $00, $80 ; Slowking
+	mon_cry SFX_CRY_11, $00, $80 ; Misdreavous
+	mon_cry SFX_CRY_11, $00, $80 ; Unown
+	mon_cry SFX_CRY_11, $00, $80 ; Wobbuffet
+	mon_cry SFX_CRY_11, $00, $80 ; Girafarig
+	mon_cry SFX_CRY_11, $00, $80 ; Pineco
+	mon_cry SFX_CRY_11, $00, $80 ; Forretress
+	mon_cry SFX_CRY_11, $00, $80 ; Dunsparce
+	mon_cry SFX_CRY_11, $00, $80 ; Gliger
+	mon_cry SFX_CRY_11, $00, $80 ; Snubbull
+	mon_cry SFX_CRY_11, $00, $80 ; Granbull
+	mon_cry SFX_CRY_11, $00, $80 ; Qwilfish
+	mon_cry SFX_CRY_11, $00, $80 ; Scizor
 	assert_table_length NUM_POKEMON_INDEXES

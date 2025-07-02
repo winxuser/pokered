@@ -201,6 +201,23 @@ PokedexEntryPointers:
 	dw AipomDexEntry
 	dw SunkernDexEntry
 	dw SunfloraDexEntry
+	dw YanmaDexEntry
+	dw WooperDexEntry
+	dw QuagsireDexEntry
+	dw MurkrowDexEntry
+	dw SlowkingDexEntry
+	dw MisdreavousDexEntry
+	dw UnownDexEntry
+	dw WobbuffetDexEntry
+	dw GirafarigDexEntry
+	dw PinecoDexEntry
+	dw ForretressDexEntry
+	dw DunsparceDexEntry
+	dw GligerDexEntry
+	dw SnubbullDexEntry
+	dw GranbullDexEntry
+	dw QwilfishDexEntry
+	dw ScizorDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1592,6 +1609,125 @@ SunfloraDexEntry:
 	db 1,0
 	dw 40
 	text_far _SunfloraDexEntry
+	text_end
+
+YanmaDexEntry:
+	db "CLEAR WING@"
+	db 3,11
+	dw 838
+	text_far _YanmaDexEntry
+	text_end
+
+WooperDexEntry:
+	db "WATER FISH@"
+	db 1,4
+	dw 187
+	text_far _WooperDexEntry
+	text_end
+
+QuagsireDexEntry:
+	db "WATER FISH@"
+	db 1,4
+	dw 187
+	text_far _QuagsireDexEntry
+	text_end
+
+MurkrowDexEntry:
+	db "DARKNESS@"
+	db 1,8
+	dw 46
+	text_far _MurkrowDexEntry
+	text_end
+
+SlowkingDexEntry:
+	db "ROYAL@"
+	db 6,7
+	dw 1753
+	text_far _SlowkingDexEntry
+	text_end
+
+MisdreavousDexEntry:
+	db "SCREECH@"
+	db 2,4
+	dw 22
+	text_far _MisdreavousDexEntry
+	text_end
+
+UnownDexEntry:
+	db "SYMBOL@"
+	db 1,8
+	dw 110
+	text_far _UnownDexEntry
+	text_end
+
+WobbuffetDexEntry:
+	db "PATIENT@"
+	db 4,3
+	dw 628
+	text_far _WobbuffetDexEntry
+	text_end
+
+GirafarigDexEntry:
+	db "LONGNECK@"
+	db 4,11
+	dw 915
+	text_far _GirafarigDexEntry
+	text_end
+
+PinecoDexEntry:
+	db "BAGWORM@"
+	db 2,2
+	dw 159
+	text_far _PinecoDexEntry
+	text_end
+
+ForretressDexEntry:
+	db "BAGWORM@"
+	db 3,11
+	dw 2773
+	text_far _ForretressDexEntry
+	text_end
+
+DunsparceDexEntry:
+	db "LAND SNAKE@"
+	db 4,11
+	dw 309
+	text_far _DunsparceDexEntry
+	text_end
+
+GligerDexEntry:
+	db "SCORPION@"
+	db 3,7
+	dw 1429
+	text_far _GligerDexEntry
+	text_end
+
+SnubbullDexEntry:
+	db "FAIRY@"
+	db 2,0
+	dw 172
+	text_far _SnubbullDexEntry
+	text_end
+
+GranbullDexEntry:
+	db "FAIRY@"
+	db 4,7
+	dw 1074
+	text_far _GranbullDexEntry
+	text_end
+
+QwilfishDexEntry:
+	db "BALOON@"
+	db 1,8
+	dw 86
+	text_far _QwilfishDexEntry
+	text_end
+
+ScizorDexEntry:
+	db "PINCER@"
+	db 5,11
+	dw 2601
+	text_far _ScizorDexEntry
 	text_end
 
 MissingNoDexEntry:

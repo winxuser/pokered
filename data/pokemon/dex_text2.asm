@@ -277,3 +277,173 @@ _SunfloraDexEntry::
 	next "closes its petals"
 	next "and becomes still"
 	dex
+
+_YanmaDexEntry::
+	text "If it flaps its"
+	next "wings really fast,"
+	next "it can generate"
+
+	page "shock waves that"
+	next "will shatter win-"
+	next "dows in the area"
+	dex
+
+_WooperDexEntry::
+	text "This #MON lives"
+	next "in cold water. It"
+	next "will leave the"
+
+	page "water to search"
+	next "for food when it"
+	next "gets cold outside"
+	dex
+
+_QuagsireDexEntry::
+	text "This carefree"
+	next "#MON has an"
+	next "easy-going nature."
+
+	page "While swimming, it"
+	next "always bumps into"
+	next "boat hulls"
+	dex
+
+_MurkrowDexEntry::
+	text "Feared and loathed"
+	next "by many, it is"
+	next "believed to bring"
+
+	page "misfortune to all"
+	next "those who see it"
+	next "at night"
+	dex
+
+_SlowkingDexEntry::
+	text "It has incredible"
+	next "intellect and in-"
+	next "tuition. Whatever"
+
+	page "the situation, it"
+	next "remains calm and"
+	next "collected"
+	dex
+
+_MisdreavousDexEntry::
+	text "It likes playing"
+	next "mischievous tricks"
+	next "such as screaming"
+
+	page "and wailing to"
+	next "startle people at"
+	next "night"
+	dex
+
+_UnownDexEntry::
+	text "Their shapes look"
+	next "like hieroglyphs"
+	next "on ancient tab-"
+
+	page "lets. It is said"
+	next "that the two are"
+	next "somehow related"
+	dex
+
+_WobbuffetDexEntry::
+	text "Their shapes look"
+	next "like hieroglyphs"
+	next "on ancient tab-"
+
+	page "lets. It is said"
+	next "that the two are"
+	next "somehow related"
+	dex
+
+_GirafarigDexEntry::
+	text "Their shapes look"
+	next "like hieroglyphs"
+	next "on ancient tab-"
+
+	page "lets. It is said"
+	next "that the two are"
+	next "somehow related"
+	dex
+
+_PinecoDexEntry::
+	text "It likes to make"
+	next "its shell thicker"
+	next "by adding layers"
+
+	page "of tree bark. The"
+	next "additional weight"
+	next "doesn't bother it"
+	dex
+
+_ForretressDexEntry::
+	text "Its entire body is"
+	next "shielded by a"
+	next "steel-hard shell."
+
+	page "What lurks inside"
+	next "the armor is a"
+	next "total mystery"
+	dex
+
+_DunsparceDexEntry::
+	text "When spotted, this"
+	next "#MON escapes"
+	next "backward by furi-"
+
+	page "ously boring into"
+	next "the ground with"
+	next "its tail"
+	dex
+
+_GligerDexEntry::
+	text "It flies straight"
+	next "at its target's"
+	next "face then clamps"
+
+	page "down on the star-"
+	next "tled victim to"
+	next "inject poison"
+	dex
+
+_SnubbullDexEntry::
+	text "Although it looks"
+	next "frightening, it is"
+	next "actually kind and"
+
+	page "affectionate. It"
+	next "is very popular"
+	next "among women"
+	dex
+
+_GranbullDexEntry::
+	text "It is actually"
+	next "timid and easily"
+	next "spooked. If at-"
+
+	page "tacked, it flails"
+	next "about to fend off"
+	next "its attacker"
+	dex
+
+_QwilfishDexEntry::
+	text "To fire its poison"
+	next "spikes, it must"
+	next "inflate its body"
+
+	page "by drinking over"
+	next "2.6 gallons of"
+	next "water all at once"
+	dex
+
+_ScizorDexEntry::
+	text "It swings its eye-"
+	next "patterned pincers"
+	next "up to scare its"
+
+	page "foes. This makes"
+	next "it look like it"
+	next "has three heads"
+	dex

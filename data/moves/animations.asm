@@ -182,6 +182,7 @@ AttackAnimationPointers:
 	dw ZapCannonAnim
 	dw WhirlpoolAnim
 	dw TwisterAnim
+	dw HiddenPowerAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 
@@ -1342,4 +1343,9 @@ WhirlpoolAnim:
 
 TwisterAnim:
 	battle_anim GUST, SUBANIM_1_TORNADO, 1, 6
+	db -1 ; end
+
+HiddenPowerAnim:
+	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+	battle_anim HYPER_BEAM, SUBANIM_0_BEAM, 0, 2
 	db -1 ; end

@@ -17,7 +17,7 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db SUNFLORA, 10
+	db SCIZOR, 10
 IF DEF(_DEBUG)
 	db SQUIRTLE, 5
 ELSE
@@ -51,7 +51,7 @@ IF DEF(_DEBUG)
 	ld hl, wPartyMon1Moves
 	ld a, FLY
 	ld [hli], a
-	ld a, CUT
+	ld a, HIDDEN_POWER
 	ld [hli], a
 	ld a, SURF
 	ld [hli], a
@@ -68,7 +68,7 @@ IF DEF(_DEBUG)
 
 	; Jolteon gets Thunderbolt.
 	ld hl, wPartyMon3Moves + 3
-	ld a, TWISTER
+	ld a, HIDDEN_POWER
 	ld [hl], a
 	ld hl, wPartyMon3PP + 3
 	ld a, 15
@@ -146,7 +146,7 @@ DebugNewGameItemsList:
 	db RARE_CANDY, 99
 	db MASTER_BALL, 99
 	db SECRET_KEY, 1
-	db CARD_KEY, 1
+	db METAL_COAT, 1
 	db S_S_TICKET, 1
 	db LIFT_KEY, 1
 	db MOON_STONE, 2

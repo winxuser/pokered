@@ -164,6 +164,7 @@ MoveNames::
 	li "SUPER FANG"
 	li "SLASH"
 	li "SUBSTITUTE"
+; Start of Gen 2 Moves
 	li "CHARM"
 	li "ANCIENT POWR"
 	li "BEAT UP"
@@ -181,5 +182,6 @@ MoveNames::
 	li "ZAP CANNON"
 	li "WHIRLPOOL"
 	li "TWISTER"
+	li "HIDDEN POWER"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

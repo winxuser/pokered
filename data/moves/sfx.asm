@@ -182,6 +182,7 @@ MoveSoundTable:
 	db SFX_BATTLE_2F,          $00, $20 ; ZAP CANNON
 	db SFX_BATTLE_2C,          $00, $80 ; WHIRLPOOL
 	db SFX_BATTLE_12,          $00, $c0 ; TWISTER
+	db SFX_BATTLE_36,          $00, $80 ; HIDDEN POWER
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

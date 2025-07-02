@@ -197,10 +197,27 @@
 	const DEX_AIPOM		 ; 190
 	const DEX_SUNKERN	 ; 191
 	const DEX_SUNFLORA   ; 192
-	const DEX_ESPEON     ;
-	const DEX_UMBREON    ;
+	const DEX_YANMA		 ; 193
+	const DEX_WOOPER	 ; 194
+	const DEX_QUAGSIRE	 ; 195
+	const DEX_ESPEON     ; 196
+	const DEX_UMBREON    ; 197
+	const DEX_MURKROW    ; 198
+	const DEX_SLOWKING	 ; 199
+	const DEX_MISDREAVOUS; 200
+	const DEX_UNOWN      ; 201
+	const DEX_WOBBUFFET  ; 202
+	const DEX_GIRAFARIG  ; 203
+	const DEX_PINECO	 ; 204
+	const DEX_FORRETRESS ; 205
+	const DEX_DUNSPARCE  ; 206
+	const DEX_GLIGER	 ; 207
+	const DEX_STEELIX    ; 208
+	const DEX_SNUBBULL   ; 209
+	const DEX_GRANBULL   ; 210
+	const DEX_QWILFISH	 ; 211
+	const DEX_SCIZOR	 ; 212
 	const DEX_LEAFEON    ;
 	const DEX_GLACEON    ;
 	const DEX_SYLVEON    ;
-	const DEX_STEELIX    ;
 DEF NUM_POKEMON EQU const_value - 1

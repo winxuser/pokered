@@ -193,5 +193,6 @@ Moves:
 	move ZAP_CANNON,   PARALYZE_SIDE_EFFECT1,      100, ELECTRIC,      50, 5
 	move WHIRLPOOL,    TRAPPING_EFFECT,             35, WATER,         85, 15
 	move TWISTER,      FLINCH_SIDE_EFFECT1,         40, DRAGON,       100, 20
+	move HIDDEN_POWER, NO_ADDITIONAL_EFFECT,        60, NORMAL,       100, 15
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS
