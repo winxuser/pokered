@@ -6,7 +6,6 @@ INCLUDE "engine/events/black_out.asm"
 INCLUDE "engine/battle/safari_zone.asm"
 INCLUDE "engine/movie/title.asm"
 INCLUDE "engine/pokemon/load_mon_data.asm"
-INCLUDE "data/items/prices.asm"
 INCLUDE "data/items/names.asm"
 INCLUDE "data/text/unused_names.asm"
 INCLUDE "engine/gfx/sprite_oam.asm"
@@ -26,7 +25,6 @@ INCLUDE "engine/movie/oak_speech/oak_speech2.asm"
 INCLUDE "engine/items/subtract_paid_money.asm"
 INCLUDE "engine/menus/swap_items.asm"
 INCLUDE "engine/events/pokemart.asm"
-INCLUDE "engine/pokemon/learn_move.asm"
 INCLUDE "engine/events/pokecenter.asm"
 INCLUDE "engine/events/set_blackout_map.asm"
 INCLUDE "engine/menus/display_text_id_init.asm"
@@ -776,6 +774,9 @@ SECTION "bank2F", ROMX, BANK[$2F]
 INCLUDE "data/sgb/sgb_palettes.asm"
 INCLUDE "engine/mon_gender.asm"
 INCLUDE "engine/items/tm_prices.asm"
+INCLUDE "engine/pokemon/learn_move.asm"
+INCLUDE "data/items/prices.asm"
+
 
 SECTION "Engine Spillover", ROMX
 
