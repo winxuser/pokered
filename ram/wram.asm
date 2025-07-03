@@ -583,7 +583,7 @@ wPlayerMonEvasionMod:: db
 	ds 2
 wPlayerMonStatModsEnd::
 
-	ds 1
+	;ds 1
 
 wEnemyMonUnmodifiedLevel:: db
 wEnemyMonUnmodifiedMaxHP:: dw
@@ -611,7 +611,7 @@ wEngagedTrainerClass:: db
 wEngagedTrainerSet:: db
 ENDU
 
-	ds 1
+	;ds 1
 
 wNPCMovementDirections2Index::
 wUnusedLinkMenuByte::
@@ -1636,7 +1636,7 @@ wEvolutionOccurred:: db
 
 wVBlankSavedROMBank:: db
 
-	ds 1
+	;ds 1
 
 wIsKeyItem:: db
 
@@ -2302,7 +2302,7 @@ wEXPBarKeepFullFlag:: ds 1
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $100 - 5
+	ds $100 - 6
 wStack:: db
 
 ENDSECTION

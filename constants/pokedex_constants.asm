@@ -217,6 +217,23 @@
 	const DEX_GRANBULL   ; 210
 	const DEX_QWILFISH	 ; 211
 	const DEX_SCIZOR	 ; 212
+	const DEX_SHUCKLE    ; 213
+	const DEX_HERACROSS  ; 214
+	const DEX_SNEASEL    ; 215
+	const DEX_TEDDIURSA  ; 216
+	const DEX_URSARING   ; 217
+	const DEX_SLUGMA     ; 218
+	const DEX_MAGCARGO   ; 219
+	const DEX_SWINUB     ; 220
+	const DEX_PILOSWINE  ; 221
+	const DEX_CORSOLA    ; 222
+	const DEX_REMORAID   ; 223
+	const DEX_OCTILLERY  ; 224
+	const DEX_DELIBIRD	 ; 225
+	const DEX_MANTINE	 ; 226
+	const DEX_SKARMORY	 ; 227
+	const DEX_HOUNDOUR	 ; 228
+	const DEX_HOUNDOOM	 ; 229
 	const DEX_LEAFEON    ;
 	const DEX_GLACEON    ;
 	const DEX_SYLVEON    ;

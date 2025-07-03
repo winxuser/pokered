@@ -218,6 +218,23 @@ PokedexEntryPointers:
 	dw GranbullDexEntry
 	dw QwilfishDexEntry
 	dw ScizorDexEntry
+	dw ShuckleDexEntry
+	dw HeracrossDexEntry
+	dw SneaselDexEntry
+	dw TeddiursaDexEntry
+	dw UrsaringDexEntry
+	dw SlugmaDexEntry
+	dw MagcargoDexEntry
+	dw SwinubDexEntry
+	dw PiloswineDexEntry
+	dw CorsolaDexEntry
+	dw RemoraidDexEntry
+	dw OctilleryDexEntry
+	dw DelibirdDexEntry
+	dw MantineDexEntry
+	dw SkarmoryDexEntry
+	dw HoundourDexEntry
+	dw HoundoomDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1728,6 +1745,125 @@ ScizorDexEntry:
 	db 5,11
 	dw 2601
 	text_far _ScizorDexEntry
+	text_end
+
+ShuckleDexEntry:
+	db "MOLD@"
+	db 2,0
+	dw 452
+	text_far _ShuckleDexEntry
+	text_end
+
+HeracrossDexEntry:
+	db "HORN MON@"
+	db 4,11
+	dw 1190
+	text_far _HeracrossDexEntry
+	text_end
+
+SneaselDexEntry:
+	db "SHARP CLAW@"
+	db 2,11
+	dw 617
+	text_far _SneaselDexEntry
+	text_end
+
+TeddiursaDexEntry:
+	db "LITTLEBEAR@"
+	db 2,00
+	dw 194
+	text_far _TeddiursaDexEntry
+	text_end
+
+UrsaringDexEntry:
+	db "HIBERNATOR@"
+	db 5,11
+	dw 2773
+	text_far _UrsaringDexEntry
+	text_end
+
+SlugmaDexEntry:
+	db "LAVA@"
+	db 2,4
+	dw 772
+	text_far _SlugmaDexEntry
+	text_end
+
+MagcargoDexEntry:
+	db "LAVA@"
+	db 2,7
+	dw 1213
+	text_far _MagcargoDexEntry
+	text_end
+
+SwinubDexEntry:
+	db "PIG@"
+	db 1,4
+	dw 143
+	text_far _SwinubDexEntry
+	text_end
+
+PiloswineDexEntry:
+	db "SWINE@"
+	db 3,7
+	dw 1230
+	text_far _PiloswineDexEntry
+	text_end
+
+CorsolaDexEntry:
+	db "CORAL@"
+	db 2,0
+	dw 110
+	text_far _CorsolaDexEntry
+	text_end
+
+RemoraidDexEntry:
+	db "JET@"
+	db 2,0
+	dw 265
+	text_far _RemoraidDexEntry
+	text_end
+
+OctilleryDexEntry:
+	db "JET@"
+	db 2,11
+	dw 628
+	text_far _OctilleryDexEntry
+	text_end
+
+DelibirdDexEntry:
+	db "DELIVERY@"
+	db 2,11
+	dw 353
+	text_far _DelibirdDexEntry
+	text_end
+
+MantineDexEntry:
+	db "KITE@"
+	db 6,11
+	dw 4850
+	text_far _MantineDexEntry
+	text_end
+
+SkarmoryDexEntry:
+	db "ARMOR BIRD@"
+	db 5,7
+	dw 1113
+	text_far _SkarmoryDexEntry
+	text_end
+
+HoundourDexEntry:
+	db "DARK@"
+	db 2,0
+	dw 238
+	text_far _HoundourDexEntry
+	text_end
+
+HoundoomDexEntry:
+	db "DARK@"
+	db 4,7
+	dw 772
+	text_far _HoundoomDexEntry
 	text_end
 
 MissingNoDexEntry:

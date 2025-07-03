@@ -228,6 +228,23 @@ EvosMovesPointerTable:
 	dw GranbullEvosMoves
 	dw QwilfishEvosMoves
 	dw ScizorEvosMoves
+	dw ShuckleEvosMoves
+	dw HeracrossEvosMoves
+	dw SneaselEvosMoves
+	dw TeddiursaEvosMoves
+	dw UrsaringEvosMoves
+	dw SlugmaEvosMoves
+	dw MagcargoEvosMoves
+	dw SwinubEvosMoves
+	dw PiloswineEvosMoves
+	dw CorsolaEvosMoves
+	dw RemoraidEvosMoves
+	dw OctilleryEvosMoves
+	dw DelibirdEvosMoves
+	dw MantineEvosMoves
+	dw SkarmoryEvosMoves
+	dw HoundourEvosMoves
+	dw HoundoomEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -2839,4 +2856,206 @@ ScizorEvosMoves:
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
+	db 0
+
+ShuckleEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 9, WRAP
+	db 28, BIDE
+	db 37, REST
+	db 0
+
+HeracrossEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 6, HORN_ATTACK
+	db 19, FURY_ATTACK
+	db 27, COUNTER
+	db 35, TAKE_DOWN
+	db 54, MEGA_HORN
+	db 0
+
+SneaselEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 9, QUICK_ATTACK
+	db 17, SCREECH
+;	db 25, FAINT_ATTACK
+	db 33, FURY_SWIPES
+	db 41, AGILITY
+	db 49, SLASH
+	db 57, BEAT_UP
+	db 65, METAL_CLAW
+	db 0
+
+TeddiursaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, URSARING
+	db 0
+; Learnset
+	db 8, LICK
+	db 15, FURY_SWIPES
+;	db 22, FAINT_ATTACK
+	db 29, REST
+	db 36, SLASH
+	db 50, THRASH
+	db 0
+
+UrsaringEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 8, LICK
+	db 15, FURY_SWIPES
+;	db 22, FAINT_ATTACK
+	db 29, REST
+	db 39, SLASH
+	db 59, THRASH
+	db 0
+
+SlugmaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 38, MAGCARGO
+	db 0
+; Learnset
+	db 8, EMBER
+	db 15, ROCK_THROW
+	db 22, HARDEN
+	db 29, AMNESIA
+	db 36, FLAMETHROWER
+	db 43, ROCK_SLIDE
+	db 50, BODY_SLAM
+	db 0
+
+MagcargoEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 8, EMBER
+	db 15, ROCK_THROW
+	db 22, HARDEN
+	db 29, AMNESIA
+	db 36, FLAMETHROWER
+	db 48, ROCK_SLIDE
+	db 60, BODY_SLAM
+	db 0
+
+SwinubEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 33, PILOSWINE
+	db 0
+; Learnset
+	db 10, POWDER_SNOW
+	db 28, TAKE_DOWN
+	db 37, MIST
+	db 46, BLIZZARD
+	db 55, AMNESIA
+	db 0
+
+PiloswineEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 10, POWDER_SNOW
+	db 28, TAKE_DOWN
+	db 33, FURY_ATTACK
+	db 42, MIST
+	db 56, BLIZZARD
+	db 70, AMNESIA
+	db 0
+
+CorsolaEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, HARDEN
+	db 13, BUBBLE
+	db 19, RECOVER
+	db 25, BUBBLEBEAM
+	db 31, SPIKE_CANNON
+	db 43, ANCIENT_POWR
+	db 0
+
+RemoraidEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 25, OCTILLERY
+	db 0
+; Learnset
+	db 22, PSYBEAM
+	db 24, AURORA_BEAM
+	db 26, BUBBLEBEAM
+	db 33, FOCUS_ENERGY
+	db 44, ICE_BEAM
+	db 55, HYPER_BEAM
+	db 0
+
+OctilleryEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 11, CONSTRICT
+	db 22, PSYBEAM
+	db 24, AURORA_BEAM
+	db 26, BUBBLEBEAM
+	db 38, FOCUS_ENERGY
+	db 54, ICE_BEAM
+	db 70, HYPER_BEAM
+	db 0
+
+DelibirdEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 0
+
+MantineEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 10, SUPERSONIC
+	db 18, BUBBLEBEAM
+	db 25, TAKE_DOWN
+	db 32, AGILITY
+	db 40, WING_ATTACK
+	db 49, CONFUSE_RAY
+	db 0
+
+SkarmoryEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 13, SAND_ATTACK
+	db 19, SWIFT
+	db 25, AGILITY
+	db 37, FURY_ATTACK
+;	db 49, STEEL_WING
+	db 0
+
+HoundourEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 24, HOUNDOOM
+	db 0
+; Learnset
+	db 7, ROAR
+	db 13, SMOG
+	db 20, BITE
+;	db 27, FAINT_ATTACK
+	db 35, FLAMETHROWER
+	db 43, CRUNCH
+	db 0
+
+HoundoomEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, ROAR
+	db 13, SMOG
+	db 20, BITE
+;	db 30, FAINT_ATTACK
+	db 41, FLAMETHROWER
+	db 52, CRUNCH
 	db 0

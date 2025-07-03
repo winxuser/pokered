@@ -225,6 +225,23 @@
 	const GRANBULL
 	const QWILFISH
 	const SCIZOR
+	const SHUCKLE
+	const HERACROSS
+	const SNEASEL
+	const TEDDIURSA
+	const URSARING
+	const SLUGMA
+	const MAGCARGO
+	const SWINUB
+	const PILOSWINE
+	const CORSOLA
+	const REMORAID
+	const OCTILLERY
+	const DELIBIRD
+	const MANTINE
+	const SKARMORY
+	const HOUNDOUR
+	const HOUNDOOM
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 
 ; starters

@@ -208,12 +208,29 @@ MonPartyData:
 	nybble ICON_MON       ; Forretress
 	nybble ICON_MON       ; Dunsparce
 	nybble ICON_MON       ; Gliger
+	nybble ICON_SNAKE     ; Steelix
 	nybble ICON_MON       ; Snubbull
 	nybble ICON_MON       ; Granbull
 	nybble ICON_WATER     ; Qwilfish
 	nybble ICON_BUG       ; Scizor
+	nybble ICON_BUG       ; Shuckle
+	nybble ICON_BUG       ; Heracross
+	nybble ICON_MON       ; Sneasel
+	nybble ICON_MON       ; Teddiursa
+	nybble ICON_MON       ; Ursaring
+	nybble ICON_MON       ; Slugma
+	nybble ICON_SNAKE     ; Magcargo
+	nybble ICON_MON       ; Swinub
+	nybble ICON_MON       ; Piloswine
+	nybble ICON_WATER     ; Corsola
+	nybble ICON_WATER     ; Remoraid
+	nybble ICON_WATER     ; Octillery
+	nybble ICON_BIRD      ; Delibird
+	nybble ICON_WATER     ; Mantine
+	nybble ICON_BIRD      ; Skarmory
+	nybble ICON_QUADRUPED ; Houndour
+	nybble ICON_QUADRUPED ; Houndoom
 	nybble ICON_MON       ; Leafeon
 	nybble ICON_MON       ; Glaceon
 	nybble ICON_MON       ; Sylveon
-	nybble ICON_SNAKE     ; Steelix
 	end_nybble_array NUM_POKEMON

@@ -447,3 +447,175 @@ _ScizorDexEntry::
 	next "it look like it"
 	next "has three heads"
 	dex
+
+_ShuckleDexEntry::
+	text "The BERRIES it"
+	next "stores in its"
+	next "vase-like shell"
+
+	page "decompose and"
+	next "become a gooey"
+	next "liquid"
+	dex
+
+_HeracrossDexEntry::
+	text "This powerful"
+	next "#MON thrusts"
+	next "its prized horn"
+
+	page "under its enemies'"
+	next "bellies then lifts"
+	next "and throws them"
+	dex
+
+_SneaselDexEntry::
+	text "Its paws conceal"
+	next "sharp claws. If"
+	next "attacked, it sud-"
+
+	page "denly extends the"
+	next "claws and startles"
+	next "its enemy"
+	dex
+
+_TeddiursaDexEntry::
+	text "If it finds honey,"
+	next "its crescent mark"
+	next "glows. It always"
+
+	page "licks its paws"
+	next "because they are"
+	next "soaked with honey"
+	dex
+
+_UrsaringDexEntry::
+	text "Although it is a"
+	next "good climber, it"
+	next "prefers to snap"
+
+	page "trees with its"
+	next "forelegs and eat"
+	next "fallen BERRIES"
+	dex
+
+_SlugmaDexEntry::
+	text "It never sleeps."
+	next "It has to keep"
+	next "moving because if"
+
+	page "it stopped, its"
+	next "magma body would"
+	next "cool and harden"
+	dex
+
+_MagcargoDexEntry::
+	text "The shell on its"
+	next "back is just skin"
+	next "that has cooled"
+
+	page "and hardened. It"
+	next "breaks easily with"
+	next "a slight touch"
+	dex
+
+_SwinubDexEntry::
+	text "It rubs its snout"
+	next "on the ground to"
+	next "find and dig up"
+
+	page "food. It sometimes"
+	next "discovers hot"
+	next "springs"
+	dex
+
+_PiloswineDexEntry::
+	text "Because the long"
+	next "hair all over its"
+	next "body obscures its"
+
+	page "sight, it just"
+	next "keeps charging"
+	next "repeatedly"
+	dex
+
+_CorsolaDexEntry::
+	text "It continuously"
+	next "sheds and grows."
+	next "The tip of its"
+
+	page "head is prized as"
+	next "a treasure for its"
+	next "beauty"
+	dex
+
+_RemoraidDexEntry::
+	text "It has superb ac-"
+	next "curacy. The water"
+	next "it shoots out can"
+
+	page "strike even moving"
+	next "prey from more"
+	next "than 300 feet"
+	dex
+
+_OctilleryDexEntry::
+	text "It traps enemies"
+	next "with its suction-"
+	next "cupped tentacles"
+
+	page "then smashes them"
+	next "with its rock-hard"
+	next "head"
+	dex
+
+_DelibirdDexEntry::
+	text "It carries food"
+	next "all day long."
+	next "There are tales"
+
+	page "about lost people"
+	next "who were saved by"
+	next "the food it had"
+	dex
+
+_MantineDexEntry::
+	text "As it majestically"
+	next "swims, it doesn't"
+	next "care if REMORAID"
+
+	page "attach to it for"
+	next "scavenging its"
+	next "leftovers"
+	dex
+
+_SkarmoryDexEntry::
+	text "Its sturdy wings"
+	next "look heavy, but"
+	next "they are actually"
+
+	page "hollow and light,"
+	next "allowing it to fly"
+	next "freely in the sky"
+	dex
+
+_HoundourDexEntry::
+	text "It uses different"
+	next "kinds of cries for"
+	next "communicating with"
+
+	page "others of its kind"
+	next "and for pursuing"
+	next "its prey"
+	dex
+
+_HoundoomDexEntry::
+	text "If you are burned"
+	next "by the flames it"
+	next "shoots from its"
+
+	page "mouth, the pain"
+	next "will never go"
+	next "away"
+	dex
+
+

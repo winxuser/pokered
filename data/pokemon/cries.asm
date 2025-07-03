@@ -226,4 +226,21 @@ CryData::
 	mon_cry SFX_CRY_11, $00, $80 ; Granbull
 	mon_cry SFX_CRY_11, $00, $80 ; Qwilfish
 	mon_cry SFX_CRY_11, $00, $80 ; Scizor
+	mon_cry SFX_CRY_11, $00, $80 ; Shuckle
+	mon_cry SFX_CRY_11, $00, $80 ; Heracross
+	mon_cry SFX_CRY_11, $00, $80 ; Sneasel
+	mon_cry SFX_CRY_11, $00, $80 ; Teddiursa
+	mon_cry SFX_CRY_11, $00, $80 ; Ursaring
+	mon_cry SFX_CRY_11, $00, $80 ; Slugma
+	mon_cry SFX_CRY_11, $00, $80 ; Magcargo
+	mon_cry SFX_CRY_11, $00, $80 ; Swinub
+	mon_cry SFX_CRY_11, $00, $80 ; Piloswine
+	mon_cry SFX_CRY_11, $00, $80 ; Corsola
+	mon_cry SFX_CRY_11, $00, $80 ; Remoraid
+	mon_cry SFX_CRY_11, $00, $80 ; Octillery
+	mon_cry SFX_CRY_11, $00, $80 ; Delibird
+	mon_cry SFX_CRY_11, $00, $80 ; Mantine
+	mon_cry SFX_CRY_11, $00, $80 ; Skarmory
+	mon_cry SFX_CRY_11, $00, $80 ; Houndour
+	mon_cry SFX_CRY_11, $00, $80 ; Houndoom
 	assert_table_length NUM_POKEMON_INDEXES

@@ -209,14 +209,31 @@ MonsterPalettes:
 	db PAL_PURPLEMON ; Forretress
 	db PAL_YELLOWMON ; Dunsparce
 	db PAL_PURPLEMON ; Gliger
+	db PAL_GRAYMON   ; Steelix
 	db PAL_PINKMON   ; Snubbull
 	db PAL_PURPLEMON ; Granbull
 	db PAL_GRAYMON   ; Qwilfish
 	db PAL_REDMON    ; Scizor
+	db PAL_YELLOWMON ; Shuckle
+	db PAL_BLUEMON   ; Heracross
+	db PAL_GRAYMON   ; Sneasel
+	db PAL_BROWNMON  ; Teddiursa
+	db PAL_BROWNMON  ; Ursaring
+	db PAL_REDMON    ; Slugma
+	db PAL_REDMON    ; Magcargo
+	db PAL_BROWNMON  ; Swinub
+	db PAL_BROWNMON  ; Piloswine
+	db PAL_PINKMON   ; Corsola
+	db PAL_GRAYMON   ; Remoraid
+	db PAL_REDMON    ; Octillery
+	db PAL_REDMON    ; Delibird
+	db PAL_PURPLEMON ; Mantine
+	db PAL_GRAYMON   ; Skarmory
+	db PAL_GRAYMON   ; Houndour
+	db PAL_GRAYMON   ; Houndoom
 	db PAL_PURPLEMON ; Leafeon
 	db PAL_PURPLEMON ; Glaceon
 	db PAL_PURPLEMON ; Sylveon
-	db PAL_GRAYMON   ; Steelix
 
 TrainerPalettes:
 	db PAL_HERO
