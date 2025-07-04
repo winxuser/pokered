@@ -230,6 +230,28 @@ MonPartyData:
 	nybble ICON_BIRD      ; Skarmory
 	nybble ICON_QUADRUPED ; Houndour
 	nybble ICON_QUADRUPED ; Houndoom
+	nybble ICON_WATER     ; Kingdra
+	nybble ICON_MON       ; Phanpy
+	nybble ICON_MON       ; Donphan
+	nybble ICON_MON       ; Porygon2
+	nybble ICON_QUADRUPED ; Stantler
+	nybble ICON_MON       ; Smeargle
+	nybble ICON_MON       ; Tyrogue
+	nybble ICON_MON       ; Hitmontop
+	nybble ICON_MON       ; Smoochum
+	nybble ICON_MON       ; Elekid
+	nybble ICON_MON       ; Magby
+	nybble ICON_QUADRUPED ; Miltank
+	nybble ICON_MON       ; Blissey
+	nybble ICON_QUADRUPED ; Raikou
+	nybble ICON_QUADRUPED ; Entei
+	nybble ICON_QUADRUPED ; Suicune
+	nybble ICON_MON		  ; Larvitar
+	nybble ICON_MON		  ; Pupitar
+	nybble ICON_MON		  ; Tyranitar
+	nybble ICON_BIRD	  ; Lugia
+	nybble ICON_BIRD	  ; Ho-oh
+	nybble ICON_MON		  ; Celebi
 	nybble ICON_MON       ; Leafeon
 	nybble ICON_MON       ; Glaceon
 	nybble ICON_MON       ; Sylveon

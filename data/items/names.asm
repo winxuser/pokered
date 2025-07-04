@@ -88,6 +88,8 @@ ItemNames::
 	li "METAL COAT"
 	li "SUN STONE"
 	li "KINGS ROCK"
+	li "DRAGON SCALE"
+	li "UPGRADE"
 	assert_list_length NUM_ITEMS
 	li "B2F"
 	li "B1F"

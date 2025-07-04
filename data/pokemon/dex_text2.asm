@@ -618,4 +618,222 @@ _HoundoomDexEntry::
 	next "away"
 	dex
 
+_KingdraDexEntry::
+	text "It is said that it"
+	next "usually hides in"
+	next "underwater caves."
 
+	page "It can create"
+	next "whirlpools by"
+	next "yawning"
+	dex
+
+_PhanpyDexEntry::
+	text "It swings its long"
+	next "snout around play-"
+	next "fully, but because"
+
+	page "it is so strong,"
+	next "that can be dan-"
+	next "gerous"
+	dex
+
+_DonphanDexEntry::
+	text "It has sharp, hard"
+	next "tusks and a rugged"
+	next "hide. Its TACKLE"
+
+	page "is strong enough"
+	next "to knock down a"
+	next "house"
+	dex
+
+_Porygon2DexEntry::
+	text "This upgraded"
+	next "version of PORYGON"
+	next "is designed for"
+
+	page "space exploration."
+	next "It can't fly,"
+	next "though"
+	dex
+
+_StantlerDexEntry::
+	text "The curved antlers"
+	next "subtly change the"
+	next "flow of air to"
+
+	page "create a strange"
+	next "space where real-"
+	next "ity is distorted"
+	dex
+
+_SmeargleDexEntry::
+	text "A special fluid"
+	next "oozes from the tip"
+	next "of its tail. It"
+
+	page "paints the fluid"
+	next "everywhere to mark"
+	next "its territory"
+	dex
+
+_TyrogueDexEntry::
+	text "It is always"
+	next "bursting with en-"
+	next "ergy. To make it-"
+
+	page "self stronger, it"
+	next "keeps on fighting"
+	next "even if it loses"
+	dex
+
+_HitmontopDexEntry::
+	text "If you become"
+	next "enchanted by its"
+	next "smooth, elegant,"
+
+	page "dance-like kicks,"
+	next "you may get"
+	next "drilled hard"
+	dex
+
+_SmoochumDexEntry::
+	text "Its lips are the"
+	next "most sensitive"
+	next "parts on its body."
+
+	page "It always uses its"
+	next "lips first to"
+	next "examine things"
+	dex
+
+_ElekidDexEntry::
+	text "It rotates its"
+	next "arms to generate"
+	next "electricity, but"
+
+	page "it tires easily,"
+	next "so it charges up"
+	next "only a little bit"
+	dex
+
+_MagbyDexEntry::
+	text "Each and every"
+	next "time it inhales"
+	next "and exhales, hot"
+
+	page "embers dribble out"
+	next "of its mouth and"
+	next "nostrils"
+	dex
+
+_MiltankDexEntry::
+	text "If it has just had"
+	next "a baby, the milk"
+	next "it produces con-"
+
+	page "tains much more"
+	next "nutrition than"
+	next "usual"
+	dex
+
+_BlisseyDexEntry::
+	text "It has a very com-"
+	next "passionate nature."
+	next "If it sees a sick"
+
+	page "#MON, it will"
+	next "nurse the sufferer"
+	next "back to health"
+	dex
+
+_RaikouDexEntry::
+	text "The rain clouds it"
+	next "carries let it"
+	next "fire thunderbolts"
+
+	page "at will. They say"
+	next "that it descended"
+	next "with lightning"
+	dex
+
+_EnteiDexEntry::
+	text "A #MON that"
+	next "races across the"
+	next "land. It is said"
+
+	page "that one is born"
+	next "every time a new"
+	next "volcano appears"
+	dex
+
+_SuicuneDexEntry::
+	text "Said to be the"
+	next "reincarnation of"
+	next "north winds, it"
+
+	page "can instantly"
+	next "purify filthy,"
+	next "murky water"
+	dex
+
+_LarvitarDexEntry::
+	text "It is born deep"
+	next "underground. It"
+	next "can't emerge until"
+
+	page "it has entirely"
+	next "consumed the soil"
+	next "around it"
+	dex
+
+_PupitarDexEntry::
+	text "Its shell is as"
+	next "hard as sheet"
+	next "rock, and it is"
+
+	page "also very strong."
+	next "Its THRASHING can"
+	next "topple a mountain"
+	dex
+
+_TyranitarDexEntry::
+	text "Its body can't be"
+	next "harmed by any sort"
+	next "of attack, so it"
+
+	page "is very eager to"
+	next "make challenges"
+	next "against enemies"
+	dex
+
+_LugiaDexEntry::
+	text "It is said to be"
+	next "the guardian of"
+	next "the seas. It is"
+
+	page "rumored to have"
+	next "been seen on the"
+	next "night of a storm"
+	dex
+
+_HoohDexEntry::
+	text "A legend says that"
+	next "its body glows in"
+	next "seven colors. A"
+
+	page "rainbow is said to"
+	next "form behind it"
+	next "when it flies"
+	dex
+
+_CelebiDexEntry::
+	text "When CELEBI disap-"
+	next "pears deep in a"
+	next "forest, it is said"
+
+	page "to leave behind an"
+	next "egg it brought"
+	next "from the future"
+	dex

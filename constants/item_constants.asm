@@ -97,6 +97,8 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const METAL_COAT
 	const SUN_STONE
 	const KINGS_ROCK
+	const DRAGON_SCALE
+	const UPGRADE
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs
@@ -116,7 +118,7 @@ DEF NUM_ITEMS EQU const_value - 1
 	const FLOOR_B4F     ; $61
 DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 
-	const_next $C4 ; dereknote - apparently not necessary, and should comment out if adding more than 62 (?) total machines
+	;const_next $C4 ; dereknote - apparently not necessary, and should comment out if adding more than 62 (?) total machines
 
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
@@ -217,13 +219,13 @@ DEF TM01 EQU const_value
 	add_tm FIRE_PUNCH   ; $FC (TM52)
 	add_tm ICE_PUNCH    ; $FD (TM53)
 	add_tm THUNDERPUNCH ; $FE (TM54)
-	add_tm DYNAM_PUNCH  ; $G2 (TM58)
+	add_tm DYNAM_PUNCH  ; $FF (TM55)
 
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 
-; 56 (dereknote - was 50) TMs + 5 HMs = 62 (dereknote - was 55) learnable TM/HM flags per Pokémon.
+; 55 (dereknote - was 50) TMs + 5 HMs = 62 (dereknote - was 55) learnable TM/HM flags per Pokémon.
 ; These now fit in 8 bytes, with five unused bits left over.
 ; dereknote - now the final unused bit is used, from the additional TM51, and 3 more bits in the next byte are used
 DEF __tmhm_value__ = NUM_TM_HM + 1

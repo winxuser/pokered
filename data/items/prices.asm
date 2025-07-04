@@ -88,6 +88,8 @@ ItemPrices::
 	bcd3 2000  ; METAL_COAT
 	bcd3 2000  ; SUN_STONE
 	bcd3 2000  ; KINGS_ROCK
+	bcd3 2000  ; DRAGON_SCALE
+	bcd3 2000  ; UPGRADE
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

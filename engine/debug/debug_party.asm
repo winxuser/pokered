@@ -17,7 +17,7 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db HOUNDOUR, 10
+	db CELEBI, 75
 IF DEF(_DEBUG)
 	db SQUIRTLE, 5
 ELSE
@@ -153,6 +153,7 @@ DebugNewGameItemsList:
 	db ICE_STONE, 2
 	db SUN_STONE, 2
 	db DARK_SHARD, 2
+	db PROTEIN, 2
 	db -1 ; end
 
 DebugUnusedList: ; unreferenced

@@ -234,7 +234,29 @@
 	const DEX_SKARMORY	 ; 227
 	const DEX_HOUNDOUR	 ; 228
 	const DEX_HOUNDOOM	 ; 229
-	const DEX_LEAFEON    ;
-	const DEX_GLACEON    ;
-	const DEX_SYLVEON    ;
+	const DEX_KINGDRA	 ; 230
+	const DEX_PHANPY	 ; 231
+	const DEX_DONPHAN	 ; 232
+	const DEX_PORYGON2	 ; 233
+	const DEX_STANTLER	 ; 234
+	const DEX_SMEARGLE	 ; 235
+	const DEX_TYROGUE	 ; 236
+	const DEX_HITMONTOP	 ; 237
+	const DEX_SMOOCHUM	 ; 238
+	const DEX_ELEKID	 ; 239
+	const DEX_MAGBY 	 ; 240
+	const DEX_MILTANK	 ; 241
+	const DEX_BLISSEY	 ; 242
+	const DEX_RAIKOU	 ; 243
+	const DEX_ENTEI		 ; 244
+	const DEX_SUICUNE	 ; 245
+	const DEX_LARVITAR	 ; 246
+	const DEX_PUPITAR	 ; 247
+	const DEX_TYRANITAR	 ; 248
+	const DEX_LUGIA		 ; 249
+	const DEX_HOOH		 ; 250
+	const DEX_CELEBI	 ; 251
+	const DEX_LEAFEON    ; 252
+	const DEX_GLACEON    ; 253
+	const DEX_SYLVEON    ; 254
 DEF NUM_POKEMON EQU const_value - 1

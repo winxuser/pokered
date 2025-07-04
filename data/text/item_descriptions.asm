@@ -36,6 +36,11 @@ _LeafStoneDescription::
 _SunShardDescription::
 _MetalCoatDescription::
 _IceStoneDescription::
+_DarkShardDescription::
+_SunStoneDescription::
+_KingsRockDescription::
+_DragonScaleDescription::
+_UpgradeDescription::
 	text "Evolves certain"
 	next "kinds of #MON."
 	prompt
@@ -621,13 +626,8 @@ _TM54Description::
 	prompt
 
 _TM55Description::
-	text "Charm the foe and"
-	next "sharplylowers attack."
-	prompt
-
-_TM56Description::
-	text "Makes @MON infatuated,"
-	next "may not attack."
+	text "A fighting attack"
+	next "may confuse enemy."
 	prompt
 
 _UnusedItemDescription::

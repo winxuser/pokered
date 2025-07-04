@@ -767,7 +767,6 @@ MewtwoPicBack::       INCBIN "gfx/pokemon/back/mewtwob.pic"
 MewPicFront::         INCBIN "gfx/pokemon/front/mew.pic"
 MewPicBack::          INCBIN "gfx/pokemon/back/mewb.pic"
 
-INCLUDE "engine/pokemon/evos_moves.asm"
 
 SECTION "bank2F", ROMX, BANK[$2F]
 
@@ -793,3 +792,4 @@ INCLUDE "engine/battle/move_effects/conversion.asm"
 INCLUDE "engine/battle/move_effects/haze.asm"
 INCLUDE "engine/battle/move_effects/substitute.asm"
 INCLUDE "engine/menus/pc.asm"
+INCLUDE "engine/pokemon/evos_moves.asm"

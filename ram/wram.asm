@@ -494,7 +494,7 @@ wLinkBattleRandomNumberListIndex:: db
 ; number of times remaining that AI action can occur
 wAICount:: db
 
-	ds 2
+	;ds 2
 
 wEnemyMoveListIndex:: db
 
@@ -538,7 +538,7 @@ wLowHealthAlarmDisabled:: db
 
 wPlayerMonMinimized:: db
 
-	ds 13
+	ds 11
 
 UNION
 ; the amount of damage accumulated by the enemy while biding
@@ -580,7 +580,7 @@ wPlayerMonSpeedMod:: db
 wPlayerMonSpecialMod:: db
 wPlayerMonAccuracyMod:: db
 wPlayerMonEvasionMod:: db
-	ds 2
+	;ds 2
 wPlayerMonStatModsEnd::
 
 	;ds 1
@@ -602,7 +602,7 @@ wEnemyMonSpeedMod:: db
 wEnemyMonSpecialMod:: db
 wEnemyMonAccuracyMod:: db
 wEnemyMonEvasionMod:: db
-	ds 2
+	;ds 2
 wEnemyMonStatModsEnd::
 
 NEXTU
@@ -2302,7 +2302,7 @@ wEXPBarKeepFullFlag:: ds 1
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $100 - 6
+	ds $50 - 10
 wStack:: db
 
 ENDSECTION

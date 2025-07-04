@@ -23,12 +23,6 @@ DisplayItemDescription::
  	text_end
  	text_far _BicycleDescription
  	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
  	text_far _MoonStoneDescription
  	text_end
  	text_far _AntidoteDescription
@@ -50,22 +44,6 @@ DisplayItemDescription::
  	text_far _SuperPotionDescription
  	text_end
  	text_far _PotionDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
- 	text_end
- 	text_far _UnusedItemDescription
  	text_end
  	text_far _EscapeRopeDescription
  	text_end
@@ -97,8 +75,6 @@ DisplayItemDescription::
  	text_end
  	text_far _SecretKeyDescription
  	text_end
- 	text_far _UnusedItemDescription
- 	text_end
  	text_far _BikeVoucherDescription
  	text_end
  	text_far _XAccuracyDescription
@@ -108,8 +84,6 @@ DisplayItemDescription::
  	text_far _CardKeyDescription
  	text_end
  	text_far _NuggetDescription
- 	text_end
- 	text_far _UnusedItemDescription
  	text_end
  	text_far _PokeDollDescription
  	text_end
@@ -126,8 +100,6 @@ DisplayItemDescription::
  	text_far _MaxRepelDescription
  	text_end
  	text_far _DireHitDescription
- 	text_end
- 	text_far _UnusedItemDescription
  	text_end
  	text_far _FreshWaterDescription
  	text_end
@@ -176,6 +148,20 @@ DisplayItemDescription::
  	text_far _ElixerDescription
  	text_end
  	text_far _MaxElixerDescription
+ 	text_end
+ 	text_far _IceStoneDescription
+ 	text_end
+ 	text_far _DarkShardDescription
+ 	text_end
+ 	text_far _MetalCoatDescription
+ 	text_end
+ 	text_far _SunStoneDescription
+ 	text_end
+ 	text_far _KingsRockDescription
+ 	text_end
+ 	text_far _DragonScaleDescription
+ 	text_end
+ 	text_far _UpgradeDescription
  	text_end
  	text_far _HM01Description
  	text_end
@@ -296,6 +282,4 @@ DisplayItemDescription::
 	text_far _TM54Description
 	text_end
 	text_far _TM55Description
-	text_end
-	text_far _TM56Description
 	text_end

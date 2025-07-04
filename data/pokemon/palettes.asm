@@ -231,7 +231,29 @@ MonsterPalettes:
 	db PAL_GRAYMON   ; Skarmory
 	db PAL_GRAYMON   ; Houndour
 	db PAL_GRAYMON   ; Houndoom
-	db PAL_PURPLEMON ; Leafeon
+	db PAL_BLUEMON   ; Kingdra
+	db PAL_BLUEMON   ; Phanpy
+	db PAL_GRAYMON   ; Donphan
+	db PAL_PORYGON   ; Porygon2
+	db PAL_BROWNMON  ; Stantler
+	db PAL_MEOWTH    ; Smeargle
+	db PAL_PURPLEMON ; Tyrogue
+	db PAL_BROWNMON  ; Hitmontop
+	db PAL_PINKMON   ; Smoochum
+	db PAL_YELLOWMON ; Elekid
+	db PAL_REDMON	 ; Magby
+	db PAL_PINKMON	 ; Miltank
+	db PAL_PINKMON	 ; Blissey
+	db PAL_YELLOWMON ; Raikou
+	db PAL_REDMON	 ; Entei
+	db PAL_BLUEMON	 ; Suicune
+	db PAL_GREENMON	 ; Larvitar
+	db PAL_GRAYMON	 ; Pupitar
+	db PAL_GREENMON	 ; Tyranitar
+	db PAL_PURPLEMON ; Lugia
+	db PAL_REDMON	 ; Ho-oh
+	db PAL_GREENMON	 ; Celebi
+	db PAL_GREENMON  ; Leafeon
 	db PAL_PURPLEMON ; Glaceon
 	db PAL_PURPLEMON ; Sylveon
 

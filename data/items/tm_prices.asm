@@ -52,10 +52,10 @@ TechnicalMachinePrices:
 	nybble 4 ; TM49
 	nybble 2 ; TM50
 	; new TMs
-	nybble 4 ; TM51 FLAMETHROWER
-	nybble 3 ; TM52 FIRE_PUNCH
-	nybble 3 ; TM53 ICE_PUNCH
-	nybble 3 ; TM54 THUNDERPUNCH
-	nybble 1 ; TM55 DYNAMIC PUNCH
+	nybble 2 ; TM51 FLAMETHROWER
+	nybble 2 ; TM52 FIRE_PUNCH
+	nybble 2 ; TM53 ICE_PUNCH
+	nybble 2 ; TM54 THUNDERPUNCH
+	nybble 2 ; TM55 DYNAMIC PUNCH
 	; end new TMs
 	end_nybble_array NUM_TMS

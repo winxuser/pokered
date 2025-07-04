@@ -245,6 +245,28 @@ EvosMovesPointerTable:
 	dw SkarmoryEvosMoves
 	dw HoundourEvosMoves
 	dw HoundoomEvosMoves
+	dw KingdraEvosMoves
+	dw PhanpyEvosMoves
+	dw DonphanEvosMoves
+	dw Porygon2EvosMoves
+	dw StantlerEvosMoves
+	dw SmeargleEvosMoves
+	dw TyrogueEvosMoves
+	dw HitmontopEvosMoves
+	dw SmoochumEvosMoves
+	dw ElekidEvosMoves
+	dw MagbyEvosMoves
+	dw MiltankEvosMoves
+	dw BlisseyEvosMoves
+	dw RaikouEvosMoves
+	dw EnteiEvosMoves
+	dw SuicuneEvosMoves
+	dw LarvitarEvosMoves
+	dw PupitarEvosMoves
+	dw TyranitarEvosMoves
+	dw LugiaEvosMoves
+	dw HoohEvosMoves
+	dw CelebiEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 RhydonEvosMoves:
@@ -733,6 +755,7 @@ GravelerEvosMoves:
 
 ChanseyEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 35, BLISSEY
 	db 0
 ; Learnset
 	db 5, GROWL
@@ -1393,6 +1416,7 @@ HorseaEvosMoves:
 
 SeadraEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, DRAGON_SCALE, 1, KINGDRA
 	db 0
 ; Learnset
 	db 8, SMOKESCREEN
@@ -2303,6 +2327,7 @@ GeodudeEvosMoves:
 
 PorygonEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, UPGRADE, 1, PORYGON2
 	db 0
 ; Learnset
 	db 9, AGILITY
@@ -3058,4 +3083,265 @@ HoundoomEvosMoves:
 ;	db 30, FAINT_ATTACK
 	db 41, FLAMETHROWER
 	db 52, CRUNCH
+	db 0
+
+KingdraEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 8, SMOKESCREEN
+	db 15, LEER
+	db 22, WATER_GUN
+	db 29, TWISTER
+	db 40, AGILITY
+	db 51, HYDRO_PUMP
+	db 0
+
+PhanpyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 25, DONPHAN
+	db 0
+; Learnset
+	db 9, DEFENSE_CURL
+	db 25, TAKE_DOWN
+	db 49, DOUBLE_EDGE
+	db 0
+
+DonphanEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 9, DEFENSE_CURL
+	db 25, FURY_ATTACK
+;	db 41, RAPID_SPIN
+	db 49, EARTHQUAKE
+	db 0
+
+Porygon2EvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 9, AGILITY
+	db 12, PSYBEAM
+	db 20, RECOVER
+	db 24, DEFENSE_CURL
+	db 36, TRI_ATTACK
+	db 44, ZAP_CANNON
+	db 0
+
+StantlerEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 8, LEER
+	db 15, HYPNOSIS
+	db 23, STOMP
+	db 31, SAND_ATTACK
+	db 40, TAKE_DOWN
+	db 49, CONFUSE_RAY
+	db 0
+
+SmeargleEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 8, MIMIC
+	db 15, MIMIC
+	db 23, MIMIC
+	db 31, MIMIC
+	db 0
+
+TyrogueEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 0
+
+HitmontopEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 7, FOCUS_ENERGY
+	db 13, PURSUIT
+	db 19, QUICK_ATTACK
+;	db 25, RAPID_SPIN
+	db 31, COUNTER
+	db 37, AGILITY
+	db 0
+
+SmoochumEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, JYNX
+	db 0
+; Learnset
+	db 13, POWDER_SNOW
+	db 21, CONFUSION
+	db 25, SING
+	db 37, PSYCHIC_M
+	db 49, BLIZZARD
+	db 0
+
+ElekidEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, ELECTABUZZ
+	db 0
+; Learnset
+	db 9, THUNDERPUNCH
+	db 17, LIGHT_SCREEN
+	db 25, SWIFT
+	db 33, SCREECH
+	db 41, THUNDERBOLT
+	db 49, THUNDER
+	db 0
+
+MagbyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, MAGMAR
+	db 0
+; Learnset
+	db 7, LEER
+	db 19, FIRE_PUNCH
+	db 25, SMOKESCREEN
+	db 37, FLAMETHROWER
+	db 43, CONFUSE_RAY
+	db 49, FIRE_BLAST
+	db 0
+
+MiltankEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 4, GROWL
+	db 8, DEFENSE_CURL
+	db 13, STOMP
+;	db 19, MILK_DRINK
+	db 26, BIDE
+	db 43, BODY_SLAM
+	db 0
+
+BlisseyEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 4, GROWL
+	db 7, TAIL_WHIP
+	db 10, SOFTBOILED
+	db 13, DOUBLESLAP
+	db 18, MINIMIZE
+	db 23, SING
+	db 33, DEFENSE_CURL
+	db 40, LIGHT_SCREEN
+	db 47, DOUBLE_EDGE
+	db 0
+
+RaikouEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 4, THUNDERSHOCK
+	db 21, ROAR
+	db 31, QUICK_ATTACK
+;	db 41, SPARK
+	db 51, REFLECT
+	db 61, CRUNCH
+	db 71, THUNDER
+	db 0
+
+EnteiEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 11, EMBER
+	db 21, ROAR
+	db 31, FIRE_SPIN
+	db 41, STOMP
+	db 51, FLAMETHROWER
+	db 71, FIRE_BLAST
+	db 0
+
+SuicuneEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 11, WATER_GUN
+	db 13, BUBBLEBEAM
+	db 21, ROAR
+	db 31, GUST
+	db 41, AURORA_BEAM
+	db 51, MIST
+	db 71, HYDRO_PUMP
+	db 0
+
+LarvitarEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, PUPITAR
+	db 0
+; Learnset
+;	db 8, SAND_STORM
+	db 15, SCREECH
+	db 22, ROCK_SLIDE
+	db 29, THRASH
+	db 43, CRUNCH
+	db 50, EARTHQUAKE
+	db 57, HYPER_BEAM
+	db 0
+
+PupitarEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 55, TYRANITAR
+	db 0
+; Learnset
+;	db 8, SAND_STORM
+	db 15, SCREECH
+	db 22, ROCK_SLIDE
+	db 29, THRASH
+	db 47, CRUNCH
+	db 56, EARTHQUAKE
+	db 65, HYPER_BEAM
+	db 0
+
+TyranitarEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+;	db 8, SAND_STORM
+	db 15, SCREECH
+	db 22, ROCK_SLIDE
+	db 29, THRASH
+	db 47, CRUNCH
+	db 61, EARTHQUAKE
+	db 75, HYPER_BEAM
+	db 0
+
+LugiaEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+;	db 8, AEROBLAST
+	db 22, GUST
+	db 33, RECOVER
+	db 44, HYDRO_PUMP
+	db 66, SWIFT
+	db 88, ANCIENT_POWR
+	db 75, HYPER_BEAM
+	db 0
+
+HoohEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+;	db 8, SACRED_FIRE
+	db 22, GUST
+	db 33, RECOVER
+	db 44, FIRE_BLAST
+	db 66, SWIFT
+	db 88, ANCIENT_POWR
+	db 75, HYPER_BEAM
+	db 0
+
+CelebiEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 20, ANCIENT_POWR
 	db 0

@@ -42,4 +42,6 @@ UsableItems_PartyMenu:
 	db METAL_COAT
 	db SUN_STONE
 	db KINGS_ROCK
+	db DRAGON_SCALE
+	db UPGRADE
 	db -1 ; end

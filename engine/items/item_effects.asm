@@ -105,6 +105,8 @@ ItemUsePtrTable:
 	dw ItemUseEvoStone   ; METAL_COAT
 	dw ItemUseEvoStone   ; SUN_STONE
 	dw ItemUseEvoStone   ; KINGS_ROCK
+	dw ItemUseEvoStone   ; DRAGON_SCALE
+	dw ItemUseEvoStone   ; UPGRADE
 
 ItemUseBall:
 

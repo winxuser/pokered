@@ -235,6 +235,28 @@ PokedexEntryPointers:
 	dw SkarmoryDexEntry
 	dw HoundourDexEntry
 	dw HoundoomDexEntry
+	dw KingdraDexEntry
+	dw PhanpyDexEntry
+	dw DonphanDexEntry
+	dw Porygon2DexEntry
+	dw StantlerDexEntry
+	dw SmeargleDexEntry
+	dw TyrogueDexEntry
+	dw HitmontopDexEntry
+	dw SmoochumDexEntry
+	dw ElekidDexEntry
+	dw MagbyDexEntry
+	dw MiltankDexEntry
+	dw BlisseyDexEntry
+	dw RaikouDexEntry
+	dw EnteiDexEntry
+	dw SuicuneDexEntry
+	dw LarvitarDexEntry
+	dw PupitarDexEntry
+	dw TyranitarDexEntry
+	dw LugiaDexEntry
+	dw HoohDexEntry
+	dw CelebiDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name
@@ -1864,6 +1886,160 @@ HoundoomDexEntry:
 	db 4,7
 	dw 772
 	text_far _HoundoomDexEntry
+	text_end
+
+KingdraDexEntry:
+	db "DRAGON@"
+	db 5,11
+	dw 3351
+	text_far _KingdraDexEntry
+	text_end
+
+PhanpyDexEntry:
+	db "LONGNOSE@"
+	db 1,8
+	dw 739
+	text_far _PhanpyDexEntry
+	text_end
+
+DonphanDexEntry:
+	db "ARMOR@"
+	db 3,7
+	dw 2646
+	text_far _DonphanDexEntry
+	text_end
+
+Porygon2DexEntry:
+	db "VIRTUAL@"
+	db 2,0
+	dw 717
+	text_far _Porygon2DexEntry
+	text_end
+
+StantlerDexEntry:
+	db "BIG HORN@"
+	db 4,7
+	dw 1570
+	text_far _StantlerDexEntry
+	text_end
+
+SmeargleDexEntry:
+	db "PAINTER@"
+	db 3,11
+	dw 1279
+	text_far _SmeargleDexEntry
+	text_end
+
+TyrogueDexEntry:
+	db "SCUFFLE@"
+	db 2,4
+	dw 463
+	text_far _TyrogueDexEntry
+	text_end
+
+HitmontopDexEntry:
+	db "HANDSTAND@"
+	db 4,7
+	dw 1058
+	text_far _HitmontopDexEntry
+	text_end
+
+SmoochumDexEntry:
+	db "KISS@"
+	db 1,4
+	dw 132
+	text_far _SmoochumDexEntry
+	text_end
+
+ElekidDexEntry:
+	db "ELECTRIC@"
+	db 2,0
+	dw 518
+	text_far _ElekidDexEntry
+	text_end
+
+MagbyDexEntry:
+	db "LIVE COAL@"
+	db 2,4
+	dw 472
+	text_far _MagbyDexEntry
+	text_end
+
+MiltankDexEntry:
+	db "MILK COW@"
+	db 3,11
+	dw 1664
+	text_far _MiltankDexEntry
+	text_end
+
+BlisseyDexEntry:
+	db "HAPPINESS@"
+	db 4,11
+	dw 1032
+	text_far _BlisseyDexEntry
+	text_end
+
+RaikouDexEntry:
+	db "THUNDER@"
+	db 6,3
+	dw 3924
+	text_far _RaikouDexEntry
+	text_end
+
+EnteiDexEntry:
+	db "VOLCANO@"
+	db 6,11
+	dw 4365
+	text_far _EnteiDexEntry
+	text_end
+
+SuicuneDexEntry:
+	db "AURORA@"
+	db 6,1
+	dw 4123
+	text_far _SuicuneDexEntry
+	text_end
+
+LarvitarDexEntry:
+	db "ROCK SKIN@"
+	db 2,0
+	dw 1587
+	text_far _LarvitarDexEntry
+	text_end
+
+PupitarDexEntry:
+	db "HARD SHELL@"
+	db 3,11
+	dw 3351
+	text_far _PupitarDexEntry
+	text_end
+
+TyranitarDexEntry:
+	db "ARMOR@"
+	db 6,7
+	dw 4453
+	text_far _TyranitarDexEntry
+	text_end
+
+LugiaDexEntry:
+	db "DIVING@"
+	db 17,1
+	dw 4762
+	text_far _LugiaDexEntry
+	text_end
+
+HoohDexEntry:
+	db "RAINBOW@"
+	db 12,6
+	dw 4387
+	text_far _HoohDexEntry
+	text_end
+
+CelebiDexEntry:
+	db "TIMETRAVEL@"
+	db 2,0
+	dw 110
+	text_far _CelebiDexEntry
 	text_end
 
 MissingNoDexEntry:

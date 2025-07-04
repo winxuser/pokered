@@ -243,4 +243,26 @@ CryData::
 	mon_cry SFX_CRY_11, $00, $80 ; Skarmory
 	mon_cry SFX_CRY_11, $00, $80 ; Houndour
 	mon_cry SFX_CRY_11, $00, $80 ; Houndoom
+	mon_cry SFX_CRY_11, $00, $80 ; Kingdra
+	mon_cry SFX_CRY_11, $00, $80 ; Phanpy
+	mon_cry SFX_CRY_11, $00, $80 ; Donphan
+	mon_cry SFX_CRY_11, $00, $80 ; Porygon2
+	mon_cry SFX_CRY_11, $00, $80 ; Stantler
+	mon_cry SFX_CRY_11, $00, $80 ; Smeargle
+	mon_cry SFX_CRY_11, $00, $80 ; Tyrogue
+	mon_cry SFX_CRY_11, $00, $80 ; Hitmontop
+	mon_cry SFX_CRY_11, $00, $80 ; Smoochum
+	mon_cry SFX_CRY_11, $00, $80 ; Elekid
+	mon_cry SFX_CRY_11, $00, $80 ; Magby
+	mon_cry SFX_CRY_11, $00, $80 ; Miltank
+	mon_cry SFX_CRY_11, $00, $80 ; Blissey
+	mon_cry SFX_CRY_11, $00, $80 ; Raikou
+	mon_cry SFX_CRY_11, $00, $80 ; Entei
+	mon_cry SFX_CRY_11, $00, $80 ; Suicune
+	mon_cry SFX_CRY_11, $00, $80 ; Larvitar
+	mon_cry SFX_CRY_11, $00, $80 ; Pupitar
+	mon_cry SFX_CRY_11, $00, $80 ; Tyranitar
+	mon_cry SFX_CRY_11, $00, $80 ; Lugia
+	mon_cry SFX_CRY_11, $00, $80 ; Ho-oh
+	mon_cry SFX_CRY_11, $00, $80 ; Celebi
 	assert_table_length NUM_POKEMON_INDEXES

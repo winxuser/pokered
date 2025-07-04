@@ -328,7 +328,6 @@ ItemSortList::
 	db BICYCLE
 	db ITEMFINDER
 	db EXP_ALL
-	db TOWN_MAP
 	; Rods
 	db OLD_ROD
 	db GOOD_ROD
@@ -397,6 +396,8 @@ ItemSortList::
 	db THUNDER_STONE
 	db WATER_STONE
 	db MOON_STONE
+	db DRAGON_SCALE
+	db UPGRADE
 	; Money
 	db COIN_CASE
 	db COIN

@@ -242,6 +242,28 @@
 	const SKARMORY
 	const HOUNDOUR
 	const HOUNDOOM
+	const KINGDRA
+	const PHANPY
+	const DONPHAN
+	const PORYGON2
+	const STANTLER
+	const SMEARGLE
+	const TYROGUE
+	const HITMONTOP
+	const SMOOCHUM
+	const ELEKID
+	const MAGBY
+	const MILTANK
+	const BLISSEY
+	const RAIKOU
+	const ENTEI
+	const SUICUNE
+	const LARVITAR
+	const PUPITAR
+	const TYRANITAR
+	const LUGIA
+	const HOOH
+	const CELEBI
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 
 ; starters
