@@ -112,3 +112,13 @@ _BoxIsFullReminderText::
  	para "Change the BOX at"
  	line "a #MON CENTER!"
  	prompt
+
+_TyrogueIsEvolvingText::
+	text "What? @"
+	text_ram wStringBuffer
+	text_start
+	line "wants to evolve!"
+
+	para "What should it"
+	line "specialize in?"
+	prompt

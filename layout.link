@@ -161,6 +161,7 @@ ROMX $23
 	"Text 4"
 ROMX $24
 	"Text 5"
+	"Evo Moves"
 ROMX $25
 	"Text 6"
 ROMX $26
@@ -197,7 +198,7 @@ WRAM0
 	"Party Data"
 	"Main Data"
 	"Current Box Data"
-	org $df47
+	org $df00
 	"Stack"
 VRAM
 	"VRAM"

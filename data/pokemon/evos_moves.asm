@@ -3153,6 +3153,7 @@ SmeargleEvosMoves:
 
 TyrogueEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 15, TYROGUE
 	db 0
 ; Learnset
 	db 0

@@ -2,7 +2,7 @@ SECTION "bank1", ROMX
 
 INCLUDE "data/sprites/facings.asm"
 INCLUDE "engine/events/black_out.asm"
-	ds $149
+;	ds $149
 INCLUDE "engine/battle/safari_zone.asm"
 INCLUDE "engine/movie/title.asm"
 INCLUDE "engine/pokemon/load_mon_data.asm"
@@ -183,6 +183,9 @@ INCLUDE "engine/battle/move_effects/pay_day.asm"
 
 
 SECTION "Battle Engine 6", ROMX
+INCLUDE "engine/battle/move_effects/mist.asm"
+INCLUDE "engine/battle/move_effects/one_hit_ko.asm"
+
 
 SECTION "Slot Machines", ROMX
 
@@ -202,6 +205,7 @@ INCLUDE "engine/battle/stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
+INCLUDE "gfx/trade.asm" ; moved from battle engine 7 for space for gen 2 mons
 
 PlayerPartyUpdated:
 	ld hl, PartyTileMap
@@ -495,7 +499,10 @@ INCLUDE "engine/battle/move_effects/paralyze.asm"
 INCLUDE "engine/battle/move_effects/heal.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
-INCLUDE "gfx/trade.asm" ; moved from battle engine 7 for space for gen 2 mons
+INCLUDE "engine/battle/move_effects/recoil.asm"
+INCLUDE "engine/battle/move_effects/conversion.asm"
+INCLUDE "engine/battle/move_effects/haze.asm"
+INCLUDE "engine/battle/move_effects/substitute.asm"
 
 SECTION "Hidden Objects 2", ROMX
 
@@ -504,6 +511,7 @@ INCLUDE "engine/events/prize_menu.asm"
 INCLUDE "engine/events/hidden_objects/school_notebooks.asm"
 INCLUDE "engine/events/hidden_objects/fighting_dojo.asm"
 INCLUDE "engine/events/hidden_objects/indigo_plateau_hq.asm"
+
 
 HealthBarPal:
 	ld a, HP_BAR_RED
@@ -780,16 +788,13 @@ SECTION "bank30", ROMX, BANK[$30]
 
 SECTION "bank31", ROMX, BANK[$31]
 
+SECTION "Evo Moves", ROMX
+
+INCLUDE "engine/pokemon/evos_moves.asm"
+
 SECTION "Engine Spillover", ROMX
 
 INCLUDE "engine/menus/item_descriptions.asm"
 INCLUDE "data/pokemon/dex_text2.asm"
 INCLUDE "gfx/fishing.asm"
-INCLUDE "engine/battle/move_effects/mist.asm"
-INCLUDE "engine/battle/move_effects/one_hit_ko.asm"
-INCLUDE "engine/battle/move_effects/recoil.asm"
-INCLUDE "engine/battle/move_effects/conversion.asm"
-INCLUDE "engine/battle/move_effects/haze.asm"
-INCLUDE "engine/battle/move_effects/substitute.asm"
 INCLUDE "engine/menus/pc.asm"
-INCLUDE "engine/pokemon/evos_moves.asm"

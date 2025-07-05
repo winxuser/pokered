@@ -256,7 +256,6 @@ MonsterPalettes:
 	db PAL_GREENMON  ; Leafeon
 	db PAL_PURPLEMON ; Glaceon
 	db PAL_PURPLEMON ; Sylveon
-
 TrainerPalettes:
 	db PAL_HERO
 	db PAL_YOUNGSTER

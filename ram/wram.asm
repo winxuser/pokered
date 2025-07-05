@@ -937,7 +937,7 @@ wPayDayMoney:: ds 3
 
 NEXTU
 ; evolution data for one mon
-wEvoDataBuffer:: ds 4 * 3 + 1 ; enough for Eevee's three 4-byte evolutions and 0 terminator
+wEvoDataBuffer:: ds 4 * 8 + 1 ; enough for Eevee's three 4-byte evolutions and 0 terminator
 
 NEXTU
 wBattleMenuCurrentPP:: db
@@ -1688,7 +1688,7 @@ wSavedSpriteScreenX:: db
 wSavedSpriteMapY:: db
 wSavedSpriteMapX:: db
 
-	ds 5
+	;ds 5
 
 wWhichPrize:: db
 
@@ -1865,7 +1865,7 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 wDestinationWarpID:: db
 
 UNION
-	ds 128
+	;ds 128
 NEXTU
 wChannel5:: channel_struct wChannel5
 wChannel6:: channel_struct wChannel6
@@ -1926,7 +1926,7 @@ wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
 
-	ds 4
+	;ds 4
 
 wNumBoxItems:: db
 ; item, quantity
@@ -1949,7 +1949,7 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-	ds 7
+	;ds 7
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
@@ -1960,19 +1960,19 @@ wSavedSpriteImageIndex:: db
 ; terminated with $FF
 wMissableObjectList:: ds 16 * 2 + 1
 
-	ds 1
+	;ds 1
 
 wGameProgressFlags::
 wOaksLabCurScript:: db
 wPalletTownCurScript:: db
-	ds 1
+	;ds 1
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
-	ds 2
+	;ds 2
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-	ds 1
+	;ds 1
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
 wCeruleanGymCurScript:: db
@@ -1989,12 +1989,12 @@ wMtMoonB2FCurScript:: db
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
-	ds 1
+	;ds 1
 wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	ds 7
+	;ds 7
 wSSAnneBowCurScript:: db
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
@@ -2095,7 +2095,7 @@ wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS
 ; $02 = surfing
 wWalkBikeSurfState:: db
 
-	ds 10
+	;ds 10
 
 wTownVisitedFlag:: flag_array NUM_CITY_MAPS
 
@@ -2143,7 +2143,10 @@ wWhichDungeonWarp:: db
 
 wUnusedCardKeyGateID:: db
 
-	ds 8
+wTyrogueEvolutions::
+	; stores directly the number/name of the chosen Hitmon
+
+	;ds 6
 
 wStatusFlags1:: db
 	ds 1
@@ -2201,7 +2204,7 @@ wLinkEnemyTrainerName:: ds NAME_LENGTH
 
 wSerialEnemyDataBlock:: ; ds $1a8
 
-	ds 9
+	;ds 9
 
 wEnemyPartyCount:: db
 wEnemyPartySpecies:: ds PARTY_LENGTH + 1
@@ -2302,7 +2305,7 @@ wEXPBarKeepFullFlag:: ds 1
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $50 - 10
+	ds $100 - 1
 wStack:: db
 
 ENDSECTION

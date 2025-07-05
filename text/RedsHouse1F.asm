@@ -35,3 +35,8 @@ _RedsHouse1FTVStandByMeMovieText::
 _RedsHouse1FTVWrongSideText::
 	text "Oops, wrong side."
 	done
+
+
+_RedsHouse1FMrMimeText::
+	text "MR.MIME: Mimien!"
+	done
