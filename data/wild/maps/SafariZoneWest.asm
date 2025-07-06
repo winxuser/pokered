@@ -4,7 +4,7 @@ SafariZoneWestWildMons:
 	db 25, NIDORAN_F
 	db 26, DODUO
 	db 23, VENONAT
-	db 24, VENONAT
+	db 24, GIRAFARIG
 	db 24, EXEGGCUTE
 	db 33, NIDORINO
 	db 33, NIDORINA

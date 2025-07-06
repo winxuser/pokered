@@ -6,8 +6,8 @@ Route5WildMons:
 	db 15, HOOTHOOT
 	db 12, MANKEY
 	db 12, MEOWTH
-	db 15, ODDISH
-	db 15, BELLSPROUT
+	db 15, DUNSPARCE
+	db 15, SNUBBULL
 	db 15, ABRA
 	db 16, PIDGEY
 	db 16, MANKEY

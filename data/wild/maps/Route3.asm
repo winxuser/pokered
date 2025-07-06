@@ -5,7 +5,7 @@ Route3WildMons:
 	db  7, SANDSHREW
 	db  6, SPEAROW
 	db  5, ZUBAT
-	db  8, PIDGEY
+	db  8, CLEFFA
 	db  5, IGGLYBUFF
 	db  3, JIGGLYPUFF
 	db  5, EKANS

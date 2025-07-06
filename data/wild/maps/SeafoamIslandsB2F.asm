@@ -3,12 +3,12 @@ SeafoamIslandsB2FWildMons:
 	db 31, SLOWPOKE
 	db 31, PSYDUCK
 	db 32, SEEL
-	db 31, SEEL
+	db 31, CORSOLA
 	db 30, KRABBY
 	db 30, HORSEA
 	db 29, STARYU
 	db 29, SHELLDER
-	db 30, SEEL
+	db 30, DELIBIRD
 	db 30, GOLBAT
 	db 37, SLOWBRO
 	db 37, GOLDUCK

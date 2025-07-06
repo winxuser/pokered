@@ -3,15 +3,15 @@ VictoryRoad3FWildMons:
 	db 24, MACHOP
 	db 26, GEODUDE
 	db 22, ZUBAT
-	db 42, ONIX
+	db 42, MACHOKE
 	db 40, VENOMOTH
 	db 45, ONIX
 	db 43, GRAVELER
 	db 41, GOLBAT
-	db 42, MACHOKE
-	db 22, ZUBAT
+	db 42, LUGIA
+	db 22, HITMONTOP
 	db 39, HITMONLEE ; dereknote: previously unobtainable pokemon
-	db 45, MACHOKE
+	db 45, PORYGON2
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

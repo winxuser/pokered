@@ -2,13 +2,13 @@ RockTunnelB1FWildMons:
 	def_grass_wildmons 15 ; encounter rate
 	db 16, ZUBAT
 	db 17, ZUBAT
-	db 17, GEODUDE
+	db 17, SHUCKLE
 	db 15, MACHOP
 	db 16, GEODUDE
 	db 18, ZUBAT
 	db 17, MACHOP
 	db 17, ONIX
-	db 13, ONIX
+	db 13, LARVITAR
 	db 17, GEODUDE
 	db 15, CHARMANDER ; dereknote: previously unavailable pokemon
 	db 18, GEODUDE

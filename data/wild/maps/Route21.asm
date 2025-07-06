@@ -5,7 +5,7 @@ Route21WildMons:
 	db 30, RATICATE
 	db 23, RATTATA
 	db 21, PIDGEY
-	db 30, PIDGEOTTO
+	db 30, NOCTOWL
 	db 32, PIDGEOTTO
 	db 28, MR_MIME ; dereknote: previously unobtainable pokemon
 	db 30, TANGELA
@@ -15,14 +15,14 @@ Route21WildMons:
 	end_grass_wildmons
 
 	def_water_wildmons 5 ; encounter rate
-	db  5, TENTACOOL
+	db  5, QWILFISH
 	db 10, TENTACOOL
-	db 15, TENTACOOL
+	db 15, MARILL
 	db  5, TENTACOOL
-	db 10, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACOOL
-	db 30, TENTACOOL
+	db 10, CHINCHOU
+	db 15, QUAGSIRE
+	db 20, REMORAID
+	db 30, WOOPER
 	db 35, TENTACOOL
 	db 15, TENTACOOL
 	db 15, TENTACOOL

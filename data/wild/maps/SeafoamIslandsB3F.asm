@@ -7,11 +7,11 @@ SeafoamIslandsB3FWildMons:
 	db 30, SHELLDER
 	db 30, STARYU
 	db 30, SEEL
-	db 31, SEEL
+	db 31, REMORAID
 	db 39, SEADRA
 	db 39, KINGLER
-	db 37, DEWGONG
-	db 29, SQUIRTLE ; dereknote: previously unavailable pokemon
+	db 37, JYNX
+	db 36, SUICUNE ; dereknote: previously unavailable pokemon
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

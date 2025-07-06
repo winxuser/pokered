@@ -4,14 +4,14 @@ PokemonMansion2FWildMons:
 	db 32, VULPIX
 	db 34, KOFFING
 	db 34, GRIMER
-	db 30, PONYTA
+	db 30, SLUGMA
 	db 31, PONYTA
-	db 32, PONYTA
+	db 32, HOUNDOOM
 	db 28, PONYTA
 	db 37, WEEZING
 	db 37, MUK
 	db 30, KOFFING
-	db 30, GRIMER
+	db 30, HOOH
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

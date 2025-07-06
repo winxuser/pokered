@@ -9,7 +9,7 @@ Route23WildMons:
 	db 41, ARBOK
 	db 41, SANDSLASH
 	db 27, SPEAROW
-	db 43, DITTO
+	db 43, TYROGUE
 	db 28, SPEAROW
 	db 43, FEAROW
 	end_grass_wildmons ; dereknote: version exclusives merged

@@ -1,13 +1,13 @@
 SeafoamIslandsB1FWildMons:
 	def_grass_wildmons 10 ; encounter rate
 	db 32, STARYU
-	db 32, SHELLDER
+	db 32, SMOOCHUM
 	db 30, KRABBY
 	db 30, HORSEA
 	db 28, SLOWPOKE
 	db 28, PSYDUCK
 	db 29, SEEL
-	db 30, SEEL
+	db 30, QWILFISH
 	db 37, KINGLER
 	db 37, SEADRA
 	db 28, SEEL

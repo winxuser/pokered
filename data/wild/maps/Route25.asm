@@ -8,7 +8,7 @@ Route25WildMons:
 	db 12, ABRA
 	db 13, ODDISH
 	db 13, BELLSPROUT
-	db 14, PIDGEY
+	db 14, WOBBUFFET
 	db 10, ABRA
 	db 14, ODDISH
 	db 14, EEVEE

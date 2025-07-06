@@ -4,7 +4,7 @@ SeafoamIslandsB4FWildMons:
 	db 32, KRABBY
 	db 32, SHELLDER
 	db 32, STARYU
-	db 29, SEEL
+	db 29, MANTINE
 	db 30, SEEL
 	db 31, SLOWPOKE
 	db 31, PSYDUCK

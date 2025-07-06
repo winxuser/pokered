@@ -3,10 +3,10 @@ PokemonMansion1FWildMons:
 	db 30, GRIMER
 	db 30, KOFFING
 	db 32, PONYTA
-	db 30, PONYTA
+	db 30, MAGBY
 	db 34, GROWLITHE
 	db 34, VULPIX
-	db 34, PONYTA
+	db 34, CYNDAQUIL
 	db 32, GRIMER
 	db 32, KOFFING
 	db 28, PONYTA

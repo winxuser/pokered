@@ -8,10 +8,10 @@ Route12WildMons:
 	db 22, BELLSPROUT
 	db 28, FARFETCHD ; dereknote: previously unobtainable pokemon 
 	db 26, VENONAT
-	db 28, GLOOM
+	db 28, URSARING
 	db 28, WEEPINBELL
 	db 30, GLOOM
-	db 30, WEEPINBELL
+	db 30, SKARMORY
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

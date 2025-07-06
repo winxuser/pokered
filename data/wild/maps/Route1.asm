@@ -6,8 +6,8 @@ Route1WildMons:
 	db  2, RATTATA
 	db  2, PIDGEY
 	db  4, HOOTHOOT
-	db  3, PIDGEY
-	db  4, RATTATA
+	db  3, NATU
+	db  4, HOPPIP
 	db  4, PIDGEY
 	db  3, FURRET
 	db  6, RATICATE

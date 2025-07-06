@@ -5,7 +5,7 @@ SafariZoneNorthWildMons:
 	db 26, RHYHORN
 	db 23, PARAS
 	db 25, EXEGGCUTE
-	db 27, EXEGGCUTE
+	db 27, BLISSEY
 	db 30, NIDORINO
 	db 30, NIDORINA
 	db 23, PARAS
