@@ -503,6 +503,7 @@ ArcanineEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 50, EXTREMESPEED
 	db 0
 
 MewEvosMoves:
@@ -1954,6 +1955,7 @@ ChinchouEvosMoves:
 ; Learnset
 	db 5, SUPERSONIC
 	db 17, WATER_GUN
+	db 25, SPARK
 	db 29, CONFUSE_RAY
 	db 37, TAKE_DOWN
 	db 41, HYDRO_PUMP
@@ -1986,6 +1988,7 @@ LanturnEvosMoves:
 ; Learnset
 	db 5, SUPERSONIC
 	db 17, WATER_GUN
+	db 25, SPARK
 	db 33, CONFUSE_RAY
 	db 45, TAKE_DOWN
 	db 53, HYDRO_PUMP
@@ -2725,7 +2728,7 @@ MurkrowEvosMoves:
 	db 11, PURSUIT
 	db 16, HAZE
 	db 26, NIGHT_SHADE
-;	db 31, FAINT_ATTACK
+	db 31, FAINT_ATTACK
 	db 0
 
 SlowkingEvosMoves:
@@ -2789,7 +2792,7 @@ PinecoEvosMoves:
 ; Learnset
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
-;	db 22, RAPID_SPIN
+	db 22, RAPID_SPIN
 	db 29, BIDE
 	db 36, EXPLOSION
 	db 50, DOUBLE_EDGE
@@ -2801,7 +2804,7 @@ ForretressEvosMoves:
 ; Learnset
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
-;	db 22, RAPID_SPIN
+	db 22, RAPID_SPIN
 	db 29, BIDE
 	db 39, EXPLOSION
 	db 59, DOUBLE_EDGE
@@ -2825,7 +2828,7 @@ GligerEvosMoves:
 	db 6, SAND_ATTACK
 	db 13, HARDEN
 	db 20, QUICK_ATTACK
-;	db 28, FAINT_ATTACK
+	db 28, FAINT_ATTACK
 	db 36, SLASH
 	db 44, SCREECH
 	db 52, GUILLOTINE
@@ -2909,7 +2912,7 @@ SneaselEvosMoves:
 ; Learnset
 	db 9, QUICK_ATTACK
 	db 17, SCREECH
-;	db 25, FAINT_ATTACK
+	db 25, FAINT_ATTACK
 	db 33, FURY_SWIPES
 	db 41, AGILITY
 	db 49, SLASH
@@ -2924,7 +2927,7 @@ TeddiursaEvosMoves:
 ; Learnset
 	db 8, LICK
 	db 15, FURY_SWIPES
-;	db 22, FAINT_ATTACK
+	db 22, FAINT_ATTACK
 	db 29, REST
 	db 36, SLASH
 	db 50, THRASH
@@ -2936,7 +2939,7 @@ UrsaringEvosMoves:
 ; Learnset
 	db 8, LICK
 	db 15, FURY_SWIPES
-;	db 22, FAINT_ATTACK
+	db 22, FAINT_ATTACK
 	db 29, REST
 	db 39, SLASH
 	db 59, THRASH
@@ -3068,7 +3071,7 @@ HoundourEvosMoves:
 	db 7, ROAR
 	db 13, SMOG
 	db 20, BITE
-;	db 27, FAINT_ATTACK
+	db 27, FAINT_ATTACK
 	db 35, FLAMETHROWER
 	db 43, CRUNCH
 	db 0
@@ -3080,7 +3083,7 @@ HoundoomEvosMoves:
 	db 7, ROAR
 	db 13, SMOG
 	db 20, BITE
-;	db 30, FAINT_ATTACK
+	db 30, FAINT_ATTACK
 	db 41, FLAMETHROWER
 	db 52, CRUNCH
 	db 0
@@ -3113,7 +3116,7 @@ DonphanEvosMoves:
 ; Learnset
 	db 9, DEFENSE_CURL
 	db 25, FURY_ATTACK
-;	db 41, RAPID_SPIN
+	db 41, RAPID_SPIN
 	db 49, EARTHQUAKE
 	db 0
 
@@ -3165,7 +3168,7 @@ HitmontopEvosMoves:
 	db 7, FOCUS_ENERGY
 	db 13, PURSUIT
 	db 19, QUICK_ATTACK
-;	db 25, RAPID_SPIN
+	db 25, RAPID_SPIN
 	db 31, COUNTER
 	db 37, AGILITY
 	db 0
@@ -3215,7 +3218,7 @@ MiltankEvosMoves:
 	db 4, GROWL
 	db 8, DEFENSE_CURL
 	db 13, STOMP
-;	db 19, MILK_DRINK
+	db 19, MILK_DRINK
 	db 26, BIDE
 	db 43, BODY_SLAM
 	db 0
@@ -3242,7 +3245,7 @@ RaikouEvosMoves:
 	db 4, THUNDERSHOCK
 	db 21, ROAR
 	db 31, QUICK_ATTACK
-;	db 41, SPARK
+	db 41, SPARK
 	db 51, REFLECT
 	db 61, CRUNCH
 	db 71, THUNDER
@@ -3318,7 +3321,7 @@ LugiaEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-;	db 8, AEROBLAST
+	db 8, AEROBLAST
 	db 22, GUST
 	db 33, RECOVER
 	db 44, HYDRO_PUMP
@@ -3331,7 +3334,7 @@ HoohEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-;	db 8, SACRED_FIRE
+	db 8, SACRED_FIRE
 	db 22, GUST
 	db 33, RECOVER
 	db 44, FIRE_BLAST

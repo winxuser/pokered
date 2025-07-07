@@ -173,6 +173,8 @@ DisplayItemDescription::
  	text_end
  	text_far _HM05Description
  	text_end
+ 	text_far _HM06Description
+ 	text_end
  	text_far _TM01Description
  	text_end
  	text_far _TM02Description

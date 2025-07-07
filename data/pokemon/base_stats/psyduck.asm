@@ -19,7 +19,7 @@
 	     PAY_DAY,      SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
 	     SKULL_BASH,   REST,         SUBSTITUTE,   ICE_PUNCH,    SURF,         \
-		 STRENGTH,     FLASH
+		 STRENGTH,     FLASH,	 	 WHIRLPOOL
 	; end
 
 	db BANK(PsyduckPicFront)

@@ -19,7 +19,8 @@
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     EARTHQUAKE,   FISSURE,      PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  \
 	     BIDE,         METRONOME,    SKULL_BASH,   REST,         PSYWAVE,      \
-	     SUBSTITUTE,   SURF,         STRENGTH,	   THUNDERBOLT,	 THUNDER
+	     SUBSTITUTE,   SURF,         STRENGTH,	   THUNDERBOLT,	 THUNDER,		\
+	     WHIRLPOOL
 	; end
 
 	db BANK(LanturnPicFront)

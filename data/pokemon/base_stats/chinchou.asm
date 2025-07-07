@@ -20,7 +20,7 @@
 	     EARTHQUAKE,   FISSURE,      PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  \
 	     BIDE,         METRONOME,    SKULL_BASH,   REST,         PSYWAVE,      \
 	     SUBSTITUTE,   ICE_PUNCH,    SURF,         STRENGTH,	 THUNDERBOLT,  \
-	     THUNDER,      THUNDER_WAVE
+	     THUNDER,      THUNDER_WAVE, WHIRLPOOL
 	; end
 
 	db BANK(ChinchouPicFront)

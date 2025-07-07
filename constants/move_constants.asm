@@ -189,6 +189,14 @@
 	const WHIRLPOOL
 	const TWISTER
 	const HIDDEN_POWER
+	const AEROBLAST
+	const SACRED_FIRE
+;	const SAND_STORM
+	const EXTREMESPEED
+	const FAINT_ATTACK
+	const SPARK
+	const MILK_DRINK
+	const RAPID_SPIN
 	const STRUGGLE
 DEF NUM_ATTACKS EQU const_value -1
 

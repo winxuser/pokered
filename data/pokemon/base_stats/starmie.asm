@@ -19,7 +19,7 @@
 	     THUNDER,      PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   DREAM_EATER,  \
 		 REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   \
-		 SURF,         FLASH
+		 SURF,         FLASH,		 WHIRLPOOL
 	; end
 
 	db BANK(StarmiePicFront)

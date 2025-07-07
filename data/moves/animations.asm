@@ -183,6 +183,14 @@ AttackAnimationPointers:
 	dw WhirlpoolAnim
 	dw TwisterAnim
 	dw HiddenPowerAnim
+	dw AeroblastAnim
+	dw SacredfireAnim
+;	dw SandstormAnim
+	dw ExtremespeedAnim
+	dw FaintattackAnim
+	dw SparkAnim
+	dw MilkDrinkAnim
+	dw RapidSpinAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 
@@ -385,6 +393,7 @@ RollingKickAnim:
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
+;SandstormAnim:
 SandAttackAnim:
 	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
 	db -1 ; end
@@ -801,6 +810,7 @@ AgilityAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+ExtremespeedAnim:
 QuickAttackAnim:
 	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
@@ -1348,4 +1358,44 @@ TwisterAnim:
 HiddenPowerAnim:
 	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
 	battle_anim HYPER_BEAM, SUBANIM_0_BEAM, 0, 2
+	db -1 ; end
+
+AeroblastAnim:
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim AURORA_BEAM, SUBANIM_0_BEAM, 0, 5
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	db -1 ; end
+
+SacredfireAnim:
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim FIRE_SPIN, SUBANIM_1_FLAME_COLUMN_1, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_2, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_3, 1, 6
+	db -1 ; end
+
+FaintattackAnim:
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim DOUBLESLAP, SUBANIM_0_STAR_THRICE, 0, 6
+	db -1 ; end
+
+SparkAnim:
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim THUNDERBOLT, SUBANIM_1_LIGHTNING, 1, 6
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	db -1 ; end
+
+MilkDrinkAnim:
+	battle_anim RECOVER, SE_BLINK_MON
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+RapidSpinAnim:
+	battle_anim GUST, SUBANIM_1_TORNADO, 1, 6
+	battle_anim DOUBLESLAP, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim DOUBLESLAP, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end

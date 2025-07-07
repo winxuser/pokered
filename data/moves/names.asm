@@ -183,5 +183,13 @@ MoveNames::
 	li "WHIRLPOOL"
 	li "TWISTER"
 	li "HIDDEN POWER"
+	li "AEROBLAST"
+	li "SACRED FIRE"
+;	li "SAND STORM"
+	li "EXTREMESPEED"
+	li "FAINT ATTACK"
+	li "SPARK"
+	li "MILK DRINK"
+	li "RAPID SPIN"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

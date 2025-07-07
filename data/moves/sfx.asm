@@ -183,6 +183,14 @@ MoveSoundTable:
 	db SFX_BATTLE_2C,          $00, $80 ; WHIRLPOOL
 	db SFX_BATTLE_12,          $00, $c0 ; TWISTER
 	db SFX_BATTLE_36,          $00, $80 ; HIDDEN POWER
+	db SFX_BATTLE_25,          $48, $ff ; AEROBLAST
+	db SFX_BATTLE_29,          $20, $c0 ; SACRED FIRE
+;	db SFX_BATTLE_1B,          $f1, $ff ; SAND STORM
+	db SFX_BATTLE_25,          $00, $10 ; EXTREMESPEED
+	db SFX_BATTLE_25,          $00, $10 ; FAINT ATTACK
+	db SFX_BATTLE_26,          $00, $80 ; SPARK
+	db SFX_BATTLE_1B,          $03, $60 ; MILK DRINK
+	db SFX_BATTLE_12,          $00, $c0 ; RAPID SPIN
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

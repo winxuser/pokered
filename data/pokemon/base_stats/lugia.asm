@@ -10,14 +10,14 @@
 	INCBIN "gfx/pokemon/front/lugia.pic", 0, 1 ; sprite dimensions
 	dw LugiaPicFront, LugiaPicBack
 
-	db BUBBLE, SMOKESCREEN, LEER, WATER_GUN ; level 1 learnset
+	db AEROBLAST, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    \
 	     ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     SUBSTITUTE,   SURF
+	     SUBSTITUTE,   SURF,		 WHIRLPOOL
 	; end
 
 	db BANK(LugiaPicFront)

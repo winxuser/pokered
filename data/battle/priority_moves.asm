@@ -4,4 +4,5 @@
 PriorityMovesList:
         db COUNTER,        1
         db QUICK_ATTACK,   8
+        db EXTREMESPEED,   7
         db -1 ; end

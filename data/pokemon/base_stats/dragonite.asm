@@ -20,7 +20,7 @@
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   \
 	     SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, SUBSTITUTE,   \
 	     FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, FLY,          \
-		 SURF,         STRENGTH
+		 SURF,         STRENGTH,	 WHIRLPOOL
 	; end
 
 	db BANK(DragonitePicFront)

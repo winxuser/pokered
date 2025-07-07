@@ -18,7 +18,7 @@
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
 	     DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         \
-	     SUBSTITUTE,   FLAMETHROWER, SURF,         STRENGTH
+	     SUBSTITUTE,   FLAMETHROWER, SURF,         STRENGTH,	 WHIRLPOOL
 	; end
 
 	db BANK(GyaradosPicFront)

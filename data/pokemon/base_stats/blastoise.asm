@@ -19,7 +19,7 @@
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         SKULL_BASH,   REST,         SUBSTITUTE,   \
-	     ICE_PUNCH,    SURF,         STRENGTH
+	     ICE_PUNCH,    SURF,         STRENGTH,	   WHIRLPOOL
 	; end
 
 	db BANK(BlastoisePicFront)

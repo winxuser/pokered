@@ -157,7 +157,7 @@ _BikeVoucherDescription::
 
 _XAccuracyDescription::
 	text "Raises accuracy."
-	next "(1 BTL)"
+	next "(1 BTL)."
 	prompt
 
 _CardKeyDescription::
@@ -192,7 +192,7 @@ _MaxReviveDescription::
 
 _GuardSpecDescription::
 	text "Prevents stats"
-	next "reduction. (1 BTL)"
+	next "reduction. (1 BTL)."
 	prompt
 
 _SuperRepelDescription::
@@ -207,7 +207,7 @@ _MaxRepelDescription::
 
 _DireHitDescription::
 	text "Ups critical hit"
-	next "ratio. (1 BTL)"
+	next "ratio. (1 BTL)."
 	prompt
 
 _FreshWaterDescription::
@@ -237,22 +237,22 @@ _GoldTeethDescription::
 
 _XAttackDescription::
 	text "Raises ATTACK."
-	next "(1 BTL)"
+	next "(1 BTL)."
 	prompt
 
 _XDefendDescription::
 	text "Raises DEFENSE."
-	next "(1 BTL)"
+	next "(1 BTL)."
 	prompt
 
 _XSpeedDescription::
 	text "Raises SPEED."
-	next "(1 BTL)"
+	next "(1 BTL)."
 	prompt
 
 _XSpecialDescription::
 	text "Raises SPECIAL."
-	next "(1 BTL)"
+	next "(1 BTL)."
 	prompt
 
 _CoinCaseDescription::
@@ -337,7 +337,7 @@ _HM01Description::
 
 _HM02Description::
 	text "1st turn: Fly"
-	next "2nd turn: Attack"
+	next "2nd turn: Attack."
 	prompt
 
 _HM03Description::
@@ -355,6 +355,11 @@ _HM05Description::
 	next "reduce accuracy."
 	prompt
 
+_HM06Description::
+	text "Creates a wet"
+	next "whirlpool."
+	prompt
+
 _TM01Description::
 	text "A powerful punch"
 	next "thrown very hard."
@@ -362,7 +367,7 @@ _TM01Description::
 
 _TM02Description::
 	text "1st turn: Attack"
-	next "2nd turn: Rest"
+	next "2nd turn: Rest."
 	prompt
 
 _TM03Description::
@@ -427,7 +432,7 @@ _TM14Description::
 
 _TM15Description::
 	text "1st turn: Attack"
-	next "2nd turn: Rest"
+	next "2nd turn: Rest."
 	prompt
 
 _TM16Description::
@@ -462,7 +467,7 @@ _TM21Description::
 
 _TM22Description::
 	text "1st turn: Prepare"
-	next "2nd turn: Attack"
+	next "2nd turn: Attack."
 	prompt
 
 _TM23Description::
@@ -492,7 +497,7 @@ _TM27Description::
 
 _TM28Description::
 	text "1st turn: Burrow"
-	next "2nd turn: Attack"
+	next "2nd turn: Attack."
 	prompt
 
 _TM29Description::
@@ -552,7 +557,7 @@ _TM39Description::
 
 _TM40Description::
 	text "1st turn: Prepare"
-	next "2nd turn: Attack"
+	next "2nd turn: Attack."
 	prompt
 
 _TM41Description::
@@ -567,7 +572,7 @@ _TM42Description::
 
 _TM43Description::
 	text "1st turn: Prepare"
-	next "2nd turn: Attack"
+	next "2nd turn: Attack."
 	prompt
 
 _TM44Description::
@@ -628,8 +633,4 @@ _TM54Description::
 _TM55Description::
 	text "A fighting attack"
 	next "may confuse enemy."
-	prompt
-
-_UnusedItemDescription::
-	text "?"
 	prompt

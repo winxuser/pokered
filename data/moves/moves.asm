@@ -194,5 +194,13 @@ Moves:
 	move WHIRLPOOL,    TRAPPING_EFFECT,             35, WATER,         85, 15
 	move TWISTER,      FLINCH_SIDE_EFFECT1,         40, DRAGON,       100, 20
 	move HIDDEN_POWER, NO_ADDITIONAL_EFFECT,        60, NORMAL,       100, 15
+	move AEROBLAST,    NO_ADDITIONAL_EFFECT,       100, FLYING,        95, 5
+	move SACRED_FIRE,  BURN_SIDE_EFFECT1,          100, FIRE,          95, 5
+;	move SAND_STORM,   ACCURACY_DOWN1_EFFECT,        0, ROCK,         100, 10
+	move EXTREMESPEED, NO_ADDITIONAL_EFFECT,        80, NORMAL,       100, 5
+	move FAINT_ATTACK, NO_ADDITIONAL_EFFECT,        60, DARK,         100, 20
+	move SPARK, 	   PARALYZE_SIDE_EFFECT1,       65, ELECTRIC,     100, 20
+	move MILK_DRINK,   HEAL_EFFECT,      			 0, NORMAL,       100, 5
+	move RAPID_SPIN,   ATTACK_THRICE_EFFECT,		50, NORMAL,       100, 40
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

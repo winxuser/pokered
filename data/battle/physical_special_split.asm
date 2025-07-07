@@ -1,6 +1,7 @@
 PhysicalToSpecialMoves:
 ; Flying
         db GUST
+        db AEROBLAST
 ; Poison
         db ACID
         db SLUDGE
@@ -22,6 +23,10 @@ PhysicalToSpecialMoves:
         db ZAP_CANNON
 ; Dragon
         db TWISTER
+
+; Fire
+        db SACRED_FIRE
+
         db -1 ; end
 
 SpecialToPhysicalMoves:

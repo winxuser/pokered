@@ -226,7 +226,7 @@ HandlePokedexListMenu:
 	ld de, PokedexMenuItemsText
 	call PlaceString
 ; find the highest pokedex number among the pokemon the player has seen
-	ld b, 254
+	ld b, 255
 ;	ld hl, wPokedexSeenEnd - 1
 ;	ld b, (wPokedexSeenEnd - wPokedexSeen) * 7
 .maxSeenPokemonLoop

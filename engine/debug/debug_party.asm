@@ -51,7 +51,7 @@ IF DEF(_DEBUG)
 	ld hl, wPartyMon1Moves
 	ld a, FLY
 	ld [hli], a
-	ld a, HIDDEN_POWER
+	ld a, RAPID_SPIN
 	ld [hli], a
 	ld a, SURF
 	ld [hli], a
@@ -154,6 +154,7 @@ DebugNewGameItemsList:
 	db SUN_STONE, 2
 	db DARK_SHARD, 2
 	db PROTEIN, 2
+	db HM_WHIRLPOOL
 	db -1 ; end
 
 DebugUnusedList: ; unreferenced

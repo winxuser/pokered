@@ -10,14 +10,14 @@
 	INCBIN "gfx/pokemon/front/hooh.pic", 0, 1 ; sprite dimensions
 	dw HoohPicFront, HoohPicBack
 
-	db TACKLE, SAND_ATTACK, GUST, SAND_ATTACK ; level 1 learnset
+	db SACRED_FIRE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   \
-	     FLY
+	     BIDE,         FIRE_BLAST,   SWIFT,        SKY_ATTACK,   REST,         \
+	     SUBSTITUTE,   FLAMETHROWER, FLY
 	; end
 
 	db BANK(HoohPicFront)

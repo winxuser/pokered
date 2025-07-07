@@ -19,7 +19,7 @@
 	     RAGE,         SOLARBEAM,    DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      \
 	     PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
 	     SKULL_BASH,   DREAM_EATER,  REST,         PSYWAVE,      SUBSTITUTE,   \
-		 SURF,         STRENGTH
+		 SURF,         STRENGTH,	 WHIRLPOOL
 	; end
 
 	db BANK(LaprasPicFront)
