@@ -124,7 +124,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SS_ANNE_1F_ROOMS,              12,  8 ; $66
 	map_const SS_ANNE_2F_ROOMS,              12,  8 ; $67
 	map_const SS_ANNE_B1F_ROOMS,             12,  8 ; $68
-	map_const UNUSED_MAP_69,                  0,  0 ; $69
+	map_const YELLOWS_HOUSE_2F,               4,  4 ; $69
 	map_const UNUSED_MAP_6A,                  0,  0 ; $6A
 	map_const UNUSED_MAP_6B,                  0,  0 ; $6B
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
@@ -250,7 +250,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const CERULEAN_CAVE_1F,              15,  9 ; $E4
 	map_const NAME_RATERS_HOUSE,              4,  4 ; $E5
 	map_const CERULEAN_BADGE_HOUSE,           4,  4 ; $E6
-	map_const UNUSED_MAP_E7,                  0,  0 ; $E7
+	map_const YELLOWS_HOUSE,                  4,  4 ; $E7 Yellows House
 	map_const ROCK_TUNNEL_B1F,               20, 18 ; $E8
 	map_const SILPH_CO_9F,                   13,  9 ; $E9
 	map_const SILPH_CO_10F,                   8,  9 ; $EA
