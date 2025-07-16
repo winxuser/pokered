@@ -1850,7 +1850,8 @@ wAltAnimationID:: db
 wPlayerGender::
 	; $00 = male
 	; $01 = female
-	db
+
+	ds 1
 
 ; the tile shown outside the boundaries of the map
 wMapBackgroundTile:: db
@@ -1865,7 +1866,7 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 wDestinationWarpID:: db
 
 UNION
-	;ds 128
+	ds 100
 NEXTU
 wChannel5:: channel_struct wChannel5
 wChannel6:: channel_struct wChannel6
