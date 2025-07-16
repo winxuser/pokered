@@ -488,15 +488,15 @@ _GolemDexEntry::
 	next "without damage"
 	dex
 
-_LeafeonDexEntry::
-	text "Just like a plant"
-	next "it uses"
-	next "photosynthesis"
+;_LeafeonDexEntry::
+;	text "Just like a plant"
+;	next "it uses"
+;	next "photosynthesis"
 
-	page "As a result, it is"
-	next "always enveloped"
-	next "in clean air"
-	dex
+;	page "As a result, it is"
+;	next "always enveloped"
+;	next "in clean air"
+;	dex
 
 _MagmarDexEntry::
 	text "Its body always"
@@ -508,15 +508,15 @@ _MagmarDexEntry::
 	next "among flames"
 	dex
 
-_GlaceonDexEntry::
-	text "As a protective"
-	next "technique, it can"
-	next "completely freeze"
+;_GlaceonDexEntry::
+;	text "As a protective"
+;	next "technique, it can"
+;	next "completely freeze"
 
-	page "its fur to make"
-	next "it stand like"
-	next "needles"
-	dex
+;	page "its fur to make"
+;	next "it stand like"
+;	next "needles"
+;	dex
 
 _ElectabuzzDexEntry::
 	text "Normally found"
@@ -548,15 +548,15 @@ _KoffingDexEntry::
 	next "without warning"
 	dex
 
-_SylveonDexEntry::
-	text "Its sends a"
-	next "soothing aura from"
-	next "its ribbonlike"
-
-	page "feelers to calm"
-	next "fights. It can"
-	next "stop any conflict"
-	dex
+;_SylveonDexEntry::
+;	text "Its sends a"
+;	next "soothing aura from"
+;	next "its ribbonlike"
+;
+;	page "feelers to calm"
+;	next "fights. It can"
+;	next "stop any conflict"
+;	dex
 
 _MankeyDexEntry::
 	text "Extremely quick to"

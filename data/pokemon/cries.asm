@@ -56,13 +56,13 @@ CryData::
 	mon_cry SFX_CRY_21, $20, $60 ; Psyduck
 	mon_cry SFX_CRY_0D, $88, $20 ; Drowzee
 	mon_cry SFX_CRY_12, $E0, $40 ; Golem
-	mon_cry SFX_CRY_1A, $AA, $01 ; Leafeon
+;	mon_cry SFX_CRY_1A, $AA, $01 ; Leafeon
 	mon_cry SFX_CRY_04, $FF, $30 ; Magmar
-	mon_cry SFX_CRY_1A, $AA, $E0 ; Glaceon
+;	mon_cry SFX_CRY_1A, $AA, $E0 ; Glaceon
 	mon_cry SFX_CRY_06, $8F, $FF ; Electabuzz
 	mon_cry SFX_CRY_1C, $20, $C0 ; Magneton
 	mon_cry SFX_CRY_12, $E6, $DD ; Koffing
-	mon_cry SFX_CRY_1A, $88, $FF ; Sylveon
+;	mon_cry SFX_CRY_1A, $88, $FF ; Sylveon
 	mon_cry SFX_CRY_0A, $DD, $60 ; Mankey
 	mon_cry SFX_CRY_0C, $88, $C0 ; Seel
 	mon_cry SFX_CRY_0B, $AA, $01 ; Diglett

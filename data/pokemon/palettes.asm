@@ -253,9 +253,9 @@ MonsterPalettes:
 	db PAL_PURPLEMON ; Lugia
 	db PAL_REDMON	 ; Ho-oh
 	db PAL_GREENMON	 ; Celebi
-	db PAL_GREENMON  ; Leafeon
-	db PAL_PURPLEMON ; Glaceon
-	db PAL_PURPLEMON ; Sylveon
+;	db PAL_GREENMON  ; Leafeon
+;	db PAL_PURPLEMON ; Glaceon
+;	db PAL_PURPLEMON ; Sylveon
 TrainerPalettes:
 	db PAL_HERO
 	db PAL_YOUNGSTER

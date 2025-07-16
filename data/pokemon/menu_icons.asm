@@ -252,7 +252,7 @@ MonPartyData:
 	nybble ICON_BIRD	  ; Lugia
 	nybble ICON_BIRD	  ; Ho-oh
 	nybble ICON_MON		  ; Celebi
-	nybble ICON_MON       ; Leafeon
-	nybble ICON_MON       ; Glaceon
-	nybble ICON_MON       ; Sylveon
+;	nybble ICON_MON       ; Leafeon
+;	nybble ICON_MON       ; Glaceon
+;	nybble ICON_MON       ; Sylveon
 	end_nybble_array NUM_POKEMON

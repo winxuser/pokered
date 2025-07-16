@@ -256,7 +256,7 @@
 	const DEX_LUGIA		 ; 249
 	const DEX_HOOH		 ; 250
 	const DEX_CELEBI	 ; 251
-	const DEX_LEAFEON    ; 252
-	const DEX_GLACEON    ; 253
-	const DEX_SYLVEON    ; 254
+;	const DEX_LEAFEON    ; 252
+;	const DEX_GLACEON    ; 253
+;	const DEX_SYLVEON    ; 254
 DEF NUM_POKEMON EQU const_value - 1

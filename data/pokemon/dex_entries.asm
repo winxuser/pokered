@@ -49,13 +49,13 @@ PokedexEntryPointers:
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw LeafeonDexEntry
+;	dw LeafeonDexEntry
 	dw MagmarDexEntry
-	dw GlaceonDexEntry
+;	dw GlaceonDexEntry
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw SylveonDexEntry
+;	dw SylveonDexEntry
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
@@ -607,12 +607,12 @@ GolemDexEntry:
 	text_far _GolemDexEntry
 	text_end
 
-LeafeonDexEntry:
-	db "VERDANT@"
-	db 3,3
-	dw 562
-	text_far _LeafeonDexEntry
-	text_end
+;LeafeonDexEntry:
+;	db "VERDANT@"
+;	db 3,3
+;	dw 562
+;	text_far _LeafeonDexEntry
+;	text_end
 
 MagmarDexEntry:
 	db "SPITFIRE@"
@@ -621,12 +621,12 @@ MagmarDexEntry:
 	text_far _MagmarDexEntry
 	text_end
 
-GlaceonDexEntry:
-	db "FRESH SNOW@"
-	db 2,7
-	dw 571
-	text_far _GlaceonDexEntry
-	text_end
+;GlaceonDexEntry:
+;	db "FRESH SNOW@"
+;	db 2,7
+;	dw 571
+;	text_far _GlaceonDexEntry
+;	text_end
 
 ElectabuzzDexEntry:
 	db "ELECTRIC@"
@@ -649,12 +649,12 @@ KoffingDexEntry:
 	text_far _KoffingDexEntry
 	text_end
 
-SylveonDexEntry:
-	db "INTERTWINE@"
-	db 3,3
-	dw 518
-	text_far _SylveonDexEntry
-	text_end
+;SylveonDexEntry:
+;	db "INTERTWINE@"
+;	db 3,3
+;	dw 518
+;	text_far _SylveonDexEntry
+;	text_end
 
 MankeyDexEntry:
 	db "PIG MONKEY@"

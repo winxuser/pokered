@@ -494,7 +494,7 @@ wLinkBattleRandomNumberListIndex:: db
 ; number of times remaining that AI action can occur
 wAICount:: db
 
-	;ds 2
+	ds 2
 
 wEnemyMoveListIndex:: db
 
@@ -580,10 +580,10 @@ wPlayerMonSpeedMod:: db
 wPlayerMonSpecialMod:: db
 wPlayerMonAccuracyMod:: db
 wPlayerMonEvasionMod:: db
-	;ds 2
+	ds 2
 wPlayerMonStatModsEnd::
 
-	;ds 1
+	ds 1
 
 wEnemyMonUnmodifiedLevel:: db
 wEnemyMonUnmodifiedMaxHP:: dw
@@ -602,7 +602,7 @@ wEnemyMonSpeedMod:: db
 wEnemyMonSpecialMod:: db
 wEnemyMonAccuracyMod:: db
 wEnemyMonEvasionMod:: db
-	;ds 2
+	ds 1
 wEnemyMonStatModsEnd::
 
 NEXTU
