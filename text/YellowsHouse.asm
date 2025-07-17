@@ -1,5 +1,9 @@
 _YellowsMomText:: ; marcelnote - new for Yellow's House
-	text "Hey there, May"
-	line "has been out all"
-	cont "day, go find her."
+	text "Hey <PLAYER>,"
+	line "Jasmine has been"
+	cont "out all day,"
+
+	para "maybe go out and"
+	line "find her."
 	done
+	text_end

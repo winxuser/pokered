@@ -491,14 +491,14 @@ _SortComplete::
 	text "I did it!"
 	line "all my items"
 
-	para "have been sorted"
-	line "Im fast :)"
+	cont "have been sorted"
+	cont "Im fast :)"
 	done
 
 _NothingToSort::
 	text "Damn! i have"
 	line "no items to"
 
-	para "be sorted better"
-	line "get some!"
+	cont "be sorted better"
+	cont "get some!"
 	done

@@ -937,7 +937,7 @@ wPayDayMoney:: ds 3
 
 NEXTU
 ; evolution data for one mon
-wEvoDataBuffer:: ds 4 * 8 + 1 ; enough for Eevee's three 4-byte evolutions and 0 terminator
+wEvoDataBuffer:: ds 4 * 5 + 1 ; enough for Eevee's three 4-byte evolutions and 0 terminator
 
 NEXTU
 wBattleMenuCurrentPP:: db
@@ -1851,7 +1851,7 @@ wPlayerGender::
 	; $00 = male
 	; $01 = female
 
-	ds 1
+	;ds 1
 
 ; the tile shown outside the boundaries of the map
 wMapBackgroundTile:: db
@@ -1937,7 +1937,7 @@ wBoxItems:: ds PC_ITEM_CAPACITY * 2 + 1
 ; bit 7: whether the player has changed boxes before
 wCurrentBoxNum:: db
 
-	ds 1
+	;ds 1
 
 ; number of HOF teams
 wNumHoFTeams:: db
@@ -1966,14 +1966,15 @@ wMissableObjectList:: ds 16 * 2 + 1
 wGameProgressFlags::
 wOaksLabCurScript:: db
 wPalletTownCurScript:: db
-	;ds 1
+	ds 1
 wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
-	;ds 2
+wRoute1CurScript:: db
+	ds 1
 wPewterCityCurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-	;ds 1
+	ds 1
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
 wCeruleanGymCurScript:: db
@@ -1990,12 +1991,12 @@ wMtMoonB2FCurScript:: db
 wSSAnne1FRoomsCurScript:: db
 wSSAnne2FRoomsCurScript:: db
 wRoute22CurScript:: db
-	;ds 1
+	ds 1
 wRedsHouse2FCurScript:: db
 wViridianMartCurScript:: db
 wRoute22GateCurScript:: db
 wCeruleanCityCurScript:: db
-	;ds 7
+	ds 7
 wSSAnneBowCurScript:: db
 wViridianForestCurScript:: db
 wMuseum1FCurScript:: db
@@ -2096,7 +2097,7 @@ wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS
 ; $02 = surfing
 wWalkBikeSurfState:: db
 
-	;ds 10
+	ds 2
 
 wTownVisitedFlag:: flag_array NUM_CITY_MAPS
 

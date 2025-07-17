@@ -43,6 +43,25 @@ _Route1Youngster2Text::
 	cont "quicker that way."
 	done
 
+
+_Route1BattleText1::
+	text "Hi! I like shorts!"
+	line "They're comfy and"
+	cont "easy to wear!"
+	done
+
+_Route1EndBattleText1::
+	text "BEEEH!"
+	line "Wrong!"
+	prompt
+
+_Route1AfterBattleText1::
+	text "I lost, but I'm"
+	line "training hard to"
+	cont "defeated you in"
+    cont "the next round!"
+	done
+
 _Route1SignText::
 	text "ROUTE 1"
 	line "PALLET TOWN -"

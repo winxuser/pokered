@@ -12,7 +12,7 @@ TrainerDataPointers:
 	dw BikerData
 	dw BurglarData
 	dw EngineerData
-	dw UnusedJugglerData
+	dw JasmineData ; unused juggler
 	dw FisherData
 	dw SwimmerData
 	dw CueBallData
@@ -310,8 +310,9 @@ EngineerData:
 	db 21, MAGNEMITE, 0
 	db 18, MAGNEMITE, MAGNEMITE, MAGNETON, 0
 
-UnusedJugglerData:
-; none
+JasmineData:
+; Route 1
+	db 4, PIDGEY, 0
 
 FisherData:
 ; SS Anne 2F Rooms
@@ -628,8 +629,8 @@ CooltrainerFData:
 ; Victory Road 3F
 	db 43, BELLSPROUT, WEEPINBELL, VICTREEBEL, 0
 	db 43, PARASECT, DEWGONG, CHANSEY, 0
-; Unused
-	db 46, VILEPLUME, BUTTERFREE, 0
+; Route 1
+	db 5, PIDGEY, 0
 ; Victory Road 1F
 	db 44, PERSIAN, NINETALES, 0
 ; Unused
