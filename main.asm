@@ -394,3 +394,7 @@ INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
 
 INCLUDE "color/animations.asm"
+
+SECTION "Engine Spillover", ROMX
+
+INCLUDE "engine/menus/item_descriptions.asm"
