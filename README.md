@@ -2,6 +2,14 @@
 
 Pokémon Red/Blue overhauled with full GBC support. Made by FroggestSpirit, Drenn, and dannye. Also check out the crysaudio branch.
 
+Winxusers Changes and fixes
+
+- Multi-player battle engine:
+    - Dual-type move effectiveness may be misreported
+    - HP draining moves and Dream Eater may hit when they shouldn't
+    - PP restoring items do not account for PP Ups when used
+
+
 Original README follows...
 
 # Pokémon Red and Blue [![Build Status][ci-badge]][ci]
