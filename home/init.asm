@@ -97,9 +97,9 @@ DEF LCDC_DEFAULT EQU LCDC_ON | LCDC_WIN_9C00 | LCDC_WIN_ON | LCDC_BLOCK21 | LCDC
 
 	predef LoadSGB
 
-	ld a, BANK(SFX_Shooting_Star)
-	ld [wAudioROMBank], a
-	ld [wAudioSavedROMBank], a
+;	ld a, 0 ; BANK(SFX_Shooting_Star)
+;	ld [wAudioROMBank], a
+;	ld [wAudioSavedROMBank], a
 	ld a, $9c
 	ldh [hAutoBGTransferDest + 1], a
 	xor a
@@ -126,12 +126,12 @@ ClearVram::
 
 
 StopAllSounds::
-	ld a, BANK("Audio Engine 1")
-	ld [wAudioROMBank], a
-	ld [wAudioSavedROMBank], a
+;	ld a, 0 ; BANK("Audio Engine 1")
+;	ld [wAudioROMBank], a
+;	ld [wAudioSavedROMBank], a
 	xor a
-	ld [wAudioFadeOutControl], a
-	ld [wNewSoundID], a
+	ld [wMusicFade], a
+	ld [wMusicFadeID], a
 	ld [wLastMusicSoundID], a
 	dec a
 	jp PlaySound
