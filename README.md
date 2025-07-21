@@ -12,6 +12,7 @@ Winxusers Changes and fixes
     - Bide damage doesn't get cleared properly in link battles if you are the host
     - Struggle may not function correctly if any move has at least one PP Up
     - Psychic/Psywave/Night Shade's animation doesn't wiggle the top 3 screen lines
+    - Psywave can desync a link battle
     
     
 - Upgrades:
