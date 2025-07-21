@@ -24,7 +24,7 @@ Winxusers Changes and fixes
     - Separate Move Animations from Other Battle Animations
     - Add Item Sorting In Bag
     - Free some space in the Home BANK
-
+    - Experience System & Exp. All Enhancements
 
 Original README follows...
 
