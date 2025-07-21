@@ -43,6 +43,11 @@ Winxusers Changes and fixes
     - The PC screen in the healing machine doesn't flash correctly
     - GetName applies to all names rather than only item names
    
+- Graphics:
+
+    - Sliding of trainer and Pokémon graphics can cause tearing
+
+    
 - Upgrades:
 
     - Map legend in save infobox
