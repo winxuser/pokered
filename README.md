@@ -19,6 +19,7 @@ Winxusers Changes and fixes
     - Allow multiple moves to be learned at the same level
     - Menu Descriptions
     - Gen 7 critical hit chance mechanic
+    - Infinite Use TMs
 
 
 Original README follows...
