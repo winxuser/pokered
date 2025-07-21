@@ -85,6 +85,7 @@ Winxusers Changes and fixes
 - Scripted Events:
 
     - The lucky slot machine in the Game Corner can be the nonexistent slot machine 255 (-1)
+    - The player doesn't face the guard in the Route 8 gate when stopped by him
 
 
 Original README follows...
