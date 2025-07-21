@@ -14,8 +14,8 @@ Winxusers Changes and fixes
     - Psychic/Psywave/Night Shade's animation doesn't wiggle the top 3 screen lines
     - Psywave can desync a link battle
     - Healing moves will fail if max HP is 255 or 511 points higher than current HP
-    
-    
+    - Switch-out messages do not account for underflow
+   
 - Upgrades:
 
     - Map legend in save infobox
