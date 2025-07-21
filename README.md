@@ -22,6 +22,7 @@ Winxusers Changes and fixes
     - Infinite Use TMs
     - Improved Catching System Closer Gen 3's
     - Separate Move Animations from Other Battle Animations
+    - Add Item Sorting In Bag
 
 Original README follows...
 
