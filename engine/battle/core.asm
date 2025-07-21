@@ -7385,3 +7385,9 @@ BattleMonPartyAttr:
 	ld bc, wPartyMon2 - wPartyMon1
 	jp AddNTimes
 ENDC
+
+LoadBackSpriteUnzoomed:
+	ld a, $66
+	ld de, vBackPic
+	push de
+	jp LoadUncompressedBackSprite
