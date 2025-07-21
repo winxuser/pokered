@@ -46,6 +46,7 @@ Winxusers Changes and fixes
 - Graphics:
 
     - Sliding of trainer and Pokémon graphics can cause tearing
+    - The lower-right tile of Pokémon backsprites are deleted when sliding offscreen
 
     
 - Upgrades:
