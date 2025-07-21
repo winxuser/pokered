@@ -26,7 +26,8 @@ Winxusers Changes and fixes
     - Having a stack of 99 items and adding more can cause memory corruption
     - A cuttable tree can return and block the player like it was never cut
     - Falling through a hole on the Bicycle doesn't reset the music
-
+    - The Item Finder won't detect items at X or Y coordinate 0
+    
    
 - Upgrades:
 
