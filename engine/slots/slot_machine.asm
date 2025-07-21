@@ -296,7 +296,7 @@ SlotMachine_StopWheel1Early:
 	inc hl
 	ld a, [hl]
 	cp HIGH(SLOTSCHERRY)
-	jr nz, .stopWheel
+	jr z, .stopWheel
 	ret
 ; Bug: This looks intended to make the wheel stop when a
 ; 7 symbol was visible, but instead the wheel stops randomly.

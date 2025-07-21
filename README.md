@@ -36,7 +36,7 @@ Winxusers Changes and fixes
     - Erroneous stone evolutions can cause Pokémon to evolve
     - Smoke puffs from Strength boulders don't show up correctly
     - The slot machine's tile loading routine loads too many tiles
-
+    - The lucky slot machine in the Game Corner doesn't stop when it should if you get a 7
    
 - Upgrades:
 
