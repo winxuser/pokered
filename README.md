@@ -15,6 +15,11 @@ Winxusers Changes and fixes
     - Psywave can desync a link battle
     - Healing moves will fail if max HP is 255 or 511 points higher than current HP
     - Switch-out messages do not account for underflow
+    
+- Single-player battle engine
+
+    - Transformed Pokémon are assumed to be Ditto
+
    
 - Upgrades:
 
