@@ -29,7 +29,8 @@ Winxusers Changes and fixes
     - The Item Finder won't detect items at X or Y coordinate 0
     - NPCs on the overworld aren't restricted correctly
     - NPCs can treat the bottom row or the rightmost column of a map as offscreen
-
+    - NPC movement delay can be higher than it should be
+    
    
 - Upgrades:
 
