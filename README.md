@@ -21,6 +21,9 @@ Winxusers Changes and fixes
     - Transformed Pokémon are assumed to be Ditto
     - AI trainer HUD does not update when it uses healing items
 
+- Game Engine:
+
+    - Having a stack of 99 items and adding more can cause memory corruption
    
 - Upgrades:
 
