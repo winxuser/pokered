@@ -23,6 +23,8 @@ Winxusers Changes and fixes
     - Improved Catching System Closer Gen 3's
     - Separate Move Animations from Other Battle Animations
     - Add Item Sorting In Bag
+    - Free some space in the Home BANK
+
 
 Original README follows...
 

@@ -397,3 +397,5 @@ SECTION "Engine Spillover", ROMX
 
 INCLUDE "engine/menus/item_descriptions.asm"
 INCLUDE "engine/items/tm_prices.asm"
+INCLUDE "engine/pokemon/calc_stats.asm"
+
