@@ -31,6 +31,7 @@ Winxusers Changes and fixes
     - NPCs can treat the bottom row or the rightmost column of a map as offscreen
     - NPC movement delay can be higher than it should be
     - NPCs can randomly load at the corner of the screen when you first enter an area
+    - Trainers' end battle text 2 isn't read correctly
 
    
 - Upgrades:
