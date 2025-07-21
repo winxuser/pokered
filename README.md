@@ -30,7 +30,8 @@ Winxusers Changes and fixes
     - NPCs on the overworld aren't restricted correctly
     - NPCs can treat the bottom row or the rightmost column of a map as offscreen
     - NPC movement delay can be higher than it should be
-    
+    - NPCs can randomly load at the corner of the screen when you first enter an area
+
    
 - Upgrades:
 
