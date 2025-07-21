@@ -19,6 +19,7 @@ Winxusers Changes and fixes
 - Single-player battle engine
 
     - Transformed Pokémon are assumed to be Ditto
+    - AI trainer HUD does not update when it uses healing items
 
    
 - Upgrades:
