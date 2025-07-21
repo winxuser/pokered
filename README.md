@@ -41,7 +41,7 @@ Winxusers Changes and fixes
     - The hidden 40-coin stash in the Game Corner only gives half
     - The splash screen adds 2 more stars than it should
     - The PC screen in the healing machine doesn't flash correctly
-
+    - GetName applies to all names rather than only item names
    
 - Upgrades:
 
