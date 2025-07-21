@@ -5,12 +5,14 @@ Pokémon Red/Blue overhauled with full GBC support. Made by FroggestSpirit, Dren
 Winxusers Changes and fixes
 
 - Multi-player battle engine:
+
     - Dual-type move effectiveness may be misreported
     - HP draining moves and Dream Eater may hit when they shouldn't
     - PP restoring items do not account for PP Ups when used
     
     
 - Upgrades:
+
     - Map legend in save infobox
     - Improve the Pokédex AREA functionality
     - Elite Four Members play Gym Leader Battle Theme
@@ -27,6 +29,9 @@ Winxusers Changes and fixes
     - Experience System & Exp. All Enhancements
     - Trainers are not Pokemon
 
+- Battle Engine Changes:
+    
+    - Check base power before skipping damage calculation
 
 Original README follows...
 
