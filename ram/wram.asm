@@ -601,6 +601,7 @@ wEnemyMonEvasionMod:: db
 wEnemyMonStatModsEnd::
 
 NEXTU
+wTempColCoords::
 	ds 30
 wEngagedTrainerClass:: db
 wEngagedTrainerSet:: db

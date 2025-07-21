@@ -24,6 +24,8 @@ Winxusers Changes and fixes
 - Game Engine:
 
     - Having a stack of 99 items and adding more can cause memory corruption
+    - A cuttable tree can return and block the player like it was never cut
+
    
 - Upgrades:
 
