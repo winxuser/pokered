@@ -34,6 +34,7 @@ Winxusers Changes and fixes
     - Trainers' end battle text 2 isn't read correctly
     - Random items can cause Pokémon to evolve
     - Erroneous stone evolutions can cause Pokémon to evolve
+    - Smoke puffs from Strength boulders don't show up correctly
 
    
 - Upgrades:
