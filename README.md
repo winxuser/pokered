@@ -21,6 +21,7 @@ Winxusers Changes and fixes
     - Gen 7 critical hit chance mechanic
     - Infinite Use TMs
     - Improved Catching System Closer Gen 3's
+    - Separate Move Animations from Other Battle Animations
 
 Original README follows...
 
