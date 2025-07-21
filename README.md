@@ -33,6 +33,7 @@ Winxusers Changes and fixes
     - NPCs can randomly load at the corner of the screen when you first enter an area
     - Trainers' end battle text 2 isn't read correctly
     - Random items can cause Pokémon to evolve
+    - Erroneous stone evolutions can cause Pokémon to evolve
 
    
 - Upgrades:
