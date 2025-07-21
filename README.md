@@ -55,6 +55,7 @@ Winxusers Changes and fixes
 
     - The battle victory music can sometimes play at the wrong time
     - Prof. Oak's lab music can sometimes play with a channel cut off
+    - The 'acquired an item' jingle can sometimes be cut off
 
     
 - Upgrades:
