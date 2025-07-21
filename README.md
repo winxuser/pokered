@@ -35,6 +35,7 @@ Winxusers Changes and fixes
     - Random items can cause Pokémon to evolve
     - Erroneous stone evolutions can cause Pokémon to evolve
     - Smoke puffs from Strength boulders don't show up correctly
+    - The slot machine's tile loading routine loads too many tiles
 
    
 - Upgrades:
