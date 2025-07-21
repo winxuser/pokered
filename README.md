@@ -13,6 +13,7 @@ Winxusers Changes and fixes
     - Struggle may not function correctly if any move has at least one PP Up
     - Psychic/Psywave/Night Shade's animation doesn't wiggle the top 3 screen lines
     - Psywave can desync a link battle
+    - Healing moves will fail if max HP is 255 or 511 points higher than current HP
     
     
 - Upgrades:
