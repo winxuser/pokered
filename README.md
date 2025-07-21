@@ -49,6 +49,7 @@ Winxusers Changes and fixes
     - The lower-right tile of Pokémon backsprites are deleted when sliding offscreen
     - Minimize and Substitute can cause sprite glitches with enemy Pokémon
     - OAM updates can be interrupted by V-Blank
+    - Trainer Card transition screens can show brief garbage on DMG
 
     
 - Upgrades:

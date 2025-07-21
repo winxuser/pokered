@@ -463,6 +463,9 @@ StartMenu_TrainerInfo::
 	predef DrawBadges ; draw badges
 	ld b, SET_PAL_TRAINER_CARD
 	call RunPaletteCommand
+	ld a, [wOnSGB]
+	and a
+	call z, Delay3
 	call GBPalNormal
 	call WaitForTextScrollButtonPress ; wait for button press
 	call GBPalWhiteOut
@@ -470,6 +473,9 @@ StartMenu_TrainerInfo::
 	call LoadScreenTilesFromBuffer2 ; restore saved screen
 	call RunDefaultPaletteCommand
 	call ReloadMapData
+	ld a, [wOnSGB]
+	and a
+	call z, Delay3
 	call LoadGBPal
 	pop af
 	ldh [hTileAnimations], a
