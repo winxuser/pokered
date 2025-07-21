@@ -82,6 +82,10 @@ Winxusers Changes and fixes
     - Check base power before skipping damage calculation
     - Poison, burn and leech seed do an 8th of max HP
 
+- Scripted Events:
+
+    - The lucky slot machine in the Game Corner can be the nonexistent slot machine 255 (-1)
+
 
 Original README follows...
 
