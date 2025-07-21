@@ -26,7 +26,11 @@ VBlank::
 	call VBlankCopy
 	call VBlankCopyDouble
 	;call UpdateMovingBgTiles
+	ld a, [hSkipOAMUpdates]
+	bit 0, a
+	jr nz, .skipOAM
 	call hDMARoutine
+.skipOAM
 	rst $10 ; HAX: VBlank hook (loads palettes)
 	nop
 	nop
