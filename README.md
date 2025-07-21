@@ -56,7 +56,7 @@ Winxusers Changes and fixes
     - The battle victory music can sometimes play at the wrong time
     - Prof. Oak's lab music can sometimes play with a channel cut off
     - The 'acquired an item' jingle can sometimes be cut off
-
+    - Articuno's cry may get distorted when you see it in the binoculars on Route 15/Fossils play their Pokémon's cry when they shouldn't in Pewter Museum
     
 - Upgrades:
 
