@@ -32,6 +32,8 @@ Winxusers Changes and fixes
 - Battle Engine Changes:
     
     - Check base power before skipping damage calculation
+    - Poison, burn and leech seed do an 8th of max HP
+
 
 Original README follows...
 
