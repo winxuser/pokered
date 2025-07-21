@@ -8,6 +8,16 @@ Winxusers Changes and fixes
     - Dual-type move effectiveness may be misreported
     - HP draining moves and Dream Eater may hit when they shouldn't
     - PP restoring items do not account for PP Ups when used
+    
+    
+- Upgrades:
+    - Map legend in save infobox
+    - Improve the Pokédex AREA functionality
+    - Elite Four Members play Gym Leader Battle Theme
+    - Turn to face enemy trainers when seen by them
+    - Item Descriptions
+    - Allow multiple moves to be learned at the same level
+    - Menu Descriptions
 
 
 Original README follows...
