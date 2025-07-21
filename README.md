@@ -51,6 +51,10 @@ Winxusers Changes and fixes
     - OAM updates can be interrupted by V-Blank
     - Trainer Card transition screens can show brief garbage on DMG
 
+- Audio:
+
+    - The battle victory music can sometimes play at the wrong time
+
     
 - Upgrades:
 
