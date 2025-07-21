@@ -37,6 +37,8 @@ Winxusers Changes and fixes
     - Smoke puffs from Strength boulders don't show up correctly
     - The slot machine's tile loading routine loads too many tiles
     - The lucky slot machine in the Game Corner doesn't stop when it should if you get a 7
+    - The lucky slot machine in the Game Corner doesn't stop when it should if there are two 7s or BARs on the middle or bottom of the wheel
+
    
 - Upgrades:
 
