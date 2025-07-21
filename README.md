@@ -38,6 +38,7 @@ Winxusers Changes and fixes
     - The slot machine's tile loading routine loads too many tiles
     - The lucky slot machine in the Game Corner doesn't stop when it should if you get a 7
     - The lucky slot machine in the Game Corner doesn't stop when it should if there are two 7s or BARs on the middle or bottom of the wheel
+    - The hidden 40-coin stash in the Game Corner only gives half
 
    
 - Upgrades:
