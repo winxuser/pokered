@@ -27,7 +27,9 @@ Winxusers Changes and fixes
     - A cuttable tree can return and block the player like it was never cut
     - Falling through a hole on the Bicycle doesn't reset the music
     - The Item Finder won't detect items at X or Y coordinate 0
-    
+    - NPCs on the overworld aren't restricted correctly
+    - NPCs can treat the bottom row or the rightmost column of a map as offscreen
+
    
 - Upgrades:
 
