@@ -25,6 +25,8 @@ Winxusers Changes and fixes
     - Add Item Sorting In Bag
     - Free some space in the Home BANK
     - Experience System & Exp. All Enhancements
+    - Trainers are not Pokemon
+
 
 Original README follows...
 
