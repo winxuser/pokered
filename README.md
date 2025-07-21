@@ -9,6 +9,7 @@ Winxusers Changes and fixes
     - Dual-type move effectiveness may be misreported
     - HP draining moves and Dream Eater may hit when they shouldn't
     - PP restoring items do not account for PP Ups when used
+    - Bide damage doesn't get cleared properly in link battles if you are the host
     
     
 - Upgrades:
