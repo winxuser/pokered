@@ -494,6 +494,30 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x3c: SPRITE_MEW
 	db SPR_PAL_PURPLE
 
+	; 0x3c: SPRITE_BROCK
+	db SPR_PAL_ROCK
+
+	; 0x3c: SPRITE_MISTY
+	db SPR_PAL_RANDOM
+
+	; 0x3c: SPRITE_SURGE
+	db SPR_PAL_RANDOM
+
+	; 0x3b: SPRITE_ERIKA
+	db SPR_PAL_RANDOM
+
+	; 0x3c: SPRITE_KOGA2
+	db SPR_PAL_RANDOM
+
+	; 0x3c: SPRITE_SABRINA
+	db SPR_PAL_PURPLE
+
+	; 0x3d: SPRITE_BLAINE
+	db SPR_PAL_ORANGE
+
+	; 0x3e: SPRITE_BILL
+	db SPR_PAL_BROWN
+
 	; 0x3d: SPRITE_BALL
 	db SPR_PAL_ORANGE
 

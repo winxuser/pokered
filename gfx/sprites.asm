@@ -74,3 +74,11 @@ SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
 
 SECTION "NPC Sprites 3", ROMX
 MewSprite::              INCBIN "gfx/sprites/mew.2bpp"
+BrockSprite::            INCBIN "gfx/sprites/brock.2bpp"
+MistySprite::            INCBIN "gfx/sprites/misty.2bpp"
+SurgeSprite::            INCBIN "gfx/sprites/surge.2bpp"
+ErikaSprite::            INCBIN "gfx/sprites/erika.2bpp"
+Koga2Sprite::            INCBIN "gfx/sprites/koga2.2bpp"
+SabrinaSprite::          INCBIN "gfx/sprites/sabrina.2bpp"
+BlaineSprite::           INCBIN "gfx/sprites/blaine.2bpp"
+BillSprite::             INCBIN "gfx/sprites/bill.2bpp"
