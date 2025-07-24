@@ -50,6 +50,7 @@ Winxusers Changes and fixes
     - Minimize and Substitute can cause sprite glitches with enemy Pokémon
     - OAM updates can be interrupted by V-Blank
     - Trainer Card transition screens can show brief garbage on DMG
+    - Update Gym trainers sprites from GSC
 
 - Audio:
 
@@ -64,21 +65,15 @@ Winxusers Changes and fixes
     - Map legend in save infobox
     - Improve the Pokédex AREA functionality
     - Elite Four Members play Gym Leader Battle Theme
-    - Turn to face enemy trainers when seen by them
-    - Item Descriptions
-    - Allow multiple moves to be learned at the same level
-    - Menu Descriptions
-    - Gen 7 critical hit chance mechanic
     - Infinite Use TMs
-    - Improved Catching System Closer Gen 3's
     - Separate Move Animations from Other Battle Animations
     - Add Item Sorting In Bag
     - Free some space in the Home BANK
-    - Experience System & Exp. All Enhancements
     - Trainers are not Pokemon
     - Trader NPC in Celedon City
     - Merge all version exclusives
     - Add some previously unobtainable pokemon to the wild
+    - Overworld HM useage
 
 - Battle Engine Changes:
     
@@ -90,6 +85,15 @@ Winxusers Changes and fixes
     - The lucky slot machine in the Game Corner can be the nonexistent slot machine 255 (-1)
     - The player doesn't face the guard in the Route 8 gate when stopped by him
 
+- Future Gen Updates:
+
+    - Experience System & Exp. All Enhancements
+    - Turn to face enemy trainers when seen by them
+    - Item Descriptions
+    - Allow multiple moves to be learned at the same level
+    - Menu Descriptions
+    - Gen 7 critical hit chance mechanic
+    - Improved Catching System Closer Gen 3's
 
 Original README follows...
 
