@@ -75,6 +75,7 @@ Winxusers Changes and fixes
     - Add some previously unobtainable pokemon to the wild
     - Overworld HM useage
     - Taking both Fossils
+    - Add MAP to start menu
 
 - Battle Engine Changes:
     
