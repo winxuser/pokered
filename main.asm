@@ -120,9 +120,6 @@ INCLUDE "engine/gfx/load_pokedex_tiles.asm"
 INCLUDE "engine/overworld/map_sprites.asm"
 INCLUDE "engine/overworld/emotion_bubbles.asm"
 INCLUDE "engine/events/evolve_trade.asm"
-INCLUDE "engine/battle/move_effects/substitute.asm"
-INCLUDE "engine/menus/pc.asm"
-
 
 SECTION "Play Time", ROMX
 
@@ -158,7 +155,7 @@ INCLUDE "engine/events/hidden_objects/oaks_lab_email.asm"
 SECTION "Bill's PC", ROMX
 
 INCLUDE "engine/pokemon/bills_pc.asm"
-
+INCLUDE "engine/menus/pc.asm"
 
 SECTION "Battle Engine 3", ROMX
 
@@ -211,7 +208,7 @@ INCLUDE "engine/pokemon/evos_moves.asm"
 INCLUDE "engine/battle/move_effects/heal.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
-
+INCLUDE "engine/battle/move_effects/substitute.asm"
 INCLUDE "color/draw_hud_pokeball_gfx.asm"
 
 

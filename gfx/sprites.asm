@@ -33,6 +33,8 @@ SECTION "NPC Sprites 2", ROMX
 
 RedBikeSprite::          INCBIN "gfx/sprites/red_bike.2bpp"
 RedSprite::              INCBIN "gfx/sprites/red.2bpp"
+GreenBikeSprite::        INCBIN "gfx/sprites/green_bike.2bpp"
+GreenSprite::            INCBIN "gfx/sprites/green.2bpp"
 BlueSprite::             INCBIN "gfx/sprites/blue.2bpp"
 OakSprite::              INCBIN "gfx/sprites/oak.2bpp"
 YoungsterSprite::        INCBIN "gfx/sprites/youngster.2bpp"
@@ -69,7 +71,6 @@ GameboyKidSprite::       INCBIN "gfx/sprites/gameboy_kid.2bpp"
 FairySprite::            INCBIN "gfx/sprites/fairy.2bpp"
 AgathaSprite::           INCBIN "gfx/sprites/agatha.2bpp"
 BrunoSprite::            INCBIN "gfx/sprites/bruno.2bpp"
-LoreleiSprite::          INCBIN "gfx/sprites/lorelei.2bpp"
 SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
 
 SECTION "NPC Sprites 3", ROMX
@@ -82,3 +83,4 @@ Koga2Sprite::            INCBIN "gfx/sprites/koga2.2bpp"
 SabrinaSprite::          INCBIN "gfx/sprites/sabrina.2bpp"
 BlaineSprite::           INCBIN "gfx/sprites/blaine.2bpp"
 BillSprite::             INCBIN "gfx/sprites/bill.2bpp"
+LoreleiSprite::          INCBIN "gfx/sprites/lorelei.2bpp"
