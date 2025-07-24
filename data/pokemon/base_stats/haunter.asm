@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw HaunterPicFront, HaunterPicBack
 
-	db LICK, CONFUSE_RAY, NIGHT_SHADE, NO_MOVE ; level 1 learnset
+	db HYPNOSIS, LICK, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

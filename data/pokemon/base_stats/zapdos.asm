@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw ZapdosPicFront, ZapdosPicBack
 
-	db THUNDERSHOCK, DRILL_PECK, NO_MOVE, NO_MOVE ; level 1 learnset
+	db PECK, THUNDERSHOCK, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

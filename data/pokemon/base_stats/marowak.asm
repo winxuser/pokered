@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw MarowakPicFront, MarowakPicBack
 
-	db BONE_CLUB, GROWL, LEER, FOCUS_ENERGY ; level 1 learnset
+	db GROWL, TAIL_WHIP, BONE_CLUB, HEADBUTT ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw DoduoPicFront, DoduoPicBack
 
-	db PECK, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db PECK, GROWL, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

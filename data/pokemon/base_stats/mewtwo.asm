@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw MewtwoPicFront, MewtwoPicBack
 
-	db CONFUSION, DISABLE, SWIFT, PSYCHIC_M ; level 1 learnset
+	db CONFUSION, DISABLE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

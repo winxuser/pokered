@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw GolbatPicFront, GolbatPicBack
 
-	db LEECH_LIFE, SCREECH, BITE, NO_MOVE ; level 1 learnset
+	db SCREECH, LEECH_LIFE, SUPERSONIC, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw MachokePicFront, MachokePicBack
 
-	db KARATE_CHOP, LOW_KICK, LEER, NO_MOVE ; level 1 learnset
+	db LOW_KICK, LEER, FOCUS_ENERGY, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

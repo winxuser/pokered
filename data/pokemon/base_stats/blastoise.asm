@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw BlastoisePicFront, BlastoisePicBack
 
-	db TACKLE, TAIL_WHIP, BUBBLE, WATER_GUN ; level 1 learnset
+	db TACKLE, TAIL_WHIP, BUBBLE, WITHDRAW ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

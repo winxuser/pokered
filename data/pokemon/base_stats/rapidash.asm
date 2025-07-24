@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw RapidashPicFront, RapidashPicBack
 
-	db EMBER, TAIL_WHIP, STOMP, GROWL ; level 1 learnset
+	db TACKLE, GROWL, TAIL_WHIP, EMBER ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw MukPicFront, MukPicBack
 
-	db POUND, DISABLE, POISON_GAS, NO_MOVE ; level 1 learnset
+	db POISON_GAS, POUND, HARDEN, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

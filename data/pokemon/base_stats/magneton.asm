@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw MagnetonPicFront, MagnetonPicBack
 
-	db TACKLE, SONICBOOM, THUNDERSHOCK, NO_MOVE ; level 1 learnset
+	db TACKLE, THUNDERSHOCK, SUPERSONIC, SONICBOOM ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

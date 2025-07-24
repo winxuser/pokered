@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw ArcaninePicFront, ArcaninePicBack
 
-	db ROAR, EMBER, LEER, TAKE_DOWN ; level 1 learnset
+	db ROAR, LEER, TAKE_DOWN, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

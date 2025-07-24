@@ -14,14 +14,14 @@ ELSE
 ENDC
 	dw ParasectPicFront, ParasectPicBack
 
-	db SCRATCH, STUN_SPORE, LEECH_LIFE, NO_MOVE ; level 1 learnset
+	db SCRATCH, STUN_SPORE, POISONPOWDER, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
 	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    DIG,          \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   CUT
+	     REST,         SUBSTITUTE,   CUT,		   FLASH
 	; end
 
 	db BANK(ParasectPicFront)

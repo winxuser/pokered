@@ -4,11 +4,48 @@ PhysicalToSpecialMoves:
 ; Poison
         db ACID
         db SLUDGE
+        db SMOG
 ; Normal
         db HYPER_BEAM
         db RAZOR_WIND
         db SWIFT
         db TRI_ATTACK
+        db SONICBOOM
+        db SWIFT
+; Fire
+        db EMBER
+        db FIRE_BLAST
+; Grass
+        db ABSORB
+        db MEGA_DRAIN
+        db PETAL_DANCE
+        db SOLARBEAM
+; Water
+        db BUBBLE
+        db BUBBLEBEAM
+        db HYDRO_PUMP
+        db SURF
+        db WATER_GUN
+; Ice
+        db AURORA_BEAM
+        db BLIZZARD
+        db ICE_BEAM
+; Psychic
+        db CONFUSION
+        db DREAM_EATER
+        db PSYBEAM
+        db PSYCHIC_M
+        db PSYWAVE
+; Dragon
+        db DRAGON_RAGE
+; Fighting
+        db HI_JUMP_KICK
+; Ghost
+        db NIGHT_SHADE
+; Electric
+        db THUNDER
+        db THUNDERSHOCK
+        db THUNDERBOLT
         db -1 ; end
 
 SpecialToPhysicalMoves:
@@ -25,4 +62,75 @@ SpecialToPhysicalMoves:
         db THUNDERPUNCH
 ; Ice
         db ICE_PUNCH
+
+; Normal
+        db BARRAGE
+        db BIDE
+        db BIND
+        db BODY_SLAM
+        db COMET_PUNCH
+        db CONSTRICT
+        db CUT
+        db DIZZY_PUNCH
+        db DOUBLESLAP
+        db DOUBLE_EDGE
+        db EGG_BOMB
+        db EXPLOSION
+        db HEADBUTT
+        db HORN_ATTACK
+        db HORN_DRILL
+        db HYPER_FANG
+        db MEGA_KICK
+        db MEGA_PUNCH
+        db PAY_DAY
+        db POUND
+        db QUICK_ATTACK
+        db RAGE
+        db SCRATCH
+        db SELFDESTRUCT
+        db SKULL_BASH
+        db SLAM
+        db SLASH
+        db SPIKE_CANNON
+        db STOMP
+        db STRENGTH
+        db STRUGGLE
+        db SUPER_FANG
+        db TACKLE
+        db TAKE_DOWN
+        db THRASH
+        db VICEGRIP
+        db WRAP
+; Fighting
+        db COUNTER
+        db DOUBLE_KICK
+        db JUMP_KICK
+        db KARATE_CHOP
+        db LOW_KICK
+        db ROLLING_KICK
+        db SEISMIC_TOSS
+        db SUBMISSION
+; Ground
+        db BONE_CLUB
+        db BONEMERANG
+        db DIG
+        db EARTHQUAKE
+; Dark
+        db BITE
+; Flying
+        db DRILL_PECK
+        db PECK
+        db SKY_ATTACK
+        db WING_ATTACK
+; Bug
+        db LEECH_LIFE
+        db PIN_MISSILE
+        db TWINEEDLE
+; Ghost
+        db LICK
+; Poison
+        db POISON_STING
+; Rock
+        db ROCK_SLIDE
+        db ROCK_THROW
         db -1 ; end

@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw SeakingPicFront, SeakingPicBack
 
-	db PECK, TAIL_WHIP, SUPERSONIC, NO_MOVE ; level 1 learnset
+	db PECK, TAIL_WHIP, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

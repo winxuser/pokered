@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw PersianPicFront, PersianPicBack
 
-	db SCRATCH, GROWL, BITE, SCREECH ; level 1 learnset
+	db SCRATCH, GROWL, BITE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -3,7 +3,7 @@
 	db  95,  70,  73,  60,  85
 	;   hp  atk  def  spd  spc
 
-	db NORMAL, NORMAL ; type
+	db FAIRY, FAIRY ; type
 	db 25 ; catch rate
 	db 129 ; base exp
 
@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw ClefablePicFront, ClefablePicBack
 
-	db SING, DOUBLESLAP, MINIMIZE, METRONOME ; level 1 learnset
+	db SING, DOUBLESLAP, METRONOME, NO_MOVE ; level 1 learnset
 	db GROWTH_FAST ; growth rate
 
 	; tm/hm learnset

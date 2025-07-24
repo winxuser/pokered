@@ -21,7 +21,7 @@ ENDC
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         PSYCHIC_M,    \
 	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
 	     SELFDESTRUCT, EGG_BOMB,     REST,         PSYWAVE,      EXPLOSION,    \
-	     SUBSTITUTE
+	     SUBSTITUTE,   FLASH,		 STRENGTH
 	; end
 
 	db BANK(ExeggcutePicFront)

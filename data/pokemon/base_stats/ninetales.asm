@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw NinetalesPicFront, NinetalesPicBack
 
-	db EMBER, TAIL_WHIP, QUICK_ATTACK, ROAR ; level 1 learnset
+	db EMBER, QUICK_ATTACK, CONFUSE_RAY, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

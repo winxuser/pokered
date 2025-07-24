@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, NORMAL ; type
-	db 90 ; catch rate
+	db 127 ; catch rate
 	db 116 ; base exp
 
 IF GEN_2_GRAPHICS
@@ -21,7 +21,8 @@ ENDC
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
 	     WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         \
 	     THUNDERBOLT,  THUNDER,      DIG,          MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE
+	     BIDE,         SWIFT,        SKULL_BASH,   REST,         SUBSTITUTE,	\
+	     CUT,		   STRENGTH
 	; end
 
 	db BANK(RaticatePicFront)

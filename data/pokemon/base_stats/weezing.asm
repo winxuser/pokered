@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw WeezingPicFront, WeezingPicBack
 
-	db TACKLE, SMOG, SLUDGE, NO_MOVE ; level 1 learnset
+	db POISON_GAS, TACKLE, SMOG, SELFDESTRUCT ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw NidoqueenPicFront, NidoqueenPicBack
 
-	db TACKLE, SCRATCH, TAIL_WHIP, BODY_SLAM ; level 1 learnset
+	db TACKLE, SCRATCH, DOUBLE_KICK, TAIL_WHIP ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

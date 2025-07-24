@@ -14,13 +14,13 @@ ELSE
 ENDC
 	dw GloomPicFront, GloomPicBack
 
-	db ABSORB, POISONPOWDER, STUN_SPORE, NO_MOVE ; level 1 learnset
+	db ABSORB, POISONPOWDER, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm SWORDS_DANCE, TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         \
 	     MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
-	     BIDE,         REST,         SUBSTITUTE,   CUT
+	     BIDE,         REST,         SUBSTITUTE,   CUT,			 FLASH
 	; end
 
 	db BANK(GloomPicFront)

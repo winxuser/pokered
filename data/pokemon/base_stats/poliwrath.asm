@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw PoliwrathPicFront, PoliwrathPicBack
 
-	db HYPNOSIS, WATER_GUN, DOUBLESLAP, BODY_SLAM ; level 1 learnset
+	db WATER_GUN, HYPNOSIS, DOUBLESLAP, SUBMISSION ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
