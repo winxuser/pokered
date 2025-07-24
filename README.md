@@ -74,6 +74,7 @@ Winxusers Changes and fixes
     - Merge all version exclusives
     - Add some previously unobtainable pokemon to the wild
     - Overworld HM useage
+    - Taking both Fossils
 
 - Battle Engine Changes:
     
