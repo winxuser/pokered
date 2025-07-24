@@ -95,6 +95,7 @@ Winxusers Changes and fixes
     - Gen 7 critical hit chance mechanic
     - Improved Catching System Closer Gen 3's
     - Implement move priority system
+    - Add gender selection
 
 Original README follows...
 
