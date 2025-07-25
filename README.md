@@ -98,6 +98,7 @@ Winxusers Changes and fixes
     - Improved Catching System Closer Gen 3's
     - Implement move priority system
     - Add gender selection
+    - Add base stats into dex 
 
 Original README follows...
 
