@@ -76,6 +76,7 @@ Winxusers Changes and fixes
     - Overworld HM useage
     - Taking both Fossils
     - Add MAP to start menu
+    - Able to change pokemon in the status screen
 
 - Battle Engine Changes:
     
