@@ -597,6 +597,26 @@ _TM50Description::
 	next "1/4 user's max HP."
 	prompt
 
+_TM51Description::
+	text "A very strong fire"
+	next "type move."
+	prompt
+
+_TM52Description::
+	text "A very strong fire"
+	next "type punch move."
+	prompt
+
+_TM53Description::
+	text "A very strong ice"
+	next "type punch move."
+	prompt
+
+_TM54Description::
+	text "A very strong ele-"
+	next "ctric type punch."
+	prompt
+
 _UnusedItemDescription::
 	text "?"
 	prompt
