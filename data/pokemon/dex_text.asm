@@ -298,6 +298,26 @@ _TangelaDexEntry::
 	next "shake as it walks"
 	dex
 
+_ChikoritaDexEntry::
+	text "A sweet aroma"
+	next "gently wafts from"
+	next "the leaf on its"
+
+	page "head. It is docile"
+	next "and loves to soak"
+	next "up the sun's rays"
+	dex
+
+_BayleefDexEntry::
+	text "The scent of"
+	next "spices comes from"
+	next "around its neck."
+
+	page "Somehow, sniffing"
+	next "it makes you want"
+	next "to fight"
+	dex
+
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."
@@ -468,6 +488,16 @@ _GolemDexEntry::
 	next "without damage"
 	dex
 
+_MeganiumDexEntry::
+	text "The aroma that"
+	next "rises from its"
+	next "petals contains a"
+
+	page "substance that"
+	next "calms aggressive"
+	next "feelings"
+	dex
+
 _MagmarDexEntry::
 	text "Its body always"
 	next "burns with an"
@@ -476,6 +506,16 @@ _MagmarDexEntry::
 	page "enables it to"
 	next "hide perfectly"
 	next "among flames"
+	dex
+
+_CyndaquilDexEntry::
+	text "It is timid, and"
+	next "always curls it-"
+	next "self up in a ball."
+
+	page "If attacked, it"
+	next "flares up its back"
+	next "for protection"
 	dex
 
 _ElectabuzzDexEntry::
@@ -506,6 +546,16 @@ _KoffingDexEntry::
 	page "its body, it is"
 	next "prone to exploding"
 	next "without warning"
+	dex
+
+_QuilavaDexEntry::
+	text "Be careful if it"
+	next "turns its back"
+	next "during battle. It"
+
+	page "means that it will"
+	next "attack with the"
+	next "fire on its back"
 	dex
 
 _MankeyDexEntry::
@@ -548,6 +598,36 @@ _TaurosDexEntry::
 	next "long tails"
 	dex
 
+_TyphlosionDexEntry::
+	text "If its rage peaks,"
+	next "it becomes so hot"
+	next "that anything that"
+
+	page "touches it will"
+	next "instantly go"
+	next "up in flames"
+	dex
+
+_TotodileDexEntry::
+	text "Its well-developed"
+	next "jaws are powerful"
+	next "and capable of"
+
+	page "crushing anything."
+	next "Even its trainer"
+	next "must be careful"
+	dex
+
+_CroconawDexEntry::
+	text "If it loses a"
+	next "fang, a new one"
+	next "grows back in its"
+
+	page "place. There are"
+	next "always 48 fangs"
+	next "lining its mouth"
+	dex
+
 _FarfetchdDexEntry::
 	text "The sprig of"
 	next "green onions it"
@@ -576,6 +656,36 @@ _DragoniteDexEntry::
 	page "Its intelligence"
 	next "is said to match"
 	next "that of humans"
+	dex
+
+_FeraligatrDexEntry::
+	text "When it bites with"
+	next "its massive and"
+	next "powerful jaws, it"
+
+	page "shakes its head"
+	next "and savagely tears"
+	next "its victim up"
+	dex
+
+_SentretDexEntry::
+	text "A very cautious"
+	next "#MON, it raises"
+	next "itself up using"
+
+	page "its tail to get a"
+	next "better view of its"
+	next "surroundings"
+	dex
+
+_FurretDexEntry::
+	text "It makes a nest to"
+	next "suit its long and"
+	next "skinny body. The"
+
+	page "nest is impossible"
+	next "for other #MON"
+	next "to enter"
 	dex
 
 _DoduoDexEntry::
@@ -668,6 +778,36 @@ _KrabbyDexEntry::
 	next "sideways"
 	dex
 
+_HoothootDexEntry::
+	text "It always stands"
+	next "on one foot. It"
+	next "changes feet so"
+
+	page "fast, the movement"
+	next "can rarely be"
+	next "seen"
+	dex
+
+_NoctowlDexEntry::
+	text "Its eyes are"
+	next "specially adapted."
+	next "They concentrate"
+
+	page "even faint light"
+	next "and enable it to"
+	next "see in the dark"
+	dex
+
+_LedybaDexEntry::
+	text "It is very timid."
+	next "It will be afraid"
+	next "to move if it is"
+
+	page "alone. But it will"
+	next "be active if it is"
+	next "in a group"
+	dex
+
 _VulpixDexEntry::
 	text "At the time of"
 	next "birth, it has"
@@ -706,6 +846,26 @@ _RaichuDexEntry::
 	page "itself from its"
 	next "own high voltage"
 	next "power"
+	dex
+
+_LedianDexEntry::
+	text "When the stars"
+	next "flicker in the"
+	next "night sky, it"
+
+	page "flutters about,"
+	next "scattering a"
+	next "glowing powder"
+	dex
+
+_SpinarakDexEntry::
+	text "It lies still in"
+	next "the same pose for"
+	next "days in its web,"
+
+	page "waiting for its"
+	next "unsuspecting prey"
+	next "to wander close"
 	dex
 
 _DratiniDexEntry::
@@ -766,6 +926,26 @@ _SeadraDexEntry::
 	page "its wing-like"
 	next "pectoral fins and"
 	next "stout tail"
+	dex
+
+_AriadosDexEntry::
+	text "It spins string"
+	next "not only from its"
+	next "rear but also from"
+
+	page "its mouth. It is"
+	next "hard to tell which"
+	next "end is which"
+	dex
+
+_CrobatDexEntry::
+	text "It flies so si-"
+	next "lently through the"
+	next "dark on its four"
+
+	page "wings that it may"
+	next "not be noticed"
+	next "even when nearby.@"
 	dex
 
 _SandshrewDexEntry::
@@ -956,6 +1136,16 @@ _BeedrillDexEntry::
 	page "venomous stingers"
 	next "on its forelegs"
 	next "and tail"
+	dex
+
+_ChinchouDexEntry::
+	text "It shoots positive"
+	next "and negative elec-"
+	next "tricity between"
+
+	page "the tips of its"
+	next "two antennae and"
+	next "zaps its enemies"
 	dex
 
 _DodrioDexEntry::

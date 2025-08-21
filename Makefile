@@ -178,14 +178,14 @@ gfx/trade/game_boy.2bpp: tools/gfx += --remove-duplicates
 %.png: ;
 
 %.2bpp: %.png
-	$(RGBGFX) --colors dmg=e4 $(rgbgfx) -o $@ $<
+	$(RGBGFX) $(rgbgfx) -o $@ $<
 	$(if $(tools/gfx),\
-		tools/gfx $(tools/gfx) -o $@ $@ || $$($(RM) $@ && false))
+		tools/gfx $(tools/gfx) -o $@ $@)
 
 %.1bpp: %.png
-	$(RGBGFX) --colors dmg=e4 $(rgbgfx) --depth 1 -o $@ $<
+	$(RGBGFX) $(rgbgfx) --depth 1 -o $@ $<
 	$(if $(tools/gfx),\
-		tools/gfx $(tools/gfx) --depth 1 -o $@ $@ || $$($(RM) $@ && false))
+		tools/gfx $(tools/gfx) --depth 1 -o $@ $@)
 
 %.pic: %.2bpp
 	tools/pkmncompress $< $@

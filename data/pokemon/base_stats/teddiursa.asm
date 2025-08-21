@@ -1,0 +1,26 @@
+	db DEX_TEDDIURSA ; pokedex id
+
+	db  60,  80,  50,  40,  50
+	;   hp  atk  def  spd  spc
+
+	db NORMAL, NORMAL ; type
+	db 120 ; catch rate
+	db 124 ; base exp
+
+IF GEN_2_GRAPHICS
+	INCBIN "gfx/pokemon/gsfront/teddiursa.pic", 0, 1 ; sprite dimensions
+ENDC
+	dw TeddiursaPicFront, TeddiursaPicBack
+
+	db SCRATCH, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_FAST ; growth rate
+
+	; tm/hm learnset
+	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
+	     WATER_GUN,    BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
+	     DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
+	     SKULL_BASH,   REST,         SUBSTITUTE,   FIRE_PUNCH,   THUNDERPUNCH, \
+	     ICE_PUNCH,    CUT,          STRENGTH
+	; end
+
+	db BANK(TeddiursaPicFront)

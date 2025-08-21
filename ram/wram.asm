@@ -1687,7 +1687,7 @@ wSavedSpriteScreenX:: db
 wSavedSpriteMapY:: db
 wSavedSpriteMapX:: db
 
-	ds 5
+;	ds 1
 
 wWhichPrize:: db
 
@@ -1705,7 +1705,7 @@ wPrize1:: db
 wPrize2:: db
 wPrize3:: db
 
-	ds 1
+;	ds 1
 
 UNION
 wSerialRandomNumberListBlock:: ds $11
@@ -1948,7 +1948,7 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-	ds 7
+	ds 5
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db

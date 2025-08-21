@@ -225,6 +225,28 @@ IF GEN_2_GRAPHICS
 	const PAL_DRAGONITE  ; $B9
 	const PAL_MEWTWO     ; $BA
 	const PAL_MEW        ; $BB
+; Start of Gen 2 Pokemon
+	const PAL_CHIKORITA
+	const PAL_BAYLEEF
+	const PAL_MEGANIUM
+	const PAL_CYNDAQUIL
+	const PAL_QUILAVA
+	const PAL_TYPHLOSION
+	const PAL_TOTODILE
+	const PAL_CROCONAW
+	const PAL_FERALIGATR
+	const PAL_SENTRET
+	const PAL_FURRET
+	const PAL_HOOTHOOT
+	const PAL_NOCTOWL
+	const PAL_LEDYBA
+	const PAL_LEDIAN
+	const PAL_SPINARAK
+	const PAL_ARIADOS
+	const PAL_CROBAT
+	const PAL_CHINCHOU
+	const PAL_LANTURN
+;	const PAL_PICHU
 	const PAL_YOUNGSTER     ; $BC
 	const PAL_BUGCATCHER    ; $BD
 	const PAL_LASS          ; $BE

@@ -36,7 +36,7 @@ INCLUDE "engine/battle/move_effects/drain_hp.asm"
 INCLUDE "engine/menus/players_pc.asm"
 INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
-
+INCLUDE "data/pokemon/mew.asm"
 
 ; Hooks for color hack
 INCLUDE "color/cable_club.asm"
@@ -196,19 +196,11 @@ INCLUDE "engine/slots/game_corner_slots.asm"
 
 SECTION "Battle Engine 7", ROMX
 
-INCLUDE "data/moves/moves.asm"
 INCLUDE "data/pokemon/base_stats.asm"
 INCLUDE "data/pokemon/cries.asm"
-INCLUDE "engine/battle/unused_stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
 INCLUDE "engine/battle/trainer_ai.asm"
 INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
-INCLUDE "gfx/trade.asm"
-INCLUDE "engine/pokemon/evos_moves.asm"
-INCLUDE "engine/battle/move_effects/heal.asm"
-INCLUDE "engine/battle/move_effects/transform.asm"
-INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
-INCLUDE "engine/battle/move_effects/substitute.asm"
 INCLUDE "color/draw_hud_pokeball_gfx.asm"
 
 
@@ -254,6 +246,10 @@ SECTION "Battle Engine 8", ROMX
 
 INCLUDE "engine/battle/init_battle_variables.asm"
 INCLUDE "engine/battle/move_effects/paralyze.asm"
+INCLUDE "engine/battle/move_effects/heal.asm"
+INCLUDE "engine/battle/move_effects/transform.asm"
+INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
+INCLUDE "engine/battle/move_effects/substitute.asm"
 
 
 SECTION "Hidden Objects 2", ROMX
@@ -395,3 +391,9 @@ INCLUDE "engine/pokemon/calc_stats.asm"
 INCLUDE "gfx/fishing.asm"
 INCLUDE "engine/overworld/hms_overworld.asm" ; new, testing
 INCLUDE "engine/battle/link_battle_versus_text.asm"
+INCLUDE "engine/battle/unused_stats_functions.asm"
+INCLUDE "gfx/trade.asm"
+INCLUDE "data/moves/moves.asm"
+
+SECTION "Pokemon Data", ROMX
+INCLUDE "engine/pokemon/evos_moves.asm"

@@ -153,6 +153,107 @@ IF GEN_2_GRAPHICS
 	db PAL_DRAGONITE
 	db PAL_MEWTWO
 	db PAL_MEW
+; Start of Gen 2 Pokemon
+	db PAL_CHIKORITA
+	db PAL_BAYLEEF
+	db PAL_MEGANIUM
+	db PAL_CYNDAQUIL
+	db PAL_QUILAVA
+	db PAL_TYPHLOSION
+	db PAL_TOTODILE
+	db PAL_CROCONAW
+	db PAL_FERALIGATR
+	db PAL_SENTRET
+	db PAL_FURRET
+	db PAL_HOOTHOOT
+	db PAL_NOCTOWL
+	db PAL_LEDYBA
+	db PAL_LEDIAN
+	db PAL_SPINARAK
+	db PAL_ARIADOS
+	db PAL_CROBAT
+	db PAL_CHINCHOU
+	db PAL_LANTURN
+	db PAL_PIKACHU    ; Pichu
+	db PAL_CLEFAIRY   ; Cleffa
+	db PAL_JIGGLYPUFF ; Igglybuff
+	db PAL_GRAYMON    ; Togepi
+	db PAL_GRAYMON    ; Togetic
+	db PAL_GREENMON   ; Natu
+	db PAL_GREENMON   ; Xatu
+	db PAL_YELLOWMON  ; Mareep
+	db PAL_PINKMON    ; Flaaffy
+	db PAL_YELLOWMON  ; Ampharos
+	db PAL_GREENMON   ; Bellossom
+	db PAL_BLUEMON    ; Marill
+	db PAL_BLUEMON    ; Azumarill
+	db PAL_BROWNMON   ; Sudowodo
+	db PAL_GREENMON   ; Politoed
+	db PAL_PINKMON    ; Hoppip
+	db PAL_GREENMON   ; Skiploom
+	db PAL_BLUEMON    ; Jumpluff
+	db PAL_PURPLEMON  ; Aipom
+	db PAL_GREENMON   ; Sunkern
+	db PAL_GREENMON   ; Sunflora
+	db PAL_REDMON     ; Yanma
+	db PAL_BLUEMON    ; Wooper
+	db PAL_BLUEMON    ; Quagsire
+	db PAL_PURPLEMON  ; Espeon
+	db PAL_GRAYMON    ; Umbreon
+	db PAL_GRAYMON    ; Murkrow
+	db PAL_PINKMON    ; Slowking
+	db PAL_GRAYMON    ; Misdreavus
+	db PAL_GRAYMON    ; Unown
+	db PAL_BLUEMON    ; Wobbuffet
+	db PAL_YELLOWMON  ; Girafarig
+	db PAL_GRAYMON    ; Pineco
+	db PAL_PURPLEMON  ; Forretress
+	db PAL_YELLOWMON  ; Dunsparce
+	db PAL_PURPLEMON  ; Gligar
+	db PAL_ONIX       ; Steelix
+	db PAL_PINKMON    ; Snubbull
+	db PAL_PURPLEMON  ; Granbull
+	db PAL_GRAYMON    ; Qwilfish
+	db PAL_REDMON     ; Scizor
+	db PAL_YELLOWMON  ; Shuckle
+	db PAL_GRAYMON    ; Heracross
+	db PAL_GRAYMON    ; Sneasel
+	db PAL_BROWNMON   ; Teddiursa
+	db PAL_BROWNMON   ; Ursaring
+	db PAL_REDMON     ; Slugma
+	db PAL_REDMON     ; Magcargo
+	db PAL_BROWNMON   ; Swinub
+	db PAL_BROWNMON   ; Piloswine
+	db PAL_PINKMON    ; Corsola
+	db PAL_GRAYMON    ; Remoraid
+	db PAL_REDMON     ; Octillery
+	db PAL_REDMON     ; Delibird
+	db PAL_PURPLEMON  ; Mantine
+	db PAL_GRAYMON    ; Skarmory
+	db PAL_GRAYMON    ; Houndour
+	db PAL_GRAYMON    ; Houndoom
+	db PAL_BLUEMON    ; Kingdra
+	db PAL_BLUEMON    ; Phanpy
+	db PAL_GRAYMON    ; Donphan
+	db PAL_PORYGON    ; Porygon2
+	db PAL_BROWNMON   ; Stantler
+	db PAL_GRAYMON    ; Smeargle
+	db PAL_GRAYMON    ; Tyrogue
+	db PAL_BROWNMON   ; Hitmontop
+	db PAL_JYNX       ; Smoochum
+	db PAL_YELLOWMON  ; Elekid
+	db PAL_REDMON     ; Magby
+	db PAL_PINKMON    ; Miltank
+	db PAL_PINKMON    ; Blissey
+	db PAL_YELLOWMON  ; Raikou
+	db PAL_REDMON     ; Entei
+	db PAL_BLUEMON    ; Suicune
+	db PAL_GREENMON   ; Larvitar
+	db PAL_GRAYMON    ; Pupitar
+	db PAL_GREENMON   ; Tyranitar
+	db PAL_GRAYMON    ; Lugia
+	db PAL_REDMON     ; Hooh
+	db PAL_GREENMON   ; Celebi
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
 	db PAL_YOUNGSTER

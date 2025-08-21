@@ -77,6 +77,7 @@ Winxusers Changes and fixes
     - Taking both Fossils
     - Add MAP to start menu
     - Able to change pokemon in the status screen
+    - Add all Gen 2 Pokemon and edit their palettes to match Gen 2 (thanks to Engezerstorung for helping me with the palettes)
 
 - Battle Engine Changes:
     
