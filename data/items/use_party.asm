@@ -36,4 +36,12 @@ UsableItems_PartyMenu:
 	db MAX_ETHER
 	db ELIXER
 	db MAX_ELIXER
+; Gen 2 Itens
+	db SUN_SHARD
+	db MOON_SHARD
+	db METAL_COAT
+	db SUN_STONE
+	db KINGS_ROCK
+	db DRAGON_SCALE
+	db UPGRADE
 	db -1 ; end

@@ -100,6 +100,14 @@ ItemUsePtrTable:
 	dw ItemUsePPRestore  ; MAX_ETHER
 	dw ItemUsePPRestore  ; ELIXER
 	dw ItemUsePPRestore  ; MAX_ELIXER
+; Gen 2 Items
+	dw ItemUseEvoStone   ; SUN_SHARD
+	dw ItemUseEvoStone   ; MOON_SHARD
+	dw ItemUseEvoStone   ; METAL_COAT
+	dw ItemUseEvoStone   ; SUN_STONE
+	dw ItemUseEvoStone   ; KINGS_ROCK
+	dw ItemUseEvoStone   ; DRAGON_SCALE
+	dw ItemUseEvoStone   ; UPGRADE
 
 ItemUseBall:
 

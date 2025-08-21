@@ -83,4 +83,12 @@ KeyItemFlags:
 	dbit FALSE ; MAX_ETHER
 	dbit FALSE ; ELIXER
 	dbit FALSE ; MAX_ELIXER
+; Gen 2 Items
+	dbit FALSE ; SUN_SHARD
+	dbit FALSE ; MOON_SHARD
+	dbit FALSE ; METAL_COAT
+	dbit FALSE ; SUN_STONE
+	dbit FALSE ; KINGS_ROCK
+	dbit FALSE ; DRAGON_SCALE
+	dbit FALSE ; UPGRADE
 	end_bit_array NUM_ITEMS

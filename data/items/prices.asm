@@ -83,6 +83,14 @@ ItemPrices::
 	bcd3 0     ; MAX_ETHER
 	bcd3 0     ; ELIXER
 	bcd3 0     ; MAX_ELIXER
+; Gen 2 Items
+	bcd3 2100  ; SUN_SHARD
+	bcd3 2100  ; MOON_SHARD
+	bcd3 2100  ; METAL_COAT
+	bcd3 2100  ; SUN_STONE
+	bcd3 2100  ; KINGS_ROCK
+	bcd3 2100  ; DRAGON_SCALE
+	bcd3 2100  ; UPGRADE
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

@@ -33,6 +33,13 @@ _FireStoneDescription::
 _ThunderStoneDescription::
 _WaterStoneDescription::
 _LeafStoneDescription::
+_SunShardDescription::
+_MoonShardDescription::
+_MetalCoatDescription::
+_SunStoneDescription::
+_KingsRockDescription::
+_DragonScaleDescription::
+_UpgradeDescription::
 	text "Evolves certain"
 	next "kinds of #MON."
 	prompt

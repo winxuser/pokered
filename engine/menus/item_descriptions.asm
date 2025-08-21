@@ -177,6 +177,20 @@ ItemDescriptionPointers:
 	text_end
 	text_far _MaxElixerDescription
 	text_end
+	text_far _SunShardDescription
+	text_end
+	text_far _MoonShardDescription
+	text_end
+	text_far _MetalCoatDescription
+	text_end
+	text_far _SunStoneDescription
+	text_end
+	text_far _KingsRockDescription
+	text_end
+	text_far _DragonScaleDescription
+	text_end
+	text_far _UpgradeDescription
+	text_end
 	text_far _HM01Description
 	text_end
 	text_far _HM02Description

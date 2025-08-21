@@ -7,7 +7,6 @@ INCLUDE "engine/movie/title.asm"
 INCLUDE "engine/pokemon/load_mon_data.asm"
 INCLUDE "data/items/prices.asm"
 INCLUDE "data/items/names.asm"
-INCLUDE "data/text/unused_names.asm"
 INCLUDE "engine/gfx/sprite_oam.asm"
 INCLUDE "engine/gfx/oam_dma.asm"
 INCLUDE "engine/link/print_waiting_text.asm"
@@ -36,7 +35,6 @@ INCLUDE "engine/battle/move_effects/drain_hp.asm"
 INCLUDE "engine/menus/players_pc.asm"
 INCLUDE "engine/pokemon/remove_mon.asm"
 INCLUDE "engine/events/display_pokedex.asm"
-INCLUDE "data/pokemon/mew.asm"
 
 ; Hooks for color hack
 INCLUDE "color/cable_club.asm"
@@ -394,6 +392,7 @@ INCLUDE "engine/battle/link_battle_versus_text.asm"
 INCLUDE "engine/battle/unused_stats_functions.asm"
 INCLUDE "gfx/trade.asm"
 INCLUDE "data/moves/moves.asm"
+INCLUDE "data/text/unused_names.asm"
 
 SECTION "Pokemon Data", ROMX
 INCLUDE "engine/pokemon/evos_moves.asm"

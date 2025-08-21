@@ -182,7 +182,7 @@ MonPartyData:
 	nybble ICON_MON       ; Mareep
 	nybble ICON_MON       ; Flaaffy
 	nybble ICON_MON       ; Ampharos
-	nybble ICON_MON       ; Bellossom
+	nybble ICON_GRASS     ; Bellossom
 	nybble ICON_MON       ; Marill
 	nybble ICON_MON       ; Azumarill
 	nybble ICON_MON       ; Sudowoodo
@@ -191,8 +191,8 @@ MonPartyData:
 	nybble ICON_MON       ; Skiploom
 	nybble ICON_MON       ; Jumpluff
 	nybble ICON_MON       ; Aipom
-	nybble ICON_MON       ; Sunkern
-	nybble ICON_MON       ; Sunflora
+	nybble ICON_GRASS     ; Sunkern
+	nybble ICON_GRASS     ; Sunflora
 	nybble ICON_BUG       ; Yanma
 	nybble ICON_MON       ; Wooper
 	nybble ICON_MON       ; Quagsire

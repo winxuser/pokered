@@ -672,7 +672,7 @@ GrowlitheEvosMoves:
 
 OnixEvosMoves:
 ; Evolutions
-;	db EVOLVE_ITEM, METAL_COAT, 1, STEELIX
+	db EVOLVE_ITEM, METAL_COAT, 1, STEELIX
 	db 0
 ; Learnset
 	db 10, BIND
@@ -712,7 +712,7 @@ PidgeyEvosMoves:
 SlowpokeEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 37, SLOWBRO
-;	db EVOLVE_ITEM, KINGS_ROCK, 1, SLOWKING
+	db EVOLVE_ITEM, KINGS_ROCK, 1, SLOWKING
 	db 0
 ; Learnset
 	db 6, GROWL
@@ -1417,7 +1417,7 @@ HorseaEvosMoves:
 
 SeadraEvosMoves:
 ; Evolutions
-;	db EVOLVE_ITEM, DRAGON_SCALE, 1, KINGDRA
+	db EVOLVE_ITEM, DRAGON_SCALE, 1, KINGDRA
 	db 0
 ; Learnset
 	db 8, SMOKESCREEN
@@ -1527,8 +1527,8 @@ EeveeEvosMoves:
 	db EVOLVE_ITEM, FIRE_STONE, 1, FLAREON
 	db EVOLVE_ITEM, THUNDER_STONE, 1, JOLTEON
 	db EVOLVE_ITEM, WATER_STONE, 1, VAPOREON
-;	db EVOLVE_ITEM, SUN_SHARD, 1, ESPEON
-;	db EVOLVE_ITEM, MOON_SHARD, 1, UMBREON
+	db EVOLVE_ITEM, SUN_SHARD, 1, ESPEON
+	db EVOLVE_ITEM, MOON_SHARD, 1, UMBREON
 	db 0
 ; Learnset
 	db 8, SAND_ATTACK
@@ -1636,7 +1636,7 @@ ParasEvosMoves:
 PoliwhirlEvosMoves:
 ; Evolutions
 	db EVOLVE_ITEM, WATER_STONE, 1, POLIWRATH
-;	db EVOLVE_ITEM, KINGS_ROCK, 1, POLITOED
+	db EVOLVE_ITEM, KINGS_ROCK, 1, POLITOED
 	db 0
 ; Learnset
 	db 7, HYPNOSIS
@@ -2321,7 +2321,7 @@ GeodudeEvosMoves:
 
 PorygonEvosMoves:
 ; Evolutions
-;	db EVOLVE_ITEM, UPGRADE, 1, PORYGON2
+	db EVOLVE_ITEM, UPGRADE, 1, PORYGON2
 	db 0
 ; Learnset
 	db 9, AGILITY
@@ -2506,7 +2506,7 @@ OddishEvosMoves:
 GloomEvosMoves:
 ; Evolutions
 	db EVOLVE_ITEM, LEAF_STONE, 1, VILEPLUME
-;	db EVOLVE_ITEM, SUN_STONE, 1, BELLOSSOM
+	db EVOLVE_ITEM, SUN_STONE, 1, BELLOSSOM
 	db 0
 ; Learnset
 	db 14, POISONPOWDER
@@ -2603,7 +2603,7 @@ AipomEvosMoves:
 
 SunkernEvosMoves:
 ; Evolutions
-;	db EVOLVE_ITEM, SUN_STONE, 1 , SUNFLORA
+	db EVOLVE_ITEM, SUN_STONE, 1 , SUNFLORA
 	db 0
 ; Learnset
 	db 4, GROWTH
@@ -2712,7 +2712,6 @@ MisdreavusEvosMoves:
 	db 12, CONFUSE_RAY
 	db 27, PSYBEAM
 	db 0
-
 
 UnownEvosMoves:
 ; Evolutions

@@ -83,6 +83,14 @@ ItemNames::
 	li "MAX ETHER"
 	li "ELIXER"
 	li "MAX ELIXER"
+; Gen 2 Items
+	li "SUN SHARD"
+	li "MOON SHARD"
+	li "METAL COAT"
+	li "SUN STONE"
+	li "KINGS ROCK"
+	li "DRAGON SCALE"
+	li "UPGRADE"
 	assert_list_length NUM_ITEMS
 	li "B2F"
 	li "B1F"
