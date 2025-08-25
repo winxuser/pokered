@@ -53,7 +53,7 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld a, CUT
 	ld [hli], a
-	ld a, SPARK
+	ld a, SURF
 	ld [hli], a
 	ld a, SLUDGE_BOMB
 	ld [hl], a

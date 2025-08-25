@@ -76,6 +76,7 @@ SpriteSheetPointerTable:
  	overworld_sprite SabrinaSprite, 12          ; SPRITE_SABRINA
  	overworld_sprite BlaineSprite, 12           ; SPRITE_BLAINE
  	overworld_sprite BillSprite,   12	    	; SPRITE_BILL
+ 	overworld_sprite YellowSprite, 12           ; SPRITE_YELLOW
 	overworld_sprite PokeBallSprite, 4          ; SPRITE_POKE_BALL
 	overworld_sprite FossilSprite, 4            ; SPRITE_FOSSIL
 	overworld_sprite BoulderSprite, 4           ; SPRITE_BOULDER

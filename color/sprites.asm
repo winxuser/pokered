@@ -546,6 +546,9 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x3e: SPRITE_BILL
 	db SPR_PAL_BROWN
 
+	; 0x3e: SPRITE_YELLOW
+	db SPR_PAL_RANDOM
+
 	; 0x3d: SPRITE_BALL
 	db SPR_PAL_ORANGE
 

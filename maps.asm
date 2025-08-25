@@ -1224,3 +1224,13 @@ INCLUDE "data/maps/headers/TraderHouse.asm"
 INCLUDE "scripts/TraderHouse.asm"
 INCLUDE "data/maps/objects/TraderHouse.asm"
 TraderHouse_Blocks: INCBIN "maps/TraderHouse.blk"
+
+INCLUDE "data/maps/headers/YellowsHouse.asm"
+INCLUDE "scripts/YellowsHouse.asm"
+INCLUDE "data/maps/objects/YellowsHouse.asm"
+YellowsHouse_Blocks: INCBIN "maps/YellowsHouse.blk"
+
+INCLUDE "data/maps/headers/YellowsHouse2F.asm"
+INCLUDE "scripts/YellowsHouse2F.asm"
+INCLUDE "data/maps/objects/YellowsHouse2F.asm"
+YellowsHouse2F_Blocks: INCBIN "maps/YellowsHouse2F.blk"
