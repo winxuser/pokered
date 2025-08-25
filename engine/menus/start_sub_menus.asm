@@ -26,6 +26,7 @@ StartMenu_Pokemon::
 .exitMenu
 	call GBPalWhiteOutWithDelay3
 	call RestoreScreenTilesAndReloadTilePatterns
+    call ReloadMapData
 	call LoadGBPal
 	jp RedisplayStartMenu
 .chosePokemon
@@ -272,6 +273,7 @@ StartMenu_Pokemon::
 	text_end
 .goBackToMap
 	call RestoreScreenTilesAndReloadTilePatterns
+    call ReloadMapData
 	jp CloseTextDisplay
 .newBadgeRequired
 	ld hl, .newBadgeRequiredText
@@ -295,6 +297,7 @@ ErasePartyMenuCursors::
 
 ItemMenuLoop:
 	call LoadScreenTilesFromBuffer2DisableBGTransfer ; restore saved screen
+    call ReloadMapData
 	call RunDefaultPaletteCommand
 
 StartMenu_Item::
@@ -322,8 +325,7 @@ StartMenu_Item::
 	jr nc, .choseItem
 .exitMenu
 	call LoadScreenTilesFromBuffer2 ; restore saved screen
-	call LoadTextBoxTilePatterns
-	call UpdateSprites
+	call ReloadMapData
 	jp RedisplayStartMenu
 .choseItem
 ; erase menu cursor (blank each tile in front of an item name)

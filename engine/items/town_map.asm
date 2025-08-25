@@ -289,7 +289,8 @@ LoadTownMap:
 	call TextBoxBorder
 	call DisableLCD
 	ld hl, WorldMapTileGraphics
-	ld de, vChars2 tile $60
+    ld de, vChars2
+    ld bc, $300
 	ld bc, WorldMapTileGraphicsEnd - WorldMapTileGraphics
 	ld a, BANK(WorldMapTileGraphics)
 	call FarCopyData2
@@ -299,25 +300,16 @@ LoadTownMap:
 	ld a, BANK(MonNestIcon)
 	call FarCopyDataDouble
 	hlcoord 0, 0
-	ld de, CompressedMap
+	ld de, UncompressedMap ; $5100
+.loop
 .nextTile
 	ld a, [de]
-	and a
-	jr z, .done
-	ld b, a
-	and $f
-	ld c, a
-	ld a, b
-	swap a
-	and $f
-	add $60
-.writeRunLoop
-	ld [hli], a
-	dec c
-	jr nz, .writeRunLoop
-	inc de
-	jr .nextTile
-.done
+	cp $ff
+	jr z, .doneCopying
+    ld [hli], a
+    inc de
+    jr .loop
+.doneCopying
 	call EnableLCD
 	ld b, SET_PAL_TOWN_MAP
 	call RunPaletteCommand
@@ -329,8 +321,9 @@ LoadTownMap:
 	ld [wTownMapSpriteBlinkingEnabled], a
 	ret
 
-CompressedMap:
-	INCBIN "gfx/town_map/town_map.rle"
+UncompressedMap: ; Uses the Gen 2 format
+    INCBIN "gfx/town_map.map"
+    db $ff ; Marks the end of the map data
 
 ExitTownMap:
 ; clear town map graphics data and load usual graphics data
