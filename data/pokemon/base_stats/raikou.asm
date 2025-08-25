@@ -19,7 +19,8 @@ ENDC
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
 	     RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         SWIFT,        SKULL_BASH,   REST,         \
-	     THUNDER_WAVE, SUBSTITUTE,   CUT,          STRENGTH,     FLASH
+	     THUNDER_WAVE, SUBSTITUTE,   MUDSLAP,      CUT,          STRENGTH,     \
+	     FLASH
 	; end
 
 	db BANK(RaikouPicFront)

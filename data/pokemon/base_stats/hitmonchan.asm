@@ -22,7 +22,7 @@ ENDC
 	     DOUBLE_EDGE,  SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     MIMIC,        DOUBLE_TEAM,  BIDE,         METRONOME,    SWIFT,        \
 	     SKULL_BASH,   REST,         SUBSTITUTE,   FIRE_PUNCH,   ICE_PUNCH,    \
-		 THUNDERPUNCH, STRENGTH
+		 THUNDERPUNCH, MUDSLAP,      STRENGTH
 	; end
 
 	db BANK(HitmonchanPicFront)

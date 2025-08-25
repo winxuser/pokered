@@ -12,7 +12,7 @@ IF GEN_2_GRAPHICS
 ENDC
 	dw HoppipPicFront, HoppipPicBack
 
-	db SPLASH, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SPLASH, SYNTHESIS, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

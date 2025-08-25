@@ -20,7 +20,8 @@ ENDC
 	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
 	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
 	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE,   CUT,          SURF,         STRENGTH
+	     ROCK_SLIDE,   SUBSTITUTE,   MUDSLAP,      CUT,          SURF,         \
+	     STRENGTH
 	; end
 
 	db BANK(TyranitarPicFront)

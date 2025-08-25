@@ -20,7 +20,7 @@ ENDC
 	     ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         TELEPORT,     \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SELFDESTRUCT, \
 	     SWIFT,        REST,         EXPLOSION,    TRI_ATTACK,   SUBSTITUTE,   \
-	     FLY,          SURF,         STRENGTH
+	     MUDSLAP,      FLY,          SURF,         STRENGTH
 	; end
 
 	db BANK(LugiaPicFront)

@@ -14,14 +14,15 @@ ELSE
 ENDC
 	dw ArticunoPicFront, ArticunoPicBack
 
-	db GUST, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GUST, POWDER_SNOW, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   \
 	     RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	     SWIFT,        SKY_ATTACK,   REST,         SUBSTITUTE,   MUDSLAP,      \
+	     FLY
 	; end
 
 	db BANK(ArticunoPicFront)

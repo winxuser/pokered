@@ -19,7 +19,8 @@ ENDC
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         THUNDERBOLT,  THUNDER,      MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        SKY_ATTACK,   \
-	     REST,         THUNDER_WAVE, SUBSTITUTE,   CUT,          FLY
+	     REST,         THUNDER_WAVE, SUBSTITUTE,   MUDSLAP,      CUT,          \
+	     FLY
 	; end
 
 	db BANK(SkarmoryPicFront)

@@ -12,7 +12,7 @@ IF GEN_2_GRAPHICS
 ENDC
 	dw PiloswinePicFront, PiloswinePicBack
 
-	db TACKLE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db TACKLE, POWDER_SNOW, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

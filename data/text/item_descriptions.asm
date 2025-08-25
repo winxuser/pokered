@@ -624,6 +624,17 @@ _TM54Description::
 	next "ctric type punch."
 	prompt
 
+_TM55Description::
+	text "Reduces the foe's"
+	next "accuracy."
+	prompt
+
+_TM56Description::
+	text "Strikes target"
+	next "with wings."
+	para "May raise Defense."
+	prompt
+
 _UnusedItemDescription::
 	text "?"
 	prompt

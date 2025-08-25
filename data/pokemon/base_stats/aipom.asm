@@ -20,7 +20,7 @@ ENDC
 	     WATER_GUN,    BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
 	     DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
 	     SKULL_BASH,   REST,         SUBSTITUTE,   FIRE_PUNCH,   ICE_PUNCH,    \
-	     THUNDERPUNCH, CUT,          STRENGTH
+	     THUNDERPUNCH, MUDSLAP,      CUT,          STRENGTH
 	     ; end
 
 	db BANK(AipomPicFront)

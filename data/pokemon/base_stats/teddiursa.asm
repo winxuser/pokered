@@ -20,7 +20,7 @@ ENDC
 	     WATER_GUN,    BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
 	     DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
 	     SKULL_BASH,   REST,         SUBSTITUTE,   FIRE_PUNCH,   THUNDERPUNCH, \
-	     ICE_PUNCH,    CUT,          STRENGTH
+	     ICE_PUNCH,    MUDSLAP,      CUT,          STRENGTH
 	; end
 
 	db BANK(TeddiursaPicFront)

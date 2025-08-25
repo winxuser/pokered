@@ -23,7 +23,7 @@ ENDC
 	     RAGE,         THUNDERBOLT,  THUNDER,      DIG,          MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         METRONOME,    SWIFT,        SKULL_BASH,   \
 	     REST,         ROCK_SLIDE,   SUBSTITUTE,   FIRE_PUNCH,   ICE_PUNCH,    \
-		 THUNDERPUNCH, STRENGTH
+		 MUDSLAP,      THUNDERPUNCH, STRENGTH
 	; end
 
 	db BANK(MankeyPicFront)

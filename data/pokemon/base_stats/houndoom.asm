@@ -19,7 +19,8 @@ ENDC
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  HYPER_BEAM,   \
 	     RAGE,         DRAGON_RAGE,  DIG,          TELEPORT,     MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   FLAMETHROWER, STRENGTH
+	     SKULL_BASH,   REST,         SUBSTITUTE,   FLAMETHROWER, MUDSLAP,      \
+	     STRENGTH
 	; end
 
 	db BANK(HoundoomPicFront)

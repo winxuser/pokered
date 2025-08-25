@@ -301,6 +301,10 @@ FreezeBurnParalyzeEffect:
 	ld hl, FrozenText
 	jp PrintText
 
+PrintBurnText: ; new, testing
+	ld hl, BurnedText
+	jp PrintText
+
 BurnedText:
 	text_far _BurnedText
 	text_end
@@ -348,6 +352,42 @@ FireDefrostedText:
 	text_far _FireDefrostedText
 	text_end
 
+SelfBuff10Percent:
+	call BattleRandom
+	cp 10 percent	; chance of self-buffing ; testing with higher number, 50 instead of 10
+	ret nc			; returns and doesn't buff if rolls 10 or higher
+	call StatModifierUpEffect ; jr or call?
+	ret ; new, testing, is this ret the solution to all the problems of the world?
+
+SelfBuff20Percent:
+	call BattleRandom
+	cp 20 percent	; chance of self-buffing ; testing with higher number, 80 instead of 20
+	ret nc			; returns and doesn't buff if rolls 20 or higher
+	call StatModifierUpEffect ; jr or call?
+	ret ; new, testing, is this ret the solution to all the problems of the world?
+
+; taking inspiration from Vortiene
+AttackSpeedUpEffect: ; used for Dragon Dance
+	ld de, wPlayerMoveEffect
+	ldh a, [hWhoseTurn]
+	and a
+	jr z, .next
+	ld de, wEnemyMoveEffect
+.next
+	ld a, SPEED_UP1_EFFECT
+	ld [de], a
+	push de
+	call StatModifierUpEffect ; stat modifier raising function
+	pop de
+	ld a, ATTACK_UP_SIDE_EFF1 ; it's ugly I'm using the one whose name implies a 10% chance, but I can't be bothered to make another one
+	ld [de], a ; we do the side effect for the second stat because it won't run the animation
+	push de
+	call StatModifierUpEffect ; stat modifier raising function
+	pop de
+	ld a, ATTACK_SPEED_UP1_EFFECT
+	ld [de], a
+	ret
+
 StatModifierUpEffect:
 	ld hl, wPlayerMonStatMods
 	ld de, wPlayerMoveEffect
@@ -358,6 +398,21 @@ StatModifierUpEffect:
 	ld de, wEnemyMoveEffect
 .statModifierUpEffect
 	ld a, [de]
+	cp ATTACK_UP_SIDE_EFF1 ; new, testing
+	jr c, .vanillaCode
+	cp ATTACK_UP_SIDE_EFF1
+	jr z, .mapNewToAtk
+	cp ATTACK_UP_SIDE_EFF2
+	jr z, .mapNewToAtk
+	cp DEFENSE_UP_SIDE_EFF1
+	jr z, .mapNewToDef
+.mapNewToAtk
+	ld a, 0
+	jr .incrementStatMod
+.mapNewToDef
+	ld a, 1
+	jr .incrementStatMod
+.vanillaCode
 	sub ATTACK_UP1_EFFECT
 	cp EVASION_UP1_EFFECT + $3 - ATTACK_UP1_EFFECT ; covers all +1 effects
 	jr c, .incrementStatMod
@@ -372,6 +427,8 @@ StatModifierUpEffect:
 	cp b ; can't raise stat past +6 ($d or 13)
 	jp c, PrintNothingHappenedText
 	ld a, [de]
+	cp ATTACK_UP_SIDE_EFF1 ; new, testing
+	jr nc, .ok
 	cp ATTACK_UP1_EFFECT + $8 ; is it a +2 effect?
 	jr c, .ok
 	inc b ; if so, increment stat mod again
@@ -472,6 +529,19 @@ UpdateStatDone:
     and a
     jr nz, .notMinimize
 	ld a, [de]
+;;;;;;;;;; adapted from Vortiene
+	push de
+	ld de, wPlayerMoveEffect
+	ldh a, [hWhoseTurn]
+	and a
+	jr z, .playerTurn2
+	ld de, wEnemyMoveEffect
+.playerTurn2
+	ld a, [de]
+	pop de
+	cp ATTACK_UP_SIDE_EFF1
+	jr nc, .skipAnimation
+;;;;;;;;;;
 	cp MINIMIZE
 	jr nz, .notMinimize
  ; if a substitute is up, slide off the substitute and show the mon pic before
@@ -535,8 +605,11 @@ MonsStatsRoseText:
 	jr z, .playerTurn
 	ld a, [wEnemyMoveEffect]
 .playerTurn
+	cp ATTACK_UP_SIDE_EFF1	; new, testing
+	jp nc, .rose			; new, testing
 	cp ATTACK_DOWN1_EFFECT
 	ret nc
+.rose
 	ld hl, RoseText
 	ret
 
@@ -568,13 +641,51 @@ StatModifierDownEffect:
 	call CheckTargetSubstitute ; can't hit through substitute
 	jp nz, MoveMissed
 	ld a, [de]
-	cp ATTACK_DOWN_SIDE_EFFECT
+	cp ATTACK_DOWN_SIDE_EFFECT1		; new, was ATTACK_DOWN_SIDE_EFFECT3, which was ATTACK_DOWN_SIDE_EFFECT
 	jr c, .nonSideEffect
+	cp ATTACK_DOWN_SIDE_EFFECT_CERT	; new
+	jr nc, .canLowerFurther			; new
+	cp ATTACK_DOWN_SIDE_EFFECT3		; new
+	jr nc, .goTo30ishChance			; new
+	cp ATTACK_DOWN_SIDE_EFFECT2		; new
+	jr nc, .goTo20Chance			; new
+; would be goTo10Chance, but no need to jump to it if we failed the jr nc above
+	call BattleRandom
+	cp 10 percent + 1 ; chance for side effects
+	jp nc, CantLowerAnymore
+	jp c, .canLowerFurther
+.goTo20Chance
+	call BattleRandom
+	cp 20 percent + 1 ; chance for side effects
+	jp nc, CantLowerAnymore
+	jp c, .canLowerFurther
+.goTo30ishChance
 	call BattleRandom
 	cp 33 percent + 1 ; chance for side effects
 	jp nc, CantLowerAnymore
+;			jp c, .canLowerFurther	; unnecessary
+;		.differentChance  			; new
+;			call BattleRandom		; new
+;			cp 99 percent + 1 ; different chance for side effects  ; new
+;			jp nc, CantLowerAnymore	; new
+.canLowerFurther 			; new
 	ld a, [de]
-	sub ATTACK_DOWN_SIDE_EFFECT ; map each stat to 0-3
+	cp ATTACK_DOWN_SIDE_EFFECT_CERT	; new
+	jr nc, .mappingCert				; new
+	cp ATTACK_DOWN_SIDE_EFFECT3		; new
+	jr nc, .mapping30				; new
+	cp ATTACK_DOWN_SIDE_EFFECT2		; new
+	jr nc, .mapping20				; new
+	sub ATTACK_DOWN_SIDE_EFFECT1 	; map each stat to 0-5 (it said 3 because there was nothing lower accuracy or evasion?)
+	jr .decrementStatMod
+.mappingCert						; new
+	sub ATTACK_DOWN_SIDE_EFFECT_CERT; new ; map each stat to 0-5 (it said 3 because there was nothing lower accuracy or evasion?)
+	jr .decrementStatMod
+.mapping30							; new
+	sub ATTACK_DOWN_SIDE_EFFECT3 	; new ; map each stat to 0-5 (it said 3 because there was nothing lower accuracy or evasion?)
+	jr .decrementStatMod
+.mapping20							; new
+	sub ATTACK_DOWN_SIDE_EFFECT2 	; new ; map each stat to 0-5 (it said 3 because there was nothing lower accuracy or evasion?)
 	jr .decrementStatMod
 .nonSideEffect ; non-side effects only
 	push hl
@@ -724,7 +835,7 @@ CantLowerAnymore_Pop:
 
 CantLowerAnymore:
 	ld a, [de]
-	cp ATTACK_DOWN_SIDE_EFFECT
+	cp ATTACK_DOWN_SIDE_EFFECT1
 	ret nc
 	ld hl, NothingHappenedText
 	jp PrintText
@@ -748,7 +859,7 @@ MonsStatsFellText:
 ; check if the move's effect decreases a stat by 2
 	cp BIDE_EFFECT
 	ret c
-	cp ATTACK_DOWN_SIDE_EFFECT
+	cp ATTACK_DOWN_SIDE_EFFECT1
 	ret nc
 	ld hl, GreatlyFellText
 	ret

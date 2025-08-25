@@ -28,8 +28,8 @@ ENDC
 	     SELFDESTRUCT, EGG_BOMB,     FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
 	     SOFTBOILED,   DREAM_EATER,  SKY_ATTACK,   REST,         THUNDER_WAVE, \
 	     PSYWAVE,      EXPLOSION,    ROCK_SLIDE,   TRI_ATTACK,   SUBSTITUTE,   \
-	     FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, CUT,          \
-	     FLY,          SURF,         STRENGTH,     FLASH
+	     FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, MUDSLAP,      \
+	     CUT,          FLY,          SURF,         STRENGTH,     FLASH
 
 	; end
 

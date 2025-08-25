@@ -24,7 +24,8 @@ ENDC
 	     RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   FISSURE,      \
 	     MIMIC,        DOUBLE_TEAM,  BIDE,         FIRE_BLAST,   SKULL_BASH,   \
 	     DREAM_EATER,  REST,         SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   \
-		 ICE_PUNCH,    THUNDERPUNCH, CUT,          SURF,         STRENGTH
+		 ICE_PUNCH,    THUNDERPUNCH, MUDSLAP,      CUT,          SURF,         \
+		 STRENGTH
 	; end
 
 	db BANK(LickitungPicFront)

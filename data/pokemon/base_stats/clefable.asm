@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw ClefablePicFront, ClefablePicBack
 
-	db SING, DOUBLESLAP, METRONOME, NO_MOVE ; level 1 learnset
+	db SING, DOUBLESLAP, METRONOME, MOONLIGHT ; level 1 learnset
 	db GROWTH_FAST ; growth rate
 
 	; tm/hm learnset
@@ -25,7 +25,7 @@ ENDC
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
 	     FIRE_BLAST,   SKULL_BASH,   DREAM_EATER,  REST,         THUNDER_WAVE, \
 		 PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   \
-		 ICE_PUNCH,    THUNDERPUNCH, STRENGTH,     FLASH
+		 ICE_PUNCH,    THUNDERPUNCH, MUDSLAP,      STRENGTH,     FLASH
 	; end
 
 	db BANK(ClefablePicFront)

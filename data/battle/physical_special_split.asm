@@ -5,6 +5,7 @@ PhysicalToSpecialMoves:
         db ACID
         db SLUDGE
         db SMOG
+        db SLUDGE_BOMB
 ; Normal
         db HYPER_BEAM
         db RAZOR_WIND
@@ -20,16 +21,19 @@ PhysicalToSpecialMoves:
         db MEGA_DRAIN
         db PETAL_DANCE
         db SOLARBEAM
+        db GIGA_DRAIN
 ; Water
         db BUBBLE
         db BUBBLEBEAM
         db HYDRO_PUMP
         db SURF
         db WATER_GUN
+        db OCTAZOOKA
 ; Ice
         db AURORA_BEAM
         db BLIZZARD
         db ICE_BEAM
+        db POWDER_SNOW
 ; Psychic
         db CONFUSION
         db DREAM_EATER
@@ -38,6 +42,7 @@ PhysicalToSpecialMoves:
         db PSYWAVE
 ; Dragon
         db DRAGON_RAGE
+        db TWISTER
 ; Fighting
         db HI_JUMP_KICK
 ; Ghost
@@ -46,11 +51,13 @@ PhysicalToSpecialMoves:
         db THUNDER
         db THUNDERSHOCK
         db THUNDERBOLT
+        db ZAP_CANNON
         db -1 ; end
 
 SpecialToPhysicalMoves:
 ; Fire
         db FIRE_PUNCH
+        db FLAMEWHEEL
 ; Water
         db CLAMP
         db CRABHAMMER
@@ -60,6 +67,7 @@ SpecialToPhysicalMoves:
         db VINE_WHIP
 ; Electric
         db THUNDERPUNCH
+        db SPARK
 ; Ice
         db ICE_PUNCH
 
@@ -101,6 +109,7 @@ SpecialToPhysicalMoves:
         db THRASH
         db VICEGRIP
         db WRAP
+        db RAPID_SPIN
 ; Fighting
         db COUNTER
         db DOUBLE_KICK
@@ -110,13 +119,19 @@ SpecialToPhysicalMoves:
         db ROLLING_KICK
         db SEISMIC_TOSS
         db SUBMISSION
+        db CROSS_CHOP
+        db VITAL_THROW
+        db MACH_PUNCH
 ; Ground
         db BONE_CLUB
         db BONEMERANG
         db DIG
         db EARTHQUAKE
+        db BONE_RUSH
 ; Dark
         db BITE
+        db PURSUIT
+        db FAINT_ATTACK
 ; Flying
         db DRILL_PECK
         db PECK
@@ -126,6 +141,7 @@ SpecialToPhysicalMoves:
         db LEECH_LIFE
         db PIN_MISSILE
         db TWINEEDLE
+        db MEGA_HORN
 ; Ghost
         db LICK
 ; Poison
@@ -133,4 +149,12 @@ SpecialToPhysicalMoves:
 ; Rock
         db ROCK_SLIDE
         db ROCK_THROW
+
+; Dragon
+        db OUTRAGE
+
+; Steel
+        db METAL_CLAW
+        db STEEL_WING
+
         db -1 ; end

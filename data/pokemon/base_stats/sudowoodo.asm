@@ -19,7 +19,7 @@ ENDC
 	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   SUBMISSION,   SEISMIC_TOSS, RAGE,         MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         REST,         SUBSTITUTE,   FIRE_PUNCH,   \
-	     THUNDERPUNCH, ICE_PUNCH,    STRENGTH
+	     THUNDERPUNCH, ICE_PUNCH,    MUDSLAP,      STRENGTH
 	; end
 
 	db BANK(SudowoodoPicFront)

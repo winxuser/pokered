@@ -20,7 +20,7 @@ ENDC
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
 	     RAGE,         MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
-	     SKY_ATTACK,   REST,         SUBSTITUTE,   FLY
+	     SKY_ATTACK,   REST,         SUBSTITUTE,   MUDSLAP,      FLY
 	; end
 
 	db BANK(SpearowPicFront)

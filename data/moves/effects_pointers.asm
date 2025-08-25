@@ -68,14 +68,34 @@ MoveEffectPointerTable:
 	dw ReflectLightScreenEffect  ; REFLECT_EFFECT
 	dw PoisonEffect              ; POISON_EFFECT
 	dw ParalyzeEffect            ; PARALYZE_EFFECT
-	dw StatModifierDownEffect    ; ATTACK_DOWN_SIDE_EFFECT
-	dw StatModifierDownEffect    ; DEFENSE_DOWN_SIDE_EFFECT
-	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT
-	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT
+	dw StatModifierDownEffect    ; ATTACK_DOWN_SIDE_EFFECT1
+	dw StatModifierDownEffect    ; DEFENSE_DOWN_SIDE_EFFECT1
+	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT1
+	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT1
 	dw StatModifierDownEffect    ; unused effect
 	dw StatModifierDownEffect    ; unused effect
 	dw StatModifierDownEffect    ; unused effect
 	dw StatModifierDownEffect    ; unused effect
+	dw StatModifierDownEffect    ; ATTACK_DOWN_SIDE_EFFECT2
+	dw StatModifierDownEffect    ; DEFENSE_DOWN_SIDE_EFFECT2
+	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT2
+	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT2
+	dw StatModifierDownEffect    ; unused effect - would this be accuracy?
+	dw StatModifierDownEffect    ; unused effect - would this be evasion?
+
+	dw StatModifierDownEffect    ; ATTACK_DOWN_SIDE_EFFECT3
+	dw StatModifierDownEffect    ; DEFENSE_DOWN_SIDE_EFFECT3
+	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT3
+	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT3
+	dw StatModifierDownEffect    ; unused effect - would this be accuracy?
+	dw StatModifierDownEffect    ; unused effect - would this be evasion?
+
+	dw StatModifierDownEffect    ; ATTACK_DOWN_SIDE_EFFECT_CERT
+	dw StatModifierDownEffect    ; DEFENSE_DOWN_SIDE_EFFECT_CERT
+	dw StatModifierDownEffect    ; SPEED_DOWN_SIDE_EFFECT_CERT
+	dw StatModifierDownEffect    ; SPECIAL_DOWN_SIDE_EFFECT_CERT
+	dw StatModifierDownEffect    ; ACCURACY_DOWN_SIDE_EFFECT_CERT
+	dw StatModifierDownEffect    ; EVASION_DOWN_SIDE_EFFECT_CERT
 	dw ConfusionSideEffect       ; CONFUSION_SIDE_EFFECT
 	dw TwoToFiveAttacksEffect    ; TWINEEDLE_EFFECT
 	dw NULL                      ; unused effect
@@ -87,4 +107,10 @@ MoveEffectPointerTable:
 	dw LeechSeedEffect           ; LEECH_SEED_EFFECT
 	dw SplashEffect              ; SPLASH_EFFECT
 	dw DisableEffect             ; DISABLE_EFFECT
+
+	dw AttackSpeedUpEffect 		 ; ATTACK_SPEED_UP1_EFFECT - for DRAGON_DANCE
+
+	dw SelfBuff10Percent		 ; ATTACK_UP_SIDE_EFF1
+	dw SelfBuff10Percent		 ; DEFENSE_UP_SIDE_EFF1
+	dw SelfBuff20Percent		 ; ATTACK_UP_SIDE_EFF2
 	assert_table_length NUM_MOVE_EFFECTS

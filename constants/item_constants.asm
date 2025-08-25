@@ -124,7 +124,7 @@ DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
-DEF NUM_TMS EQU 54
+DEF NUM_TMS EQU 56
 
 DEF __tmhm_value__ = NUM_TMS + 1
 
@@ -219,11 +219,13 @@ DEF TM01 EQU const_value
 	add_tm FIRE_PUNCH   ; $FC (TM52)
 	add_tm ICE_PUNCH    ; $FD (TM53)
 	add_tm THUNDERPUNCH ; $FE (TM54)
+	add_tm MUDSLAP      ; $FF (TM55)
+	add_tm STEEL_WING   ; (TM56)
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 
-; 54 TMs + 5 HMs = 59 learnable TM/HM flags per Pokémon.
+; 56 TMs + 5 HMs = 61 learnable TM/HM flags per Pokémon.
 DEF __tmhm_value__ = NUM_TM_HM + 1
 DEF UNUSED_TMNUM EQU __tmhm_value__
 

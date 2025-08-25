@@ -22,7 +22,7 @@ ENDC
 	     THUNDERBOLT,  THUNDER,      EARTHQUAKE,   FISSURE,      MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         \
 	     ROCK_SLIDE,   SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    \
-		 THUNDERPUNCH, SURF,         STRENGTH
+		 THUNDERPUNCH, MUDSLAP,      SURF,         STRENGTH
 	; end
 
 	db BANK(MiltankPicFront)

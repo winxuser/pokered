@@ -53,9 +53,9 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld a, CUT
 	ld [hli], a
-	ld a, SURF
+	ld a, SPARK
 	ld [hli], a
-	ld a, STRENGTH
+	ld a, SLUDGE_BOMB
 	ld [hl], a
 	ld hl, wPartyMon1PP
 	ld a, 15
@@ -155,7 +155,7 @@ DebugNewGameItemsList:
 	db DRAGON_SCALE, 1
 	db UPGRADE, 2
 	db TM_THUNDERPUNCH, 1
-	db TM_THUNDERBOLT, 1
+	db TM_STEEL_WING, 1
 	db -1 ; end
 
 DebugUnusedList: ; unreferenced

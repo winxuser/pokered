@@ -72,12 +72,32 @@
 	const REFLECT_EFFECT             ; $41
 	const POISON_EFFECT              ; $42
 	const PARALYZE_EFFECT            ; $43
-	const ATTACK_DOWN_SIDE_EFFECT    ; $44
-	const DEFENSE_DOWN_SIDE_EFFECT   ; $45
-	const SPEED_DOWN_SIDE_EFFECT     ; $46
-	const SPECIAL_DOWN_SIDE_EFFECT   ; $47
+	const ATTACK_DOWN_SIDE_EFFECT1   ; $44 - the position of this one is important for statModifierDownEffect!!!
+	const DEFENSE_DOWN_SIDE_EFFECT1  ; $45
+	const SPEED_DOWN_SIDE_EFFECT1    ; $46
+	const SPECIAL_DOWN_SIDE_EFFECT1  ; $47
 	const_skip                       ; $48
 	const_skip                       ; $49
+	const ATTACK_DOWN_SIDE_EFFECT2   ; - the position of this one is important for statModifierDownEffect!!!
+	const DEFENSE_DOWN_SIDE_EFFECT2  ;
+	const SPEED_DOWN_SIDE_EFFECT2    ;
+	const SPECIAL_DOWN_SIDE_EFFECT2  ;
+	const_skip                       ;
+	const_skip                       ;
+
+	const ATTACK_DOWN_SIDE_EFFECT3   ; - the position of this one is important for statModifierDownEffect!!!
+	const DEFENSE_DOWN_SIDE_EFFECT3  ;
+	const SPEED_DOWN_SIDE_EFFECT3    ;
+	const SPECIAL_DOWN_SIDE_EFFECT3  ;
+	const_skip                       ;
+	const_skip                       ;
+
+	const ATTACK_DOWN_SIDE_EFFECT_CERT
+	const DEFENSE_DOWN_SIDE_EFFECT_CERT
+	const SPEED_DOWN_SIDE_EFFECT_CERT
+	const SPECIAL_DOWN_SIDE_EFFECT_CERT
+	const ACCURACY_DOWN_SIDE_EFFECT_CERT
+	const EVASION_DOWN_SIDE_EFFECT_CERT
 	const_skip                       ; $4A
 	const_skip                       ; $4B
 	const CONFUSION_SIDE_EFFECT      ; $4C
@@ -91,4 +111,12 @@
 	const LEECH_SEED_EFFECT          ; $54
 	const SPLASH_EFFECT              ; $55
 	const DISABLE_EFFECT             ; $56
+
+	const ATTACK_SPEED_UP1_EFFECT	 ; - new, testing, for DRAGON_DANCE
+
+	const ATTACK_UP_SIDE_EFF1		 ; new, testing
+	const DEFENSE_UP_SIDE_EFF1		 ; new, testing
+
+	const ATTACK_UP_SIDE_EFF2		 ; new, testing
+
 DEF NUM_MOVE_EFFECTS EQU const_value - 1

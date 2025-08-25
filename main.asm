@@ -205,8 +205,6 @@ INCLUDE "color/draw_hud_pokeball_gfx.asm"
 SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
-;INCLUDE "engine/battle/effects.asm"
-
 
 SECTION "bank10", ROMX
 
@@ -248,7 +246,6 @@ INCLUDE "engine/battle/move_effects/heal.asm"
 INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
 INCLUDE "engine/battle/move_effects/substitute.asm"
-
 
 SECTION "Hidden Objects 2", ROMX
 

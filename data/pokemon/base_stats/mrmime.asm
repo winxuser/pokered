@@ -24,7 +24,7 @@ ENDC
 	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
 	     METRONOME,    SKULL_BASH,   DREAM_EATER,  REST,         THUNDER_WAVE, \
 		 PSYWAVE,      SUBSTITUTE,   FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, \
-		 FLASH
+		 MUDSLAP,      FLASH
 	; end
 
 	db BANK(MrMimePicFront)

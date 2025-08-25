@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw JynxPicFront, JynxPicBack
 
-	db POUND, LICK, LOVELY_KISS, NO_MOVE ; level 1 learnset
+	db POUND, LICK, LOVELY_KISS, POWDER_SNOW ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
@@ -23,7 +23,7 @@ ENDC
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         METRONOME,    SKULL_BASH,   DREAM_EATER,  REST,         \
-		 PSYWAVE,      SUBSTITUTE,   ICE_PUNCH
+		 PSYWAVE,      SUBSTITUTE,   ICE_PUNCH,    MUDSLAP
 	; end
 
 	db BANK(JynxPicFront)

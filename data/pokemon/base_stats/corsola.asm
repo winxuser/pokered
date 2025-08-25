@@ -20,7 +20,7 @@ ENDC
 	     ICE_BEAM,     BLIZZARD,     HYPER_BEAM,   RAGE,         TELEPORT,     \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SELFDESTRUCT, \
 	     SWIFT,        REST,         EXPLOSION,    TRI_ATTACK,   SUBSTITUTE,   \
-	     SURF,         STRENGTH
+	     MUDSLAP,      SURF,         STRENGTH
 	; end
 
 	db BANK(CorsolaPicFront)

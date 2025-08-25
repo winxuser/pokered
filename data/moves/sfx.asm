@@ -165,6 +165,32 @@ MoveSoundTable:
 	db SFX_BATTLE_26,          $f0, $ff ; SUPER_FANG
 	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SLASH
 	db SFX_BATTLE_2C,          $d8, $04 ; SUBSTITUTE
+	db SFX_BATTLE_12,          $00, $c0 ; RAPID_SPIN
+	db SFX_BATTLE_23,          $00, $80 ; PURSUIT
+	db SFX_BATTLE_24,          $40, $c0 ; GIGA_DRAIN
+	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; FAINT_ATTACK
+	db SFX_BATTLE_0F,          $20, $40 ; CROSS_CHOP
+	db SFX_BATTLE_19,          $21, $e0 ; FLAMEWHEEL
+	db SFX_BATTLE_0D,          $00, $40 ; VITAL_THROW
+	db SFX_BATTLE_2F,          $20, $80 ; ZAP_CANNON
+	db SFX_BATTLE_2A,          $20, $20 ; SLUDGE_BOMB
+	db SFX_BATTLE_32,          $00, $80 ; BONE_RUSH
+	db SFX_BATTLE_0D,          $00, $40 ; MACH_PUNCH
+	db SFX_BATTLE_12,          $00, $c0 ; TWISTER
+	db SFX_BATTLE_13,          $14, $c0 ; POWDER_SNOW
+	db SFX_BATTLE_32,          $00, $80 ; OUTRAGE
+	db SFX_BATTLE_09,          $88, $10 ; SWEET_KISS
+	db SFX_NOT_VERY_EFFECTIVE, $10, $ff ; COTTON_SPORE
+	db SFX_NOT_VERY_EFFECTIVE, $10, $ff ; SYNTHESIS
+	db SFX_NOT_VERY_EFFECTIVE, $10, $ff ; MOONLIGHT
+	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; MUDSLAP
+	db SFX_BATTLE_1E,          $00, $80 ; CRUNCH
+	db SFX_BATTLE_0F,          $1f, $ff ; METAL_CLAW
+	db SFX_BATTLE_1E,          $00, $60 ; MEGA_HORN
+	db SFX_BATTLE_28,          $40, $80 ; OCTAZOOKA
+	db SFX_BATTLE_12,          $10, $a0 ; STEEL_WING
+	db SFX_NOT_VERY_EFFECTIVE, $10, $ff ; MILK_DRINK
+	db SFX_BATTLE_26,          $00, $80 ; SPARK
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

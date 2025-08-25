@@ -12,7 +12,7 @@ IF GEN_2_GRAPHICS
 ENDC
 	dw JumpluffPicFront, JumpluffPicBack
 
-	db SPLASH, TAIL_WHIP, TACKLE, NO_MOVE ; level 1 learnset
+	db SPLASH, SYNTHESIS, TAIL_WHIP, TACKLE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

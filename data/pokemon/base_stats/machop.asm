@@ -23,7 +23,7 @@ ENDC
 	     EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
 	     BIDE,         METRONOME,    FIRE_BLAST,   SKULL_BASH,   REST,         \
 	     ROCK_SLIDE,   SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   ICE_PUNCH,    \
-		 THUNDERPUNCH, STRENGTH
+		 THUNDERPUNCH, MUDSLAP,      STRENGTH
 	; end
 
 	db BANK(MachopPicFront)

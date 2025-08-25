@@ -78,6 +78,7 @@ Winxusers Changes and fixes
     - Add MAP to start menu
     - Able to change pokemon in the status screen
     - Add all Gen 2 Pokemon and edit their palettes to match Gen 2 (thanks to Engezerstorung for helping me with the palettes)
+    - Add a few Gen 2 moves
 
 - Battle Engine Changes:
     

@@ -23,7 +23,7 @@ ENDC
 	     RAGE,         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   \
 	     REST,         EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   FLAMETHROWER, \
-		 FIRE_PUNCH,   STRENGTH
+		 FIRE_PUNCH,   MUDSLAP,      STRENGTH
 	; end
 
 	db BANK(GolemPicFront)

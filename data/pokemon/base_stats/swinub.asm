@@ -20,7 +20,7 @@ ENDC
 	     ICE_BEAM,     BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
 	     PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, \
-	     PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   STRENGTH
+	     PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   MUDSLAP,      STRENGTH
 	; end
 
 	db BANK(SwinubPicFront)

@@ -20,7 +20,7 @@ ENDC
 	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
 	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
 	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   REST,         EXPLOSION,    \
-	     ROCK_SLIDE,   SUBSTITUTE
+	     ROCK_SLIDE,   SUBSTITUTE,   MUDSLAP
 	; end
 
 	db BANK(PupitarPicFront)

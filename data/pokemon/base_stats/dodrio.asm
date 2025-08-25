@@ -14,14 +14,14 @@ ELSE
 ENDC
 	dw DodrioPicFront, DodrioPicBack
 
-	db PECK, GROWL, FURY_ATTACK, NO_MOVE ; level 1 learnset
+	db PECK, GROWL, PURSUIT, FURY_ATTACK ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
 	tmhm WHIRLWIND,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     HYPER_BEAM,   RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         SWIFT,        SKULL_BASH,   SKY_ATTACK,   REST,         \
-		 TRI_ATTACK,   SUBSTITUTE,   FLY
+		 TRI_ATTACK,   SUBSTITUTE,   MUDSLAP,      FLY
 	; end
 
 	db BANK(DodrioPicFront)

@@ -19,8 +19,8 @@ ENDC
 	tmhm TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  BUBBLEBEAM,   \
 	     WATER_GUN,    BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
 	     DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         SWIFT,        \
-	     SKULL_BASH,   REST,         SUBSTITUTE,   CUT,          SURF,         \
-	     STRENGTH
+	     SKULL_BASH,   REST,         SUBSTITUTE,   MUDSLAP,      CUT,          \
+	     SURF,         STRENGTH
 	; end
 
 	db BANK(FurretPicFront)

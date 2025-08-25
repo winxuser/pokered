@@ -20,7 +20,8 @@ ENDC
 	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         DIG,          \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   ICE_PUNCH,    SURF,         STRENGTH
+	     REST,         SUBSTITUTE,   ICE_PUNCH,    MUDSLAP,      SURF,         \
+	     STRENGTH
 	; end
 
 	db BANK(AzumarillPicFront)

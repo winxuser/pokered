@@ -22,8 +22,8 @@ ENDC
 	     TAKE_DOWN,    DOUBLE_EDGE,  SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
 	     RAGE,         DRAGON_RAGE,  DIG,          MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   CUT,          \
-		 STRENGTH
+	     REST,         SUBSTITUTE,   FLAMETHROWER, FIRE_PUNCH,   MUDSLAP,      \
+	     CUT,          STRENGTH
 	; end
 
 	db BANK(CharmeleonPicFront)

@@ -170,6 +170,32 @@
 	const SUPER_FANG   ; a2
 	const SLASH        ; a3
 	const SUBSTITUTE   ; a4
+	const RAPID_SPIN
+	const PURSUIT
+	const GIGA_DRAIN
+	const FAINT_ATTACK
+	const CROSS_CHOP
+	const FLAMEWHEEL
+	const VITAL_THROW
+	const ZAP_CANNON
+	const SLUDGE_BOMB
+	const BONE_RUSH
+	const MACH_PUNCH
+	const TWISTER
+	const POWDER_SNOW
+	const OUTRAGE
+	const SWEET_KISS
+	const COTTON_SPORE
+	const SYNTHESIS
+	const MOONLIGHT
+	const MUDSLAP
+	const CRUNCH
+	const METAL_CLAW
+	const MEGA_HORN
+	const OCTAZOOKA
+	const STEEL_WING
+	const MILK_DRINK
+	const SPARK
 	const STRUGGLE     ; a5
 DEF NUM_ATTACKS EQU const_value - 1
 

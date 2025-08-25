@@ -14,7 +14,7 @@ ELSE
 ENDC
 	dw StarmiePicFront, StarmiePicBack
 
-	db TACKLE, RECOVER, BUBBLEBEAM, NO_MOVE ; level 1 learnset
+	db TACKLE, RAPID_SPIN, RECOVER, BUBBLEBEAM ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

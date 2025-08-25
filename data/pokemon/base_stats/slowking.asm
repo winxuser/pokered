@@ -23,7 +23,7 @@ ENDC
 	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
 	     FIRE_BLAST,   SWIFT,        SKULL_BASH,   DREAM_EATER,  REST,         \
 		 THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   FLAMETHROWER, \
-		 ICE_PUNCH,    SURF,         STRENGTH,     FLASH
+		 ICE_PUNCH,    MUDSLAP,      SURF,         STRENGTH,     FLASH
 	; end
 
 	db BANK(SlowkingPicFront)

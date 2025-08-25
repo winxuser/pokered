@@ -18,8 +18,8 @@ ENDC
 	; tm/hm learnset
 	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     RAGE,         MEGA_DRAIN,   SOLARBEAM,    MIMIC,        DOUBLE_TEAM,  \
-	     REFLECT,      BIDE,         REST,         SUBSTITUTE,   CUT,          \
-		 FLASH
+	     REFLECT,      BIDE,         REST,         SUBSTITUTE,   MUDSLAP,      \
+	     CUT,          FLASH
 	; end
 
 	db BANK(BayleefPicFront)

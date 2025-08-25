@@ -55,4 +55,6 @@ TechnicalMachinePrices:
 	nybble 3 ; TM52 FIRE_PUNCH
 	nybble 3 ; TM53 ICE_PUNCH
 	nybble 3 ; TM54 THUNDERPUNCH
+	nybble 3 ; TM55 MUDSLAP
+	nybble 3 ; TM56 STEEL_WING
 	end_nybble_array NUM_TMS

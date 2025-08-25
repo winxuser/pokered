@@ -24,7 +24,8 @@ ENDC
 	     SEISMIC_TOSS, RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
 	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
 	     FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-	     FLAMETHROWER, FIRE_PUNCH,   THUNDERPUNCH, SURF,         STRENGTH
+	     FLAMETHROWER, FIRE_PUNCH,   THUNDERPUNCH, MUDSLAP,      SURF,         \
+	     STRENGTH
 	; end
 
 	db BANK(RhydonPicFront)
