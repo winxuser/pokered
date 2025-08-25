@@ -896,7 +896,7 @@ wRightGBMonSpecies:: db
 
 wMiscFlags:: db
 
-	ds 9
+	;ds 9
 
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored
@@ -1084,7 +1084,7 @@ wPartyMenuHPBarColors:: ds PARTY_LENGTH
 
 wStatusScreenHPBarColor:: db
 
-	ds 7
+	;ds 7
 
 wCopyingSGBTileData::
 wWhichPartyMenuHPBar::
@@ -1243,14 +1243,14 @@ NEXTU
 wLearnMoveMonName:: ds NAME_LENGTH
 ENDU
 
-	ds 2
+	;ds 2
 
 ; money received after battle = base money × level of last enemy mon
 wTrainerBaseMoney:: dw ; BCD
 
 wMissableObjectCounter:: db
 
-	ds 1
+	;ds 1
 
 ; 13 bytes for the letters of the opposing trainer
 ; the name is terminated with $50 with possible
@@ -1327,7 +1327,7 @@ wPlayerToxicCounter:: db
 ; low nibble: disable turns left
 wPlayerDisabledMove:: db
 
-	ds 1
+	;ds 1
 
 ; when the enemy is attacking multiple times, the number of attacks left
 wEnemyNumAttacksLeft:: db
