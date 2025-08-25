@@ -13,7 +13,6 @@ YellowsHouse_Object:
 ;	bg_event  3,  1, TEXT_REDSHOUSE1F_TV
 
 	def_object_events
-	SET EVENT_GOT_STARTER
 	object_event  5,  4, SPRITE_YELLOW, STAY, LEFT, TEXT_YELLOWSHOUSE_YELLOW
 
 
