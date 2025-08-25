@@ -390,6 +390,7 @@ INCLUDE "engine/battle/unused_stats_functions.asm"
 INCLUDE "gfx/trade.asm"
 INCLUDE "data/moves/moves.asm"
 INCLUDE "data/text/unused_names.asm"
+INCLUDE "data/pokemon/breeding_list.asm"
 
 SECTION "Pokemon Data", ROMX
 INCLUDE "engine/pokemon/evos_moves.asm"
