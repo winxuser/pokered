@@ -238,4 +238,5 @@ DEF SHOW EQU $15
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_2 ; E2
 	const HS_ARTICUNO                      ; E3 X
 	const HS_MEW_VERMILION_DOCK            ; E4
+	const HS_YELLOWSHOUSE_YELLOW           ; E5
 DEF NUM_HS_OBJECTS EQU const_value

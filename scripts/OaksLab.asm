@@ -334,9 +334,11 @@ OaksLabRivalChoosesStarterScript:
 	ldh [hTextID], a
 	call DisplayTextID
 	SetEvent EVENT_GOT_STARTER
+	ld a, HS_YELLOWSHOUSE_YELLOW
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	xor a
 	ld [wJoyIgnore], a
-
 	ld a, SCRIPT_OAKSLAB_RIVAL_CHALLENGES_PLAYER
 	ld [wOaksLabCurScript], a
 	ret

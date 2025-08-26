@@ -1,5 +1,5 @@
 	object_const_def
-;	const_export YELLOWSHOUSE2F_YELLOW
+	const_export YELLOWSHOUSE_YELLOW
 
 YellowsHouse_Object:
 	db $a ; border block
