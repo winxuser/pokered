@@ -1055,7 +1055,11 @@ wSpriteIndex:: db
 ; movement byte 2 of current sprite
 wCurSpriteMovement2:: db
 
-	ds 2
+wTyrogueEvolutions::
+	; stores directly the number/name of the chosen Hitmon
+	ds 1
+
+	ds 1
 
 ; sprite offset of sprite being controlled by NPC movement script
 wNPCMovementScriptSpriteOffset:: db

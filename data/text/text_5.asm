@@ -117,3 +117,15 @@ _NothingToSort::
 	text "Damn! I have nothing"
 	line "to sort out yet"
 	done
+
+_TyrogueIsEvolvingText::
+	text "What? @"
+	text_ram wStringBuffer
+	text_start
+	line "wants to evolve!"
+
+	para "What should it"
+	line "specialize in?"
+	prompt
+
+
