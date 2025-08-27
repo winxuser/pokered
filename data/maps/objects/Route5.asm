@@ -1,6 +1,9 @@
 Route5_Object:
 	db $a ; border block
 
+	object_const_def
+	const_export ROUTE5_POLIWRATH
+
 	def_warp_events
 	warp_event 10, 29, ROUTE_5_GATE, 4
 	warp_event  9, 29, ROUTE_5_GATE, 3
@@ -12,5 +15,6 @@ Route5_Object:
 	bg_event 17, 29, TEXT_ROUTE5_UNDERGROUND_PATH_SIGN
 
 	def_object_events
+	object_event  6,  7, SPRITE_POLIWRATH, STAY, DOWN, TEXT_ROUTE5_POLIWRATH
 
 	def_warps_to ROUTE_5

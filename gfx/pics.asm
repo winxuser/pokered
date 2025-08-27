@@ -1028,5 +1028,5 @@ HoohPicFront::        INCBIN "gfx/pokemon/gsfront/hooh.pic"
 HoohPicBack::         INCBIN "gfx/pokemon/gsback/hoohb.pic"
 CelebiPicFront::      INCBIN "gfx/pokemon/gsfront/celebi.pic"
 CelebiPicBack::       INCBIN "gfx/pokemon/gsback/celebib.pic"
-WorldMapTileGraphics:           INCBIN "gfx/town_map/town_map.2bpp"
+WorldMapTileGraphics: INCBIN "gfx/town_map/town_map.2bpp"
 ENDC
