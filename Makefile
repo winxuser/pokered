@@ -134,9 +134,6 @@ $(foreach obj, $(pokeblue_vc_obj), $(eval $(call DEP,$(obj),$(obj:_blue_vc.o=.as
 endif
 
 
-%.asm: ;
-
-
 pokered_pad        = 0x00
 pokeblue_pad       = 0x00
 pokegreen_pad      = 0x00
@@ -184,8 +181,6 @@ gfx/trade/game_boy.2bpp: tools/gfx += --remove-duplicates
 
 ### Catch-all graphics rules
 
-%.png: ;
-
 %.2bpp: %.png
 	$(RGBGFX) $(rgbgfx) -o $@ $<
 	$(if $(tools/gfx),\
@@ -198,3 +193,15 @@ gfx/trade/game_boy.2bpp: tools/gfx += --remove-duplicates
 
 %.pic: %.2bpp
 	tools/pkmncompress $< $@
+
+
+### File extensions that are never generated and should be manually created
+
+%.asm: ;
+%.inc: ;
+%.png: ;
+%.pal: ;
+%.bin: ;
+%.blk: ;
+%.bst: ;
+%.rle: ;
