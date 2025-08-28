@@ -3,15 +3,15 @@ Route22WildMons:
 	db  3, NIDORAN_M
 	db  3, NIDORAN_F
 	db  3, RATTATA
-	db  4, RATTATA
+	db  4, HOPPIP
 	db  4, NIDORAN_M
-	db  4, NIDORAN_F
-	db  2, RATTATA
-	db  2, SPEAROW
+	db  5, MANKEY
+	db  4, AIPOM
+	db  4, MAREEP
 	db  3, SPEAROW
 	db  5, SPEAROW
-	db  2, NIDORAN_M
-	db  2, NIDORAN_F
+	db  5, NIDORAN_M
+	db  5, NIDORAN_F
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

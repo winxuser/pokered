@@ -3,7 +3,7 @@ PokemonTower3FWildMons:
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 23, GASTLY
+	db 23, MISDREAVUS
 	db 19, GASTLY
 	db 18, GASTLY
 	db 24, GASTLY

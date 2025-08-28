@@ -6,12 +6,12 @@ PokemonMansion2FWildMons:
 	db 34, GRIMER
 	db 30, PONYTA
 	db 31, PONYTA
-	db 32, PONYTA
+	db 32, HOUNDOUR
 	db 28, PONYTA
 	db 37, WEEZING
 	db 37, MUK
 	db 30, KOFFING
-	db 30, GRIMER
+	db 30, CYNDAQUIL
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

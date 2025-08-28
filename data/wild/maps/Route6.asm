@@ -4,7 +4,7 @@ Route6WildMons:
 	db 13, ODDISH
 	db 13, PIDGEY
 	db 14, PIDGEY
-	db 12, MANKEY
+	db 10, TYROGUE
 	db 12, MEOWTH
 	db 15, BELLSPROUT
 	db 15, ODDISH

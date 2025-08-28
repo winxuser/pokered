@@ -8,7 +8,7 @@ Route24WildMons:
 	db 10, ABRA
 	db 13, BELLSPROUT
 	db 13, ODDISH
-	db 14, BELLSPROUT
+	db 14, WOBBUFFET
 	db 14, ODDISH
 	db 10, PIDGEY
 	db 12, ABRA

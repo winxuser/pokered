@@ -7,7 +7,7 @@ Route12WildMons:
 	db 22, ODDISH
 	db 22, BELLSPROUT
 	db 28, FARFETCHD ; dereknote: previously unobtainable pokemon 
-	db 26, VENONAT
+	db 26, SNEASEL
 	db 28, GLOOM
 	db 28, WEEPINBELL
 	db 30, GLOOM

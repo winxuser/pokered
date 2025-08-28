@@ -3,7 +3,7 @@ Route25WildMons:
 	db  8, WEEDLE
 	db  8, CATERPIE
 	db  9, KAKUNA
-	db  9, METAPOD
+	db  9, TOTODILE
 	db 13, PIDGEY
 	db 12, ABRA
 	db 13, ODDISH

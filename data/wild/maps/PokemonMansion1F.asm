@@ -6,9 +6,9 @@ PokemonMansion1FWildMons:
 	db 30, PONYTA
 	db 34, GROWLITHE
 	db 34, VULPIX
-	db 34, PONYTA
+	db 34, SLUGMA
 	db 32, GRIMER
-	db 32, KOFFING
+	db 32, HOUNDOUR
 	db 28, PONYTA
 	db 37, WEEZING
 	db 37, MUK

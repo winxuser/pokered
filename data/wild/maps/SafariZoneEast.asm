@@ -5,7 +5,7 @@ SafariZoneEastWildMons:
 	db 26, DODUO
 	db 22, PARAS
 	db 25, EXEGGCUTE
-	db 23, EXEGGCUTE
+	db 23, GIRAFARIG
 	db 33, NIDORINO
 	db 33, NIDORINA
 	db 25, PARASECT

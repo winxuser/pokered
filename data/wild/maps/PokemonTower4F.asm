@@ -4,7 +4,7 @@ PokemonTower4FWildMons:
 	db 21, GASTLY
 	db 22, GASTLY
 	db 23, GASTLY
-	db 19, GASTLY
+	db 19, MISDREAVUS
 	db 18, GASTLY
 	db 25, HAUNTER
 	db 20, CUBONE

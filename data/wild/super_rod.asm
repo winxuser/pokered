@@ -40,9 +40,10 @@ SuperRodData:
 ; number of monsters, followed by level/monster pairs
 
 .Group1:
-	db 2
+	db 3
 	db 15, TENTACOOL
 	db 15, POLIWAG
+	db 15, REMORAID
 
 .Group2:
 	db 2

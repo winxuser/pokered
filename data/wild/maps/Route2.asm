@@ -7,9 +7,9 @@ Route2WildMons:
 	db  3, WEEDLE
 	db  3, CATERPIE
 	db  5, PIDGEY
-	db  5, RATTATA
+	db  5, SENTRET
 	db  4, WEEDLE
-	db  4, CATERPIE
+	db  4, HOOTHOOT
 	db  5, WEEDLE
 	db  5, CATERPIE
 	end_grass_wildmons ; dereknote: version exclusives merged

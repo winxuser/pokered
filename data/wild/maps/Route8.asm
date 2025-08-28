@@ -3,7 +3,7 @@ Route8WildMons:
 	db 18, MANKEY
 	db 18, MEOWTH
 	db 18, PIDGEY
-	db 20, PIDGEY
+	db 20, SNUBBULL
 	db 17, EKANS
 	db 17, SANDSHREW
 	db 19, EKANS

@@ -9,9 +9,9 @@ PokemonMansion3FWildMons:
 	db 34, KOFFING
 	db 34, GRIMER
 	db 34, PONYTA
-	db 36, PONYTA
+	db 36, HOUNDOOM
 	db 42, MUK
-	db 42, WEEZING
+	db 42, MAGCARGO
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

@@ -4,9 +4,9 @@ Route9WildMons:
 	db 16, SPEAROW
 	db 11, EKANS
 	db 11, SANDSHREW
-	db 13, SPEAROW
-	db 14, RATTATA
-	db 13, EKANS
+	db 13, PINECO
+	db 14, WOOPER
+	db 13, DUNSPARCE
 	db 13, SANDSHREW
 	db 17, RATTATA
 	db 17, SPEAROW

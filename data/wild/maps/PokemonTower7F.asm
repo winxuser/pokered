@@ -3,7 +3,7 @@ PokemonTower7FWildMons:
 	db 21, GASTLY
 	db 22, GASTLY
 	db 23, GASTLY
-	db 24, GASTLY
+	db 24, MISDREAVUS
 	db 20, GASTLY
 	db 28, HAUNTER
 	db 22, CUBONE
