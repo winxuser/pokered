@@ -28,6 +28,7 @@ MapPaletteSets:
 	dw IceCavernPalSet   ; ICE_CAVERN
 	assert_table_length NUM_TILESETS
 
+KantoPalSet:
 OverworldPalSet:
 PlateauPalSet:
 	db OUTDOOR_GRAY

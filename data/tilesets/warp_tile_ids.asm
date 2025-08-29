@@ -33,7 +33,6 @@ MACRO warp_tiles
 	ENDC
 	db -1 ; end
 ENDM
-
 .OverworldWarpTileIDs:
 	warp_tiles $1B, $58
 
