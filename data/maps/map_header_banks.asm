@@ -108,7 +108,7 @@ MapHeaderBanks::
 	db BANK(SSAnneB1FRooms_h)
 	db BANK(YellowsHouse_h)
 	db BANK(YellowsHouse2F_h)
-	db $1D ; UNUSED_MAP_6B
+	db BANK(IceCavern_h) ; UNUSED_MAP_6B
 	db BANK(VictoryRoad1F_h)
 	db $1D ; UNUSED_MAP_6D
 	db $1D ; UNUSED_MAP_6E

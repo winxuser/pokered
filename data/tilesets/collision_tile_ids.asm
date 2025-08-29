@@ -68,3 +68,6 @@ Facility_Coll::
 
 Plateau_Coll::
 	coll_tiles $1b, $23, $2c, $2d, $3b, $45
+
+IceCavern_Coll::
+	coll_tiles $05, $15, $18, $1a, $20, $21, $22, $2a, $2d, $30

@@ -61,3 +61,7 @@ Club_GFX::          INCBIN "gfx/tilesets/club.2bpp"
 Club_Block::        INCBIN "gfx/blocksets/club.bst"
 Underground_GFX::   INCBIN "gfx/tilesets/underground.2bpp"
 Underground_Block:: INCBIN "gfx/blocksets/underground.bst"
+
+SECTION "Tilesets 4", ROMX
+IceCavern_GFX::		INCBIN "gfx/tilesets/ice_cavern.2bpp"
+IceCavern_Block::	INCBIN "gfx/blocksets/ice_cavern.bst"

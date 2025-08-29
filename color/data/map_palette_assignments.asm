@@ -30,6 +30,7 @@ MapPaletteAssignments:
 	dw ClubPalMap        ; CLUB
 	dw FacilityPalMap    ; FACILITY
 	dw PlateauPalMap     ; PLATEAU
+	dw IceCavernPalMap   ; ICE_CAVERN
 	assert_table_length NUM_TILESETS
 
 OverworldPalMap:
@@ -73,6 +74,7 @@ CemeteryPalMap:
 InteriorPalMap:
 	INCLUDE "color/tilesets/interior.asm"
 
+;IceCavernPalMap:
 CavernPalMap:
 	INCLUDE "color/tilesets/cavern.asm"
 
@@ -93,3 +95,6 @@ FacilityPalMap:
 
 PlateauPalMap:
 	INCLUDE "color/tilesets/plateau.asm"
+
+IceCavernPalMap:
+	INCLUDE "color/tilesets/ice_cavern.asm"

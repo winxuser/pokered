@@ -105,9 +105,9 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
+	dw NothingWildMons       ; (YELLOWS_HOUSE UNUSED_MAP_69)
+	dw NothingWildMons       ; (YELLOWS_HOUSE_2F UNUSED_MAP_6A)
+	dw IceCavernWildMons     ; (ICE_CAVERN UNUSED_MAP_6B)
 	dw VictoryRoad1FWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -321,3 +321,4 @@ INCLUDE "data/wild/maps/VictoryRoad2F.asm"
 INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
+INCLUDE "data/wild/maps/IceCavern.asm"

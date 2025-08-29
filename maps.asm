@@ -1234,3 +1234,8 @@ INCLUDE "data/maps/headers/YellowsHouse2F.asm"
 INCLUDE "scripts/YellowsHouse2F.asm"
 INCLUDE "data/maps/objects/YellowsHouse2F.asm"
 YellowsHouse2F_Blocks: INCBIN "maps/YellowsHouse2F.blk"
+
+INCLUDE "data/maps/headers/IceCavern.asm"
+INCLUDE "scripts/IceCavern.asm"
+INCLUDE "data/maps/objects/IceCavern.asm"
+IceCavern_Blocks: INCBIN "maps/IceCavern.blk"

@@ -25,6 +25,7 @@ MapPaletteSets:
 	dw ClubPalSet        ; CLUB
 	dw FacilityPalSet    ; FACILITY
 	dw PlateauPalSet     ; PLATEAU
+	dw IceCavernPalSet   ; ICE_CAVERN
 	assert_table_length NUM_TILESETS
 
 OverworldPalSet:
@@ -114,6 +115,16 @@ CemeteryPalSet:
 	db CRYS_TEXTBOX
 
 CavernPalSet:
+	db CAVE_GRAY
+	db CAVE_RED
+	db CAVE_GREEN
+	db CAVE_BLUE
+	db CAVE_YELLOW
+	db CAVE_BROWN
+	db CAVE_LIGHT_BLUE
+	db CRYS_TEXTBOX
+
+IceCavernPalSet:
 	db CAVE_GRAY
 	db CAVE_RED
 	db CAVE_GREEN

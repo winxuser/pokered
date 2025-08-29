@@ -4,4 +4,5 @@ EscapeRopeTilesets:
 	db CAVERN
 	db FACILITY
 	db INTERIOR
+	db ICECAVERN
 	db -1 ; end
