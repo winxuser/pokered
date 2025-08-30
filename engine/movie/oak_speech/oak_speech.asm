@@ -61,7 +61,7 @@ OakSpeech:
 	call PrepareForSpecialWarp
 	xor a
 	ldh [hTileAnimations], a
-	ld hl, BoyGirlText  ; added to the same file as the other oak text
+    ld hl, BoyGirlText  ; added to the same file as the other oak text
   	call PrintText     ; show this text
   	call BoyGirlChoice ; added routine at the end of this file
    	ld a, [wCurrentMenuItem]
@@ -283,18 +283,14 @@ IntroDisplayPicCenteredOrUpperRight:
 ; displays boy/girl choice
 BoyGirlChoice::
    call SaveScreenTilesToBuffer1
-   call InitBoyGirlTextBoxParameters
-   jr DisplayBoyGirlChoice
-
-InitBoyGirlTextBoxParameters::
-   ld a, $1 ; loads the value for the unused North/West choice, that was changed to say Boy/Girl
+	; which menu to show
+	ld a, BOY_GIRL_MENU
    ld [wTwoOptionMenuID], a
+	; set the coords
    coord hl, 13, 7
-   ld bc, $80e
-   ret
-
-DisplayBoyGirlChoice::
-   ld a, $14
+	lb bc, 8, 14
+	; show the menu
+	ld a, TWO_OPTION_MENU
    ld [wTextBoxID], a
    call DisplayTextBoxID
    jp LoadScreenTilesFromBuffer1

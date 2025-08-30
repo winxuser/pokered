@@ -97,9 +97,6 @@ INCLUDE "engine/menus/start_sub_menus.asm"
 INCLUDE "engine/items/tms.asm"
 INCLUDE "engine/battle/end_of_battle.asm"
 INCLUDE "engine/battle/wild_encounters.asm"
-INCLUDE "engine/battle/move_effects/recoil.asm"
-INCLUDE "engine/battle/move_effects/conversion.asm"
-INCLUDE "engine/battle/move_effects/haze.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
 
@@ -393,4 +390,12 @@ INCLUDE "data/pokemon/breeding_list.asm"
 INCLUDE "gfx/trainer_card.asm"
 
 SECTION "Pokemon Data", ROMX
+
 INCLUDE "engine/pokemon/evos_moves.asm"
+
+
+SECTION "Move Effects", ROMX
+
+INCLUDE "engine/battle/move_effects/recoil.asm"
+INCLUDE "engine/battle/move_effects/conversion.asm"
+INCLUDE "engine/battle/move_effects/haze.asm"
