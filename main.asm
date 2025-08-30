@@ -169,7 +169,6 @@ INCLUDE "engine/battle/move_effects/leech_seed.asm"
 SECTION "Battle Engine 5", ROMX
 
 INCLUDE "engine/battle/display_effectiveness.asm"
-INCLUDE "gfx/trainer_card.asm"
 INCLUDE "engine/items/tmhm.asm"
 INCLUDE "engine/battle/scale_sprites.asm"
 INCLUDE "engine/battle/move_effects/pay_day.asm"
@@ -391,6 +390,7 @@ INCLUDE "gfx/trade.asm"
 INCLUDE "data/moves/moves.asm"
 INCLUDE "data/text/unused_names.asm"
 INCLUDE "data/pokemon/breeding_list.asm"
+INCLUDE "gfx/trainer_card.asm"
 
 SECTION "Pokemon Data", ROMX
 INCLUDE "engine/pokemon/evos_moves.asm"
