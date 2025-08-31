@@ -74,7 +74,6 @@ CemeteryPalMap:
 InteriorPalMap:
 	INCLUDE "color/tilesets/interior.asm"
 
-;IceCavernPalMap:
 CavernPalMap:
 	INCLUDE "color/tilesets/cavern.asm"
 
