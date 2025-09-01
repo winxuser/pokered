@@ -238,7 +238,7 @@ ENDC
 	push hl
 	ld de, wBattleMonLevel
 	ld bc, 1 + NUM_STATS * 2 ; size of stats
-	call CopyData
+	rst _CopyData
 	pop hl
 	ld a, [wPlayerBattleStatus3]
 	bit TRANSFORMED, a
@@ -246,7 +246,7 @@ ENDC
 ; the mon is not transformed, so update the unmodified stats
 	ld de, wPlayerMonUnmodifiedLevel
 	ld bc, 1 + NUM_STATS * 2
-	call CopyData
+	rst _CopyData
 .recalcStatChanges
 	xor a ; battle mon
 	ld [wCalculateWhoseStats], a

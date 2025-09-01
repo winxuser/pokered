@@ -118,7 +118,7 @@ MainSlotMachineLoop:
 	ld [hl], a
 	call WaitForSoundToFinish
 	ld a, SFX_SLOTS_NEW_SPIN
-	call PlaySound
+	rst _PlaySound
 	ld hl, StartSlotMachineText
 	rst _PrintText
 	call SlotMachine_SpinWheels
@@ -210,7 +210,7 @@ SlotMachine_SpinWheels:
 	call SlotMachine_AnimWheel2
 	call SlotMachine_AnimWheel3
 	ld c, 2
-	call DelayFrames
+	rst _DelayFrames
 	pop bc
 	dec c
 	jr nz, .loop1
@@ -226,7 +226,7 @@ SlotMachine_SpinWheels:
 	xor $1
 	inc a
 	ld c, a
-	call DelayFrames
+	rst _DelayFrames
 	jr .loop2
 
 ; Note that the wheels can only stop when a symbol is centred in the wheel
@@ -421,9 +421,9 @@ SlotMachine_CheckForMatches:
 	ret
 .rollWheel3DownByOneSymbol
 	call SlotMachine_AnimWheel3
-	call DelayFrame
+	rst _DelayFrame
 	call SlotMachine_AnimWheel3
-	call DelayFrame
+	rst _DelayFrame
 	jp SlotMachine_CheckForMatches
 .foundMatch
 	ld a, [wSlotMachineFlags]
@@ -453,7 +453,7 @@ SlotMachine_CheckForMatches:
 	ld l, a
 	ld de, wStringBuffer
 	ld bc, 4
-	call CopyData
+	rst _CopyData
 	pop hl
 	ld de, .flashScreenLoop
 	push de
@@ -464,7 +464,7 @@ SlotMachine_CheckForMatches:
 	xor $40
 	ldh [rBGP], a
 	ld c, 5
-	call DelayFrames
+	rst _DelayFrames
 	dec b
 	jr nz, .flashScreenLoop
 	ld hl, wPayoutCoins
@@ -591,7 +591,7 @@ SlotReward15Func:
 
 SlotReward100Func:
 	ld a, SFX_GET_KEY_ITEM
-	call PlaySound
+	rst _PlaySound
 	xor a
 	ld [wSlotMachineFlags], a
 	ld b, $8
@@ -602,7 +602,7 @@ SlotReward300Func:
 	ld hl, YeahText
 	rst _PrintText
 	ld a, SFX_GET_ITEM_2
-	call PlaySound
+	rst _PlaySound
 	call Random
 	cp $80
 	ld a, 0
@@ -697,7 +697,7 @@ SlotMachine_PayCoinsToPlayer:
 	call SlotMachine_PrintCreditCoins
 	call SlotMachine_PrintPayoutCoins
 	ld a, SFX_SLOTS_REWARD
-	call PlaySound
+	rst _PlaySound
 	ld a, 1
 	ld [wSFXPriority], a
 	ld a, [wAnimCounter]
@@ -715,7 +715,7 @@ SlotMachine_PayCoinsToPlayer:
 	jr nc, .skip2
 	srl c ; c = 4 (make the the coins transfer faster if the symbol was 7 or bar)
 .skip2
-	call DelayFrames
+	rst _DelayFrames
 	jr .loop
 
 SlotMachine_PutOutLitBalls:
@@ -831,7 +831,7 @@ SlotMachine_AnimWheel:
 	ret
 
 SlotMachine_HandleInputWhileWheelsSpin:
-	call DelayFrame
+	rst _DelayFrame
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
 	and PAD_A
@@ -874,7 +874,7 @@ LoadSlotMachineTiles:
 	ld hl, SlotMachineMap
 	decoord 0, 0
 	ld bc, SlotMachineMapEnd - SlotMachineMap
-	call CopyData
+	rst _CopyData
 	call EnableLCD
 	ld hl, wSlotMachineWheel1Offset
 	ld a, $1c

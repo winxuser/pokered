@@ -63,7 +63,7 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ld c, $90
 	ld a, c
 	ldh [hSCX], a
-	;call DelayFrame
+	;rst _DelayFrame
 	nop
 	nop
 	nop
@@ -160,7 +160,7 @@ StartBattle:
 	dec a ; is it a trainer battle?
 	call nz, EnemySendOutFirstMon ; if it is a trainer battle, send out enemy mon
 	ld c, 40
-	call DelayFrames
+	rst _DelayFrames
 	call SaveScreenTilesToBuffer1
 .checkAnyPartyAlive
 	call AnyPartyAlive
@@ -563,7 +563,7 @@ HandlePoisonBurnLeechSeed:
 	ret nz          ; test if fainted
 	call DrawHUDsAndHPBars
 	ld c, 20
-	call DelayFrames
+	rst _DelayFrames
 	xor a
 	ret
 
@@ -841,7 +841,7 @@ FaintEnemyPokemon:
 ;	jr z, .sfxwait
 
 	ld a, SFX_FAINT_THUD
-	call PlaySound
+	rst _PlaySound
 	call WaitForSoundToFinish
 	jr .sfxplayed
 .wild_win
@@ -1002,7 +1002,7 @@ TrainerBattleVictory:
 	ret z
 	call ScrollTrainerPicAfterBattle
 	ld c, 40
-	call DelayFrames
+	rst _DelayFrames
 	call PrintEndBattleText
 ; win money
 	ld hl, MoneyForWinningText
@@ -1214,7 +1214,7 @@ HandlePlayerBlackOut:
 	call ClearScreenArea
 	call ScrollTrainerPicAfterBattle
 	ld c, 40
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, Rival1WinText
 	rst _PrintText
 	ld a, [wCurMap]
@@ -1269,7 +1269,7 @@ SlideDownFaintedMonPic:
 	push hl
 	push de
 	ld bc, $7
-	call CopyData
+	rst _CopyData
 	pop de
 	pop hl
 	ld bc, -SCREEN_WIDTH
@@ -1291,7 +1291,7 @@ SlideDownFaintedMonPic:
 	ld a, 1
 	ld [hAutoBGTransferEnabled], a
 	ld c, 2
-	call DelayFrames
+	rst _DelayFrames
 	pop hl
 	pop de
 	pop bc
@@ -1345,7 +1345,7 @@ SlideTrainerPicOffScreen:
 	ld a, 1
 	ld [hAutoBGTransferEnabled], a
 	ld c, 2
-	call DelayFrames
+	rst _DelayFrames
 	pop hl
 	pop bc
 	dec c
@@ -1710,18 +1710,18 @@ LoadBattleMonFromParty:
 	call AddNTimes
 	ld de, wBattleMonSpecies
 	ld bc, wBattleMonDVs - wBattleMonSpecies
-	call CopyData
+	rst _CopyData
 	ld bc, wPartyMon1DVs - wPartyMon1OTID
 	add hl, bc
 	ld de, wBattleMonDVs
 	ld bc, wPartyMon1PP - wPartyMon1DVs
-	call CopyData
+	rst _CopyData
 	ld de, wBattleMonPP
 	ld bc, NUM_MOVES
-	call CopyData
+	rst _CopyData
 	ld de, wBattleMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
-	call CopyData
+	rst _CopyData
 	ld a, [wBattleMonSpecies2]
 	ld [wCurSpecies], a
 	call GetMonHeader
@@ -1730,11 +1730,11 @@ LoadBattleMonFromParty:
 	call SkipFixedLengthTextEntries
 	ld de, wBattleMonNick
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, wBattleMonLevel
 	ld de, wPlayerMonUnmodifiedLevel ; block of memory used for unmodified stats
 	ld bc, 1 + NUM_STATS * 2
-	call CopyData
+	rst _CopyData
 	call ApplyBurnAndParalysisPenaltiesToPlayer
 	call ApplyBadgeStatBoosts
 	ld a, $7 ; default stat modifier
@@ -1754,18 +1754,18 @@ LoadEnemyMonFromParty:
 	call AddNTimes
 	ld de, wEnemyMonSpecies
 	ld bc, wEnemyMonDVs - wEnemyMonSpecies
-	call CopyData
+	rst _CopyData
 	ld bc, wEnemyMon1DVs - wEnemyMon1OTID
 	add hl, bc
 	ld de, wEnemyMonDVs
 	ld bc, wEnemyMon1PP - wEnemyMon1DVs
-	call CopyData
+	rst _CopyData
 	ld de, wEnemyMonPP
 	ld bc, NUM_MOVES
-	call CopyData
+	rst _CopyData
 	ld de, wEnemyMonLevel
 	ld bc, wEnemyMonPP - wEnemyMonLevel
-	call CopyData
+	rst _CopyData
 	ld a, [wEnemyMonSpecies]
 	ld [wCurSpecies], a
 	call GetMonHeader
@@ -1774,11 +1774,11 @@ LoadEnemyMonFromParty:
 	call SkipFixedLengthTextEntries
 	ld de, wEnemyMonNick
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, wEnemyMonLevel
 	ld de, wEnemyMonUnmodifiedLevel ; block of memory used for unmodified stats
 	ld bc, 1 + NUM_STATS * 2
-	call CopyData
+	rst _CopyData
 	call ApplyBurnAndParalysisPenaltiesToEnemy
 	ld hl, wMonHBaseStats
 	ld de, wEnemyMonBaseStats
@@ -1857,7 +1857,7 @@ AnimateRetreatingPlayerMon:
 	ldh [hBaseTileID], a
 	predef CopyDownscaledMonTiles
 	ld c, 4
-	call DelayFrames
+	rst _DelayFrames
 	call .clearScreenArea
 	hlcoord 4, 9
 	lb bc, 3, 3
@@ -1912,11 +1912,11 @@ ENDC
 	ld hl, wBattleMonSpecies
 	ld de, wLoadedMon
 	ld bc, wBattleMonDVs - wBattleMonSpecies
-	call CopyData
+	rst _CopyData
 	ld hl, wBattleMonLevel
 	ld de, wLoadedMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
-	call CopyData
+	rst _CopyData
 	hlcoord 14, 8
 	push hl
 	inc hl
@@ -2118,21 +2118,21 @@ DisplayBattleMenu::
 	ld hl, wPlayerName
 	ld de, wLinkEnemyTrainerName
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, .oldManName
 	ld de, wPlayerName
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 ; the following simulates the keystrokes by drawing menus on screen
 	hlcoord 9, 14
 	ld [hl], "▶"
 	ld c, 80
-	call DelayFrames
+	rst _DelayFrames
 	ld [hl], " "
 	hlcoord 9, 16
 	ld [hl], "▶"
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld [hl], "▷"
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperLeftMenuItemWasNotSelected
@@ -2508,7 +2508,7 @@ PartyMenuOrRockOrRun:
 SwitchPlayerMon:
 	callfar RetreatMon
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	call AnimateRetreatingPlayerMon
 	ld a, [wWhichPokemon]
 	ld [wPlayerMonNumber], a
@@ -2558,7 +2558,7 @@ MoveSelectionMenu:
 .loadmoves
 	ld de, wMoves
 	ld bc, NUM_MOVES
-	call CopyData
+	rst _CopyData
 	callfar FormatMovesString
 	ret
 
@@ -2840,7 +2840,7 @@ AnyMoveToSelect:
 	ld hl, NoMovesLeftText
 	rst _PrintText
 	ld c, 60
-	call DelayFrames
+	rst _DelayFrames
 	xor a
 	ret
 
@@ -3126,7 +3126,7 @@ LinkBattleExchangeData:
 	callfar PrintWaitingText
 .syncLoop1
 	call Serial_ExchangeNybble
-	call DelayFrame
+	rst _DelayFrame
 	ld a, [wSerialExchangeNybbleReceiveData]
 	inc a
 	jr z, .syncLoop1
@@ -3139,7 +3139,7 @@ ELSE
 ENDC
 	vc_patch_end
 .syncLoop2
-	call DelayFrame
+	rst _DelayFrame
 	call Serial_ExchangeNybble
 	dec b
 	jr nz, .syncLoop2
@@ -3152,7 +3152,7 @@ ELSE
 ENDC
 	vc_patch_end
 .syncLoop3
-	call DelayFrame
+	rst _DelayFrame
 	call Serial_SendZeroByte
 	dec b
 	jr nz, .syncLoop3
@@ -3272,7 +3272,7 @@ playPlayerMoveAnimation:
 	jr MirrorMoveCheck
 playerCheckIfFlyOrChargeEffect:
 	ld c, 30
-	call DelayFrames
+	rst _DelayFrames
 	ld a, [wPlayerMoveEffect]
 	cp FLY_EFFECT
 	jr z, .playAnim
@@ -5877,7 +5877,7 @@ playEnemyMoveAnimation:
 EnemyCheckIfFlyOrChargeEffect:
 	call SwapPlayerAndEnemyLevels
 	ld c, 30
-	call DelayFrames
+	rst _DelayFrames
 	ld a, [wEnemyMoveEffect]
 	cp FLY_EFFECT
 	jr z, .playAnim
@@ -6373,7 +6373,7 @@ LoadEnemyMonData:
 	ld bc, wEnemyMon2 - wEnemyMon1
 	call AddNTimes
 	ld bc, NUM_MOVES
-	call CopyData
+	rst _CopyData
 	jr .loadMovePPs
 .copyStandardMoves
 ; for a wild mon, first copy default moves from the mon header
@@ -6420,7 +6420,7 @@ LoadEnemyMonData:
 	ld hl, wNameBuffer
 	ld de, wEnemyMonNick
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld a, [wEnemyMonSpecies2]
 	ld [wPokedexNum], a
 	predef IndexToPokedex
@@ -6433,7 +6433,7 @@ LoadEnemyMonData:
 	ld hl, wEnemyMonLevel
 	ld de, wEnemyMonUnmodifiedLevel
 	ld bc, 1 + NUM_STATS * 2
-	call CopyData
+	rst _CopyData
 	ld a, $7 ; default stat mod
 	ld b, NUM_STAT_MODS ; number of stat mods
 	ld hl, wEnemyMonStatMods
@@ -6456,7 +6456,7 @@ DoBattleTransitionAndInitBattleVariables:
 	ld [wUpdateSpritesEnabled], a
 	call ClearScreen
 .next
-	call DelayFrame
+	rst _DelayFrame
 	predef BattleTransition
 	callfar LoadHudAndHpBarAndStatusTilePatterns
 	ld a, $1
@@ -7160,7 +7160,7 @@ AnimateSendingOutMon:
 	lb bc, 3, 3
 	predef CopyDownscaledMonTiles
 	ld c, 4
-	call DelayFrames
+	rst _DelayFrames
 	ld bc, -(SCREEN_WIDTH * 2 + 1)
 	add hl, bc
 	xor a
@@ -7168,7 +7168,7 @@ AnimateSendingOutMon:
 	lb bc, 5, 5
 	predef CopyDownscaledMonTiles
 	ld c, 5
-	call DelayFrames
+	rst _DelayFrames
 	ld bc, -(SCREEN_WIDTH * 2 + 1)
 	jr .next
 .notInBattle

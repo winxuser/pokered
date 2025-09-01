@@ -56,10 +56,10 @@ VendingMachineMenu::
 	ld b, 60 ; number of times to play the "brrrrr" sound
 .playDeliverySound
 	ld c, 2
-	call DelayFrames
+	rst _DelayFrames
 	push bc
 	ld a, SFX_PUSH_BOULDER
-	call PlaySound
+	rst _PlaySound
 	pop bc
 	dec b
 	jr nz, .playDeliverySound

@@ -24,14 +24,14 @@ PewterPokecenterJigglypuffText:
 	rst _PrintText
 
 	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
+	rst _PlaySound
 	ld c, 32
-	call DelayFrames
+	rst _DelayFrames
 
 	ld hl, .FacingDirections
 	ld de, wJigglypuffFacingDirections
 	ld bc, .FacingDirectionsEnd - .FacingDirections
-	call CopyData
+	rst _CopyData
 
 	ld a, [wSprite03StateData1ImageIndex]
 	ld hl, wJigglypuffFacingDirections
@@ -55,12 +55,12 @@ PewterPokecenterJigglypuffText:
 	ld hl, wJigglypuffFacingDirections
 	ld de, wJigglypuffFacingDirections - 1
 	ld bc, .FacingDirectionsEnd - .FacingDirections
-	call CopyData
+	rst _CopyData
 	ld a, [wJigglypuffFacingDirections - 1]
 	ld [wJigglypuffFacingDirections + 3], a
 	pop hl
 	ld c, 24
-	call DelayFrames
+	rst _DelayFrames
 
 	push hl
 	call IsSongPlaying
@@ -73,7 +73,7 @@ PewterPokecenterJigglypuffText:
 ;	jr nz, .spinMovementLoop
 
 	ld c, 48
-	call DelayFrames
+	rst _DelayFrames
 	call PlayDefaultMusic
 	rst TextScriptEnd
 

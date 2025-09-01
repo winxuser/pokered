@@ -94,7 +94,7 @@ CheckForCut::
     ld a, $1
     ld [wUpdateSpritesEnabled], a
     ld a, SFX_CUT
-    call PlaySound
+    rst _PlaySound
     ld a, $90
     ldh [hWY], a
     call UpdateSprites
@@ -295,7 +295,7 @@ IsMoveInParty::
     push af
     call AddNTimes ; brings hl to the address wPartyMon{1+a}Nick
     ld de, wNameBuffer
-    call CopyData ; copy bc bytes from hl to de
+    rst _CopyData ; copy bc bytes from hl to de
     pop af
     inc b ; sets nz since b=0 after CopyData
 .done

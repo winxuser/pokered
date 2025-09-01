@@ -168,7 +168,7 @@ ItemUseBall:
 	ld hl, wGrassRate
 	ld de, wPlayerName
 	ld bc, NAME_LENGTH
-	call CopyData ; save the player's name in the Wild Monster data (part of the Cinnabar Island Missingno. glitch)
+	rst _CopyData ; save the player's name in the Wild Monster data (part of the Cinnabar Island Missingno. glitch)
 	jp .captured
 
 .notOldManBattle
@@ -433,7 +433,7 @@ ItemUseBall:
 
 .skipShakeCalculations
 	ld c, 20
-	call DelayFrames
+	rst _DelayFrames
 
 ; Do the animation.
 	ld a, TOSS_ANIM
@@ -918,7 +918,7 @@ ItemUseMedicine:
 	add hl, bc ; hl now points to party stats
 	ld de, wBattleMonStats
 	ld bc, NUM_STATS * 2
-	call CopyData ; copy party stats to in-battle stat data
+	rst _CopyData ; copy party stats to in-battle stat data
 	predef DoubleOrHalveSelectedStats
 	jp .doneHealing
 .healHP
@@ -1243,7 +1243,7 @@ ItemUseMedicine:
 	ld a, 1
 	ldh [hAutoBGTransferEnabled], a
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	call WaitForTextScrollButtonPress
 	jr .done
 .canceledItemUse
@@ -1319,9 +1319,9 @@ ItemUseMedicine:
 .gotStatName
 	ld de, wStringBuffer
 	ld bc, 10
-	call CopyData ; copy the stat's name to wStringBuffer
+	rst _CopyData ; copy the stat's name to wStringBuffer
 	ld a, SFX_HEAL_AILMENT
-	call PlaySound
+	rst _PlaySound
 	ld hl, VitaminStatRoseText
 	rst _PrintText
 	jp RemoveUsedItem
@@ -1532,7 +1532,7 @@ ItemUseEscapeRope:
 	ret nz ; if so, return
 	call ItemUseReloadOverworldData
 	ld c, 30
-	call DelayFrames
+	rst _DelayFrames
 	jp RemoveUsedItem
 .notUsable
 	jp ItemUseNotTime
@@ -1749,7 +1749,7 @@ ItemUsePokeFlute:
 	call WaitForSoundToFinish ; wait for sound to end
 
 	ld a, SFX_POKEFLUTE_IN_BATTLE
-	call PlaySound
+	rst _PlaySound
 	call WaitForSoundToFinish
 ;	farcall Music_PokeFluteInBattle ; play in-battle pokeflute music
 ;.musicWaitLoop ; wait for music to finish playing
@@ -1816,10 +1816,10 @@ PlayedFluteHadEffectText:
 	jr nz, .done
 ; play out-of-battle pokeflute music
 	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
+	rst _PlaySound
 	ld a, SFX_POKEFLUTE
 	ld c, 0 ; BANK(SFX_Pokeflute)
-	call PlaySound
+	rst _PlaySound
 ;.musicWaitLoop ; wait for music to finish playing
 ;	ld a, [wChannelSoundIDs + CHAN3]
 ;	cp SFX_POKEFLUTE
@@ -1922,9 +1922,9 @@ FishingInit:
 	ld hl, ItemUseText00
 	rst _PrintText
 	ld a, SFX_HEAL_AILMENT
-	call PlaySound
+	rst _PlaySound
 	ld c, 80
-	call DelayFrames
+	rst _DelayFrames
 	and a
 	ret
 .surfing
@@ -1939,7 +1939,7 @@ ItemUseItemfinder:
 	and a
 	jp nz, ItemUseNotTime
 	call ItemUseReloadOverworldData
-	call DelayFrame
+	rst _DelayFrame
 	farcall HiddenItemNear ; check for hidden items
 	ld hl, ItemfinderFoundNothingText
 	jr nc, .printText ; if no hidden items
@@ -2047,10 +2047,10 @@ ItemUsePPRestore:
 	call AddNTimes
 	ld de, wBattleMonPP
 	ld bc, 4
-	call CopyData ; copy party data to in-battle data
+	rst _CopyData ; copy party data to in-battle data
 .skipUpdatingInBattleData
 	ld a, SFX_HEAL_AILMENT
-	call PlaySound
+	rst _PlaySound
 	ld hl, PPRestoredText
 	rst _PrintText
 	jr .done
@@ -2210,7 +2210,7 @@ ItemUseTMHM:
 	ld hl, wStringBuffer
 	ld de, wTempMoveNameBuffer
 	ld bc, 14
-	call CopyData ; save the move name because DisplayPartyMenu will overwrite it
+	rst _CopyData ; save the move name because DisplayPartyMenu will overwrite it
 	ld a, $ff
 	ld [wUpdateSpritesEnabled], a
 	ld a, TMHM_PARTY_MENU
@@ -2220,7 +2220,7 @@ ItemUseTMHM:
 	ld hl, wTempMoveNameBuffer
 	ld de, wStringBuffer
 	ld bc, 14
-	call CopyData
+	rst _CopyData
 	pop af
 	jr nc, .checkIfAbleToLearnMove
 ; if the player canceled teaching the move
@@ -2276,7 +2276,7 @@ PrintItemUseTextAndRemoveItem:
 	ld hl, ItemUseText00
 	rst _PrintText
 	ld a, SFX_HEAL_AILMENT
-	call PlaySound
+	rst _PlaySound
 	call WaitForTextScrollButtonPress ; wait for button press
 
 RemoveUsedItem:
@@ -2633,7 +2633,7 @@ IsKeyItem_::
 	ld de, wBuffer
 	ld bc, 15 ; only 11 bytes are actually used
 	ASSERT 15 >= (NUM_ITEMS + 7) / 8
-	call CopyData
+	rst _CopyData
 	pop af
 	dec a
 	ld c, a
@@ -2691,7 +2691,7 @@ SendNewMonToBox:
 	push bc
 	push hl
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	pop hl
 	ld d, h
 	ld e, l
@@ -2704,7 +2704,7 @@ SendNewMonToBox:
 	ld hl, wPlayerName
 	ld de, wBoxMonOT
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld a, [wBoxCount]
 	dec a
 	jr z, .skip2
@@ -2725,7 +2725,7 @@ SendNewMonToBox:
 	push bc
 	push hl
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	pop hl
 	ld d, h
 	ld e, l
@@ -2759,7 +2759,7 @@ SendNewMonToBox:
 	push bc
 	push hl
 	ld bc, wBoxMon2 - wBoxMon1
-	call CopyData
+	rst _CopyData
 	pop hl
 	ld d, h
 	ld e, l
@@ -2774,7 +2774,7 @@ SendNewMonToBox:
 	ld hl, wEnemyMon
 	ld de, wBoxMon1
 	ld bc, wEnemyMonDVs - wEnemyMon
-	call CopyData
+	rst _CopyData
 	ld hl, wPlayerID
 	ld a, [hli]
 	ld [de], a

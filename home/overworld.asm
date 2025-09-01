@@ -39,9 +39,9 @@ EnterMap::
 	ld [wJoyIgnore], a
 
 OverworldLoop::
-	call DelayFrame
+	rst _DelayFrame
 OverworldLoopLessDelay::
-	call DelayFrame
+	rst _DelayFrame
 	call LoadGBPal
 	ld a, [wMovementFlags]
 	bit BIT_LEDGE_OR_FISHING, a
@@ -379,7 +379,7 @@ OverworldLoopLessDelay::
 	jr z, .allPokemonFainted
 .noFaintCheck
 	ld c, 10
-	call DelayFrames
+	rst _DelayFrames
 	jp EnterMap
 .allPokemonFainted
 	ld a, $ff
@@ -726,7 +726,7 @@ PlayMapChangeSound::
 .didNotGoThroughDoor
 	ld a, SFX_GO_OUTSIDE
 .playSound
-	call PlaySound
+	rst _PlaySound
 	ld a, [wMapPalOffset]
 	and a
 	ret nz
@@ -1284,7 +1284,7 @@ CollisionCheckOnLand::
 	jr nz, .setCarry
 
 	ld a, SFX_COLLISION
-	call PlaySound ; play collision sound (if it's not already playing)
+	rst _PlaySound ; play collision sound (if it's not already playing)
 .setCarry
 	scf
 	ret
@@ -1969,7 +1969,7 @@ CollisionCheckOnWater::
 	jr nz, .setCarry
 
 	ld a, SFX_COLLISION
-	call PlaySound ; play collision sound (if it's not already playing)
+	rst _PlaySound ; play collision sound (if it's not already playing)
 .setCarry
 	scf
 	jr .done
@@ -2444,7 +2444,7 @@ ForceBikeOrSurf::
 CheckForUserInterruption::
 ; Return carry if Up+Select+B, Start or A are pressed in c frames.
 ; Used only in the intro and title screen.
-	call DelayFrame
+	rst _DelayFrame
 
 	push bc
 	call JoypadLowSensitivity
@@ -2490,7 +2490,7 @@ LoadDestinationWarpPosition::
 	add hl, bc
 	ld bc, 4
 	ld de, wCurrentTileBlockMapViewPointer
-	call CopyData
+	rst _CopyData
 	pop af
 	ldh [hLoadedROMBank], a
 	ld [rROMB], a

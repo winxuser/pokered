@@ -33,7 +33,7 @@ PrepareOakSpeech:
 	ld hl, DebugNewGamePlayerName
 	ld de, wPlayerName
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, DebugNewGameRivalName
 	ld de, wRivalName
 	ld bc, NAME_LENGTH
@@ -41,7 +41,7 @@ PrepareOakSpeech:
 
 OakSpeech:
 	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
+	rst _PlaySound
 	ld a, 0 ; BANK(Music_Routes2)
 	ld c, a
 	ld a, MUSIC_ROUTES2
@@ -143,12 +143,12 @@ ENDC
 	ldh a, [hLoadedROMBank]
 	push af
 	ld a, SFX_SHRINK
-	call PlaySound
+	rst _PlaySound
 	pop af
 	ldh [hLoadedROMBank], a
 	ld [rROMB], a
 	ld c, 4
-	call DelayFrames
+	rst _DelayFrames
 	ld de, RedSprite
 	ld hl, vSprites
 	lb bc, BANK(RedSprite), $0C
@@ -164,7 +164,7 @@ ENDC
 	lb bc, BANK(ShrinkPic1), $00
 	call IntroDisplayPicCenteredOrUpperRight
 	ld c, 4
-	call DelayFrames
+	rst _DelayFrames
 	ld de, ShrinkPic2
 	lb bc, BANK(ShrinkPic2), $00
 	call IntroDisplayPicCenteredOrUpperRight
@@ -184,7 +184,7 @@ ENDC
 	ldh [hLoadedROMBank], a
 	ld [rROMB], a
 	ld c, 20
-	call DelayFrames
+	rst _DelayFrames
 	hlcoord 6, 5
 	ld b, 7
 	ld c, 7
@@ -193,7 +193,7 @@ ENDC
 	ld a, 1
 	ld [wUpdateSpritesEnabled], a
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	call GBFadeOutToWhite
 	jp ClearScreen
 OakSpeechText1:
@@ -225,7 +225,7 @@ FadeInIntroPic:
 	ld a, [hli]
 	ldh [rBGP], a
 	ld c, 10
-	call DelayFrames
+	rst _DelayFrames
 	dec b
 	jr nz, .next
 	ret
@@ -241,12 +241,12 @@ IntroFadePalettes:
 MovePicLeft:
 	ld a, 119
 	ldh [rWX], a
-	call DelayFrame
+	rst _DelayFrame
 
 	ld a, %11100100
 	ldh [rBGP], a
 .next
-	call DelayFrame
+	rst _DelayFrame
 	ldh a, [rWX]
 	sub 8
 	cp $FF
@@ -266,7 +266,7 @@ IntroDisplayPicCenteredOrUpperRight:
 	ld hl, sSpriteBuffer1
 	ld de, sSpriteBuffer0
 	ld bc, $310
-	call CopyData
+	rst _CopyData
 	ld de, vFrontPic
 	call InterlaceMergeSpriteBuffers
 	pop bc

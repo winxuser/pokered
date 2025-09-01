@@ -26,7 +26,7 @@ HealEffect_:
 	push de
 	push af
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, wBattleMonStatus
 	ldh a, [hWhoseTurn]
 	and a
@@ -104,7 +104,7 @@ HealEffect_:
 	jp PrintText
 .failed
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, PrintButItFailedText_
 	jp EffectCallBattleCore
 

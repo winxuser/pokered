@@ -31,19 +31,13 @@ VBlank::
 	jr nz, .skipOAM
 	call hDMARoutine
 .skipOAM
-	rst $10 ; HAX: VBlank hook (loads palettes)
-	nop
-	nop
+	ld a, BANK(GbcVBlankHook)
+	call SetRomBank
+	call GbcVBlankHook
 	; HAX: don't update sprites here. They're updated elsewhere to prevent wobbliness.
 	;ld a, BANK(PrepareOAMData)
-	nop
-	nop
 	;ldh [hLoadedROMBank], a
-	nop
-	nop
 	;ld [rROMB], a
-	nop
-	nop
 	nop
 	;call PrepareOAMData
 	nop

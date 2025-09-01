@@ -53,7 +53,7 @@ VermilionDockSSAnneLeavesScript:
 	ld a, SFX_STOP_ALL_MUSIC
 	ld [wJoyIgnore], a
 ;	ld [wNewSoundID], a
-	call PlaySound
+	rst _PlaySound
 	ld c, 0 ; BANK(Music_Surfing)
 	ld a, MUSIC_SURFING
 	call PlayMusic
@@ -61,7 +61,7 @@ VermilionDockSSAnneLeavesScript:
 	xor a
 	ld [wSpritePlayerStateData1ImageIndex], a
 	ld c, 120
-	call DelayFrames
+	rst _DelayFrames
 	ld b, $9c
 	call CopyScreenTileBufferToVRAM
 	hlcoord 0, 10
@@ -214,9 +214,9 @@ endr
 	ld [hl], a
 
 	ld a, SFX_SS_ANNE_HORN
-	call PlaySound
+	rst _PlaySound
 	ld c, 120
-	call DelayFrames
+	rst _DelayFrames
 	ret
 
 VermilionDock_TextPointers:
@@ -313,7 +313,7 @@ TruckCheck:
 	ld hl, TruckOAMTable
 	ld bc, $20
 	ld de, wShadowOAM + $20
-	call CopyData
+	rst _CopyData
 	ld a, $c
 	ld [wNewTileBlockID], a ; used to be wd09f
 	ld bc, $a
@@ -321,7 +321,7 @@ TruckCheck:
 	; moving the truck
 	callfar AnimateBoulderDust
 	ld a, SFX_PUSH_BOULDER
-	call PlaySound
+	rst _PlaySound
 	ld b, 32
 	ld de, 4
 .movingtruck
@@ -333,7 +333,7 @@ TruckCheck:
 	dec a
 	jr nz, .movingtruck2
 	ld c, 2
-	call DelayFrames
+	rst _DelayFrames
 	dec b
 	jr nz, .movingtruck
 	ld a, $3
@@ -353,7 +353,7 @@ ShowMew:
 	ret
 FinishShowMew:
 	ld c, 60
-	call DelayFrames
+	rst _DelayFrames
 	xor a
 	ld [wJoyIgnore], a
 	SetEvent EVENT_FOUND_MEW

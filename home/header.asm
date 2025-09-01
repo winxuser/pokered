@@ -1,21 +1,15 @@
 SECTION "rst0", ROM0[$0000]
-_LoadMapVramAndColors:
-	ldh a, [hLoadedROMBank]
-	push af
-	ld a, BANK(LoadMapVramAndColors)
-	ld [rROMB], a
-	call LoadMapVramAndColors
-	pop af
-	ld [rROMB], a
-	ret
+_CopyData::
+	jp CopyData
 
-;SECTION "rst8", ROM0[$0008]
+SECTION "rst8", ROM0[$0008]
+_PlaySound::
+	jp PlaySound
 
 ; HAX: rst10 is used for the vblank hook
 SECTION "rst10", ROM0[$0010]
-	ld b, BANK(GbcVBlankHook)
-	ld hl, GbcVBlankHook
-	jp Bankswitch
+_DelayFrame::
+	jp DelayFrame
 
 ; HAX: rst18 can be used for "Bankswitch"
 SECTION "rst18", ROM0[$0018]
@@ -24,10 +18,9 @@ _Bankswitch::
 
 ; memory for rst vectors $20-$38 used by color hack
 
-SetRomBank::
-	ldh [hLoadedROMBank], a
-	ld [rROMB], a
-	ret
+SECTION "rst20", ROM0[$0020]
+_DelayFrames::
+	jp DelayFrames
 
 SECTION "rst28", ROM0[$0028]
 _PrintText::

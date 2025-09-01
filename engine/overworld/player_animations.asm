@@ -10,7 +10,7 @@ EnterMapAnim::
 	res BIT_USED_FLY, [hl]
 	jr nz, .flyAnimation
 	ld a, SFX_TELEPORT_ENTER_1
-	call PlaySound
+	rst _PlaySound
 	ld hl, wStatusFlags6
 	bit BIT_DUNGEON_WARP, [hl]
 	res BIT_DUNGEON_WARP, [hl]
@@ -18,7 +18,7 @@ EnterMapAnim::
 	jr nz, .dungeonWarpAnimation
 	call PlayerSpinWhileMovingDown
 	ld a, SFX_TELEPORT_ENTER_2
-	call PlaySound
+	rst _PlaySound
 	call IsPlayerStandingOnWarpPadOrHole
 	ld a, b
 	and a
@@ -40,7 +40,7 @@ EnterMapAnim::
 	jp RestoreFacingDirectionAndYScreenPos
 .dungeonWarpAnimation
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	call PlayerSpinWhileMovingDown
 	jr .done
 .flyAnimation
@@ -51,7 +51,7 @@ EnterMapAnim::
 	call CopyVideoData
 	call LoadBirdSpriteGraphics
 	ld a, SFX_FLY
-	call PlaySound
+	rst _PlaySound
 	ld hl, wFlyAnimUsingCoordList
 	xor a ; is using coord list
 	ld [hli], a ; wFlyAnimUsingCoordList
@@ -100,7 +100,7 @@ _LeaveMapAnim::
 	jp nz, LeaveMapThroughHoleAnim
 .spinWhileMovingUp
 	ld a, SFX_TELEPORT_EXIT_1
-	call PlaySound
+	rst _PlaySound
 	ld hl, wPlayerSpinWhileMovingUpOrDownAnimDeltaY
 	ld a, -$10
 	ld [hli], a ; wPlayerSpinWhileMovingUpOrDownAnimDeltaY
@@ -115,7 +115,7 @@ _LeaveMapAnim::
 	jr z, .playerStandingOnWarpPad
 ; if not standing on a warp pad, there is an extra delay
 	ld c, 10
-	call DelayFrames
+	rst _DelayFrames
 .playerStandingOnWarpPad
 	call GBFadeOutToWhite
 	jp RestoreFacingDirectionAndYScreenPos
@@ -147,7 +147,7 @@ _LeaveMapAnim::
 	ld [hl], $c ; wFlyAnimBirdSpriteImageIndex
 	call DoFlyAnimation
 	ld a, SFX_FLY
-	call PlaySound
+	rst _PlaySound
 	ld hl, wFlyAnimUsingCoordList
 	xor a ; is using coord list
 	ld [hli], a ; wFlyAnimUsingCoordList
@@ -157,7 +157,7 @@ _LeaveMapAnim::
 	ld de, FlyAnimationScreenCoords1
 	call DoFlyAnimation
 	ld c, 40
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, wFlyAnimCounter
 	ld a, 11
 	ld [hli], a ; wFlyAnimCounter
@@ -216,7 +216,7 @@ LeaveMapThroughHoleAnim:
 	ld [wShadowOAMSprite00YCoord], a
 	ld [wShadowOAMSprite01YCoord], a
 	ld c, 2
-	call DelayFrames
+	rst _DelayFrames
 	; hide upper half of player's sprite
 	ld a, $a0
 	ld [wShadowOAMSprite02YCoord], a
@@ -268,7 +268,7 @@ InitFacingDirectionList:
 	ld hl, PlayerSpinningFacingOrder
 	ld de, wFacingDirectionList
 	ld bc, 4
-	call CopyData
+	rst _CopyData
 	ld a, [wSpritePlayerStateData1ImageIndex] ; (image index is locked to standing images)
 	ld hl, wFacingDirectionList
 ; find the place in the list that matches the current facing direction
@@ -292,7 +292,7 @@ SpinPlayerSprite:
 	ld hl, wFacingDirectionList
 	ld de, wFacingDirectionList - 1
 	ld bc, 4
-	call CopyData
+	rst _CopyData
 	ld a, [wFacingDirectionList - 1]
 	ld [wFacingDirectionList + 3], a
 	pop hl
@@ -316,7 +316,7 @@ PlayerSpinInPlace:
 	ld a, [wPlayerSpinInPlaceAnimFrameDelayEndValue]
 	cp c
 	ret z
-	call DelayFrames
+	rst _DelayFrames
 	jr PlayerSpinInPlace
 
 PlayerSpinWhileMovingUpOrDown:
@@ -332,7 +332,7 @@ PlayerSpinWhileMovingUpOrDown:
 	ret z
 	ld a, [wPlayerSpinWhileMovingUpOrDownAnimFrameDelay]
 	ld c, a
-	call DelayFrames
+	rst _DelayFrames
 	jr PlayerSpinWhileMovingUpOrDown
 
 RestoreFacingDirectionAndYScreenPos:
@@ -380,7 +380,7 @@ INCLUDE "data/tilesets/warp_pad_hole_tile_ids.asm"
 
 FishingAnim:
 	ld c, 10
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, wMovementFlags
 	set BIT_LEDGE_OR_FISHING, [hl]
 	ld a, [wPlayerGender] ; added gender check
@@ -414,9 +414,9 @@ FishingAnim:
 	add hl, bc
 	ld de, wShadowOAMSprite39
 	ld bc, $4
-	call CopyData
+	rst _CopyData
 	ld c, 100
-	call DelayFrames
+	rst _DelayFrames
 	ld a, [wRodResponse]
 	and a
 	ld hl, NoNibbleText

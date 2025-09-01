@@ -159,7 +159,7 @@ ENDC
 	cp -3
 	jr nz, .skipPlayingSound
 	ld a, SFX_INTRO_CRASH
-	call PlaySound
+	rst _PlaySound
 .skipPlayingSound
 	ld a, [hli]
 	ld e, a
@@ -180,7 +180,7 @@ ENDC
 .ScrollTitleScreenPokemonLogo:
 ; Scrolls the Pokemon logo on the title screen to create the bouncing effect
 ; Scrolls d pixels e times
-	call DelayFrame
+	rst _DelayFrame
 	ld a, [bc] ; background scroll Y
 	add d
 	ld [bc], a
@@ -191,9 +191,9 @@ ENDC
 .finishedBouncingPokemonLogo
 	call LoadScreenTilesFromBuffer1
 	ld c, 36
-	call DelayFrames
+	rst _DelayFrames
 	ld a, SFX_INTRO_WHOOSH
-	call PlaySound
+	rst _PlaySound
 
 ; scroll game version in from the right
 	call PrintGameVersionOnTitleScreen

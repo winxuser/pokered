@@ -42,7 +42,7 @@ AnimateEXPBar:
 .loop2
 	inc a
 	ld [hl], a
-	call DelayFrame
+	rst _DelayFrame
 	dec b
 	jr z, .done
 	jr .loop1
@@ -50,7 +50,7 @@ AnimateEXPBar:
 	ld bc, $08
 	hlcoord 10, 11
 	ld de, wTileMapBackup + 10 + 11 * 20
-	call CopyData
+	rst _CopyData
 	ld c, $20
 	jp DelayFrames
 

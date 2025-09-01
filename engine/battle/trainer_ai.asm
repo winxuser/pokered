@@ -267,7 +267,7 @@ ReadMove:
 	ld bc, MOVE_LENGTH
 	call AddNTimes
 	ld de, wEnemyMoveNum
-	call CopyData
+	rst _CopyData
 	pop bc
 	pop de
 	pop hl
@@ -596,7 +596,7 @@ SwitchEnemyMon:
 	ld e, l
 	ld hl, wEnemyMonHP
 	ld bc, 4
-	call CopyData
+	rst _CopyData
 
 	ld hl, AIBattleWithdrawText
 	rst _PrintText

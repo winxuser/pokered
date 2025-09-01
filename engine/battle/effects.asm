@@ -162,7 +162,7 @@ PoisonEffect:
 	ret nz
 .didntAffect
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	jp PrintDidntAffectText
 
 PoisonedText:
@@ -974,7 +974,7 @@ SwitchAndTeleportEffect:
 	cp b ; is rand[0, playerLevel + enemyLevel] >= (enemyLevel / 4)?
 	jr nc, .playerMoveWasSuccessful ; if so, allow teleporting
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld a, [wPlayerMoveNum]
 	cp TELEPORT
 	jp nz, PrintDidntAffectText
@@ -989,7 +989,7 @@ SwitchAndTeleportEffect:
 	jr .playAnimAndPrintText
 .notWildBattle1
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, IsUnaffectedText
 	ld a, [wPlayerMoveNum]
 	cp TELEPORT
@@ -1016,7 +1016,7 @@ SwitchAndTeleportEffect:
 	cp b
 	jr nc, .enemyMoveWasSuccessful
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld a, [wEnemyMoveNum]
 	cp TELEPORT
 	jp nz, PrintDidntAffectText
@@ -1031,7 +1031,7 @@ SwitchAndTeleportEffect:
 	jr .playAnimAndPrintText
 .notWildBattle2
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	ld hl, IsUnaffectedText
 	ld a, [wEnemyMoveNum]
 	cp TELEPORT
@@ -1041,7 +1041,7 @@ SwitchAndTeleportEffect:
 	push af
 	call PlayBattleAnimation
 	ld c, 20
-	call DelayFrames
+	rst _DelayFrames
 	pop af
 	ld hl, RanFromBattleText
 	cp TELEPORT
@@ -1313,7 +1313,7 @@ ConfusionEffectFailed:
 	cp CONFUSION_SIDE_EFFECT
 	ret z
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	jp ConditionalPrintButItFailed
 
 ParalyzeEffect:
@@ -1356,7 +1356,7 @@ RageEffect:
 
 MimicEffect:
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 	call MoveHitTest
 	ld a, [wMoveMissed]
 	and a

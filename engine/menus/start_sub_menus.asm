@@ -231,7 +231,7 @@ StartMenu_Pokemon::
 	set BIT_UNKNOWN_4_1, [hl]
 	res BIT_NO_BATTLES, [hl]
 	ld c, 60
-	call DelayFrames
+	rst _DelayFrames
 	call GBPalWhiteOutWithDelay3
 	jp .goBackToMap
 .warpToLastPokemonCenterText
@@ -534,7 +534,7 @@ DrawTrainerInfo:
 	ld hl, vChars2 tile $07
 	ld de, vChars2 tile $00
 	ld bc, $1c tiles
-	call CopyData
+	rst _CopyData
 	ld hl, TrainerInfoTextBoxTileGraphics ; trainer info text box tile patterns
 	ld de, vChars2 tile $75
 	ld bc, 10 tiles
@@ -782,7 +782,7 @@ SwitchPartyMon_InitVarOrSwapData:
 	push hl
 	ld de, wSwitchPartyMonTempBuffer
 	ld bc, wPartyMon2 - wPartyMon1
-	call CopyData
+	rst _CopyData
 	ld hl, wPartyMons
 	ld bc, wPartyMon2 - wPartyMon1
 	ld a, [wMenuItemToSwap]
@@ -790,47 +790,47 @@ SwitchPartyMon_InitVarOrSwapData:
 	pop de
 	push hl
 	ld bc, wPartyMon2 - wPartyMon1
-	call CopyData
+	rst _CopyData
 	pop de
 	ld hl, wSwitchPartyMonTempBuffer
 	ld bc, wPartyMon2 - wPartyMon1
-	call CopyData
+	rst _CopyData
 	ld hl, wPartyMonOT
 	ld a, [wCurrentMenuItem]
 	call SkipFixedLengthTextEntries
 	push hl
 	ld de, wSwitchPartyMonTempBuffer
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, wPartyMonOT
 	ld a, [wMenuItemToSwap]
 	call SkipFixedLengthTextEntries
 	pop de
 	push hl
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	pop de
 	ld hl, wSwitchPartyMonTempBuffer
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, wPartyMonNicks
 	ld a, [wCurrentMenuItem]
 	call SkipFixedLengthTextEntries
 	push hl
 	ld de, wSwitchPartyMonTempBuffer
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld hl, wPartyMonNicks
 	ld a, [wMenuItemToSwap]
 	call SkipFixedLengthTextEntries
 	pop de
 	push hl
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	pop de
 	ld hl, wSwitchPartyMonTempBuffer
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	ld a, [wMenuItemToSwap]
 	ld [wSwappedMenuItem], a
 	xor a

@@ -74,7 +74,7 @@ DisplayNameRaterScreen::
 	ld d, h
 	ld hl, wBuffer
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	and a
 	ret
 .playerCancelled
@@ -162,7 +162,7 @@ DisplayNamingScreen:
 	pop de
 	ld hl, wStringBuffer
 	ld bc, NAME_LENGTH
-	call CopyData
+	rst _CopyData
 	call GBPalWhiteOutWithDelay3
 	call ClearScreen
 	call ClearSprites
@@ -264,7 +264,7 @@ DisplayNamingScreen:
 	ld [hli], a
 	ld [hl], "@"
 	ld a, SFX_PRESS_AB
-	call PlaySound
+	rst _PlaySound
 	ret
 .pressedB
 	ld a, [wNamingScreenNameLength]

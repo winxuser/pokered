@@ -29,7 +29,7 @@ PalletTownDefaultScript:
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
+	rst _PlaySound
 	ld a, 0 ; BANK(Music_MeetProfOak)
 	ld c, a
 	ld a, MUSIC_MEET_PROF_OAK ; "oak appears" music
@@ -178,7 +178,7 @@ PalletTownOakText:
 	text_far _PalletTownOakHeyWaitDontGoOutText
 	text_asm
 	ld c, 10
-	call DelayFrames
+	rst _DelayFrames
 	xor a
 	ld [wEmotionBubbleSpriteIndex], a ; player's sprite
 	ld [wWhichEmotionBubble], a ; EXCLAMATION_BUBBLE

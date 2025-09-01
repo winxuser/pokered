@@ -134,7 +134,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld hl, TyrogueIsEvolvingText
 	rst _PrintText
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 
 	call TyrogueEvolutionChoice ; added routine at the end of this file
 	; store Tyrogue's chosen evolution in wEvoNewSpecies: 00 for Chan, 01 for Lee, 02 for Top
@@ -161,7 +161,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 .continueVanilla
 	rst _PrintText
 	ld c, 50
-	call DelayFrames
+	rst _DelayFrames
 .continueVanilla2
 	xor a
 	ldh [hAutoBGTransferEnabled], a
@@ -201,7 +201,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	call PlaySoundWaitForCurrent
 	call WaitForSoundToFinish
 	ld c, 40
-	call DelayFrames
+	rst _DelayFrames
 	call ClearScreen
 	call RenameEvolvedMon
 	ld a, [wPokedexNum]
@@ -215,7 +215,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld bc, BASE_DATA_SIZE
 	call AddNTimes
 	ld de, wMonHeader
-	call CopyData
+	rst _CopyData
 	ld a, [wCurSpecies]
 	ld [wMonHIndex], a
 	pop af
@@ -253,7 +253,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld [hl], a
 	dec hl
 	pop bc
-	call CopyData
+	rst _CopyData
 	ld a, [wCurSpecies]
 	ld [wPokedexNum], a
 	xor a

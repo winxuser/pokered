@@ -9,13 +9,13 @@ DrawBadges:
 	ld de, wBadgeOrFaceTiles
 	ld hl, .FaceBadgeTiles
 	ld bc, NUM_BADGES
-	call CopyData
+	rst _CopyData
 
 ; Tile ids for name graphics.
 	ld de, wLeaderNameTiles
 	ld hl, .NameTiles
 	ld bc, NUM_BADGES
-	call CopyData
+	rst _CopyData
 
 ; Move from face to badge graphics if badge is owned.
 	ld hl, wBadgeOrFaceTiles
@@ -84,7 +84,7 @@ DrawBadges:
 	ld hl, wBadgeOrFaceTiles + 1
 	ld de, wBadgeOrFaceTiles
 	ld bc, NUM_BADGES
-	call CopyData ; Copy bc bytes from hl to de.
+	rst _CopyData ; Copy bc bytes from hl to de.
 	pop bc
 
 	pop hl

@@ -32,7 +32,7 @@ LoadGymLeaderAndCityName::
 	push de
 	ld de, wGymCityName
 	ld bc, $11
-	call CopyData   ; load city name
+	rst _CopyData   ; load city name
 	pop hl
 	ld de, wGymLeaderName
 	ld bc, NAME_LENGTH
@@ -428,7 +428,7 @@ PlayTrainerMusic::
 	xor a
 	ld [wMusicFade], a
 	ld a, SFX_STOP_ALL_MUSIC
-	call PlaySound
+	rst _PlaySound
 ;	ld a, 0 ; BANK(Music_MeetEvilTrainer)
 ;	ld [wAudioROMBank], a
 ;	ld [wAudioSavedROMBank], a
