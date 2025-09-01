@@ -79,6 +79,9 @@ Winxusers Changes and fixes
     - Able to change pokemon in the status screen
     - Add all Gen 2 Pokemon and edit their palettes to match Gen 2 (thanks to Engezerstorung for helping me with the palettes)
     - Add a few Gen 2 moves
+    - Added a new trainer YELLOW and her house in Pallet Town
+    - Port over some Gen 2 tileset graphics
+    - Add a PC into the Daycare
 
 - Battle Engine Changes:
     
@@ -102,6 +105,7 @@ Winxusers Changes and fixes
     - Implement move priority system
     - Add gender selection
     - Add base stats into dex 
+    - Added breeding mechanic
 
 Original README follows...
 
