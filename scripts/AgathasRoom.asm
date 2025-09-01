@@ -113,6 +113,8 @@ AgathasRoomAgathaEndBattleScript:
 	ld a, TEXT_AGATHASROOM_AGATHA
 	ldh [hTextID], a
 	call DisplayTextID
+	ld a, SFX_GO_INSIDE
+	rst _PlaySound
 	ld a, SCRIPT_CHAMPIONSROOM_PLAYER_ENTERS
 	ld [wChampionsRoomCurScript], a
 	ret

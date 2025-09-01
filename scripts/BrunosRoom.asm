@@ -112,7 +112,10 @@ BrunosRoomBrunoEndBattleScript:
 	jp z, ResetBrunoScript
 	ld a, TEXT_BRUNOSROOM_BRUNO
 	ldh [hTextID], a
-	jp DisplayTextID
+	call DisplayTextID
+	ld a, SFX_GO_INSIDE
+	rst _PlaySound
+	ret
 
 BrunosRoom_TextPointers:
 	def_text_pointers

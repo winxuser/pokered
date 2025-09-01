@@ -114,7 +114,10 @@ LoreleisRoomLoreleiEndBattleScript:
 	jp z, ResetLoreleiScript
 	ld a, TEXT_LORELEISROOM_LORELEI
 	ldh [hTextID], a
-	jp DisplayTextID
+	call DisplayTextID
+	ld a, SFX_GO_INSIDE
+	rst _PlaySound
+	ret
 
 LoreleisRoom_TextPointers:
 	def_text_pointers
