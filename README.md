@@ -42,6 +42,7 @@ Winxusers Changes and fixes
     - The splash screen adds 2 more stars than it should
     - The PC screen in the healing machine doesn't flash correctly
     - GetName applies to all names rather than only item names
+    - Fix swapping moves while transformed creates game glitches
    
 - Graphics:
 
