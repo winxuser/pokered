@@ -62,13 +62,13 @@ BillsHouseInitiatedText::
 	call WaitForSoundToFinish
 	ld c, 60
 	call DelayFrames
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 BillsHousePokemonList::
 	text_asm
 	call SaveScreenTilesToBuffer1
 	ld hl, BillsHousePokemonListText1
-	call PrintText
+	rst _PrintText
 	xor a
 	ld [wMenuItemOffset], a ; not used
 	ld [wCurrentMenuItem], a
@@ -92,7 +92,7 @@ BillsHousePokemonList::
 	ld de, BillsMonListText
 	call PlaceString
 	ld hl, BillsHousePokemonListText2
-	call PrintText
+	rst _PrintText
 	call SaveScreenTilesToBuffer2
 	call HandleMenuInput
 	bit B_PAD_B, a
@@ -116,7 +116,7 @@ BillsHousePokemonList::
 	ld hl, wStatusFlags5
 	res BIT_NO_TEXT_DELAY, [hl]
 	call LoadScreenTilesFromBuffer2
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 BillsHousePokemonListText1:
 	text_far _BillsHousePokemonListText1

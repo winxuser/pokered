@@ -137,10 +137,10 @@ LinkMenu:
 	ld hl, wStatusFlags4
 	set BIT_LINK_CONNECTED, [hl]
 	ld hl, LinkMenuEmptyText
-	call PrintText
+	rst _PrintText
 	call SaveScreenTilesToBuffer1
 	ld hl, WhereWouldYouLikeText
-	call PrintText
+	rst _PrintText
 	hlcoord 5, 5
 	ld b, $6
 	ld c, $d
@@ -269,7 +269,7 @@ LinkMenu:
 .next
 	ld [wCableClubDestinationMap], a
 	ld hl, PleaseWaitText
-	call PrintText
+	rst _PrintText
 	ld c, 50
 	call DelayFrames
 	ld hl, wStatusFlags6
@@ -294,7 +294,7 @@ LinkMenu:
 	call CloseLinkConnection
 	ld hl, LinkCanceledText
 	vc_hook Wireless_net_end
-	call PrintText
+	rst _PrintText
 	ld hl, wStatusFlags4
 	res BIT_LINK_CONNECTED, [hl]
 	ret

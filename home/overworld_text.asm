@@ -1,7 +1,3 @@
-TextScriptEnd::
-	ld hl, TextScriptEndingText
-	ret
-
 ExclamationText::
 	text_far _ExclamationText
 	text_end
@@ -13,7 +9,7 @@ GroundRoseText::
 BoulderText::
 	text_asm
 	callfar CheckForStrength
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 MartSignText::
 	text_far _MartSignText
@@ -26,7 +22,7 @@ PokeCenterSignText::
 PickUpItemText::
 	text_asm
 	predef PickUpItem
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 MonCouldSurfText:: ; marcelnote - HMs in overworld
     text_far _MonCouldSurfText

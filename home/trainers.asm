@@ -98,11 +98,12 @@ TalkToTrainer::
 	jr z, .trainerNotYetFought     ; test trainer's flag
 	ld a, $6
 	call ReadTrainerHeaderInfo     ; print after battle text
-	jp PrintText
+	rst _PrintText
+	ret
 .trainerNotYetFought
 	ld a, $4
 	call ReadTrainerHeaderInfo     ; print before battle text
-	call PrintText
+	rst _PrintText
 	ld a, $a
 	call ReadTrainerHeaderInfo     ; read end battle text (2)
 	push de
@@ -265,7 +266,8 @@ SetSpritePosition2::
 	ld hl, _SetSpritePosition2
 SpritePositionBankswitch::
 	ld b, BANK("Trainer Sight")
-	jp Bankswitch ; indirect jump to one of the four functions
+	rst _Bankswitch ; indirect jump to one of the four functions
+	ret
 
 CheckForEngagingTrainers::
 	xor a
@@ -369,7 +371,7 @@ PrintEndBattleText::
 	push hl
 	farcall SaveTrainerName
 	ld hl, TrainerEndBattleText
-	call PrintText
+	rst _PrintText
 	pop hl
 	pop af
 	ldh [hLoadedROMBank], a
@@ -399,7 +401,7 @@ TrainerEndBattleText::
 	text_asm
 	call GetSavedEndBattleTextPointer
 	call TextCommandProcessor
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 ; only engage with the trainer if the player is not already
 ; engaged with another trainer

@@ -210,17 +210,17 @@ PewterCityCooltrainerMText:
 PewterCitySuperNerd1Text:
 	text_asm
 	ld hl, .DidYouCheckOutMuseumText
-	call PrintText
+	rst _PrintText
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
 	and a
 	jr nz, .playerDidNotGoIntoMuseum
 	ld hl, .WerentThoseFossilsAmazingText
-	call PrintText
+	rst _PrintText
 	jr .done
 .playerDidNotGoIntoMuseum
 	ld hl, .YouHaveToGoText
-	call PrintText
+	rst _PrintText
 	xor a
 	ldh [hJoyPressed], a
 	ldh [hJoyHeld], a
@@ -235,7 +235,7 @@ PewterCitySuperNerd1Text:
 	ld a, SCRIPT_PEWTERCITY_SUPER_NERD1_SHOWS_PLAYER_MUSEUM
 	ld [wPewterCityCurScript], a
 .done
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .DidYouCheckOutMuseumText:
 	text_far _PewterCitySuperNerd1DidYouCheckOutMuseumText
@@ -256,19 +256,19 @@ PewterCitySuperNerd1ItsRightHereText:
 PewterCitySuperNerd2Text:
 	text_asm
 	ld hl, .DoYouKnowWhatImDoingText
-	call PrintText
+	rst _PrintText
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
 	cp $0
 	jr nz, .playerDoesNotKnow
 	ld hl, .ThatsRightText
-	call PrintText
+	rst _PrintText
 	jr .done
 .playerDoesNotKnow
 	ld hl, .ImSprayingRepelText
-	call PrintText
+	rst _PrintText
 .done
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .DoYouKnowWhatImDoingText:
 	text_far _PewterCitySuperNerd2DoYouKnowWhatImDoingText
@@ -285,7 +285,7 @@ PewterCitySuperNerd2Text:
 PewterCityYoungsterText:
 	text_asm
 	ld hl, .YoureATrainerFollowMeText
-	call PrintText
+	rst _PrintText
 	xor a
 	ldh [hJoyHeld], a
 	ld [wNPCMovementScriptFunctionNum], a
@@ -298,7 +298,7 @@ PewterCityYoungsterText:
 	call GetSpritePosition2
 	ld a, SCRIPT_PEWTERCITY_YOUNGSTER_SHOWS_PLAYER_GYM
 	ld [wPewterCityCurScript], a
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .YoureATrainerFollowMeText:
 	text_far _PewterCityYoungsterYoureATrainerFollowMeText

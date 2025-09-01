@@ -54,7 +54,7 @@ CheckLoadTmName:: ; loads a TM name when the cursor is on TMs
 	pop af
 	call CopyToStringBuffer
 	ld hl, TMParamMoveNameText
-	call PrintText
+	rst _PrintText
 	ld a, 1
 	ld [wTMTextShown], a
 	jr .done
@@ -74,7 +74,7 @@ ClearTMTextBox:
 	and a
 	ret z
 	ld hl,EmptyItemParamText
-	call PrintText
+	rst _PrintText
 	xor a
 	ld [wTMTextShown], a
 	ret

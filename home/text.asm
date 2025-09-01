@@ -224,9 +224,6 @@ DoneText::
 	dec de
 	ret
 
-TextScriptEndingText::
-	text_end
-
 Paragraph::
 	push de
 	ld a, "▼"

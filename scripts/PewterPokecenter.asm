@@ -21,7 +21,7 @@ PewterPokecenterJigglypuffText:
 	ld a, TRUE
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld hl, .Text
-	call PrintText
+	rst _PrintText
 
 	ld a, SFX_STOP_ALL_MUSIC
 	call PlaySound
@@ -75,7 +75,7 @@ PewterPokecenterJigglypuffText:
 	ld c, 48
 	call DelayFrames
 	call PlayDefaultMusic
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .Text:
 	text_far _PewterPokecenterJigglypuffText

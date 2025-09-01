@@ -155,7 +155,7 @@ CheckForStrength:: ; marcelnote - this function is different from the others bec
     push hl
 ; stores address wPartyMon{1+a}Species on stack
     ld hl, WantToStrengthText
-    call PrintText
+    rst _PrintText
     ld a, $1
     ld [wDoNotWaitForButtonPressAfterDisplayingText], a
     call YesNoChoice
@@ -163,7 +163,7 @@ CheckForStrength:: ; marcelnote - this function is different from the others bec
     and a
     jr nz, .saidNo
     ld hl, CanMoveBouldersText
-    call PrintText
+    rst _PrintText
     pop hl
     ld a, [hl]
     call PlayCry ; plays cry of Pokémon a
@@ -173,10 +173,10 @@ CheckForStrength:: ; marcelnote - this function is different from the others bec
     ret
 .fail
 	ld hl, ThisRequiresStrengthText
-	call PrintText
+	rst _PrintText
 	ret
 .saidNo
-    pop hl ; remove address wPartyMon{1+a}Species from the stack to use jp TextScriptEnd
+    pop hl ; remove address wPartyMon{1+a}Species from the stack to use rst TextScriptEnd
     ret
 
 
@@ -225,11 +225,11 @@ WantToSurfText::
     and a
     jr nz, .saidNo
     ld hl, SurfingGotOnText
-    call PrintText
-    ;jp TextScriptEnd
+    rst _PrintText
+    ;rst TextScriptEnd
     ;ret nz
 .saidNo
-	jp TextScriptEnd ; PureRGB - jp TextScriptEnd
+	rst TextScriptEnd ; PureRGB - rst TextScriptEnd
 
 WantToCutText::
     text_far _WantToCutText
@@ -241,18 +241,18 @@ WantToCutText::
     and a
     jr nz, .saidNo
     ld hl, UsedCutText
-    call PrintText
-    ;jp TextScriptEnd
+    rst _PrintText
+    ;rst TextScriptEnd
     ;ret
 .saidNo
-	jp TextScriptEnd ; PureRGB - jp TextScriptEnd
+	rst TextScriptEnd ; PureRGB - rst TextScriptEnd
 
 UsedFlashText::
     text_far _UsedFlashText
    	text_asm
     ld a, $1
     ld [wDoNotWaitForButtonPressAfterDisplayingText], a
- 	jp TextScriptEnd ; PureRGB - jp TextScriptEnd
+ 	rst TextScriptEnd ; PureRGB - rst TextScriptEnd
     ;ret
 
 

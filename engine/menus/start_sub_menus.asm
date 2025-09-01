@@ -148,7 +148,7 @@ StartMenu_Pokemon::
 	ld hl, wPartyMonNicks
 	call GetPartyMonName
 	ld hl, .cannotFlyHereText
-	call PrintText
+	rst _PrintText
 	jp .loop
 .canFly
 	call ChooseFlyDestination
@@ -196,7 +196,7 @@ StartMenu_Pokemon::
 	xor a
 	ld [wMapPalOffset], a
 	ld hl, .flashLightsAreaText
-	call PrintText
+	rst _PrintText
 	call GBPalWhiteOutWithDelay3
 	jp .goBackToMap
 .flashLightsAreaText
@@ -219,11 +219,11 @@ StartMenu_Pokemon::
 	ld hl, wPartyMonNicks
 	call GetPartyMonName
 	ld hl, .cannotUseTeleportNowText
-	call PrintText
+	rst _PrintText
 	jp .loop
 .canTeleport
 	ld hl, .warpToLastPokemonCenterText
-	call PrintText
+	rst _PrintText
 	ld hl, wStatusFlags6
 	set BIT_FLY_WARP, [hl]
 	set BIT_ESCAPE_WARP, [hl]
@@ -277,7 +277,7 @@ StartMenu_Pokemon::
 	jp .loop
 .notHealthyEnough ; if current HP is less than 1/5 of max HP
 	ld hl, .notHealthyEnoughText
-	call PrintText
+	rst _PrintText
 	jp .loop
 .notHealthyEnoughText
 	text_far _NotHealthyEnoughText
@@ -288,7 +288,7 @@ StartMenu_Pokemon::
 	jp CloseTextDisplay
 .newBadgeRequired
 	ld hl, .newBadgeRequiredText
-	call PrintText
+	rst _PrintText
 	jp .loop
 .newBadgeRequiredText
 	text_far _NewBadgeRequiredText
@@ -316,7 +316,7 @@ StartMenu_Item::
 	dec a ; is the player in the Colosseum or Trade Centre?
 	jr nz, .notInCableClubRoom
 	ld hl, CannotUseItemsHereText
-	call PrintText
+	rst _PrintText
 	jr .exitMenu
 .notInCableClubRoom
 	ld bc, wNumBagItems
@@ -389,7 +389,7 @@ StartMenu_Item::
 	bit BIT_ALWAYS_ON_BIKE, a
 	jr z, .useItem_closeMenu
 	ld hl, CannotGetOffHereText
-	call PrintText
+	rst _PrintText
 	jp ItemMenuLoop
 .notBicycle
 	xor a

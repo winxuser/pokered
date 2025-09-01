@@ -27,9 +27,9 @@ Route15Gate2FOaksAideText:
 	SetEvent EVENT_GOT_EXP_ALL
 .got_item
 	ld hl, .ExpAllText
-	call PrintText
+	rst _PrintText
 .no_item
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .ExpAllText:
 	text_far _Route15Gate2FOaksAideExpAllText

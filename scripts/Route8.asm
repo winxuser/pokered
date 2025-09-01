@@ -53,7 +53,7 @@ Route8SuperNerd1Text:
 	text_asm
 	ld hl, Route8TrainerHeader0
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8SuperNerd1BattleText:
 	text_far _Route8SuperNerd1BattleText
@@ -71,7 +71,7 @@ Route8Gambler1Text:
 	text_asm
 	ld hl, Route8TrainerHeader1
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8Gambler1BattleText:
 	text_far _Route8Gambler1BattleText
@@ -89,7 +89,7 @@ Route8SuperNerd2Text:
 	text_asm
 	ld hl, Route8TrainerHeader2
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8SuperNerd2BattleText:
 	text_far _Route8SuperNerd2BattleText
@@ -107,7 +107,7 @@ Route8CooltrainerF1Text:
 	text_asm
 	ld hl, Route8TrainerHeader3
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8CooltrainerF1BattleText:
 	text_far _Route8CooltrainerF1BattleText
@@ -125,7 +125,7 @@ Route8SuperNerd3Text:
 	text_asm
 	ld hl, Route8TrainerHeader4
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8SuperNerd3BattleText:
 	text_far _Route8SuperNerd3BattleText
@@ -143,7 +143,7 @@ Route8CooltrainerF2Text:
 	text_asm
 	ld hl, Route8TrainerHeader5
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8CooltrainerF2BattleText:
 	text_far _Route8CooltrainerF2BattleText
@@ -161,7 +161,7 @@ Route8CooltrainerF3Text:
 	text_asm
 	ld hl, Route8TrainerHeader6
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8CooltrainerF3BattleText:
 	text_far _Route8CooltrainerF3BattleText
@@ -179,7 +179,7 @@ Route8Gambler2Text:
 	text_asm
 	ld hl, Route8TrainerHeader7
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8Gambler2BattleText:
 	text_far _Route8Gambler2BattleText
@@ -197,7 +197,7 @@ Route8CooltrainerF4Text:
 	text_asm
 	ld hl, Route8TrainerHeader8
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 Route8CooltrainerF4BattleText:
 	text_far _Route8CooltrainerF4BattleText

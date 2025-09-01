@@ -16,4 +16,4 @@ Route5PoliwrathText:
 	text_asm
 	ld a, POLIWRATH
 	call PlayCry
-	jp TextScriptEnd
+	rst TextScriptEnd

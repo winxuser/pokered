@@ -171,8 +171,8 @@ PalletTownOakText:
 .next
 	ld hl, .ItsUnsafeText
 .done
-	call PrintText
-	jp TextScriptEnd
+	rst _PrintText
+	rst TextScriptEnd
 
 .HeyWaitDontGoOutText:
 	text_far _PalletTownOakHeyWaitDontGoOutText
@@ -185,7 +185,7 @@ PalletTownOakText:
 	predef EmotionBubble
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .ItsUnsafeText:
 	text_far _PalletTownOakItsUnsafeText

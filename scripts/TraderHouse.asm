@@ -11,7 +11,7 @@ CeladonTraderText:
 	ld a, TRADE_WITH_SELF
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 TraderJournalText:
 	text_far _TraderJournalText

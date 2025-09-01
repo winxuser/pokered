@@ -27,9 +27,9 @@ Route2GateOaksAideText:
 	SetEvent EVENT_GOT_HM05
 .got_item
 	ld hl, .FlashExplanationText
-	call PrintText
+	rst _PrintText
 .no_item
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .FlashExplanationText:
 	text_far _Route2GateOaksAideFlashExplanationText

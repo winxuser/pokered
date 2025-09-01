@@ -29,6 +29,24 @@ SetRomBank::
 	ld [rROMB], a
 	ret
 
+SECTION "rst28", ROM0[$0028]
+_PrintText::
+	jp PrintText
+
+SECTION "rst30", ROM0[$0030]
+_Predef::
+	jp Predef
+
+SECTION "rst38", ROM0[$0038]
+TextScriptEnd::
+        pop hl ; turn the rst call into a jp by popping off the return address
+TextScriptEndNoPop::
+        ld hl, TextScriptEndingText
+DoRet::
+        ret
+
+TextScriptEndingText:: ; moved from home/overworld_text.asm
+    	text_end
 
 ; Game Boy hardware interrupts
 

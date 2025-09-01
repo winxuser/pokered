@@ -132,7 +132,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	jr nz, .continueVanilla
 
 	ld hl, TyrogueIsEvolvingText
-	call PrintText
+	rst _PrintText
 	ld c, 50
 	call DelayFrames
 
@@ -159,7 +159,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	jr .continueVanilla2
 ; Vanilla
 .continueVanilla
-	call PrintText
+	rst _PrintText
 	ld c, 50
 	call DelayFrames
 .continueVanilla2
@@ -176,7 +176,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	callfar EvolveMon
 	jp c, CancelledEvolution
 	ld hl, EvolvedText
-	call PrintText
+	rst _PrintText
 	pop hl
 	ld a, [wEvoOldSpecies]
 	cp TYROGUE
@@ -341,7 +341,7 @@ RenameEvolvedMon:
 
 CancelledEvolution:
 	ld hl, StoppedEvolvingText
-	call PrintText
+	rst _PrintText
 	call ClearScreen
 	pop hl
 	call Evolution_ReloadTilesetTilePatterns
@@ -603,7 +603,7 @@ TyrogueEvolutionChoice::
 	ld [wEvoCancelled], a
 	call LoadScreenTilesFromBuffer1
 	ld hl, StoppedEvolvingText
-	call PrintText
+	rst _PrintText
 	pop hl
 	pop hl
 	call Evolution_ReloadTilesetTilePatterns

@@ -155,7 +155,7 @@ SortItems::
 	push hl
 	push bc
 	ld hl, SortItemsText ; Display the text to ask to sort
-	call PrintText
+	rst _PrintText
 	hlcoord 14, 7
 	lb bc, 8, 15
 	ld a, TWO_OPTION_MENU
@@ -174,7 +174,7 @@ SortItems::
 .nothingSorted
 	ld hl, NothingToSort
 .printResultText
-	call PrintText
+	rst _PrintText
 .cleanWindow
 	ld a, LIST_MENU_BOX
 	ld [wTextBoxID], a
@@ -189,7 +189,7 @@ SortItems::
 	; but that would not work for the PC, so then PC tracking is needed.
 	; To keep things simple, we will just always display a textbox after sorting items in the overworld.
 .done
-	call PrintText
+	rst _PrintText
 	ld a, ITEMLISTMENU
 	ld [wListMenuID], a
 	ld a, 1 ; max menu item ID is 1 if the list has less than 2 entries

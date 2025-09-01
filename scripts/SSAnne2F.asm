@@ -194,14 +194,14 @@ SSAnne2FWaiterText:
 SSAnne2FRivalText:
 	text_asm
 	ld hl, .Text
-	call PrintText
+	rst _PrintText
 	ld hl, wStatusFlags3
 	set BIT_TALKED_TO_TRAINER, [hl]
 	set BIT_PRINT_END_BATTLE_TEXT, [hl]
 	ld hl, SSAnne2FRivalDefeatedText
 	ld de, SSAnne2FRivalVictoryText
 	call SaveEndBattleTextPointers
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .Text:
 	text_far _SSAnne2FRivalText

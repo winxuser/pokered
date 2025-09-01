@@ -2,7 +2,7 @@ PrintStrengthText:
 	ld hl, wStatusFlags1
 	set BIT_STRENGTH_ACTIVE, [hl]
 	ld hl, UsedStrengthText
-	call PrintText
+	rst _PrintText
 	ld hl, CanMoveBouldersText
 	jp PrintText
 
@@ -12,7 +12,7 @@ UsedStrengthText:
 	ld a, [wCurPartySpecies]
 	call PlayCry
 	call Delay3
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 IsSurfingAllowed:
 ; Returns whether surfing is allowed in BIT_SURF_ALLOWED of wStatusFlags1.

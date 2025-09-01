@@ -288,7 +288,7 @@ RocketHideoutB2FRocketText:
 	text_asm
 	ld hl, RocketHideout2TrainerHeader0
 	call TalkToTrainer
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 RocketHideoutB2FRocketBattleText:
 	text_far _RocketHideoutB2FRocketBattleText

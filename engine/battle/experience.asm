@@ -6,7 +6,7 @@ GainExperience:
 	ld hl, WithExpAllText ; this is preparing the text to show
 	and a ;check wBoostExpByExpAll value
 	jr z, .skipExpAll ; if wBoostExpByExpAll is zero, we are not using it, so we don't show anything and keep going on
-	call PrintText ; if the code reaches this point it means we have the Exp.All, so show the message
+	rst _PrintText ; if the code reaches this point it means we have the Exp.All, so show the message
 .skipExpAll
 	ld hl, wPartyMon1
 	xor a
@@ -155,7 +155,7 @@ GainExperience:
    and a ; check the flag
    jr nz, .skipExpText ; if there's EXP. all, skip showing any text
    ld hl, GainedText ;there's no EXP. all, load the text to show
-	call PrintText
+	rst _PrintText
 .skipExpText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
@@ -258,7 +258,7 @@ ENDC
 	call SaveScreenTilesToBuffer1
 .printGrewLevelText
 	ld hl, GrewLevelText
-	call PrintText
+	rst _PrintText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 IF GEN_2_GRAPHICS

@@ -139,11 +139,11 @@ PokemonTower2FRivalText:
 	CheckEvent EVENT_BEAT_POKEMON_TOWER_RIVAL
 	jr z, .do_battle
 	ld hl, .HowsYourDexText
-	call PrintText
+	rst _PrintText
 	jr .text_script_end
 .do_battle
 	ld hl, .WhatBringsYouHereText
-	call PrintText
+	rst _PrintText
 	ld hl, wStatusFlags3
 	set BIT_TALKED_TO_TRAINER, [hl]
 	set BIT_PRINT_END_BATTLE_TEXT, [hl]
@@ -175,7 +175,7 @@ PokemonTower2FRivalText:
 	ld [wPokemonTower2FCurScript], a
 	ld [wCurMapScript], a
 .text_script_end
-	jp TextScriptEnd
+	rst TextScriptEnd
 
 .WhatBringsYouHereText:
 	text_far _PokemonTower2FRivalWhatBringsYouHereText

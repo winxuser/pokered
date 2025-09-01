@@ -71,11 +71,11 @@ SafariGameOverText:
 	and a
 	jr z, .noMoreSafariBalls
 	ld hl, TimesUpText
-	call PrintText
+	rst _PrintText
 .noMoreSafariBalls
 	ld hl, GameOverText
-	call PrintText
-	jp TextScriptEnd
+	rst _PrintText
+	rst TextScriptEnd
 
 TimesUpText:
 	text_far _TimesUpText
