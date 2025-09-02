@@ -1,6 +1,6 @@
 ItemPrices::
 	table_width 3
-	bcd3 0     ; MASTER_BALL
+	bcd3 2100  ; MASTER_BALL
 	bcd3 1200  ; ULTRA_BALL
 	bcd3 600   ; GREAT_BALL
 	bcd3 200   ; POKE_BALL
@@ -9,7 +9,7 @@ ItemPrices::
 	bcd3 0     ; SURFBOARD
 	bcd3 1000  ; SAFARI_BALL
 	bcd3 0     ; POKEDEX
-	bcd3 0     ; MOON_STONE
+	bcd3 2100  ; MOON_STONE
 	bcd3 100   ; ANTIDOTE
 	bcd3 250   ; BURN_HEAL
 	bcd3 250   ; ICE_HEAL
@@ -34,11 +34,11 @@ ItemPrices::
 	bcd3 2100  ; FIRE_STONE
 	bcd3 2100  ; THUNDER_STONE
 	bcd3 2100  ; WATER_STONE
-	bcd3 9800  ; HP_UP
-	bcd3 9800  ; PROTEIN
-	bcd3 9800  ; IRON
-	bcd3 9800  ; CARBOS
-	bcd3 9800  ; CALCIUM
+	bcd3 2000  ; HP_UP
+	bcd3 2000  ; PROTEIN
+	bcd3 2000  ; IRON
+	bcd3 2000  ; CARBOS
+	bcd3 2000  ; CALCIUM
 	bcd3 4800  ; RARE_CANDY
 	bcd3 0     ; DOME_FOSSIL
 	bcd3 0     ; HELIX_FOSSIL
@@ -58,7 +58,7 @@ ItemPrices::
 	bcd3 500   ; SUPER_REPEL
 	bcd3 700   ; MAX_REPEL
 	bcd3 650   ; DIRE_HIT
-	bcd3 10    ; COIN
+	bcd3 5     ; COIN
 	bcd3 200   ; FRESH_WATER
 	bcd3 300   ; SODA_POP
 	bcd3 350   ; LEMONADE
@@ -78,11 +78,11 @@ ItemPrices::
 	bcd3 0     ; OLD_ROD
 	bcd3 0     ; GOOD_ROD
 	bcd3 0     ; SUPER_ROD
-	bcd3 0     ; PP_UP
-	bcd3 0     ; ETHER
-	bcd3 0     ; MAX_ETHER
-	bcd3 0     ; ELIXER
-	bcd3 0     ; MAX_ELIXER
+	bcd3 300   ; PP_UP
+	bcd3 300   ; ETHER
+	bcd3 600   ; MAX_ETHER
+	bcd3 300   ; ELIXER
+	bcd3 600   ; MAX_ELIXER
 ; Gen 2 Items
 	bcd3 2100  ; SUN_SHARD
 	bcd3 2100  ; MOON_SHARD
