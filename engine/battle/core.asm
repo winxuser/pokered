@@ -6648,7 +6648,7 @@ ELSE
 	ld de, vBackPic
 	call InterlaceMergeSpriteBuffers
 ENDC
-	ld a, $a
+	ld a, RAMG_SRAM_ENABLE
 	ld [rRAMG], a
 	xor a
 	ld [rRAMB], a
