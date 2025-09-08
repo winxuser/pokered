@@ -224,3 +224,9 @@ ForgotAndText:
 HMCantDeleteText:
 	text_far _HMCantDeleteText
 	text_end
+
+ConvertPercentagesBattle::
+	ld a, [wPlayerMoveAccuracy]
+;	call ConvertPercentages
+	ld [wBuffer], a
+	ret
