@@ -304,17 +304,10 @@ LoadTownMap:
 	ld bc, MonNestIconEnd - MonNestIcon
 	ld a, BANK(MonNestIcon)
 	call FarCopyDataDouble
-	hlcoord 0, 0
-	ld de, UncompressedMap ; $5100
-.loop
-.nextTile
-	ld a, [de]
-	cp $ff
-	jr z, .doneCopying
-    ld [hli], a
-    inc de
-    jr .loop
-.doneCopying
+	ld hl, UncompressedMap
+	ld de, wTileMap
+	ld bc, UncompressedMapEnd - UncompressedMap
+	call CopyData
 	call EnableLCD
 	ld b, SET_PAL_TOWN_MAP
 	call RunPaletteCommand
@@ -328,7 +321,7 @@ LoadTownMap:
 
 UncompressedMap: ; Uses the Gen 2 format
     INCBIN "gfx/town_map.map"
-    db $ff ; Marks the end of the map data
+UncompressedMapEnd:
 
 ExitTownMap:
 ; clear town map graphics data and load usual graphics data
