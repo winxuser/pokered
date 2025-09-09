@@ -388,6 +388,7 @@ INCLUDE "data/moves/moves.asm"
 INCLUDE "data/text/unused_names.asm"
 INCLUDE "data/pokemon/breeding_list.asm"
 INCLUDE "gfx/trainer_card.asm"
+INCLUDE "engine/pokemon/mon_gender.asm"
 
 SECTION "Pokemon Data", ROMX
 
