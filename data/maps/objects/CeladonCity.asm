@@ -26,7 +26,7 @@ CeladonCity_Object:
 	warp_event 31, 27, CELADON_DINER, 1
 	warp_event 35, 27, CELADON_CHIEF_HOUSE, 1
 	warp_event 43, 27, CELADON_HOTEL, 1
-	warp_event  9,  3, TRADER_HOUSE, 1 ; dereknote: this is the 14th warp event in this list
+	warp_event 10,  3, TRADER_HOUSE, 1 ; dereknote: this is the 14th warp event in this list
 
 	def_bg_events
 	bg_event 27, 15, TEXT_CELADONCITY_TRAINER_TIPS1
