@@ -783,8 +783,6 @@ IndexToPokedex:
 	pop bc
 	ret
 
-INCLUDE "data/pokemon/dex_order.asm"
-
 PromptText:
 	text_promptbutton
 	text_end
@@ -815,3 +813,5 @@ SpcText:
 
 TotalText:
 	db "TOTAL@"
+
+INCLUDE "data/pokemon/dex_order.asm"
