@@ -31,6 +31,7 @@ MapPaletteAssignments:
 	dw FacilityPalMap    ; FACILITY
 	dw PlateauPalMap     ; PLATEAU
 	dw IceCavernPalMap   ; ICE_CAVERN
+	dw MartUpdatePalMap  ; MART UPDATE
 	assert_table_length NUM_TILESETS
 
 OverworldPalMap:
@@ -97,3 +98,6 @@ PlateauPalMap:
 
 IceCavernPalMap:
 	INCLUDE "color/tilesets/ice_cavern.asm"
+
+MartUpdatePalMap:
+	INCLUDE "color/tilesets/mart_update.asm"

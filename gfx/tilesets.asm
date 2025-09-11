@@ -27,11 +27,6 @@ Gym_GFX::           INCBIN "gfx/tilesets/gym.2bpp"
 Dojo_Block::
 Gym_Block::         INCBIN "gfx/blocksets/gym.bst"
 
-Mart_GFX::
-Pokecenter_GFX::    INCBIN "gfx/tilesets/pokecenter.2bpp"
-Mart_Block::
-Pokecenter_Block::  INCBIN "gfx/blocksets/pokecenter.bst"
-
 ForestGate_GFX::
 Museum_GFX::
 Gate_GFX::          INCBIN "gfx/tilesets/gate.2bpp"
@@ -65,3 +60,11 @@ Underground_Block:: INCBIN "gfx/blocksets/underground.bst"
 SECTION "Tilesets 4", ROMX
 IceCavern_GFX::		INCBIN "gfx/tilesets/ice_cavern.2bpp"
 IceCavern_Block::	INCBIN "gfx/blocksets/ice_cavern.bst"
+
+Mart_GFX::
+Pokecenter_GFX::    INCBIN "gfx/tilesets/pokecenter.2bpp"
+Mart_Block::
+Pokecenter_Block::  INCBIN "gfx/blocksets/pokecenter.bst"
+
+MartUpdate_GFX::   INCBIN "gfx/tilesets/mart_update.2bpp"
+MartUpdate_Block:: INCBIN "gfx/blocksets/mart_update.bst"

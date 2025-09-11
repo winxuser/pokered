@@ -26,4 +26,5 @@
 	const FACILITY     ; 22
 	const PLATEAU      ; 23
 	const ICECAVERN
+	const MARTUPDATE
 DEF NUM_TILESETS EQU const_value

@@ -17,7 +17,7 @@ RedsHouse2_Coll::
 
 Mart_Coll::
 Pokecenter_Coll::
-	coll_tiles $11, $1a, $1c, $3c, $5e
+	coll_tiles $06, $11, $12, $18, $1a, $1c, $3c, $4a, $4b, $5a, $5b, $50, $51, $54, $55, $5e
 
 Dojo_Coll::
 Gym_Coll::
@@ -71,3 +71,6 @@ Plateau_Coll::
 
 IceCavern_Coll::
 	coll_tiles $05, $15, $18, $1a, $20, $21, $22, $2a, $2d, $30
+
+MartUpdate_Coll::
+	coll_tiles $01, $0b, $1b, $48

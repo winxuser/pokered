@@ -11,11 +11,11 @@ Tilesets:
 	; name, 3 counter tiles, grass tile, animations
 	tileset Overworld,    -1, -1, -1, $52, TILEANIM_WATER_FLOWER
 	tileset RedsHouse1,   -1, -1, -1,  -1, TILEANIM_NONE
-	tileset Mart,        $18,$19,$1E,  -1, TILEANIM_NONE
+	tileset Mart,        $21,$19,$34,  -1, TILEANIM_NONE
 	tileset Forest,       -1, -1, -1, $20, TILEANIM_WATER
 	tileset RedsHouse2,   -1, -1, -1,  -1, TILEANIM_NONE
 	tileset Dojo,        $3A, -1, -1,  -1, TILEANIM_WATER_FLOWER
-	tileset Pokecenter,  $18,$19,$1E,  -1, TILEANIM_NONE
+	tileset Pokecenter,  $24,$34,$01,  -1, TILEANIM_NONE
 	tileset Gym,         $3A, -1, -1,  -1, TILEANIM_WATER_FLOWER
 	tileset House,        -1, -1, -1,  -1, TILEANIM_NONE
 	tileset ForestGate,  $17,$32, -1,  -1, TILEANIM_NONE
@@ -34,4 +34,5 @@ Tilesets:
 	tileset Facility,    $12, -1, -1,  -1, TILEANIM_WATER
 	tileset Plateau,      -1, -1, -1, $45, TILEANIM_WATER
 	tileset IceCavern,    -1, -1, -1,  -1, TILEANIM_WATER
+	tileset MartUpdate,  $20,$21,$30,  -1, TILEANIM_NONE
 	assert_table_length NUM_TILESETS

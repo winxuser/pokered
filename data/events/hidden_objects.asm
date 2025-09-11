@@ -225,7 +225,7 @@ OaksLabHiddenObjects:
 
 ViridianPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_LEFT, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 ViridianMartHiddenObjects:
@@ -256,12 +256,12 @@ PewterMartHiddenObjects:
 
 PewterPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_LEFT, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 CeruleanPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_LEFT, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 CeruleanGymHiddenObjects:
@@ -274,11 +274,11 @@ CeruleanMartHiddenObjects:
 
 LavenderPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_LEFT, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 VermilionPokecenterHiddenObjects:
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	hidden_object  0,  4, SPRITE_FACING_UP, PrintBenchGuyText
 	db -1 ; end
 
@@ -310,7 +310,7 @@ CeladonMansion2HiddenObjects:
 
 CeladonPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_LEFT, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 CeladonGymHiddenObjects:
@@ -375,7 +375,7 @@ CeladonHotelHiddenObjects:
 	db -1 ; end
 
 FuchsiaPokecenterHiddenObjects:
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	hidden_object  0,  4, SPRITE_FACING_UP, PrintBenchGuyText
 	db -1 ; end
 
@@ -397,7 +397,7 @@ CinnabarGymHiddenObjects:
 
 CinnabarPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_UP, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 SaffronGymHiddenObjects:
@@ -406,7 +406,7 @@ SaffronGymHiddenObjects:
 
 MtMoonPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_LEFT, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 RockTunnelPokecenterHiddenObjects:
@@ -467,7 +467,7 @@ RocketHideout4HiddenObjects:
 
 SaffronPokecenterHiddenObjects:
 	hidden_object  0,  4, SPRITE_FACING_UP, PrintBenchGuyText
-	hidden_object 13,  3, SPRITE_FACING_UP, OpenPokemonCenterPC
+	hidden_object  9,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 PokemonTower5HiddenObjects:
