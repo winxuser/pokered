@@ -27,6 +27,7 @@ MapPaletteSets:
 	dw PlateauPalSet     ; PLATEAU
 	dw IceCavernPalSet   ; ICE_CAVERN
 	dw MartUpdatePalSet  ; MART UPDATE
+	dw LeaguePalSet      ; LEAGUE
 	assert_table_length NUM_TILESETS
 
 OverworldPalSet:
@@ -66,6 +67,7 @@ LobbyPalSet:
 MansionPalSet:
 LabPalSet:
 MartUpdatePalSet:
+LeaguePalSet:
 	db INDOOR_GRAY
 	db INDOOR_RED
 	db INDOOR_GREEN

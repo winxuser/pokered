@@ -27,4 +27,5 @@
 	const PLATEAU      ; 23
 	const ICECAVERN
 	const MARTUPDATE
+	const LEAGUE
 DEF NUM_TILESETS EQU const_value

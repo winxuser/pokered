@@ -26,6 +26,7 @@ WarpTileIDPointers:
 	dw .PlateauWarpTileIDs
 	dw .IceCavernWarpTileIDs
 	dw .MartUpdateWarpTileIDs
+	dw .LeagueWarpTileIDs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
@@ -49,6 +50,7 @@ ENDM
 .MartWarpTileIDs:
 .PokecenterWarpTileIDs:
 .MartUpdateWarpTileIDs:
+.LeagueWarpTileIDs
 	warp_tiles $5E
 
 .ForestWarpTileIDs:

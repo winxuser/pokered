@@ -74,3 +74,6 @@ IceCavern_Coll::
 
 MartUpdate_Coll::
 	coll_tiles $01, $0b, $1b, $48
+
+League_Coll::
+    coll_tiles $11, $1a, $1c, $3c, $5e

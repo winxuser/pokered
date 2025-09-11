@@ -66,5 +66,8 @@ Pokecenter_GFX::    INCBIN "gfx/tilesets/pokecenter.2bpp"
 Mart_Block::
 Pokecenter_Block::  INCBIN "gfx/blocksets/pokecenter.bst"
 
-MartUpdate_GFX::   INCBIN "gfx/tilesets/mart_update.2bpp"
-MartUpdate_Block:: INCBIN "gfx/blocksets/mart_update.bst"
+MartUpdate_GFX::    INCBIN "gfx/tilesets/mart_update.2bpp"
+MartUpdate_Block::  INCBIN "gfx/blocksets/mart_update.bst"
+
+League_GFX::        INCBIN "gfx/tilesets/league.2bpp"
+League_Block::      INCBIN "gfx/blocksets/league.bst"
