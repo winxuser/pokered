@@ -613,6 +613,8 @@ wEngagedTrainerSet:: db
 ENDU
 
 	ds 1
+wGenderTemp::
+; temporary buffer used when checking/displaying a Pokemon's gender
 
 wNPCMovementDirections2Index::
 wUnusedLinkMenuByte::
@@ -2201,8 +2203,6 @@ wEventFlags:: flag_array NUM_EVENTS
 UNION
 wGrassRate:: db
 wGrassMons:: ds 10 * 2
-wGenderTemp::
-; temporary buffer used when checking/displaying a Pokemon's gender
 	ds 8
 
 wWaterRate:: db
