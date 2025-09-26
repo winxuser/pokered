@@ -613,6 +613,10 @@ wEngagedTrainerSet:: db
 ENDU
 
 	ds 1
+
+wShinyMonFlag::
+; Bit 0 is set if the mon should be Shiny.
+; Bit 1 is set for enemy mon animation, reset for player mon animation
 wGenderTemp::
 ; temporary buffer used when checking/displaying a Pokemon's gender
 

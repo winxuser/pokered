@@ -171,7 +171,7 @@
 
 	charmap "ァ",        $e9 ; Caught Indicator
 	charmap "%",         $ea ; % Symbol
-	charmap "ェ",        $eb ; katakana small e, unused
+	charmap "[SHINY]",   $eb ; Shiny Symbol
 
 	charmap "▷",         $ec
 	charmap "▶",         $ed
