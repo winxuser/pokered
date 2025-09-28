@@ -105,6 +105,9 @@ INCLUDE "color/status_screen.asm"
 IF GEN_2_GRAPHICS
 EXPBarGraphics:  INCBIN "gfx/gs/exp_bar.2bpp"
 EXPBarGraphicsEnd:
+ENDC
+
+IF GEN_2_GRAPHICS
 ShinySparkleGraphics: INCBIN "gfx/gs/shiny_sparkle.2bpp"
 EXPBarShinySparkleGraphicsEnd:
 ENDC
