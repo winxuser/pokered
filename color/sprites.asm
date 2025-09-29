@@ -580,13 +580,16 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db SPR_PAL_RANDOM
 
 	; 0x3e: SPRITE_ZAPDOS
-	db SPR_PAL_RANDOM
+	db SPR_PAL_YELLOW
 
 	; 0x3e: SPRITE_ARTICUNO
-	db SPR_PAL_RANDOM
+	db SPR_PAL_ICE
 
 	; 0x3e: SPRITE_MOLTRES
-	db SPR_PAL_RANDOM
+	db SPR_PAL_RED
+
+	; 0x47: SPRITE_BERRY_TREE
+	db SPR_PAL_TREE
 
 	; 0x3d: SPRITE_BALL
 	db SPR_PAL_ORANGE

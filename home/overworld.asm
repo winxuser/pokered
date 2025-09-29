@@ -324,7 +324,15 @@ OverworldLoopLessDelay::
    	ld [wIsEggInDaycare], a ; Spawn Egg
 .skipEggCount
 	ld [wEggRemainingSteps], a
-;Back to vanilla
+; berry steps
+	ld hl,wBerryStepCounter
+	inc [hl]
+	ld a,[hli]
+	and a
+	jp nz, .originalRoutine
+	inc [hl]
+	callfar BerryReset
+.originalRoutine
 	ld a, [wStatusFlags2]
 	bit BIT_WILD_ENCOUNTER_COOLDOWN, a
 	jr z, .doneStepCounting

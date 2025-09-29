@@ -90,6 +90,7 @@ SpriteSheetPointerTable:
 	overworld_sprite ZapdosSprite, 12	        ; SPRITE_ZAPDOS
 	overworld_sprite ArticunoSprite, 12	        ; SPRITE_ARTICUNO
 	overworld_sprite MoltresSprite, 12	        ; SPRITE_MOLTRES
+	overworld_sprite BerryTreeSprite, 12        ; SPRITE_BERRY_TREE
 	overworld_sprite PokeBallSprite, 4          ; SPRITE_POKE_BALL
 	overworld_sprite FossilSprite, 4            ; SPRITE_FOSSIL
 	overworld_sprite BoulderSprite, 4           ; SPRITE_BOULDER

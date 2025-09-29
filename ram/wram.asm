@@ -446,7 +446,11 @@ wIsEggInDaycare::
 		; $01 = yes
 		ds 0
 
-	ds 57
+wBerryTreeFlags::
+
+wBerryStepCounter::
+
+	ds 58
 
 wNPCMovementDirections2:: ds 10
 ; used in Pallet Town scripted movement
@@ -1997,9 +2001,10 @@ wBluesHouseCurScript:: db
 wViridianCityCurScript:: db
 	ds 2
 wPewterCityCurScript:: db
+wRoute1CurScript:: db
 wRoute3CurScript:: db
 wRoute4CurScript:: db
-	ds 1
+;	ds 1
 wViridianGymCurScript:: db
 wPewterGymCurScript:: db
 wCeruleanGymCurScript:: db

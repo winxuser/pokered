@@ -329,6 +329,56 @@ _MaxElixerDescription::
 	next "PP of one #MON."
 	prompt
 
+_OranBerryDescription::
+	text "Restores #MON"
+	next "HP by 10."
+	prompt
+
+_SitrusBerryDescription::
+	text "Restores #MON"
+	next "HP by 30."
+	prompt
+
+_LeppaBerryDescription::
+	text "Restores PP of one"
+	next "move by 10."
+	prompt
+
+_PechaBerryDescription::
+	text "Cures poisoned"
+	next "#MON."
+	prompt
+
+_RawstBerryDescription::
+	text "Heals burned"
+	next "#MON."
+	prompt
+
+_AspearBerryDescription::
+	text "Defrosts frozen"
+	next "#MON."
+	prompt
+
+_ChestoBerryDescription::
+	text "Awakens sleeping"
+	next "#MON."
+	prompt
+
+_CheriBerryDescription::
+	text "Heals paralyzed"
+	next "#MON."
+	prompt
+
+_LumBerryDescription::
+	text "Fully restores HP"
+	next "and status."
+	prompt
+
+_SwegBerryDescription::
+	text "Raises level of a"
+	next "#MON by one."
+	prompt
+
 _HM01Description::
 	text "Cuts using claws,"
 	next "scythes, etc."

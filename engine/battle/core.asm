@@ -7686,3 +7686,4 @@ PrintShinyCommon: ; used by both routines
 	; else, it's normal
 	ld a, " "
 	ret
+

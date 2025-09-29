@@ -77,6 +77,7 @@ INCLUDE "engine/events/hidden_objects/book_or_sculpture.asm"
 INCLUDE "engine/events/hidden_objects/elevator.asm"
 INCLUDE "engine/events/hidden_objects/town_map.asm"
 INCLUDE "engine/events/hidden_objects/pokemon_stuff.asm"
+INCLUDE "engine/overworld/berrytree.asm"
 
 INCLUDE "color/update_hp_bar.asm"
 
@@ -561,6 +562,7 @@ INCLUDE "data/text/unused_names.asm"
 INCLUDE "data/pokemon/breeding_list.asm"
 INCLUDE "gfx/trainer_card.asm"
 INCLUDE "engine/pokemon/mon_gender.asm"
+;INCLUDE "engine/overworld/berrytree.asm"
 
 SECTION "Pokemon Data", ROMX
 

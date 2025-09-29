@@ -100,6 +100,17 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const KINGS_ROCK
 	const DRAGON_SCALE
 	const UPGRADE
+; Berries start here
+	const ORAN_BERRY
+	const SITRUS_BERRY
+	const LEPPA_BERRY
+	const PECHA_BERRY
+	const RAWST_BERRY
+	const ASPEAR_BERRY
+	const CHESTO_BERRY
+	const CHERI_BERRY
+	const LUM_BERRY
+	const SWEG_BERRY
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs

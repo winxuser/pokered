@@ -91,6 +91,16 @@ ItemPrices::
 	bcd3 2100  ; KINGS_ROCK
 	bcd3 2100  ; DRAGON_SCALE
 	bcd3 2100  ; UPGRADE
+	bcd3 10    ; ORAN_BERRY
+	bcd3 10    ; SITRUS_BERRY
+	bcd3 10    ; LEPPA_BERRY
+	bcd3 10    ; PECHA_BERRY
+	bcd3 10    ; RAWST_BERRY
+	bcd3 10    ; ASPEAR_BERRY
+	bcd3 10    ; CHESTO_BERRY
+	bcd3 10    ; CHERI_BERRY
+	bcd3 10    ; LUM_BERRY
+	bcd3 10    ; SWEG_BERRY
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

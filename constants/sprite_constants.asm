@@ -85,6 +85,7 @@
 	const SPRITE_ZAPDOS
 	const SPRITE_ARTICUNO
 	const SPRITE_MOLTRES
+	const SPRITE_BERRY_TREE
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $3d
 	const SPRITE_FOSSIL                  ; $3e

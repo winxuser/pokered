@@ -7,12 +7,11 @@ PickUpItem:
 .missableObjectsListLoop
 	ld a, [hli]
 	cp $ff
-	ret z
+    ret z
 	cp b
 	jr z, .isMissable
 	inc hl
 	jr .missableObjectsListLoop
-
 .isMissable
 	ld a, [hl]
 	ldh [hMissableObjectIndex], a
@@ -37,7 +36,6 @@ PickUpItem:
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld hl, FoundItemText
 	jr .print
-
 .BagFull
 	ld hl, NoMoreRoomForItemText
 .print

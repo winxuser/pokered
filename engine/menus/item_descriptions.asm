@@ -191,6 +191,26 @@ ItemDescriptionPointers:
 	text_end
 	text_far _UpgradeDescription
 	text_end
+	text_far _OranBerryDescription
+	text_end
+	text_far _SitrusBerryDescription
+	text_end
+	text_far _LeppaBerryDescription
+	text_end
+	text_far _PechaBerryDescription
+	text_end
+	text_far _RawstBerryDescription
+	text_end
+	text_far _AspearBerryDescription
+	text_end
+	text_far _ChestoBerryDescription
+	text_end
+	text_far _CheriBerryDescription
+	text_end
+	text_far _LumBerryDescription
+	text_end
+	text_far _SwegBerryDescription
+	text_end
 	text_far _HM01Description
 	text_end
 	text_far _HM02Description
