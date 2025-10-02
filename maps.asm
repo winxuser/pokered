@@ -845,8 +845,9 @@ UndergroundPathRoute6_Blocks:
 UndergroundPathRoute5_Blocks: INCBIN "maps/UndergroundPathRoute5.blk"
 
 Route2Gate_Blocks:
-ViridianForestSouthGate_Blocks:
 ViridianForestNorthGate_Blocks: INCBIN "maps/ViridianForestNorthGate.blk"
+
+ViridianForestSouthGate_Blocks: INCBIN "maps/ViridianForestSouthGate.blk"
 
 INCLUDE "data/maps/headers/RedsHouse2F.asm"
 INCLUDE "scripts/RedsHouse2F.asm"
@@ -1239,3 +1240,8 @@ INCLUDE "data/maps/headers/IceCavern.asm"
 INCLUDE "scripts/IceCavern.asm"
 INCLUDE "data/maps/objects/IceCavern.asm"
 IceCavern_Blocks: INCBIN "maps/IceCavern.blk"
+
+INCLUDE "data/maps/headers/Pokecenter.asm"
+INCLUDE "scripts/Pokecenter.asm"
+INCLUDE "data/maps/objects/Pokecenter.asm"
+Pokecenter_Blocks: INCBIN "maps/Pokecenter.blk"

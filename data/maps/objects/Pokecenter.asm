@@ -1,0 +1,21 @@
+	object_const_def
+	const_export POKECENTER_NURSE
+;	const_export POKECENTER_GENTLEMAN
+	const_export POKECENTER_LINK_RECEPTIONIST
+
+Pokecenter_Object:
+	db $0 ; border block
+
+; These warps are taken from pewter, and only work in pewter
+	def_warp_events
+	warp_event  3,  7, LAST_MAP, 1
+	warp_event  4,  7, LAST_MAP, 1
+
+	def_bg_events
+
+	def_object_events
+	object_event  2,  1, SPRITE_NURSE, STAY, DOWN, TEXT_POKECENTER_NURSE
+;	object_event  6,  5, SPRITE_GENTLEMAN, STAY, LEFT, TEXT_PEWTERPOKECENTER_GENTLEMAN
+	object_event  6,  2, SPRITE_LINK_RECEPTIONIST, STAY, DOWN, TEXT_POKECENTER_LINK_RECEPTIONIST
+
+	def_warps_to POKE_CENTER

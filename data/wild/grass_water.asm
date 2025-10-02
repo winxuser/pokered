@@ -109,7 +109,7 @@ WildDataPointers:
 	dw NothingWildMons       ; (YELLOWS_HOUSE_2F UNUSED_MAP_6A)
 	dw IceCavernWildMons     ; (ICE_CAVERN UNUSED_MAP_6B)
 	dw VictoryRoad1FWildMons
-	dw NothingWildMons
+	dw NothingWildMons       ; (Pokecenter)
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons

@@ -11,7 +11,7 @@ Route2_Object:
 	warp_event 15, 19, ROUTE_2_TRADE_HOUSE, 1
 	warp_event 16, 35, ROUTE_2_GATE, 2
 	warp_event 15, 39, ROUTE_2_GATE, 3
-	warp_event  3, 43, VIRIDIAN_FOREST_SOUTH_GATE, 3
+	warp_event  3, 43, VIRIDIAN_FOREST_SOUTH_GATE, 2
 
 	def_bg_events
 	bg_event  5, 65, TEXT_ROUTE2_SIGN
@@ -28,4 +28,4 @@ Route2_Object:
 	db $12, $c7, $9, $7
 	warp_to 2, 7, 4
 	warp_to 2, 7, 4
-	warp_to 2, 7, 4
+	warp_to  2,  7, 4

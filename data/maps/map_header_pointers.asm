@@ -110,7 +110,7 @@ MapHeaderPointers::
 	dw YellowsHouse2F_h      ; UNUSED_MAP_6A
 	dw IceCavern_h           ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
-	dw LancesRoom_h          ; UNUSED_MAP_6D
+	dw Pokecenter_h          ; UNUSED_MAP_6D
 	dw LancesRoom_h          ; UNUSED_MAP_6E
 	dw LancesRoom_h          ; UNUSED_MAP_6F
 	dw LancesRoom_h          ; UNUSED_MAP_70

@@ -12,7 +12,7 @@ Tilesets:
 	tileset Overworld,    -1, -1, -1, $52, TILEANIM_WATER_FLOWER
 	tileset RedsHouse1,   -1, -1, -1,  -1, TILEANIM_NONE
 	tileset Mart,        $21,$19,$34,  -1, TILEANIM_NONE
-	tileset Forest,       -1, -1, -1, $20, TILEANIM_WATER
+	tileset Forest,       -1, -1, -1, $05, TILEANIM_WATER_FLOWER
 	tileset RedsHouse2,   -1, -1, -1,  -1, TILEANIM_NONE
 	tileset Dojo,        $3A, -1, -1,  -1, TILEANIM_WATER_FLOWER
 	tileset Pokecenter,  $24,$34,$01,  -1, TILEANIM_NONE

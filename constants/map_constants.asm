@@ -70,7 +70,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const ROUTE_2_TRADE_HOUSE,            4,  4 ; $30
 	map_const ROUTE_2_GATE,                   5,  4 ; $31
 	map_const VIRIDIAN_FOREST_SOUTH_GATE,     5,  4 ; $32
-	map_const VIRIDIAN_FOREST,               17, 24 ; $33
+	map_const VIRIDIAN_FOREST,               15, 27 ; $33
 	map_const MUSEUM_1F,                     10,  4 ; $34
 	map_const MUSEUM_2F,                      7,  4 ; $35
 	map_const PEWTER_GYM,                     5,  7 ; $36
@@ -128,7 +128,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const YELLOWS_HOUSE_2F,               4,  4 ; $6A (UNUSED MAP 6A)
 	map_const ICE_CAVERN,                    15,  9 ; $6B (UNUSED MAP 6B)
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
-	map_const UNUSED_MAP_6D,                  0,  0 ; $6D
+	map_const POKE_CENTER,                    5,  4 ; $6D (UNUSED_MAP_6D)
 	map_const UNUSED_MAP_6E,                  0,  0 ; $6E
 	map_const UNUSED_MAP_6F,                  0,  0 ; $6F
 	map_const UNUSED_MAP_70,                  0,  0 ; $70
