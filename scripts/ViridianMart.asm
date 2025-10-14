@@ -41,6 +41,7 @@ ViridianMartDefaultScript:
 	ret
 
 .PlayerMovement:
+	db PAD_LEFT, 1
 	db PAD_UP, 5
 	db -1 ; end
 
