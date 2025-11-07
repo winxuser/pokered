@@ -4,7 +4,7 @@
 	const_export LAVENDERTOWN_SUPER_NERD
 
 LavenderTown_Object:
-	db $2c ; border block
+	db $71 ; border block
 
 	def_warp_events
 	warp_event  3,  5, LAVENDER_POKECENTER, 1

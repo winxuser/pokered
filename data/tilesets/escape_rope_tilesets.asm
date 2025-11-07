@@ -5,4 +5,5 @@ EscapeRopeTilesets:
 	db FACILITY
 	db INTERIOR
 	db ICECAVERN
+;	db SAFARIZONE
 	db -1 ; end

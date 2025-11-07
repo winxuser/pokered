@@ -10,4 +10,5 @@ WaterTilesets:
 	db FACILITY
 	db PLATEAU
 	db ICECAVERN
+	db PARK
 	db -1 ; end

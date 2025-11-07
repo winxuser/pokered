@@ -4,7 +4,7 @@
 	const_export ROUTE18_COOLTRAINER_M3
 
 Route18_Object:
-	db $43 ; border block
+	db $05 ; border block
 
 	def_warp_events
 	warp_event 33,  8, ROUTE_18_GATE_1F, 1

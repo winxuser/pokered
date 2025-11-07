@@ -11,7 +11,7 @@
 	const_export ROUTE11_YOUNGSTER4
 
 Route11_Object:
-	db $f ; border block
+	db $61 ; border block
 
 	def_warp_events
 	warp_event 49,  8, ROUTE_11_GATE_1F, 1

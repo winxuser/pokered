@@ -2460,10 +2460,10 @@ PartyMenuOrRockOrRun:
 	call GBPalNormal
 	jp DisplayBattleMenu
 .partyMonDeselected
-	hlcoord 11, 11
-	ld bc, 6 * SCREEN_WIDTH + 9
-	ld a, " "
-	call FillMemory
+;	hlcoord 11, 11
+;	ld bc, 6 * SCREEN_WIDTH + 9
+;	ld a, " "
+;	call FillMemory
 	xor a ; NORMAL_PARTY_MENU
 	ld [wPartyMenuTypeOrMessageID], a
 	call GoBackToPartyMenu

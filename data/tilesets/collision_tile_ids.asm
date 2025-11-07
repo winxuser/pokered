@@ -9,7 +9,7 @@ Underground_Coll::
 	coll_tiles $0b, $0c, $13, $15, $18
 
 Overworld_Coll::
-	coll_tiles $00, $10, $1b, $20, $21, $23, $2c, $2d, $2e, $30, $31, $33, $39, $3c, $3e, $52, $54, $58, $5b
+	coll_tiles $03, $04, $05, $06, $07, $39, $40, $48, $53, $56, $5c
 
 RedsHouse1_Coll::
 RedsHouse2_Coll::
@@ -32,7 +32,7 @@ House_Coll::
 ForestGate_Coll::
 Museum_Coll::
 Gate_Coll::
-	coll_tiles $01, $12, $14, $1a, $1c, $37, $38, $3b, $3c, $5e
+	coll_tiles $01, $04, $12, $14, $1a, $1c, $37, $38, $3b, $3c, $5e
 
 Ship_Coll::
 	coll_tiles $04, $0d, $17, $1d, $1e, $23, $34, $37, $39, $4a
@@ -77,3 +77,6 @@ MartUpdate_Coll::
 
 League_Coll::
     coll_tiles $11, $1a, $1c, $3c, $5e
+
+Park_Coll::
+    coll_tiles $20, $2e, $30, $37, $39, $40, $5a, $5e, $5f

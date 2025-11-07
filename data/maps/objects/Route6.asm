@@ -7,7 +7,7 @@
 	const_export ROUTE6_YOUNGSTER2
 
 Route6_Object:
-	db $f ; border block
+	db $05 ; border block
 
 	def_warp_events
 	warp_event  9,  1, ROUTE_6_GATE, 3

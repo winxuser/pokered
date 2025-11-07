@@ -7,15 +7,15 @@ UsedCut:
 	cp GYM
 	jr nz, .nothingToCut
 	ld a, [wTileInFrontOfPlayer]
-	cp $50 ; gym cut tree
+	cp $50 ; gym cut tree, need to edit once city has been edited
 	jr nz, .nothingToCut
 	jr .canCut
 .overworld
 	dec a
 	ld a, [wTileInFrontOfPlayer]
-	cp $3d ; cut tree
+	cp $45 ; cut tree was $3d
 	jr z, .canCut
-	cp $52 ; grass
+	cp $04 ; grass tile ID, was $52
 	jr z, .canCut
 .nothingToCut
 	ld hl, .NothingToCutText
@@ -73,14 +73,14 @@ InitCutAnimOAM:
 	ld a, %11100100
 	ldh [rOBP1], a
 	ld a, [wCutTile]
-	cp $52
+	cp $04 ; grass tile ID, was $52
 	jr z, .grass
 ; tree
-	ld de, Overworld_GFX tile $2d ; cuttable tree sprite top row
+	ld de, Overworld_GFX tile $13 ; cuttable tree sprite top row, was $2d
 	ld hl, vChars1 tile $7c
 	lb bc, BANK(Overworld_GFX), 2
 	call CopyVideoData
-	ld de, Overworld_GFX tile $3d ; cuttable tree sprite bottom row
+	ld de, Overworld_GFX tile $45 ; cuttable tree sprite bottom row, was $3d
 	ld hl, vChars1 tile $7e
 	lb bc, BANK(Overworld_GFX), 2
 	call CopyVideoData
@@ -97,7 +97,7 @@ InitCutAnimOAM:
 	call WriteCutAnimationOAMBlock
 	ld hl, wShadowOAMSprite36Attributes
 	ld de, 4
-	ld a, $36 ; Overwrite attributes (use palette 6, green)
+	ld a, $5b ; Overwrite attributes (use palette 6, green) was $36
 	ld c, e
 .loop
 	ld [hl], a

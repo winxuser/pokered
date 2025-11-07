@@ -10,7 +10,7 @@
 	const_export CELADONCITY_ROCKET2
 
 CeladonCity_Object:
-	db $f ; border block
+	db $05 ; border block
 
 	def_warp_events
 	warp_event  8, 13, CELADON_MART_1F, 1
@@ -19,14 +19,14 @@ CeladonCity_Object:
 	warp_event 24,  3, CELADON_MANSION_1F, 3
 	warp_event 25,  3, CELADON_MANSION_1F, 3
 	warp_event 41,  9, CELADON_POKECENTER, 1
-	warp_event 12, 27, CELADON_GYM, 1
+	warp_event 10, 27, CELADON_GYM, 1
 	warp_event 28, 19, GAME_CORNER, 1
 	warp_event 39, 19, CELADON_MART_5F, 1
 	warp_event 33, 19, GAME_CORNER_PRIZE_ROOM, 1
 	warp_event 31, 27, CELADON_DINER, 1
 	warp_event 35, 27, CELADON_CHIEF_HOUSE, 1
 	warp_event 43, 27, CELADON_HOTEL, 1
-	warp_event 10,  3, TRADER_HOUSE, 1 ; dereknote: this is the 14th warp event in this list
+	warp_event  9,  3, TRADER_HOUSE, 1 ; dereknote: this is the 14th warp event in this list
 
 	def_bg_events
 	bg_event 27, 15, TEXT_CELADONCITY_TRAINER_TIPS1
@@ -42,7 +42,7 @@ CeladonCity_Object:
 
 	def_object_events
 	object_event  8, 17, SPRITE_LITTLE_GIRL, WALK, ANY_DIR, TEXT_CELADONCITY_LITTLE_GIRL
-	object_event 11, 28, SPRITE_GRAMPS, STAY, UP, TEXT_CELADONCITY_GRAMPS1
+	object_event  9, 28, SPRITE_GRAMPS, STAY, UP, TEXT_CELADONCITY_GRAMPS1
 	object_event 14, 19, SPRITE_GIRL, WALK, UP_DOWN, TEXT_CELADONCITY_GIRL
 	object_event 25, 22, SPRITE_GRAMPS, STAY, DOWN, TEXT_CELADONCITY_GRAMPS2
 	object_event 22, 16, SPRITE_GRAMPS, STAY, DOWN, TEXT_CELADONCITY_GRAMPS3

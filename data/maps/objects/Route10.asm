@@ -7,7 +7,7 @@
 	const_export ROUTE10_COOLTRAINER_F2
 
 Route10_Object:
-	db $2c ; border block
+	db $71 ; border block
 
 	def_warp_events
 	warp_event 11, 19, ROCK_TUNNEL_POKECENTER, 1

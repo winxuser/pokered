@@ -1,8 +1,5 @@
 SECTION "Tilesets 1", ROMX
 
-Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"
-Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
-
 RedsHouse1_GFX::
 RedsHouse2_GFX::    INCBIN "gfx/tilesets/reds_house.2bpp"
 RedsHouse1_Block::
@@ -71,3 +68,9 @@ MartUpdate_Block::  INCBIN "gfx/blocksets/mart_update.bst"
 
 League_GFX::        INCBIN "gfx/tilesets/league.2bpp"
 League_Block::      INCBIN "gfx/blocksets/league.bst"
+
+SECTION "Tilesets 5", ROMX
+Overworld_GFX::     INCBIN "gfx/tilesets/overworld.2bpp"
+Overworld_Block::   INCBIN "gfx/blocksets/overworld.bst"
+Park_GFX::          INCBIN "gfx/tilesets/park.2bpp"
+Park_Block::        INCBIN "gfx/blocksets/park.bst"

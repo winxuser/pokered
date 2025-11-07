@@ -1,5 +1,5 @@
 Route5_Object:
-	db $a ; border block
+	db $05 ; border block
 
 	object_const_def
 	const_export ROUTE5_POLIWRATH

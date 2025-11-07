@@ -9,7 +9,7 @@ ENDM
 Tilesets:
 	table_width 12
 	; name, 3 counter tiles, grass tile, animations
-	tileset Overworld,    -1, -1, -1, $52, TILEANIM_WATER_FLOWER
+	tileset Overworld,    -1, -1, -1, $04, TILEANIM_WATER_FLOWER
 	tileset RedsHouse1,   -1, -1, -1,  -1, TILEANIM_NONE
 	tileset Mart,        $21,$19,$34,  -1, TILEANIM_NONE
 	tileset Forest,       -1, -1, -1, $05, TILEANIM_WATER_FLOWER
@@ -36,4 +36,5 @@ Tilesets:
 	tileset IceCavern,    -1, -1, -1,  -1, TILEANIM_WATER
 	tileset MartUpdate,  $20,$21,$30,  -1, TILEANIM_NONE
 	tileset League,      $18,$19,$1E,  -1, TILEANIM_NONE
+	tileset Park,         -1, -1, -1, $04, TILEANIM_WATER
 	assert_table_length NUM_TILESETS

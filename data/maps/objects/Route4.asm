@@ -4,7 +4,7 @@
 	const_export ROUTE4_TM_WHIRLWIND
 
 Route4_Object:
-	db $2c ; border block
+	db $71 ; border block
 
 	def_warp_events
 	warp_event 11,  5, MT_MOON_POKECENTER, 1

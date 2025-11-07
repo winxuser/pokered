@@ -11,7 +11,7 @@
 	const_export ROUTE13_COOLTRAINER_M3
 
 Route13_Object:
-	db $43 ; border block
+	db $61 ; border block
 
 	def_warp_events
 

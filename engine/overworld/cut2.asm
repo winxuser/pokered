@@ -1,6 +1,6 @@
 AnimCut:
 	ld a, [wCutTile]
-	cp $52
+	cp $04 ; tile ID, was $52
 	jr z, .grass
 	ld c, $8
 .cutTreeLoop

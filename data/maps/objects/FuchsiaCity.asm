@@ -10,7 +10,7 @@
 	const_export FUCHSIACITY_FOSSIL
 
 FuchsiaCity_Object:
-	db $f ; border block
+	db $05 ; border block
 
 	def_warp_events
 	warp_event  5, 13, FUCHSIA_MART, 1
@@ -47,7 +47,7 @@ FuchsiaCity_Object:
 	object_event 25,  6, SPRITE_POKE_BALL, STAY, NONE, TEXT_FUCHSIACITY_VOLTORB
 	object_event 30, 12, SPRITE_SLOWKING, WALK, LEFT_RIGHT, TEXT_FUCHSIACITY_SLOWPOKE
 	object_event  8, 17, SPRITE_LAPRAS, WALK, ANY_DIR, TEXT_FUCHSIACITY_LAPRAS
+	object_event  7,  5, SPRITE_FOSSIL, STAY, NONE, TEXT_FUCHSIACITY_FOSSIL
 	object_event  6,  5, SPRITE_FOSSIL, STAY, NONE, TEXT_FUCHSIACITY_FOSSIL
-	object_event  5,  5, SPRITE_FOSSIL, STAY, NONE, TEXT_FUCHSIACITY_FOSSIL
 
 	def_warps_to FUCHSIA_CITY

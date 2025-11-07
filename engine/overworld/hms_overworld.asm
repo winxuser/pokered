@@ -61,13 +61,13 @@ CheckForCut::
     ;jr .cuttableTile
 ;.gym
     ld a, [wTileInFrontOfPlayer]
-    cp $50 ; gym cut tree
+    cp $50 ; tile ID, gym cut tree
     jr nz, .fail
     jr .cuttableTile
 .overworld
     ;dec a
     ld a, [wTileInFrontOfPlayer]
-    cp $3d ; overworld cut tree
+    cp $45 ; overworld cut tree, was $3d
     jr nz, .fail ; we don't check for grass, differently from vanilla
 .cuttableTile
     ld [wCutTile], a

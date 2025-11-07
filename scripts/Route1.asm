@@ -6,6 +6,7 @@ Route1_TextPointers:
 	dw_const Route1Youngster1Text, TEXT_ROUTE1_YOUNGSTER1
 	dw_const Route1Youngster2Text, TEXT_ROUTE1_YOUNGSTER2
 	dw_const Route1Tree1,          TEXT_ROUTE1_BERRY_TREE
+	dw_const Route1BerryHouseSignText, TEXT_BERRY_HOUSE_SIGN
 	dw_const Route1SignText,       TEXT_ROUTE1_SIGN
 
 Route1Youngster1Text:
@@ -59,3 +60,7 @@ Route1Tree1:
 	ld [wWhichTrade], a
 	callfar BerryTreeScript
 	rst TextScriptEnd
+
+Route1BerryHouseSignText:
+	text_far _Route1BerryHouseSignText
+	text_end

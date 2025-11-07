@@ -28,4 +28,5 @@
 	const ICECAVERN
 	const MARTUPDATE
 	const LEAGUE
+	const PARK
 DEF NUM_TILESETS EQU const_value

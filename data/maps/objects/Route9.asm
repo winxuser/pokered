@@ -11,7 +11,7 @@
 	const_export ROUTE9_TM_TELEPORT
 
 Route9_Object:
-	db $2c ; border block
+	db $71 ; border block
 
 	def_warp_events
 

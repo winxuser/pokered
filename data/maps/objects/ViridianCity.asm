@@ -8,7 +8,7 @@
 	const_export VIRIDIANCITY_OLD_MAN
 
 ViridianCity_Object:
-	db $f ; border block
+	db $5 ; border block
 
 	def_warp_events
 	warp_event 23, 25, VIRIDIAN_POKECENTER, 1
@@ -23,7 +23,7 @@ ViridianCity_Object:
 	bg_event 21, 29, TEXT_VIRIDIANCITY_TRAINER_TIPS2
 	bg_event 30, 19, TEXT_VIRIDIANCITY_MART_SIGN
 	bg_event 24, 25, TEXT_VIRIDIANCITY_POKECENTER_SIGN
-	bg_event 27,  7, TEXT_VIRIDIANCITY_GYM_SIGN
+	bg_event 29,  7, TEXT_VIRIDIANCITY_GYM_SIGN
 
 	def_object_events
 	object_event 13, 20, SPRITE_YOUNGSTER, WALK, ANY_DIR, TEXT_VIRIDIANCITY_YOUNGSTER1

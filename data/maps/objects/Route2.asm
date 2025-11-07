@@ -3,7 +3,7 @@
 	const_export ROUTE2_HP_UP
 
 Route2_Object:
-	db $f ; border block
+	db $05 ; border block
 
 	def_warp_events
 	warp_event 12,  9, DIGLETTS_CAVE_ROUTE_2, 1
@@ -11,7 +11,7 @@ Route2_Object:
 	warp_event 15, 19, ROUTE_2_TRADE_HOUSE, 1
 	warp_event 16, 35, ROUTE_2_GATE, 2
 	warp_event 15, 39, ROUTE_2_GATE, 3
-	warp_event  3, 43, VIRIDIAN_FOREST_SOUTH_GATE, 2
+	warp_event  3, 43, VIRIDIAN_FOREST_SOUTH_GATE, 3
 
 	def_bg_events
 	bg_event  5, 65, TEXT_ROUTE2_SIGN

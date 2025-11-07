@@ -43,8 +43,17 @@ _Route1Youngster2Text::
 	cont "quicker that way."
 	done
 
+_Route1BerryHouseSignText::
+	text "ROUTE 1"
+	line "Berry House."
+	cont "Find your fine"
+	cont "berries here."
+	done
+
 _Route1SignText::
 	text "ROUTE 1"
 	line "PALLET TOWN -"
 	cont "VIRIDIAN CITY"
 	done
+
+
