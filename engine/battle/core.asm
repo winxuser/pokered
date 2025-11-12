@@ -20,7 +20,7 @@ SlidePlayerAndEnemySilhouettesOnScreen:
 	ld hl, vBGMap0
 	ld bc, TILEMAP_AREA
 .clearBackgroundLoop
-	ld a, " "
+	ld a, ' '
 	ld [hli], a
 	dec bc
 	ld a, b
@@ -2120,11 +2120,11 @@ CenterMonName:
 .loop
 	inc de
 	ld a, [de]
-	cp "@"
+	cp '@'
 	jr z, .done
 	inc de
 	ld a, [de]
-	cp "@"
+	cp '@'
 	jr z, .done
 	dec hl
 	dec b
@@ -2172,15 +2172,15 @@ DisplayBattleMenu::
 	rst _CopyData
 ; the following simulates the keystrokes by drawing menus on screen
 	hlcoord 9, 14
-	ld [hl], "▶"
+	ld [hl], '▶'
 	ld c, 80
 	rst _DelayFrames
-	ld [hl], " "
+	ld [hl], ' '
 	hlcoord 9, 16
-	ld [hl], "▶"
+	ld [hl], '▶'
 	ld c, 50
 	rst _DelayFrames
-	ld [hl], "▷"
+	ld [hl], '▷'
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperLeftMenuItemWasNotSelected
 .oldManName
@@ -2198,7 +2198,7 @@ DisplayBattleMenu::
 .leftColumn ; put cursor in left column of menu
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
-	ld a, " "
+	ld a, ' '
 	jr z, .safariLeftColumn
 ; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
 	ldcoord_a 15, 14 ; clear upper cursor position in right column
@@ -2231,7 +2231,7 @@ DisplayBattleMenu::
 .rightColumn ; put cursor in right column of menu
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
-	ld a, " "
+	ld a, ' '
 	jr z, .safariRightColumn
 ; put cursor in right column for normal battle menu (i.e. when it's not a Safari battle)
 	ldcoord_a 9, 14 ; clear upper cursor position in left column
@@ -2464,7 +2464,7 @@ PartyMenuOrRockOrRun:
 .partyMonDeselected
 ;	hlcoord 11, 11
 ;	ld bc, 6 * SCREEN_WIDTH + 9
-;	ld a, " "
+;	ld a, ' '
 ;	call FillMemory
 	xor a ; NORMAL_PARTY_MENU
 	ld [wPartyMenuTypeOrMessageID], a
@@ -2632,9 +2632,9 @@ MoveSelectionMenu:
 	   ; so it is necessary to put the di ei block to not cause tearing
 	call TextBoxBorder
 	hlcoord 4, 12
-	ld [hl], "─"
+	ld [hl], '─'
 	hlcoord 10, 12
-	ld [hl], "┘"
+	ld [hl], '┘'
 	ei
 	hlcoord 6, 13
 	call .writemoves
@@ -2740,7 +2740,7 @@ SelectMenuItem:
 	dec a
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
-	ld [hl], "▷"
+	ld [hl], '▷'
 .select
 	ld hl, hUILayoutFlags
 	set BIT_DOUBLE_SPACED_MENU, [hl]
@@ -3022,7 +3022,7 @@ PrintMenuItem:
 	ld [wBattleMenuCurrentPP], a
 ; print move info
 	hlcoord 6, 11
-	ld [hl], "/"
+	ld [hl], '/'
 .printPP
 	hlcoord 1, 11
 	ld de, PPText
@@ -3078,7 +3078,7 @@ PrintMenuItem:
 	lb bc, 1, 3
 	call PrintNumber
 	hlcoord 8, 10
-	ld [hl], "%"
+	ld [hl], '%'
 	jr .printHighCrit
 .infAccuracy
 	hlcoord 5, 10
@@ -7182,7 +7182,17 @@ InitWildBattle:
 	ld [hli], a   ; write front sprite pointer
 	ld [hl], b
 	ld hl, wEnemyMonNick  ; set name to "GHOST"
-	ld_hli_a_string "GHOST@"
+	ld a, 'G'
+	ld [hli], a
+	ld a, 'H'
+	ld [hli], a
+	ld a, 'O'
+	ld [hli], a
+	ld a, 'S'
+	ld [hli], a
+	ld a, 'T'
+	ld [hli], a
+	ld [hl], '@'
 	ld a, [wCurPartySpecies]
 	push af
 	ld a, MON_GHOST
@@ -7624,13 +7634,13 @@ PrintEnemyMonGender: ; called during battle
 	dec a
 	jr z, .male
 	; else female
-	ld a, "♀"
+	ld a, '♀'
 	jr .printSymbol
 .male
-	ld a, "♂"
+	ld a, '♂'
 	jr .printSymbol
 .noGender
-	ld a, " "
+	ld a, ' '
 .printSymbol
 	hlcoord 9, 1
 	ld [hl], a
@@ -7646,13 +7656,13 @@ PrintPlayerMonGender: ; called during battle
 	dec a
 	jr z, .male
 	; else female
-	ld a, "♀"
+	ld a, '♀'
 	jr .printSymbol
 .male
-	ld a, "♂"
+	ld a, '♂'
 	jr .printSymbol
 .noGender
-	ld a, " "
+	ld a, ' '
 .printSymbol
 	hlcoord 17, 8
 	ld [hl], a
@@ -7676,9 +7686,9 @@ PrintPlayerMonShiny: ; show shiny symbol beside gender symbol
 
 PrintShinyCommon: ; used by both routines
 	farcall IsMonShiny
-	ld a, "[SHINY]"
+	ld a, '[SHINY]'
 	ret nz
 	; else, it's normal
-	ld a, " "
+	ld a, ' '
 	ret
 

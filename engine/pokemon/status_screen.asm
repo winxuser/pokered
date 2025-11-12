@@ -52,7 +52,7 @@ DrawHP_:
 	ld de, wLoadedMonHP
 	lb bc, 2, 3
 	call PrintNumber
-	ld a, "/"
+	ld a, '/'
 	ld [hli], a
 	ld de, wLoadedMonMaxHP
 	lb bc, 2, 3
@@ -113,9 +113,9 @@ ENDC
 	call DrawLineBox ; Draws the box around name, HP and status
 	hlcoord 2, 7
 	nop
-	ld [hl], "<DOT>"
+	ld [hl], '<DOT>'
 	dec hl
-	ld [hl], "№"
+	ld [hl], '№'
 	hlcoord 19, 9
 	lb bc, 8, 6
 	call DrawLineBox ; Draws the box around types, ID No. and OT
@@ -263,7 +263,7 @@ PrintShinySymbol:
 	ret z
 	; draw the shiny symbol
 	coord hl, 0, 0
-	ld a, "[SHINY]"
+	ld a, '[SHINY]'
 	ld [hl], a
 	ret
 
@@ -277,13 +277,13 @@ PrintGenderStatusScreen: ; called on status screen
 	dec a
 	jr z, .male
 	; else female
-	ld a, "♀"
+	ld a, '♀'
 	jr .printSymbol
 .male
-	ld a, "♂"
+	ld a, '♂'
 	jr .printSymbol
 .noGender
-	ld a, " "
+	ld a, ' '
 .printSymbol
 	hlcoord 17, 2
 	ld [hl], a
@@ -382,13 +382,13 @@ ENDC
 	ld b, a ; number of blank moves
 	hlcoord 11, 10
 	ld de, SCREEN_WIDTH * 2
-	ld a, "<BOLD_P>"
+	ld a, '<BOLD_P>'
 	call StatusScreen_PrintPP ; Print "PP"
 	ld a, b
 	and a
 	jr z, .InitPP
 	ld c, a
-	ld a, "-"
+	ld a, '-'
 	call StatusScreen_PrintPP ; Fill the rest with --
 .InitPP
 	ld hl, wLoadedMonMoves
@@ -425,7 +425,7 @@ ENDC
 	ld de, wStatusScreenCurrentPP
 	lb bc, 1, 2
 	call PrintNumber
-	ld a, "/"
+	ld a, '/'
 	ld [hli], a
 	ld de, wMaxPP
 	lb bc, 1, 2
@@ -453,7 +453,7 @@ ENDC
 	ld [wLoadedMonLevel], a ; Increase temporarily if not 100
 .Level100
 	hlcoord 14, 6
-	ld [hl], "<to>"
+	ld [hl], '<to>'
 	inc hl
 	inc hl
 	call PrintLevel
@@ -519,7 +519,7 @@ StatusScreenExpText:
 
 StatusScreen_ClearName:
 	ld bc, NAME_LENGTH - 1
-	ld a, " "
+	ld a, ' '
 	jp FillMemory
 
 StatusScreen_PrintPP:

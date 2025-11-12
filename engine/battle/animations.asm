@@ -1628,7 +1628,7 @@ _AnimationSquishMonPic:
 	call AnimCopyRowRight
 	inc hl
 .next
-	ld [hl], " "
+	ld [hl], ' '
 	pop hl
 	ld de, SCREEN_WIDTH
 	add hl, de
@@ -1860,7 +1860,7 @@ _AnimationSlideMonOff:
 	add 7
 	cp $62
 	ret c
-	ld a, " "
+	ld a, ' '
 	ret
 
 .EnemyNextTile
@@ -1868,7 +1868,7 @@ _AnimationSlideMonOff:
 	sub 7
 	cp $31
 	ret c
-	ld a, " "
+	ld a, ' '
 	ret
 
 AnimationSlideMonHalfOff:
