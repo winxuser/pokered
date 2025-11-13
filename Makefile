@@ -47,7 +47,18 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all red blue green blue_debug clean tidy compare tools
+.PHONY: \
+	all \
+	red \
+	blue \
+	green \
+	blue_debug \
+	red_vc \
+	blue_vc \
+	clean \
+	tidy \
+	compare \
+	tools
 
 all: $(roms)
 red:        pokered.gbc
