@@ -1,7 +1,7 @@
 	db DEX_QUAGSIRE ; pokedex id
 
-	db  95,  85,  85,  35,  65
-	;   hp  atk  def  spd  spc
+	db  95,  85,  85,  35,  65,  65
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GROUND ; type
 	db 90 ; catch rate

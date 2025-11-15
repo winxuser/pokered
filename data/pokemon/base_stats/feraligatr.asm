@@ -1,7 +1,7 @@
 	db DEX_FERALIGATR ; pokedex id
 
-	db  85,  105, 100,  78,  83
-	;   hp  atk  def  spd  spc
+	db  85, 105, 100,  78,  79,  83
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 45 ; catch rate

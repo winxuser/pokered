@@ -1,7 +1,7 @@
 	db DEX_SLUGMA ; pokedex id
 
-	db  40,  40,  40,  20,  70
-	;   hp  atk  def  spd  spc
+	db  40,  40,  40,  20,  70,  40
+	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type
 	db 190 ; catch rate

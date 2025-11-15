@@ -1,7 +1,7 @@
 	db DEX_TYRANITAR ; pokedex id
 
-	db  100,  134, 110,  61,  100
-	;   hp  atk  def  spd  spc
+	db 100, 134, 110,  61,  95, 100
+	;   hp  atk  def  spd  sat  sdf
 
 	db ROCK, DARK ; type
 	db 45 ; catch rate

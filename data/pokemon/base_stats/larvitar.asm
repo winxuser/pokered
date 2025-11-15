@@ -1,7 +1,7 @@
 	db DEX_LARVITAR ; pokedex id
 
-	db  50,  64, 50,  41,  50
-	;   hp  atk  def  spd  spc
+	db  50,  64,  50,  41,  45,  50
+	;   hp  atk  def  spd  sat  sdf
 
 	db ROCK, GROUND ; type
 	db 45 ; catch rate

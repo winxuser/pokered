@@ -84,7 +84,8 @@ ItemUsePtrTable:
 	dw ItemUseXStat      ; X_ATTACK
 	dw ItemUseXStat      ; X_DEFEND
 	dw ItemUseXStat      ; X_SPEED
-	dw ItemUseXStat      ; X_SPECIAL
+	dw ItemUseXStat      ; X_SP_ATK
+	dw ItemUseXStat      ; X_SP_DEF
 	dw ItemUseCoinCase   ; COIN_CASE
 	dw ItemUseOaksParcel ; OAKS_PARCEL
 	dw ItemUseItemfinder ; ITEMFINDER
@@ -108,6 +109,7 @@ ItemUsePtrTable:
 	dw ItemUseEvoStone   ; KINGS_ROCK
 	dw ItemUseEvoStone   ; DRAGON_SCALE
 	dw ItemUseEvoStone   ; UPGRADE
+	dw ItemUseVitamin    ; ZINC
 	dw ItemUseMedicine   ; ORAN_BERRY
 	dw ItemUseMedicine   ; SITRUS_BERRY
 	dw ItemUsePPRestore  ; LEPPA_BERRY

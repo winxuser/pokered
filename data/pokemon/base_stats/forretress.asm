@@ -1,7 +1,7 @@
 	db DEX_FORRETRESS ; pokedex id
 
-	db  75,  90,  140,  40,  60
-	;   hp  atk  def  spd  spc
+	db  75,  90, 140,  40,  60,  60
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, STEEL ; type
 	db 75 ; catch rate

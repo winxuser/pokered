@@ -1,7 +1,7 @@
 	db DEX_GRANBULL ; pokedex id
 
-	db  90,  120, 75,  40,  60
-	;   hp  atk  def  spd  spc
+	db  90, 120,  75,  45,  60,  60
+	;   hp  atk  def  spd  sat  sdf
 
 	db FAIRY, FAIRY ; type
 	db 75 ; catch rate

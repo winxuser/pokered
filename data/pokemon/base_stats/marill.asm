@@ -1,7 +1,7 @@
 	db DEX_MARILL ; pokedex id
 
-	db  70,  20,  50,  40,  50
-	;   hp  atk  def  spd  spc
+	db  70,  20,  50,  40,  20,  50
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FAIRY ; type
 	db 190 ; catch rate

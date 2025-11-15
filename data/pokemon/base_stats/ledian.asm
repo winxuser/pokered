@@ -1,7 +1,7 @@
 	db DEX_LEDIAN ; pokedex id
 
-	db  55,  35,  50,  85,  110
-	;   hp  atk  def  spd  spc
+	db  55,  35,  50,  85,  55, 110
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, FLYING ; type
 	db 90 ; catch rate

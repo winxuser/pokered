@@ -6,5 +6,6 @@ VitaminStats:
 	li "ATTACK"
 	li "DEFENSE"
 	li "SPEED"
-	li "SPECIAL"
+	li "SPCATK"
+	li "SPCDEF"
 	assert_list_length NUM_STATS

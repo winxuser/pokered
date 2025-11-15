@@ -1,7 +1,7 @@
 	db DEX_NOCTOWL ; pokedex id
 
-	db  100,  50,  50,  70,  96
-	;   hp  atk  def  spd  spc
+	db 100,  50,  50,  70,  76,  96
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, FLYING ; type
 	db 90 ; catch rate

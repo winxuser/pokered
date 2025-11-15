@@ -1,7 +1,7 @@
 	db DEX_SNUBBULL ; pokedex id
 
-	db  60,  80, 50,  30,  40
-	;   hp  atk  def  spd  spc
+	db  60,  80,  50,  30,  40,  40
+	;   hp  atk  def  spd  sat  sdf
 
 	db FAIRY, FAIRY ; type
 	db 190 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_RAIKOU ; pokedex id
 
-	db  90,  85,  75, 115, 115
-	;   hp  atk  def  spd  spc
+	db  90,  85,  75, 115, 115, 100
+	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type
 	db 3 ; catch rate

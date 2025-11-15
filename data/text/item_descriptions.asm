@@ -249,8 +249,13 @@ _XSpeedDescription::
 	next "(1 BTL)"
 	prompt
 
-_XSpecialDescription::
-	text "Raises SPECIAL."
+_XSpecialATKDescription::
+	text "Raises SPCATK."
+	next "(1 BTL)"
+	prompt
+
+_XSpecialDEFDescription::
+	text "Raises SPCDEF."
 	next "(1 BTL)"
 	prompt
 
@@ -377,6 +382,11 @@ _LumBerryDescription::
 _SwegBerryDescription::
 	text "Raises level of a"
 	next "#MON by one."
+	prompt
+
+_ZincDescription::
+	text "Raises SPCDEF of"
+	next "a #MON."
 	prompt
 
 _HM01Description::

@@ -67,7 +67,8 @@ KeyItemFlags:
 	dbit FALSE ; X_ATTACK
 	dbit FALSE ; X_DEFEND
 	dbit FALSE ; X_SPEED
-	dbit FALSE ; X_SPECIAL
+	dbit FALSE ; X_SP_ATK
+	dbit FALSE ; X_SP_DEF
 	dbit TRUE  ; COIN_CASE
 	dbit TRUE  ; OAKS_PARCEL
 	dbit TRUE  ; ITEMFINDER
@@ -91,6 +92,7 @@ KeyItemFlags:
 	dbit FALSE ; KINGS_ROCK
 	dbit FALSE ; DRAGON_SCALE
 	dbit FALSE ; UPGRADE
+	dbit FALSE ; ZINC
 	dbit FALSE ; ORAN_BERRY
 	dbit FALSE ; SITRUS_BERRY
 	dbit FALSE ; LEPPA_BERRY

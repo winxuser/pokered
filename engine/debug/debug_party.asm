@@ -149,12 +149,9 @@ DebugNewGameItemsList:
 	db S_S_TICKET, 1
 	db LIFT_KEY, 1
 	db SUN_SHARD, 1
-	db MOON_SHARD, 1
-	db METAL_COAT, 1
-	db SUN_STONE, 3
-	db KINGS_ROCK, 3
-	db DRAGON_SCALE, 1
-	db UPGRADE, 2
+	db ZINC, 1
+	db X_SP_ATK, 1
+	db X_SP_DEF, 1
 	db TM_THUNDERPUNCH, 1
 	db TM_STEEL_WING, 1
 	db -1 ; end

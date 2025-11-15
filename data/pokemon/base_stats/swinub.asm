@@ -1,7 +1,7 @@
 	db DEX_SWINUB ; pokedex id
 
-	db  50,  50,  40,  50,  30
-	;   hp  atk  def  spd  spc
+	db  50,  50,  40,  50,  30,  30
+	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, GROUND ; type
 	db 225 ; catch rate

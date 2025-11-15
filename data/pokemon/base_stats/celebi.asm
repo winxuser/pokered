@@ -1,7 +1,7 @@
 	db DEX_CELEBI ; pokedex id
 
-	db 100, 100, 100, 100, 100
-	;   hp  atk  def  spd  spc
+	db 100, 100, 100, 100, 100, 100
+	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, GRASS ; type
 	db 45 ; catch rate

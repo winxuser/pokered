@@ -1,7 +1,7 @@
 	db DEX_PILOSWINE ; pokedex id
 
-	db  100,  100,  80,  50,  60
-	;   hp  atk  def  spd  spc
+	db 100, 100,  80,  50,  60,  60
+	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, GROUND ; type
 	db 75 ; catch rate

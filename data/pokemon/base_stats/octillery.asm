@@ -1,7 +1,7 @@
 	db DEX_OCTILLERY ; pokedex id
 
-	db  75,  105,  75,  45,  105
-	;   hp  atk  def  spd  spc
+	db  75, 105,  75,  45, 105,  75
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 75 ; catch rate

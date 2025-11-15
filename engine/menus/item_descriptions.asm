@@ -145,7 +145,9 @@ ItemDescriptionPointers:
 	text_end
 	text_far _XSpeedDescription
 	text_end
-	text_far _XSpecialDescription
+	text_far _XSpecialATKDescription
+	text_end
+	text_far _XSpecialDEFDescription
 	text_end
 	text_far _CoinCaseDescription
 	text_end
@@ -190,6 +192,8 @@ ItemDescriptionPointers:
 	text_far _DragonScaleDescription
 	text_end
 	text_far _UpgradeDescription
+	text_end
+	text_far _ZincDescription
 	text_end
 	text_far _OranBerryDescription
 	text_end

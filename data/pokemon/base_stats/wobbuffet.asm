@@ -1,7 +1,7 @@
 	db DEX_WOBBUFFET ; pokedex id
 
-	db  190,  33,  58,  33, 58
-	;   hp  atk  def  spd  spc
+	db 190,  33,  58,  33,  33,  58
+	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 45 ; catch rate

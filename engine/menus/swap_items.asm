@@ -356,7 +356,8 @@ ItemSortList::
 	db X_ATTACK
 	db X_DEFEND
 	db X_SPEED
-	db X_SPECIAL
+	db X_SP_ATK
+	db X_SP_DEF
 	db GUARD_SPEC
 	db DIRE_HIT
 	; Permanent Raises

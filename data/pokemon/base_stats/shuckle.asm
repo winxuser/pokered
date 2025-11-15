@@ -1,7 +1,7 @@
 	db DEX_SHUCKLE ; pokedex id
 
-	db  20,  10,  230,  2,  230
-	;   hp  atk  def  spd  spc
+	db  20,  10, 230,  05,  10, 230
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, ROCK ; type
 	db 190 ; catch rate

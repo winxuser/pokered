@@ -1,7 +1,7 @@
 	db DEX_LUGIA ; pokedex id
 
-	db  106,  90, 130,  110,  154
-	;   hp   atk  def   spd   spc
+	db 106,  90, 130, 110,  90, 154
+	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, FLYING ; type
 	db 3 ; catch rate

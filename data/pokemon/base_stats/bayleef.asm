@@ -1,7 +1,7 @@
 	db DEX_BAYLEEF ; pokedex id
 
-	db  60,  62,  80,  60,  80
-	;   hp  atk  def  spd  spc
+	db  60,  62,  80,  60,  63,  80
+	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type
 	db 45 ; catch rate

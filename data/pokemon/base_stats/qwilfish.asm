@@ -1,7 +1,7 @@
 	db DEX_QWILFISH ; pokedex id
 
-	db  65,  95,  75,  85,  55
-	;   hp  atk  def  spd  spc
+	db  65,  95,  75,  85,  55,  55
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, POISON ; type
 	db 45 ; catch rate

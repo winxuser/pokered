@@ -1,7 +1,7 @@
 	db DEX_HITMONTOP ; pokedex id
 
-	db  50, 95,  95,  70,  110
-	;   hp  atk  def  spd  spc
+	db  50,  95,  95,  70,  35, 110
+	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, FIGHTING ; type
 	db 45 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_CHIKORITA ; pokedex id
 
-	db  45,  49,  65,  45,  65
-	;   hp  atk  def  spd  spc
+	db  45,  49,  65,  45,  49,  65
+	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type
 	db 45 ; catch rate

@@ -312,11 +312,11 @@ PrintStatsBox:
 	ld bc, $19 ; Number offset
 	jr .PrintStats
 .DifferentBox
-	hlcoord 9, 2
-	ld b, 8
+	hlcoord 9, 0
+	ld b, 10
 	ld c, 9
 	call TextBoxBorder
-	hlcoord 11, 3
+	hlcoord 11, 1
 	ld bc, $18
 .PrintStats
 	push bc
@@ -333,7 +333,9 @@ PrintStatsBox:
 	call PrintStat
 	ld de, wLoadedMonSpeed
 	call PrintStat
-	ld de, wLoadedMonSpecial
+	ld de, wLoadedMonSpclAtk
+	call PrintStat
+	ld de, wLoadedMonSpclDef
 	jp PrintNumber
 PrintStat:
 	push hl
@@ -347,7 +349,9 @@ StatsText:
 	db   "ATTACK"
 	next "DEFENSE"
 	next "SPEED"
-	next "SPECIAL@"
+	next "SPCL.ATK"
+	next "SPCL.DEF@"
+
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
@@ -546,6 +550,9 @@ StatusScreen_PrintPP:
  	call StatusScreen2
  	ld b, PAD_A | PAD_B
  	call PokedexStatusWaitForButtonPressLoop
+ 	call StatusScreen3						; testing third page
+ 	ld b, PAD_A | PAD_B
+ 	call PokedexStatusWaitForButtonPressLoop
  ExitStatusScreen:
  	pop af
  	ldh [hTileAnimations], a
@@ -569,6 +576,12 @@ StatusScreen_PrintPP:
  	bit B_PAD_B, a
  	jr nz, .exitStatus
  	call StatusScreen2
+ 	call PokemonStatusWaitForButtonPress
+ 	bit B_PAD_UP, a
+ 	jr nz, .prevMon
+ 	bit B_PAD_DOWN, a
+ 	jr nz, .nextMon
+ 	call StatusScreen3
  	call PokemonStatusWaitForButtonPress
  	bit B_PAD_UP, a
  	jr nz, .prevMon
@@ -618,3 +631,52 @@ StatusScreen_PrintPP:
  	and b
  	jr z, .waitForButtonPress
  	ret
+
+StatusScreen3:
+	hlcoord 11, 1
+	lb bc, 5, 10
+	ld a, d
+	call ClearScreenArea ; Clear under name
+	call StatusScreen2Hook
+	and a ; a is 0 from the status screen
+	jr nz, .DifferentBox2
+	hlcoord 0, 8
+	ld b, 8
+	ld c, 8
+	call TextBoxBorder ; Draws the box
+	hlcoord 1, 9 ; Start printing stats from here
+	ld bc, $19 ; Number offset
+	jr .PrintStats2
+.DifferentBox2
+	hlcoord 9, 0
+	ld b, 10
+	ld c, 9
+	call TextBoxBorder
+	hlcoord 10, 1
+	ld bc, $18
+.PrintStats2
+	push bc
+	push hl
+	ld de, StatsText
+	call PlaceString
+	pop hl
+	pop bc
+	add hl, bc
+	ld de, wLoadedMonAttack
+	lb bc, 2, 3
+	call PrintStat
+	ld de, wLoadedMonDefense
+	call PrintStat
+	ld de, wLoadedMonSpeed
+	call PrintStat
+	ld de, wLoadedMonSpclAtk
+	call PrintStat
+	ld de, wLoadedMonSpclDef
+	jp PrintNumber
+PrintStat2:
+	push hl
+	call PrintNumber
+	pop hl
+	ld de, SCREEN_WIDTH * 2
+	add hl, de
+	ret

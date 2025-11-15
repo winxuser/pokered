@@ -67,7 +67,8 @@ ItemPrices::
 	bcd3 500   ; X_ATTACK
 	bcd3 550   ; X_DEFEND
 	bcd3 350   ; X_SPEED
-	bcd3 350   ; X_SPECIAL
+	bcd3 350   ; X_SP_ATK
+	bcd3 350   ; X_SP_DEF
 	bcd3 0     ; COIN_CASE
 	bcd3 0     ; OAKS_PARCEL
 	bcd3 0     ; ITEMFINDER
@@ -91,6 +92,7 @@ ItemPrices::
 	bcd3 2100  ; KINGS_ROCK
 	bcd3 2100  ; DRAGON_SCALE
 	bcd3 2100  ; UPGRADE
+	bcd3 2000  ; ZINC
 	bcd3 10    ; ORAN_BERRY
 	bcd3 10    ; SITRUS_BERRY
 	bcd3 10    ; LEPPA_BERRY

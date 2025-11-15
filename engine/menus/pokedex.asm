@@ -467,12 +467,12 @@ ShowPokedexDataInternal:
 	ld de, PokedexDataDividerLine
 	call PlaceString ; draw horizontal divider line
 
-	hlcoord 9, 6
+	hlcoord 9, 5
 	ld de, HeightWeightText
 	call PlaceString
 
 	call GetMonName
-	hlcoord 9, 2
+	hlcoord 9, 1
 	call PlaceString
 
 	ld hl, PokedexEntryPointers
@@ -486,7 +486,7 @@ ShowPokedexDataInternal:
 	ld e, a
 	ld d, [hl] ; de = address of pokedex entry
 
-	hlcoord 9, 4
+	hlcoord 9, 3
 	call PlaceString ; print species name
 
 	ld h, b
@@ -541,14 +541,14 @@ ShowPokedexDataInternal:
 	jp z, .displaySeenBottomInfo ; if the pokemon has not been owned, don't print the height or weight, but show their type
 	inc de ; de = address of feet (height)
 	ld a, [de] ; reads feet, but a is overwritten without being used
-	hlcoord 12, 6
+	hlcoord 12, 5
 	lb bc, 1, 2
 	call PrintNumber ; print feet (height)
 	ld a, "′"
 	ld [hl], a
 	inc de
 	inc de ; de = address of inches (height)
-	hlcoord 15, 6
+	hlcoord 15, 5
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber ; print inches (height)
 	ld a, "″"
@@ -570,10 +570,10 @@ ShowPokedexDataInternal:
 	ld a, [de] ; a = lower byte of weight
 	ld [hl], a ; store lower byte of weight in [hDexWeight + 1]
 	ld de, hDexWeight
-	hlcoord 11, 8
+	hlcoord 11, 7
 	lb bc, 2, 5 ; 2 bytes, 5 digits
 	call PrintNumber ; print weight
-	hlcoord 14, 8
+	hlcoord 14, 7
 	ldh a, [hDexWeight + 1]
 	sub 10
 	ldh a, [hDexWeight]
@@ -604,41 +604,48 @@ ShowPokedexDataInternal:
 	call ClearScreenArea
 	call PrintMonTypes
 	; print mon base stats
-	hlcoord 9, 10
+	hlcoord 5, 9
 	ld de, BaseStatsText
 	call PlaceString
-	hlcoord 12, 11
+	hlcoord 11, 10
 	ld de, HPText
 	call PlaceString
 	ld de, wMonHBaseHP
+	hlcoord 15, 10
+	lb bc, 1, 3
+	call PrintNumber
+	hlcoord 11, 11
+	ld de, AtkText
+	call PlaceString
+	ld de, wMonHBaseAttack
 	hlcoord 15, 11
 	lb bc, 1, 3
 	call PrintNumber
 	hlcoord 11, 12
-	ld de, AtkText
+	ld de, DefText
 	call PlaceString
-	ld de, wMonHBaseAttack
+	ld de, wMonHBaseDefense
 	hlcoord 15, 12
 	lb bc, 1, 3
 	call PrintNumber
 	hlcoord 11, 13
-	ld de, DefText
+	ld de, SpdText
 	call PlaceString
-	ld de, wMonHBaseDefense
+	ld de, wMonHBaseSpeed
 	hlcoord 15, 13
 	lb bc, 1, 3
 	call PrintNumber
 	hlcoord 11, 14
-	ld de, SpdText
+	ld de, SpcAtkText
 	call PlaceString
-	ld de, wMonHBaseSpeed
+	ld de, wMonHBaseSpclAtk
 	hlcoord 15, 14
 	lb bc, 1, 3
 	call PrintNumber
 	hlcoord 11, 15
-	ld de, SpcText
+	ld de, SpcDefText
 	call PlaceString
-	ld de, wMonHBaseSpecial
+	ld de, wMonHBaseSpclDef
 	hlcoord 15, 15
 	lb bc, 1, 3
 	call PrintNumber
@@ -660,7 +667,10 @@ ShowPokedexDataInternal:
 	ld a, [wMonHBaseSpeed]
 	ld c, a
 	add hl, bc
-	ld a, [wMonHBaseSpecial]
+	ld a, [wMonHBaseSpclAtk]
+	ld c, a
+	add hl, bc
+	ld a, [wMonHBaseSpclDef]
 	ld c, a
 	add hl, bc
 	ld a, h
@@ -808,8 +818,11 @@ DefText:
 SpdText:
 	db "SPD@"
 
-SpcText:
-	db "SPC@"
+SpcAtkText:
+	db "SPCA@"
+
+SpcDefText:
+	db "SPCD@"
 
 TotalText:
 	db "TOTAL@"

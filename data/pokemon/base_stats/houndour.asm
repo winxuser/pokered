@@ -1,7 +1,7 @@
 	db DEX_HOUNDOUR ; pokedex id
 
-	db  45, 60,  30,  65,  80
-	;   hp  atk  def  spd  spc
+	db  45,  60,  30,  65,  80,  50
+	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FIRE ; type
 	db 120 ; catch rate

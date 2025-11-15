@@ -1,7 +1,7 @@
 	db DEX_NATU ; pokedex id
 
-	db  40,  50,  45,  70,  70
-	;   hp  atk  def  spd  spc
+	db  40,  50,  45,  70,  70,  45
+	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, FLYING ; type
 	db 190 ; catch rate

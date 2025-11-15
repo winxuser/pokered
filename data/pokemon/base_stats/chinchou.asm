@@ -1,7 +1,7 @@
 	db DEX_CHINCHOU ; pokedex id
 
-	db  75,  38,  38,  67,  56
-	;   hp  atk  def  spd  spc
+	db  75,  38,  38,  67,  56,  56
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ELECTRIC ; type
 	db 190 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_WOOPER ; pokedex id
 
-	db  55,  45,  45,  15,  25
-	;   hp  atk  def  spd  spc
+	db  55,  45,  45,  15,  25,  25
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, GROUND ; type
 	db 255 ; catch rate

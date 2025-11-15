@@ -1,7 +1,7 @@
 	db DEX_HOOTHOOT ; pokedex id
 
-	db  60,  30,  30,  50,  56
-	;   hp  atk  def  spd  spc
+	db  60,  30,  30,  50,  36,  56
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, FLYING ; type
 	db 255 ; catch rate

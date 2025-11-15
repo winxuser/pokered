@@ -1,7 +1,7 @@
 	db DEX_JUMPLUFF ; pokedex id
 
-	db  75,  55,  70,  110,  85
-	;   hp  atk  def  spd  spc
+	db  75,  55,  70, 110,  55,  85
+	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, FLYING ; type
 	db 45 ; catch rate

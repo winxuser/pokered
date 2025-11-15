@@ -1,7 +1,7 @@
 	db DEX_AMPHAROS ; pokedex id
 
-	db  90,  75,  75,  55,  115
-	;   hp  atk  def  spd  spc
+	db  90,  75,  75,  55, 115,  90
+	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type
 	db 45 ; catch rate

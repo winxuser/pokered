@@ -1,7 +1,7 @@
 	db DEX_SUICUNE ; pokedex id
 
-	db 100,  75,  115,  85, 115
-	;   hp  atk  def  spd  spc
+	db 100,  75, 115,  85,  90, 115
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 3 ; catch rate

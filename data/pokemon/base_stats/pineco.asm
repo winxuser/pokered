@@ -1,7 +1,7 @@
 	db DEX_PINECO ; pokedex id
 
-	db  50,  65,  90,  15,  35
-	;   hp  atk  def  spd  spc
+	db  50,  65,  90,  15,  35,  35
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, BUG ; type
 	db 190 ; catch rate

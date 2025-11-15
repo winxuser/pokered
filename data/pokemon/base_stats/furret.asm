@@ -1,7 +1,7 @@
 	db DEX_FURRET ; pokedex id
 
-	db  85,  76,  64,  90,  55
-	;   hp  atk  def  spd  spc
+	db  85,  76,  64,  90,  45,  55
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 90 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_MURKROW ; pokedex id
 
-	db  60,  85,  42,  91,  85
-	;   hp  atk  def  spd  spc
+	db  60,  85,  42,  91,  85,  42
+	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FLYING ; type
 	db 30 ; catch rate

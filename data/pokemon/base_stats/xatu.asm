@@ -1,7 +1,7 @@
 	db DEX_XATU ; pokedex id
 
-	db  65,  75,  70,  95,  95
-	;   hp  atk  def  spd  spc
+	db  65,  75,  70,  95,  95,  70
+	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, FLYING ; type
 	db 75 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_YANMA ; pokedex id
 
-	db  65,  65,  45,  95,  75
-	;   hp  atk  def  spd  spc
+	db  65,  65,  45,  95,  75,  45
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, FLYING ; type
 	db 75 ; catch rate

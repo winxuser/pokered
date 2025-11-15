@@ -1,7 +1,7 @@
 	db DEX_TOGETIC ; pokedex id
 
-	db 55,  40,  85,  40,  105
-	;   hp  atk  def  spd  spc
+	db  55,  40,  85,  40,  80, 105
+	;   hp  atk  def  spd  sat  sdf
 
 	db FAIRY, FAIRY ; type
 	db 75 ; catch rate

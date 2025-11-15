@@ -30,7 +30,8 @@ UsableItems_PartyMenu:
 	db X_ATTACK
 	db X_DEFEND
 	db X_SPEED
-	db X_SPECIAL
+	db X_SP_ATK
+	db X_SP_DEF
 	db PP_UP
 	db ETHER
 	db MAX_ETHER
@@ -44,6 +45,7 @@ UsableItems_PartyMenu:
 	db KINGS_ROCK
 	db DRAGON_SCALE
 	db UPGRADE
+	db ZINC
 	db ORAN_BERRY
 	db SITRUS_BERRY
 	db LEPPA_BERRY

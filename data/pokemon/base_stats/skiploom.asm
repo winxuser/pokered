@@ -1,7 +1,7 @@
 	db DEX_SKIPLOOM ; pokedex id
 
-	db  55,  45,  50,  80,  65
-	;   hp  atk  def  spd  spc
+	db  55,  45,  50,  80,  45,  65
+	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, FLYING ; type
 	db 120 ; catch rate

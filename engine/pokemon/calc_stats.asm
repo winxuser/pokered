@@ -69,6 +69,8 @@ _CalcStat::
 	jr z, .getSpeedIV
 	cp $5
 	jr z, .getSpecialIV
+	cp $6
+	jr z, .getSpecialIV ; Like Gen 2, special attack and special defense share an "IV" (DV)
 .getHpIV
 	push bc
 	ld a, [hl]  ; Atk IV

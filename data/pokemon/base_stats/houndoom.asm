@@ -1,7 +1,7 @@
 	db DEX_HOUNDOOM ; pokedex id
 
-	db  75, 90,  50,  95,  110
-	;   hp  atk  def  spd  spc
+	db  75,  90,  50,  95, 110,  80
+	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, FIRE ; type
 	db 45 ; catch rate

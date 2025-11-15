@@ -1,7 +1,7 @@
 	db DEX_REMORAID ; pokedex id
 
-	db  35,  65,  35,  65,  65
-	;   hp  atk  def  spd  spc
+	db  35,  65,  35,  65,  65,  35
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 190 ; catch rate

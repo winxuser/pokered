@@ -1,7 +1,7 @@
 	db DEX_URSARING ; pokedex id
 
-	db  90,  130,  75,  55,  75
-	;   hp  atk  def  spd  spc
+	db  90, 130,  75,  55,  75,  75
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 60 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_GLIGAR ; pokedex id
 
-	db  65,  75,  105,  85,  65
-	;   hp  atk  def  spd  spc
+	db  65,  75, 105,  85,  35,  65
+	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, FLYING ; type
 	db 60 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_TYPHLOSION ; pokedex id
 
-	db  78,  84,  78,  100,  109
-	;   hp  atk  def  spd  spc
+	db  78,  84,  78, 100, 109,  85
+	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type
 	db 45 ; catch rate

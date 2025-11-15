@@ -449,7 +449,7 @@ StatModifierUpEffect:
 .ok
 	ld [hl], b
 	ld a, c
-	cp $4
+	cp NUM_STATS - 1 ; HP is not a modifiable stat through move effects, hence -1
 	jr nc, UpdateStatDone ; jump if mod affected is evasion/accuracy
 	push hl
 	ld hl, wBattleMonAttack + 1
@@ -735,7 +735,7 @@ StatModifierDownEffect:
 .ok
 	ld [hl], b ; save modified mod
 	ld a, c
-	cp $4
+	cp NUM_STATS - 1 ; HP is not a modifiable stat through move effects, hence -1
 	jr nc, UpdateLoweredStatDone ; jump for evasion/accuracy
 	push hl
 	push de

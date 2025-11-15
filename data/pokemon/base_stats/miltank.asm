@@ -1,7 +1,7 @@
 	db DEX_MILTANK ; pokedex id
 
-	db 95,  80,  105,  100,  70
-	;   hp  atk  def  spd  spc
+	db  95,  80, 105, 100,  40,  70
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 45 ; catch rate

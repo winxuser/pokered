@@ -1,7 +1,7 @@
 	db DEX_HOPPIP ; pokedex id
 
-	db  35,  35,  40,  50,  55
-	;   hp  atk  def  spd  spc
+	db  35,  35,  40,  50,  35,  55
+	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type
 	db 255 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_MANTINE ; pokedex id
 
-	db  65, 40, 70,  70,  140
-	;   hp  atk  def  spd  spc
+	db  65,  40,  70,  70,  80, 140
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FLYING ; type
 	db 25 ; catch rate

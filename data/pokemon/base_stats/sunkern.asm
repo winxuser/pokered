@@ -1,7 +1,7 @@
 	db DEX_SUNKERN ; pokedex id
 
-	db  30,  30,  30,  30,  30
-	;   hp  atk  def  spd  spc
+	db  30,  30,  30,  30,  30,  30
+	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type
 	db 235 ; catch rate

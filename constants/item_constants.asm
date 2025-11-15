@@ -76,22 +76,23 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const X_ATTACK      ; $41
 	const X_DEFEND      ; $42
 	const X_SPEED       ; $43
-	const X_SPECIAL     ; $44
-	const COIN_CASE     ; $45
-	const OAKS_PARCEL   ; $46
-	const ITEMFINDER    ; $47
-	const SILPH_SCOPE   ; $48
-	const POKE_FLUTE    ; $49
-	const LIFT_KEY      ; $4A
-	const EXP_ALL       ; $4B
-	const OLD_ROD       ; $4C
-	const GOOD_ROD      ; $4D
-	const SUPER_ROD     ; $4E
-	const PP_UP         ; $4F
-	const ETHER         ; $50
-	const MAX_ETHER     ; $51
-	const ELIXER        ; $52
-	const MAX_ELIXER    ; $53
+	const X_SP_ATK      ; $44
+	const X_SP_DEF      ; $45
+	const COIN_CASE     ; $46
+	const OAKS_PARCEL   ; $47
+	const ITEMFINDER    ; $48
+	const SILPH_SCOPE   ; $49
+	const POKE_FLUTE    ; $4A
+	const LIFT_KEY      ; $4B
+	const EXP_ALL       ; $4C
+	const OLD_ROD       ; $4D
+	const GOOD_ROD      ; $4E
+	const SUPER_ROD     ; $4F
+	const PP_UP         ; $50
+	const ETHER         ; $51
+	const MAX_ETHER     ; $52
+	const ELIXER        ; $53
+	const MAX_ELIXER    ; $54
 ; Gen 2 Items
 	const SUN_SHARD
 	const MOON_SHARD
@@ -100,6 +101,7 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const KINGS_ROCK
 	const DRAGON_SCALE
 	const UPGRADE
+	const ZINC
 ; Berries start here
 	const ORAN_BERRY
 	const SITRUS_BERRY

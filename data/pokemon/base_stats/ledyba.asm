@@ -1,7 +1,7 @@
 	db DEX_LEDYBA ; pokedex id
 
-	db  40,  20,  30,  55,  80
-	;   hp  atk  def  spd  spc
+	db  40,  20,  30,  55,  40,  80
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, FLYING ; type
 	db 255 ; catch rate

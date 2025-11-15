@@ -1,7 +1,7 @@
 	db DEX_CROCONAW ; pokedex id
 
-	db  65,  80,  80,  58,  63
-	;   hp  atk  def  spd  spc
+	db  65,  80,  80,  58,  59,  63
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 45 ; catch rate

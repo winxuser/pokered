@@ -1,7 +1,7 @@
 	db DEX_SNEASEL ; pokedex id
 
-	db  55,  95,  55,  115,  75
-	;   hp  atk  def  spd  spc
+	db  55,  95,  55, 115,  35,  75
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, PSYCHIC_TYPE ; type
 	db 60 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_LANTURN ; pokedex id
 
-	db  125,  58,  58,  67,  76
-	;   hp  atk  def  spd  spc
+	db 125,  58,  58,  67,  76,  76
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ELECTRIC ; type
 	db 75 ; catch rate

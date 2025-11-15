@@ -1,7 +1,7 @@
 	db DEX_HERACROSS ; pokedex id
 
-	db  80,  125,  75,  85,  95
-	;   hp  atk  def  spd  spc
+	db  80, 125,  75,  85,  40,  95
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, FIGHTING ; type
 	db 45 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_PUPITAR ; pokedex id
 
-	db  70,  84, 70,  51,  10
-	;   hp  atk  def  spd  spc
+	db  70,  84,  70,  51,  65,  70
+	;   hp  atk  def  spd  sat  sdf
 
 	db ROCK, GROUND ; type
 	db 45 ; catch rate

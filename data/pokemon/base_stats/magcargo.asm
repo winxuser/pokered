@@ -1,7 +1,7 @@
 	db DEX_MAGCARGO ; pokedex id
 
-	db  50,  50,  120,  30,  80
-	;   hp  atk  def  spd  spc
+	db  50,  50, 120,  30,  80,  80
+	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, ROCK ; type
 	db 75 ; catch rate

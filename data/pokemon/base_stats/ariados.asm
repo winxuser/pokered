@@ -1,7 +1,7 @@
 	db DEX_ARIADOS ; pokedex id
 
-	db  70,  90,  70,  40,  60
-	;   hp  atk  def  spd  spc
+	db  70,  90,  70,  40,  60,  60
+	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, POISON ; type
 	db 90 ; catch rate

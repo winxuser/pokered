@@ -1,7 +1,7 @@
 	db DEX_AZUMARILL ; pokedex id
 
-	db  100,  50,  80,  50,  80
-	;   hp  atk  def  spd  spc
+	db 100,  50,  80,  50,  50,  80
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FAIRY ; type
 	db 75 ; catch rate

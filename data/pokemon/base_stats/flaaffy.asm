@@ -1,7 +1,7 @@
 	db DEX_FLAAFFY ; pokedex id
 
-	db  70,  55,  55,  45,  80
-	;   hp  atk  def  spd  spc
+	db  70,  55,  55,  45,  80,  60
+	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type
 	db 120 ; catch rate

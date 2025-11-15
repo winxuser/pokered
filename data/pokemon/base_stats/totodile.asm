@@ -1,7 +1,7 @@
 	db DEX_TOTODILE ; pokedex id
 
-	db  50,  65,  64,  43,  48
-	;   hp  atk  def  spd  spc
+	db  50,  65,  64,  43,  44,  48
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type
 	db 45 ; catch rate

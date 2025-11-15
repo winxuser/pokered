@@ -1,7 +1,7 @@
 	db DEX_TEDDIURSA ; pokedex id
 
-	db  60,  80,  50,  40,  50
-	;   hp  atk  def  spd  spc
+	db  60,  80,  50,  40,  50,  50
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 120 ; catch rate

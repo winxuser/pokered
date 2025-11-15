@@ -1,7 +1,7 @@
 	db DEX_DELIBIRD ; pokedex id
 
-	db  45,  55,  45,  75,  65
-	;   hp  atk  def  spd  spc
+	db  45,  55,  45,  75,  65,  45
+	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, FLYING ; type
 	db 45 ; catch rate

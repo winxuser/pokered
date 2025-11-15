@@ -1,7 +1,7 @@
 	db DEX_STANTLER ; pokedex id
 
-	db  73,  95,  62,  85,  85
-	;   hp  atk  def  spd  spc
+	db  73,  95,  62,  85,  85,  65
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
 	db 45 ; catch rate

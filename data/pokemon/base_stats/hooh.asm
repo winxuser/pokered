@@ -1,7 +1,7 @@
 	db DEX_HOOH ; pokedex id
 
-	db  106, 130,  90, 90,  154
-	;   hp  atk  def  spd  spc
+	db 106, 130,  90,  90, 110, 154
+	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FLYING ; type
 	db 3 ; catch rate

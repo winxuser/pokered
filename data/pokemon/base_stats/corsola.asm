@@ -1,7 +1,7 @@
 	db DEX_CORSOLA; pokedex id
 
-	db  55,  55, 85,  35,  85
-	;   hp  atk  def  spd  spc
+	db  55,  55,  85,  35,  65,  85
+	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ROCK ; type
 	db 60 ; catch rate

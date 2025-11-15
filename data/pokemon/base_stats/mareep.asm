@@ -1,7 +1,7 @@
 	db DEX_MAREEP ; pokedex id
 
-	db  55,  40,  40,  35,  65
-	;   hp  atk  def  spd  spc
+	db  55,  40,  40,  35,  65,  45
+	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type
 	db 235 ; catch rate

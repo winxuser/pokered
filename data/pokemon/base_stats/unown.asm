@@ -1,7 +1,7 @@
 	db DEX_UNOWN ; pokedex id
 
-	db  48,  72,  48,  48, 72
-	;   hp  atk  def  spd  spc
+	db  48,  72,  48,  48,  72,  48
+	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 225 ; catch rate

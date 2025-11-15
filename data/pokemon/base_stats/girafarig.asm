@@ -1,7 +1,7 @@
 	db DEX_GIRAFARIG ; pokedex id
 
-	db  70,  80,  65,  85,  90
-	;   hp  atk  def  spd  spc
+	db  70,  80,  65,  85,  90,  65
+	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, PSYCHIC_TYPE ; type
 	db 60 ; catch rate

@@ -1,7 +1,7 @@
 	db DEX_ENTEI ; pokedex id
 
-	db  115, 115,  85,  100, 90
-	;   hp  atk  def  spd  spc
+	db 115, 115,  85, 100,  90,  75
+	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type
 	db 3 ; catch rate
