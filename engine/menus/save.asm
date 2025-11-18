@@ -215,10 +215,13 @@ SaveSAVtoSRAM0:
 	ld de, sSpriteData
 	ld bc, wSpriteDataEnd - wSpriteDataStart
 	rst _CopyData
+
+; this part is redundant, SaveCurrentBoxData is always called next
 	ld hl, wBoxDataStart
 	ld de, sCurBoxData
 	ld bc, wBoxDataEnd - wBoxDataStart
 	rst _CopyData
+
 	ldh a, [hTileAnimations]
 	ld [sTileAnimations], a
 	ld hl, sGameData

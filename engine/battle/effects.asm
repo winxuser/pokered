@@ -828,8 +828,8 @@ UpdateLoweredStatDone:
 .ApplyBadgeBoostsAndStatusPenalties
 	ldh a, [hWhoseTurn]
 	and a
-	call nz, ApplyBadgeStatBoosts ; whenever the player uses a stat-down move, badge boosts get reapplied again to every stat,
-	                              ; even to those not affected by the stat-up move (will be boosted further)
+	call nz, ApplyBadgeStatBoosts ; whenever the opponent uses a stat-down move, badge boosts get reapplied again to every stat,
+	                              ; even to those not affected by the stat-down move (will be boosted further)
 	ld hl, MonsStatsFellText
 	rst _PrintText
 

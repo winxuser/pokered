@@ -96,13 +96,17 @@ InitCutAnimOAM:
 	call LoadCutGrassAnimationTilePattern
 	call WriteCutAnimationOAMBlock
 	ld hl, wShadowOAMSprite36Attributes
-	ld de, 4
-	ld a, $5b ; Overwrite attributes (use palette 6, green) was $36
+; original
+;	ld de, 4
+;	ld a, $5b ; Overwrite attributes (use palette 6, green) was $36
+	ld de, OBJ_SIZE
+	ld a, OAM_XFLIP | OAM_PAL1
 	ld c, e
 .loop
 	ld [hl], a
 	add hl, de
-	xor $60
+;   xor $60 ; original
+	xor OAM_YFLIP | OAM_XFLIP
 	dec c
 	jr nz, .loop
 	ret
