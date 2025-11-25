@@ -1269,19 +1269,19 @@ SlideDownFaintedMonPic:
 	push af
 	set BIT_NO_TEXT_DELAY, a
 	ld [wStatusFlags5], a
-	ld b, 7 ; number of times to slide
+	ld b, PIC_HEIGHT ; number of times to slide
 .slideStepLoop ; each iteration, the mon is slid down one row
 	push bc
 	push de
 	push hl
-	ld b, 6 ; number of rows
+	ld b, PIC_HEIGHT - 1 ; number of rows
 	xor a
 	ld [hAutoBGTransferEnabled], a
 .rowLoop
 	push bc
 	push hl
 	push de
-	ld bc, $7
+	ld bc, PIC_WIDTH
 	rst _CopyData
 	pop de
 	pop hl
@@ -1315,7 +1315,8 @@ SlideDownFaintedMonPic:
 	ret
 
 SevenSpacesText:
-	db "       @"
+	ds PIC_WIDTH, ' '
+	db "@"
 
 ; slides the player or enemy trainer off screen
 ; a is the number of tiles to slide it horizontally (always 9 for the player trainer or 8 for the enemy trainer)
@@ -1327,7 +1328,7 @@ SlideTrainerPicOffScreen:
 .slideStepLoop ; each iteration, the trainer pic is slid one tile left/right
 	push bc
 	push hl
-	ld b, 7 ; number of rows
+	ld b, PIC_HEIGHT ; number of rows
 	xor a
 	ld [hAutoBGTransferEnabled], a
 .rowLoop
@@ -1912,7 +1913,8 @@ AnimateRetreatingPlayerMon:
 	lb bc, 7, 7
 	jp ClearScreenArea
 
-; reads player's current mon's HP into wBattleMonHP
+; Copies player's current pokemon's current HP, party pos, and status into the party
+; struct data so it stays after battle or switching
 ReadPlayerMonCurHPAndStatus:
 	ld a, [wPlayerMonNumber]
 	ld hl, wPartyMon1HP
@@ -1921,7 +1923,7 @@ ReadPlayerMonCurHPAndStatus:
 	ld d, h
 	ld e, l
 	ld hl, wBattleMonHP
-	ld bc, $4               ; 2 bytes HP, 1 byte unknown (unused?), 1 byte status
+	ld bc, MON_STATUS + 1 - MON_HP ; also copies party pos in-between HP and status
 	jp CopyData
 
 DrawHUDsAndHPBars:
@@ -6669,7 +6671,7 @@ ENDC
 	ld [hl], d ; OAM Y
 	inc hl
 	ld [hl], e ; OAM X
-	ld a, $8 ; height of tile
+	ld a, TILE_HEIGHT
 	add d ; increase Y by height of tile
 	ld d, a
 	inc hl
@@ -6683,7 +6685,7 @@ ENDC
 	ldh a, [hOAMTile]
 	add $4 ; increase tile number by 4
 	ldh [hOAMTile], a
-	ld a, $8 ; width of tile
+	ld a, TILE_WIDTH
 	add e ; increase X by width of tile
 	ld e, a
 	dec b
@@ -6705,7 +6707,7 @@ ENDC
 	ld de, sSpriteBuffer1
 	ldh a, [hLoadedROMBank]
 	ld b, a
-	ld c, 7 * 7
+	ld c, PIC_SIZE
 	call CopyVideoData
 	xor a
 	ld [rRAMG], a

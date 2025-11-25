@@ -9,7 +9,7 @@ _LoadAnimationTilesetPalettes:
 SpriteifyPlayerPokemon:
 	ld de, vBackPic
 	ld hl, vSprites
-	ld bc, 7 * 7
+	ld bc, PIC_SIZE
 	call CopyVideoData
 
 	ld a, 2

@@ -267,7 +267,7 @@ InitFacingDirectionList:
 	ld [wSavedPlayerScreenY], a
 	ld hl, PlayerSpinningFacingOrder
 	ld de, wFacingDirectionList
-	ld bc, 4
+	ld bc, OBJ_SIZE
 	rst _CopyData
 	ld a, [wSpritePlayerStateData1ImageIndex] ; (image index is locked to standing images)
 	ld hl, wFacingDirectionList
@@ -291,7 +291,7 @@ SpinPlayerSprite:
 	push hl
 	ld hl, wFacingDirectionList
 	ld de, wFacingDirectionList - 1
-	ld bc, 4
+	ld bc, OBJ_SIZE
 	rst _CopyData
 	ld a, [wFacingDirectionList - 1]
 	ld [wFacingDirectionList + 3], a
@@ -413,7 +413,7 @@ FishingAnim:
 	ld hl, FishingRodOAM
 	add hl, bc
 	ld de, wShadowOAMSprite39
-	ld bc, $4
+	ld bc, OBJ_SIZE
 	rst _CopyData
 	ld c, 100
 	rst _DelayFrames

@@ -89,8 +89,13 @@ TransformEffect_:
 	inc de
 	inc de
 	inc de
-	ld bc, $a
-	rst _CopyData
+; original for special split
+;	ld bc, $a
+;	rst _CopyData
+; Attack, Defense, Speed, and Special stats
+	ld bc, (NUM_STATS - 1) * 2
+	call CopyData
+;;
 	ld bc, wBattleMonMoves - wBattleMonPP
 	add hl, bc ; ld hl, wBattleMonMoves
 	ld b, NUM_MOVES
@@ -99,7 +104,7 @@ TransformEffect_:
 	ld a, [hli]
 	and a
 	jr z, .lessThanFourMoves
-	ld a, $5
+	ld a, 5
 	ld [de], a
 	inc de
 	dec b
@@ -136,7 +141,9 @@ TransformEffect_:
 	ld l, e
 	pop de
 .gotStatsOrModsToCopy
-	ld bc, $a
+; original for special split
+;	ld bc, $a
+	ld bc, (NUM_STATS - 1) * 2
 	jp CopyData
 
 .failed

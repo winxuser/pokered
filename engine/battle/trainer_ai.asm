@@ -586,7 +586,7 @@ AISwitchIfEnoughMons:
 
 SwitchEnemyMon:
 
-; prepare to withdraw the active monster: copy hp, number, and status to roster
+; prepare to withdraw the active monster: copy HP, party pos, and status to roster
 
 	ld a, [wEnemyMonPartyPos]
 	ld hl, wEnemyMon1HP
@@ -595,7 +595,7 @@ SwitchEnemyMon:
 	ld d, h
 	ld e, l
 	ld hl, wEnemyMonHP
-	ld bc, 4
+	ld bc, MON_STATUS + 1 - MON_HP ; also copies party pos in-between HP and status
 	rst _CopyData
 
 	ld hl, AIBattleWithdrawText

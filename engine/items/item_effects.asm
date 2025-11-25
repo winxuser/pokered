@@ -1350,13 +1350,13 @@ ItemUseMedicine:
 .statNameInnerLoop
 	ld a, [hli]
 	ld b, a
-	ld a, $50
+	ld a, '@'
 	cp b
 	jr nz, .statNameInnerLoop
 	jr .statNameLoop
 .gotStatName
 	ld de, wStringBuffer
-	ld bc, 10
+	ld bc, NAME_LENGTH - 1 ; all VitaminStats are at most 10 bytes
 	rst _CopyData ; copy the stat's name to wStringBuffer
 	ld a, SFX_HEAL_AILMENT
 	rst _PlaySound
@@ -2086,7 +2086,7 @@ ItemUsePPRestore:
 	ld bc, wPartyMon2 - wPartyMon1
 	call AddNTimes
 	ld de, wBattleMonPP
-	ld bc, 4
+	ld bc, NUM_MOVES
 	rst _CopyData ; copy party data to in-battle data
 .skipUpdatingInBattleData
 	ld a, SFX_HEAL_AILMENT
