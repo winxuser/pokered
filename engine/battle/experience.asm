@@ -266,7 +266,7 @@ IF GEN_2_GRAPHICS
 ELSE
 	call LoadMonData
 ENDC
-	ld d, $1
+	ld d, LEVEL_UP_STATS_BOX
 	callfar PrintStatsBox
 	call WaitForTextScrollButtonPress
 	call LoadScreenTilesFromBuffer1

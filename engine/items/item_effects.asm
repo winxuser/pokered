@@ -1448,15 +1448,15 @@ ItemUseMedicine:
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 	call LoadMonData
-	ld d, $01
-	callfar PrintStatsBox ; display new stats text box
-	call WaitForTextScrollButtonPress ; wait for button press
+	ld d, LEVEL_UP_STATS_BOX
+	callfar PrintStatsBox
+	call WaitForTextScrollButtonPress
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
-	predef LearnMoveFromLevelUp ; learn level up move, if any
+	predef LearnMoveFromLevelUp
 	xor a
 	ld [wForceEvolution], a
-	callfar TryEvolvingMon ; evolve pokemon, if appropriate
+	callfar TryEvolvingMon
 	ld a, $01
 	ld [wUpdateSpritesEnabled], a
 	pop af
@@ -1484,8 +1484,8 @@ ItemUseBait:
 	ld hl, wEnemyMonActualCatchRate ; catch rate
 	srl [hl] ; halve catch rate
 	ld a, BAIT_ANIM
-	ld hl, wSafariBaitFactor ; bait factor
-	ld de, wSafariEscapeFactor ; escape factor
+	ld hl, wSafariBaitFactor
+	ld de, wSafariEscapeFactor
 	jr BaitRockCommon
 
 ; for CASCADEBADGE when used from the
@@ -1502,8 +1502,8 @@ ItemUseRock:
 .noCarry
 	ld [hl], a
 	ld a, ROCK_ANIM
-	ld hl, wSafariEscapeFactor ; escape factor
-	ld de, wSafariBaitFactor ; bait factor
+	ld hl, wSafariEscapeFactor
+	ld de, wSafariBaitFactor
 
 BaitRockCommon:
 	ld [wAltAnimationID], a
