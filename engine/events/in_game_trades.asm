@@ -121,7 +121,7 @@ InGameTrade_DoTrade:
 .skip_mon_check
 	ld a, [wWhichPokemon]
 	ld hl, wPartyMon1Level
-	ld bc, wPartyMon2 - wPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes
 	ld a, [hl]
 	ld [wCurEnemyLevel], a
@@ -228,7 +228,7 @@ InGameTrade_PrepareTradeData:
 	ld de, wLinkEnemyTrainerName
 	call InGameTrade_CopyData
 	ld hl, wPartyMon1OTID
-	ld bc, wPartyMon2 - wPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	ld a, [wWhichPokemon]
 	call AddNTimes
 	ld de, wTradedPlayerMonOTID
@@ -261,7 +261,7 @@ InGameTrade_CopyDataToReceivedMon:
 	ld bc, NAME_LENGTH
 	rst _CopyData
 	ld hl, wPartyMon1OTID
-	ld bc, wPartyMon2 - wPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	call InGameTrade_GetReceivedMonPointer
 	ld hl, wTradedEnemyMonOTID
 	ld bc, 2

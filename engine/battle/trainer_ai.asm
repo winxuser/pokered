@@ -572,7 +572,7 @@ AISwitchIfEnoughMons:
 	inc d
 .Fainted
 	push bc
-	ld bc, wEnemyMon2 - wEnemyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	add hl, bc
 	pop bc
 	dec c
@@ -590,7 +590,7 @@ SwitchEnemyMon:
 
 	ld a, [wEnemyMonPartyPos]
 	ld hl, wEnemyMon1HP
-	ld bc, wEnemyMon2 - wEnemyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes
 	ld d, h
 	ld e, l
@@ -629,7 +629,7 @@ AICureStatus:
 ; cures the status of enemy's active pokemon
 	ld a, [wEnemyMonPartyPos]
 	ld hl, wEnemyMon1Status
-	ld bc, wEnemyMon2 - wEnemyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes
 	xor a
 	ld [hl], a ; clear status in enemy team roster

@@ -4,9 +4,11 @@ MACRO flag_array
 	ds ((\1) + 7) / 8
 ENDM
 
-DEF BOX_STRUCT_LENGTH EQU 27 + NUM_MOVES * 2
+
+;DEF BOX_STRUCT_LENGTH EQU 27 + NUM_MOVES * 2
 
 ; The distance from HPExp to DVs used to be 11 bytes, but is now 13
+
 MACRO box_struct
 \1Species::    db
 \1HP::         dw
