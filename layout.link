@@ -29,12 +29,12 @@ ROM0
 	"joypad"
 	; $0061
 	"High Home"
-	org $00be
-	"ColorizationHome"
-	org $100
-	"Header"
-	org $150
-	"Home"
+;	org $00be
+;	"ColorizationHome"
+;	org $100
+;	"Header"
+;	org $150
+;	"Home"
 	org $1665
 	"LoadMonFrontSprite"
 	org $1dd9

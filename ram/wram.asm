@@ -2247,6 +2247,8 @@ wSerialEnemyDataBlock:: ; ds $1a8
 
 	ds 9
 
+wEnemyPartyBank:: db
+wEnemyPartyFlags:: db
 wEnemyPartyCount:: db
 wEnemyPartySpecies:: ds PARTY_LENGTH + 1
 

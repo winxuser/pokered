@@ -574,3 +574,7 @@ SECTION "Move Effects", ROMX
 INCLUDE "engine/battle/move_effects/recoil.asm"
 INCLUDE "engine/battle/move_effects/conversion.asm"
 INCLUDE "engine/battle/move_effects/haze.asm"
+
+SECTION "Trainer Parties 1", ROMX
+
+INCLUDE "data/trainers/parties.asm"
