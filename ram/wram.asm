@@ -1820,9 +1820,20 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-wNumBagItems:: db
-; item, quantity
-wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
+		;ds 44
+
+	;;;;;;;;; note: CHANGED: this empty space is now used for bigger bag space
+	UNION
+	; original size of this empty space
+
+	NEXTU
+	wNumBagItems:: db
+	; item, quantity
+       wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1 ; now holds 50 items
+       ;;;;
+       ; 26 bytes left to use
+       ENDU
+       ;;;;;;;;;;
 
 wPlayerMoney:: ds 3 ; BCD
 
@@ -1908,7 +1919,7 @@ wWarpEntries:: ds MAX_WARP_EVENTS * 4 ; Y, X, warp ID, map ID
 wDestinationWarpID:: db
 
 UNION
-	ds 128
+	ds 111
 NEXTU
 wChannel5:: channel_struct wChannel5
 wChannel6:: channel_struct wChannel6
@@ -1969,7 +1980,7 @@ wTilesetTalkingOverTiles:: ds 3
 
 wGrassTile:: db
 
-	ds 4
+	;ds 4
 
 wNumBoxItems:: db
 ; item, quantity
@@ -1992,7 +2003,7 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-	ds 5
+	;ds 5
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
@@ -2003,7 +2014,7 @@ wSavedSpriteImageIndex:: db
 ; terminated with $FF
 wMissableObjectList:: ds 16 * 2 + 1
 
-	ds 1
+	;ds 1
 
 wGameProgressFlags::
 wOaksLabCurScript:: db
@@ -2124,7 +2135,7 @@ wRoute18Gate1FCurScript:: db
 wGameProgressFlagsEnd::
 
 UNION
-	ds 128
+	ds 123
 NEXTU
 wChannel7:: channel_struct wChannel7
 wChannel8:: channel_struct wChannel8
