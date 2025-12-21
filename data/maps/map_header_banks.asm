@@ -111,7 +111,7 @@ MapHeaderBanks::
 	db BANK(IceCavern_h) ; UNUSED_MAP_6B
 	db BANK(VictoryRoad1F_h)
 	db BANK(Pokecenter_h) ; UNUSED_MAP_6D
-	db BANK(NationalPark_h) ; UNUSED_MAP_6E
+	db $1D ; UNUSED_MAP_6E
 	db $1D ; UNUSED_MAP_6F
 	db $1D ; UNUSED_MAP_70
 	db BANK(LancesRoom_h)

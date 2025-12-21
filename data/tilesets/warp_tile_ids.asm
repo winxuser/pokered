@@ -27,7 +27,6 @@ WarpTileIDPointers:
 	dw .IceCavernWarpTileIDs
 	dw .MartUpdateWarpTileIDs
 	dw .LeagueWarpTileIDs
-	dw .ParkWarpTileIDs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
@@ -54,7 +53,6 @@ ENDM
 .LeagueWarpTileIDs
 	warp_tiles $5E
 
-.ParkWarpTileIDs:
 .ForestWarpTileIDs:
 	warp_tiles $13
 

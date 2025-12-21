@@ -113,7 +113,7 @@ MapHSPointers:
 	dw NoHS           ; ICE_CAVERN UNUSED_MAP_6B
 	dw VictoryRoad1FHS
 	dw NoHS           ; Pokecenter
-	dw NoHS ; NationalPark
+	dw NoHS 	      ;UNUSED_MAP_6E
 	dw NoHS
 	dw NoHS
 	dw NoHS

@@ -111,7 +111,7 @@ MapHeaderPointers::
 	dw IceCavern_h           ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
 	dw Pokecenter_h          ; UNUSED_MAP_6D
-	dw NationalPark_h        ; UNUSED_MAP_6E
+	dw LancesRoom_h          ; UNUSED_MAP_6E
 	dw LancesRoom_h          ; UNUSED_MAP_6F
 	dw LancesRoom_h          ; UNUSED_MAP_70
 	dw LancesRoom_h

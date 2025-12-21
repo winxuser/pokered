@@ -28,7 +28,6 @@ MapPaletteSets:
 	dw IceCavernPalSet   ; ICE_CAVERN
 	dw MartUpdatePalSet  ; MART UPDATE
 	dw LeaguePalSet      ; LEAGUE
-	dw ParkPalSet        ; NATIONAL PARK
 	assert_table_length NUM_TILESETS
 
 OverworldPalSet:
@@ -78,7 +77,6 @@ LeaguePalSet:
 	db INDOOR_LIGHT_BLUE
 	db PC_POKEBALL_PAL
 
-ParkPalSet:
 ForestPalSet:
 	db OUTDOOR_GRAY
 	db FOREST_ROCKS

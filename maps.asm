@@ -1245,8 +1245,3 @@ INCLUDE "data/maps/headers/Pokecenter.asm"
 INCLUDE "scripts/Pokecenter.asm"
 INCLUDE "data/maps/objects/Pokecenter.asm"
 Pokecenter_Blocks: INCBIN "maps/Pokecenter.blk"
-
-INCLUDE "data/maps/headers/NationalPark.asm"
-INCLUDE "scripts/NationalPark.asm"
-INCLUDE "data/maps/objects/NationalPark.asm"
-NationalPark_Blocks: INCBIN "maps/NationalPark.blk"

@@ -33,7 +33,6 @@ MapPaletteAssignments:
 	dw IceCavernPalMap   ; ICE_CAVERN
 	dw MartUpdatePalMap  ; MART UPDATE
 	dw LeaguePalMap      ; LEAGUE
-	dw ParkPalMap        ; NATIONAL PARK
 	assert_table_length NUM_TILESETS
 
 OverworldPalMap:
@@ -106,6 +105,3 @@ MartUpdatePalMap:
 
 LeaguePalMap:
     INCLUDE "color/tilesets/league.asm"
-
-ParkPalMap:
-    INCLUDE "color/tilesets/park.asm"
