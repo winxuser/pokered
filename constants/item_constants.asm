@@ -48,11 +48,12 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const IRON          ; $25
 	const CARBOS        ; $26
 	const CALCIUM       ; $27
+	const ZINC
 	const RARE_CANDY    ; $28
 	const DOME_FOSSIL   ; $29
 	const HELIX_FOSSIL  ; $2A
 	const SECRET_KEY    ; $2B
-	const ITEM_2C       ; $2C ; unused
+;	const ITEM_2C       ; $2C ; unused
 	const BIKE_VOUCHER  ; $2D
 	const X_ACCURACY    ; $2E
 	const LEAF_STONE    ; $2F
@@ -101,7 +102,6 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const KINGS_ROCK
 	const DRAGON_SCALE
 	const UPGRADE
-	const ZINC
 ; Berries start here
 	const ORAN_BERRY
 	const SITRUS_BERRY

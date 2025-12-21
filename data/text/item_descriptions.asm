@@ -134,6 +134,11 @@ _CalciumDescription::
 	next "of one #MON."
 	prompt
 
+_ZincDescription::
+	text "Raises SPCDEF of"
+	next "a #MON."
+	prompt
+
 _RareCandyDescription::
 	text "Raises level of a"
 	next "#MON by one."
@@ -382,11 +387,6 @@ _LumBerryDescription::
 _SwegBerryDescription::
 	text "Raises level of a"
 	next "#MON by one."
-	prompt
-
-_ZincDescription::
-	text "Raises SPCDEF of"
-	next "a #MON."
 	prompt
 
 _HM01Description::

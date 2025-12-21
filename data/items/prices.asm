@@ -39,11 +39,12 @@ ItemPrices::
 	bcd3 2000  ; IRON
 	bcd3 2000  ; CARBOS
 	bcd3 2000  ; CALCIUM
+	bcd3 2000  ; ZINC
 	bcd3 4800  ; RARE_CANDY
 	bcd3 0     ; DOME_FOSSIL
 	bcd3 0     ; HELIX_FOSSIL
 	bcd3 0     ; SECRET_KEY
-	bcd3 0     ; ITEM_2C
+;	bcd3 0     ; ITEM_2C
 	bcd3 0     ; BIKE_VOUCHER
 	bcd3 950   ; X_ACCURACY
 	bcd3 2100  ; LEAF_STONE
@@ -92,7 +93,6 @@ ItemPrices::
 	bcd3 2100  ; KINGS_ROCK
 	bcd3 2100  ; DRAGON_SCALE
 	bcd3 2100  ; UPGRADE
-	bcd3 2000  ; ZINC
 	bcd3 10    ; ORAN_BERRY
 	bcd3 10    ; SITRUS_BERRY
 	bcd3 10    ; LEPPA_BERRY

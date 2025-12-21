@@ -39,11 +39,12 @@ KeyItemFlags:
 	dbit FALSE ; IRON
 	dbit FALSE ; CARBOS
 	dbit FALSE ; CALCIUM
+	dbit FALSE ; ZINC
 	dbit FALSE ; RARE_CANDY
 	dbit TRUE  ; DOME_FOSSIL
 	dbit TRUE  ; HELIX_FOSSIL
 	dbit TRUE  ; SECRET_KEY
-	dbit TRUE  ; ITEM_2C
+;	dbit TRUE  ; ITEM_2C
 	dbit TRUE  ; BIKE_VOUCHER
 	dbit FALSE ; X_ACCURACY
 	dbit FALSE ; LEAF_STONE
@@ -92,7 +93,6 @@ KeyItemFlags:
 	dbit FALSE ; KINGS_ROCK
 	dbit FALSE ; DRAGON_SCALE
 	dbit FALSE ; UPGRADE
-	dbit FALSE ; ZINC
 	dbit FALSE ; ORAN_BERRY
 	dbit FALSE ; SITRUS_BERRY
 	dbit FALSE ; LEPPA_BERRY

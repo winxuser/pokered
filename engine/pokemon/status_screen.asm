@@ -294,11 +294,8 @@ PrintStatsBox:
 	ASSERT STATUS_SCREEN_STATS_BOX == 0
 	and a
 	jr nz, .LevelUpStatsBox ; battle or Rare Candy
-	hlcoord 0, 8
-	ld b, 8
-	ld c, 8
-	call TextBoxBorder
-	hlcoord 1, 9
+; Don't draw a border; status screen needs every line it can get here
+	hlcoord 1, 8 ; Start printing stats from here
 	ld bc, SCREEN_WIDTH + 5 ; one row down and 5 columns right
 	jr .PrintStats
 .LevelUpStatsBox

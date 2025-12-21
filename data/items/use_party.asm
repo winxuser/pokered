@@ -19,6 +19,7 @@ UsableItems_PartyMenu:
 	db IRON
 	db CARBOS
 	db CALCIUM
+	db ZINC
 	db RARE_CANDY
 	db LEAF_STONE
 	db FULL_HEAL
@@ -45,7 +46,6 @@ UsableItems_PartyMenu:
 	db KINGS_ROCK
 	db DRAGON_SCALE
 	db UPGRADE
-	db ZINC
 	db ORAN_BERRY
 	db SITRUS_BERRY
 	db LEPPA_BERRY

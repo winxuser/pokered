@@ -6,8 +6,8 @@ StatModTextStrings:
 	li "ATTACK"
 	li "DEFENSE"
 	li "SPEED"
-	li "SPCATK"
-	li "SPCDEF"
+	li "SPC.ATK"
+	li "SPC.DEF"
 	assert_list_length SPCLDEF_DOWN_SIDE_EFFECT - ATTACK_DOWN_SIDE_EFFECT3 + 12 ;not sure why this is, but ill look into it
 	li "ACCURACY"
 	li "EVADE"

@@ -89,6 +89,8 @@ ItemDescriptionPointers:
 	text_end
 	text_far _CalciumDescription
 	text_end
+	text_far _ZincDescription
+	text_end
 	text_far _RareCandyDescription
 	text_end
 	text_far _DomeFossilDescription
@@ -97,8 +99,8 @@ ItemDescriptionPointers:
 	text_end
 	text_far _SecretKeyDescription
 	text_end
-	text_far _UnusedItemDescription
-	text_end
+;	text_far _UnusedItemDescription
+;	text_end
 	text_far _BikeVoucherDescription
 	text_end
 	text_far _XAccuracyDescription
@@ -192,8 +194,6 @@ ItemDescriptionPointers:
 	text_far _DragonScaleDescription
 	text_end
 	text_far _UpgradeDescription
-	text_end
-	text_far _ZincDescription
 	text_end
 	text_far _OranBerryDescription
 	text_end
