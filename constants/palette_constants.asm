@@ -62,7 +62,6 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_BADGE     ; $22
 	const PAL_CAVE      ; $23
 	const PAL_GAMEFREAK ; $24
-IF GEN_2_GRAPHICS
 	const PAL_BULBASAUR  ; $25
 	const PAL_IVYSAUR    ; $26
 	const PAL_VENUSAUR   ; $27
@@ -214,28 +213,6 @@ IF GEN_2_GRAPHICS
 	const PAL_DRAGONITE  ; $B9
 	const PAL_MEWTWO     ; $BA
 	const PAL_MEW        ; $BB
-; Start of Gen 2 Pokemon
-	const PAL_CHIKORITA
-	const PAL_BAYLEEF
-	const PAL_MEGANIUM
-	const PAL_CYNDAQUIL
-	const PAL_QUILAVA
-	const PAL_TYPHLOSION
-	const PAL_TOTODILE
-	const PAL_CROCONAW
-	const PAL_FERALIGATR
-	const PAL_SENTRET
-	const PAL_FURRET
-	const PAL_HOOTHOOT
-	const PAL_NOCTOWL
-	const PAL_LEDYBA
-	const PAL_LEDIAN
-	const PAL_SPINARAK
-	const PAL_ARIADOS
-	const PAL_CROBAT
-	const PAL_CHINCHOU
-	const PAL_LANTURN
-;	const PAL_PICHU
 	const PAL_YOUNGSTER     ; $BC
 	const PAL_BUGCATCHER    ; $BD
 	const PAL_LASS          ; $BE
@@ -284,7 +261,6 @@ IF GEN_2_GRAPHICS
 	const PAL_AGATHA        ; $E9
 	const PAL_LANCE         ; $EA
 	const PAL_HERO          ; $EB
-ENDC
 ; Start of shiny Pokemon
 	const PAL_SHINY_BULBASAUR  ; $25
 	const PAL_SHINY_IVYSAUR    ; $26
@@ -437,4 +413,105 @@ ENDC
 	const PAL_SHINY_DRAGONITE  ; $B9
 	const PAL_SHINY_MEWTWO     ; $BA
 	const PAL_SHINY_MEW        ; $BB
+	const PAL_SHINY_CHIKORITA  ; $25
+	const PAL_SHINY_BAYLEEF    ; $26
+	const PAL_SHINY_MEGANIUM   ; $27
+	const PAL_SHINY_CYNDAQUIL  ; $28
+	const PAL_SHINY_QUILAVA    ; $29
+	const PAL_SHINY_TYPHLOSION ; $2A
+	const PAL_SHINY_TOTODILE   ; $2B
+	const PAL_SHINY_CROCONAW   ; $2C
+	const PAL_SHINY_FERALIGATR ; $2D
+	const PAL_SHINY_SENTRET    ; $2E
+	const PAL_SHINY_FURRET     ; $2F
+	const PAL_SHINY_HOOTHOOT   ; $30
+	const PAL_SHINY_NOCTOWL    ; $31
+	const PAL_SHINY_LEDYBA     ; $32
+	const PAL_SHINY_LEDIAN     ; $33
+	const PAL_SHINY_SPINARAK   ; $34
+	const PAL_SHINY_ARIADOS    ; $35
+	const PAL_SHINY_CROBAT     ; $36
+	const PAL_SHINY_CHINCHOU   ; $37
+	const PAL_SHINY_LANTURN    ; $38
+	const PAL_SHINY_PICHU      ; $39
+	const PAL_SHINY_CLEFFA     ; $3A
+	const PAL_SHINY_IGGLYBUFF  ; $3B
+	const PAL_SHINY_TOGEPI     ; $3C
+	const PAL_SHINY_TOGETIC    ; $3D
+	const PAL_SHINY_NATU       ; $3E
+	const PAL_SHINY_XATU       ; $3F
+	const PAL_SHINY_MAREEP     ; $40
+	const PAL_SHINY_FLAAFFY    ; $41
+	const PAL_SHINY_AMPHAROS   ; $42
+	const PAL_SHINY_BELLOSSOM  ; $43
+	const PAL_SHINY_MARILL     ; $44
+	const PAL_SHINY_AZUMARILL  ; $45
+	const PAL_SHINY_SUDOWOODO  ; $46
+	const PAL_SHINY_POLITOED   ; $47
+	const PAL_SHINY_HOPPIP     ; $48
+	const PAL_SHINY_SKIPLOOM   ; $49
+	const PAL_SHINY_JUMPLUFF   ; $4A
+	const PAL_SHINY_AIPOM      ; $4B
+	const PAL_SHINY_SUNKERN    ; $4C
+	const PAL_SHINY_SUNFLORA   ; $4D
+	const PAL_SHINY_YANMA      ; $4E
+	const PAL_SHINY_WOOPER     ; $4F
+	const PAL_SHINY_QUAGSIRE   ; $50
+	const PAL_SHINY_ESPEON     ; $51
+	const PAL_SHINY_UMBREON    ; $52
+	const PAL_SHINY_MURKROW    ; $53
+	const PAL_SHINY_SLOWKING   ; $54
+	const PAL_SHINY_MISDREAVUS ; $55
+	const PAL_SHINY_UNOWN      ; $56
+	const PAL_SHINY_WOBBUFFET  ; $57
+	const PAL_SHINY_GIRAFARIG  ; $58
+	const PAL_SHINY_PINECO     ; $59
+	const PAL_SHINY_FORRETRESS ; $5A
+	const PAL_SHINY_DUNSPARCE  ; $5B
+	const PAL_SHINY_GLIGAR     ; $5C
+	const PAL_SHINY_STEELIX    ; $5D
+	const PAL_SHINY_SNUBBULL   ; $5E
+	const PAL_SHINY_GRANBULL   ; $5F
+	const PAL_SHINY_QWILFISH   ; $60
+	const PAL_SHINY_SCIZOR     ; $61
+	const PAL_SHINY_SHUCKLE    ; $62
+	const PAL_SHINY_HERACROSS  ; $63
+	const PAL_SHINY_SNEASEL    ; $64
+	const PAL_SHINY_TEDDIURSA  ; $65
+	const PAL_SHINY_URSARING   ; $66
+	const PAL_SHINY_SLUGMA     ; $67
+	const PAL_SHINY_MAGCARGO   ; $68
+	const PAL_SHINY_SWINUB     ; $69
+	const PAL_SHINY_PILOSWINE  ; $6A
+	const PAL_SHINY_CORSOLA    ; $6B
+	const PAL_SHINY_REMORAID   ; $6C
+	const PAL_SHINY_OCTILLERY  ; $6D
+	const PAL_SHINY_DELIBIRD   ; $6E
+	const PAL_SHINY_MANTINE    ; $6F
+	const PAL_SHINY_SKARMORY   ; $70
+	const PAL_SHINY_HOUNDOUR   ; $71
+	const PAL_SHINY_HOUNDOOM   ; $72
+	const PAL_SHINY_KINGDRA    ; $73
+	const PAL_SHINY_PHANPY     ; $74
+	const PAL_SHINY_DONPHAN    ; $75
+	const PAL_SHINY_PORYGON2   ; $76
+	const PAL_SHINY_STANTLER   ; $77
+	const PAL_SHINY_SMEARGLE   ; $78
+	const PAL_SHINY_TYROGUE    ; $79
+	const PAL_SHINY_HITMONTOP  ; $7A
+	const PAL_SHINY_SMOOCHUM   ; $7B
+	const PAL_SHINY_ELEKID     ; $7C
+	const PAL_SHINY_MAGBY      ; $7D
+	const PAL_SHINY_MILTANK    ; $7E
+	const PAL_SHINY_BLISSEY    ; $7F
+	const PAL_SHINY_RAIKOU     ; $80
+	const PAL_SHINY_ENTEI      ; $81
+	const PAL_SHINY_SUICUNE    ; $82
+	const PAL_SHINY_LARVITAR   ; $83
+	const PAL_SHINY_PUPITAR    ; $84
+	const PAL_SHINY_TYRANITAR  ; $85
+	const PAL_SHINY_LUGIA      ; $86
+	const PAL_SHINY_HOOH       ; $87
+	const PAL_SHINY_CELEBI     ; $88
+
 DEF NUM_SGB_PALS EQU const_value

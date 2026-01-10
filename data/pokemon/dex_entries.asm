@@ -1732,7 +1732,7 @@ GranbullDexEntry:
 	text_end
 
 QwilfishDexEntry:
-	db "BALLOON"
+	db "BALLOON@"
 	db 1,8
 	dw 86
 	text_far _QwilfishDexEntry
