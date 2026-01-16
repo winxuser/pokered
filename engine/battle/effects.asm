@@ -7,9 +7,9 @@ _JumpMoveEffect:
 	ldh a, [hWhoseTurn]
 	and a
 	ld a, [wPlayerMoveEffect]
-	jr z, .next1
+	jr z, .next
 	ld a, [wEnemyMoveEffect]
-.next1
+.next
 	dec a ; subtract 1, there is no special effect for 00
 	add a ; x2, 16bit pointers
 	ld hl, MoveEffectPointerTable
@@ -814,7 +814,7 @@ UpdateLoweredStatDone:
 	call PrintStatText
 	pop de
 	ld a, [de]
-	cp $44
+	cp ATTACK_DOWN_SIDE_EFFECT1 ; for all side effects, move animation has already played, skip it
 	jr nc, .ApplyBadgeBoostsAndStatusPenalties
     ldh a, [hWhoseTurn] ; check who is using the move
     and a
@@ -1598,9 +1598,9 @@ CheckTargetSubstitute:
 	ld hl, wEnemyBattleStatus2
 	ldh a, [hWhoseTurn]
 	and a
-	jr z, .next1
+	jr z, .next
 	ld hl, wPlayerBattleStatus2
-.next1
+.next
 	bit HAS_SUBSTITUTE_UP, [hl]
 	pop hl
 	ret

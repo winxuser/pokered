@@ -483,6 +483,7 @@ ENDC
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
 	call Delay3
+	call WaitForTextScrollButtonPress ; this was added, not sure when it was removed, but will test
 	pop af
     ret
 
