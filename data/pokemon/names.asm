@@ -2,7 +2,7 @@ MonsterNames::
 	table_width NAME_LENGTH - 1
 	dname "RHYDON"
 	dname "KANGASKHAN"
-	dname "NIDORAN"
+	dname "NIDORAN♂"
 	dname "CLEFAIRY"
 	dname "SPEAROW"
 	dname "VOLTORB"
@@ -14,7 +14,7 @@ MonsterNames::
 	dname "EXEGGCUTE"
 	dname "GRIMER"
 	dname "GENGAR"
-	dname "NIDORAN"
+	dname "NIDORAN♀"
 	dname "NIDOQUEEN"
 	dname "CUBONE"
 	dname "RHYHORN"
