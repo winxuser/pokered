@@ -2,7 +2,7 @@
 	const_export BRUNOSROOM_BRUNO
 
 BrunosRoom_Object:
-	db $3 ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event  4, 11, LORELEIS_ROOM, 3

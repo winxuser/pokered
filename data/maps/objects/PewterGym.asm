@@ -4,7 +4,7 @@
 	const_export PEWTERGYM_GYM_GUIDE
 
 PewterGym_Object:
-	db $3 ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event  4, 13, LAST_MAP, 5
@@ -15,6 +15,6 @@ PewterGym_Object:
 	def_object_events
 	object_event  4,  1, SPRITE_BROCK, STAY, DOWN, TEXT_PEWTERGYM_BROCK, OPP_BROCK, 1
 	object_event  3,  6, SPRITE_COOLTRAINER_M, STAY, RIGHT, TEXT_PEWTERGYM_COOLTRAINER_M, OPP_JR_TRAINER_M, 1
-	object_event  7, 10, SPRITE_GYM_GUIDE, STAY, DOWN, TEXT_PEWTERGYM_GYM_GUIDE
+	object_event  7, 11, SPRITE_GYM_GUIDE, STAY, DOWN, TEXT_PEWTERGYM_GYM_GUIDE
 
 	def_warps_to PEWTER_GYM

@@ -16,12 +16,12 @@ LanceShowOrHideEntranceBlocks:
 	CheckEvent EVENT_LANCES_ROOM_LOCK_DOOR
 	jr nz, .closeEntrance
 	; open entrance
-	ld a, $31
-	ld b, $32
+	ld a, $4b
+	ld b, $56
 	jp .setEntranceBlocks
 .closeEntrance
-	ld a, $72
-	ld b, $73
+	ld a, $5f
+	ld b, $60
 .setEntranceBlocks
 ; Replaces the tile blocks so the player can't leave.
 	push bc

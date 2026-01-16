@@ -27,6 +27,7 @@ WarpTileIDPointers:
 	dw .IceCavernWarpTileIDs
 	dw .MartUpdateWarpTileIDs
 	dw .LeagueWarpTileIDs
+	dw .OaklabWarpTileIDs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
@@ -58,7 +59,7 @@ ENDM
 
 .DojoWarpTileIDs:
 .GymWarpTileIDs:
-	warp_tiles $4A
+	warp_tiles $0A, $01, $4A, $50
 
 .HouseWarpTileIDs:
 	warp_tiles $54, $5C, $32
@@ -94,6 +95,9 @@ ENDM
 .PlateauWarpTileIDs:
 	db $1B, $3B
 	; fallthrough
+
+.OaklabWarpTileIDs:
+	warp_tiles $04, $05
 
 .ShipPortWarpTileIDs:
 .ClubWarpTileIDs:

@@ -21,7 +21,7 @@ Pokecenter_Coll::
 
 Dojo_Coll::
 Gym_Coll::
-	coll_tiles $11, $16, $19, $2b, $3c, $3d, $3f, $4a, $4c, $4d, $03
+	coll_tiles $0a, $01, $09, $1c, $1d, $24, $25, $26, $2b, $3f, $41, $4a, $4b, $48, $50
 
 Forest_Coll::
 	coll_tiles $05, $13, $17
@@ -78,5 +78,5 @@ MartUpdate_Coll::
 League_Coll::
     coll_tiles $11, $1a, $1c, $3c, $5e
 
-Park_Coll::
-    coll_tiles $20, $2e, $30, $37, $39, $40, $5a, $5e, $5f
+Oaklab_Coll::
+    coll_tiles $04, $05, $13

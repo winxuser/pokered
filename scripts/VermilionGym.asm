@@ -30,12 +30,12 @@ VermilionGym_Script:
 VermilionGymSetDoorTile:
 	CheckEvent EVENT_2ND_LOCK_OPENED
 	jr nz, .doorsOpen
-	ld a, $24 ; double door tile ID
+	ld a, $3A ; double door tile ID
 	jr .replaceTile
 .doorsOpen
 	ld a, SFX_GO_INSIDE
 	rst _PlaySound
-	ld a, $5 ; clear floor tile ID
+	ld a, $35 ; clear floor tile ID
 .replaceTile
 	ld [wNewTileBlockID], a
 	lb bc, 2, 2

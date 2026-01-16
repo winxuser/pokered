@@ -2,7 +2,7 @@
 	const_export LORELEISROOM_LORELEI
 
 LoreleisRoom_Object:
-	db $3 ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event  4, 11, INDIGO_PLATEAU_LOBBY, 3

@@ -12,7 +12,7 @@ BookshelfTileIDs:
 	bookshelf_tile REDS_HOUSE_1, $32, BookOrSculptureText
 	bookshelf_tile LAB,          $28, BookOrSculptureText
 	bookshelf_tile LOBBY,        $16, ElevatorText
-	bookshelf_tile GYM,          $1D, BookOrSculptureText
+	bookshelf_tile GYM,          $12, BookOrSculptureText
 	bookshelf_tile DOJO,         $1D, BookOrSculptureText
 	bookshelf_tile GATE,         $22, BookOrSculptureText
 	bookshelf_tile MART,         $54, PokemonStuffText

@@ -3,7 +3,7 @@
 	const_export CHAMPIONSROOM_OAK
 
 ChampionsRoom_Object:
-	db $3 ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event  3,  7, LANCES_ROOM, 2

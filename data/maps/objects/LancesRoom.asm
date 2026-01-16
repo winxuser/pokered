@@ -2,7 +2,7 @@
 	const_export LANCESROOM_LANCE
 
 LancesRoom_Object:
-	db $3 ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event 24, 16, AGATHAS_ROOM, 3

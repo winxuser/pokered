@@ -9,7 +9,7 @@
 	const_export FUCHSIAGYM_GYM_GUIDE
 
 FuchsiaGym_Object:
-	db $3 ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event  4, 17, LAST_MAP, 6

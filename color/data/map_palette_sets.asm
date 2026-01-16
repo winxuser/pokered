@@ -28,6 +28,7 @@ MapPaletteSets:
 	dw IceCavernPalSet   ; ICE_CAVERN
 	dw MartUpdatePalSet  ; MART UPDATE
 	dw LeaguePalSet      ; LEAGUE
+	dw OaklabPalSet      ; OAKLAB
 	assert_table_length NUM_TILESETS
 
 OverworldPalSet:
@@ -52,6 +53,7 @@ ShipPalSet:
 ShipPortPalSet:
 ClubPalSet:
 FacilityPalSet:
+OaklabPalSet:
 	db INDOOR_GRAY
 	db INDOOR_RED
 	db INDOOR_GREEN

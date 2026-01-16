@@ -10,7 +10,7 @@
 	const_export SAFFRONGYM_GYM_GUIDE
 
 SaffronGym_Object:
-	db $2e ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event  8, 17, LAST_MAP, 3
@@ -57,6 +57,6 @@ SaffronGym_Object:
 	object_event  3, 13, SPRITE_CHANNELER, STAY, DOWN, TEXT_SAFFRONGYM_CHANNELER3, OPP_CHANNELER, 24
 	object_event 17, 13, SPRITE_YOUNGSTER, STAY, DOWN, TEXT_SAFFRONGYM_YOUNGSTER3, OPP_PSYCHIC_TR, 3
 	object_event  3,  1, SPRITE_YOUNGSTER, STAY, DOWN, TEXT_SAFFRONGYM_YOUNGSTER4, OPP_PSYCHIC_TR, 4
-	object_event 10, 15, SPRITE_GYM_GUIDE, STAY, DOWN, TEXT_SAFFRONGYM_GYM_GUIDE
+	object_event  9, 15, SPRITE_GYM_GUIDE, STAY, DOWN, TEXT_SAFFRONGYM_GYM_GUIDE
 
 	def_warps_to SAFFRON_GYM

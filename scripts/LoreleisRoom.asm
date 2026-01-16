@@ -18,10 +18,10 @@ LoreleiShowOrHideExitBlock:
 	set BIT_STARTED_ELITE_4, [hl]
 	CheckEvent EVENT_BEAT_LORELEIS_ROOM_TRAINER_0
 	jr z, .blockExitToNextRoom
-	ld a, $5
+	ld a, $55
 	jr .setExitBlock
 .blockExitToNextRoom
-	ld a, $24
+	ld a, $14
 .setExitBlock
 	ld [wNewTileBlockID], a
 	lb bc, 0, 2

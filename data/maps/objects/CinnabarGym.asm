@@ -10,7 +10,7 @@
 	const_export CINNABARGYM_GYM_GUIDE
 
 CinnabarGym_Object:
-	db $2e ; border block
+	db $00 ; border block
 
 	def_warp_events
 	warp_event 16, 17, LAST_MAP, 2

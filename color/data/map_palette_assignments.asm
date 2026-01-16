@@ -33,6 +33,7 @@ MapPaletteAssignments:
 	dw IceCavernPalMap   ; ICE_CAVERN
 	dw MartUpdatePalMap  ; MART UPDATE
 	dw LeaguePalMap      ; LEAGUE
+	dw OaklabPalMap      ; OAKLAB
 	assert_table_length NUM_TILESETS
 
 OverworldPalMap:
@@ -105,3 +106,6 @@ MartUpdatePalMap:
 
 LeaguePalMap:
     INCLUDE "color/tilesets/league.asm"
+
+OaklabPalMap:
+    INCLUDE "color/tilesets/oaklab.asm"
