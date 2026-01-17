@@ -131,3 +131,42 @@ _CeruleanGymGymGuideBeatMistyText::
 	line "we make a pretty"
 	cont "darn good team!"
 	done
+
+_CeruleanGymRematchPreBattleText::
+	text "Since our last"
+	line "battle, my"
+
+	para "#MON have"
+	line "grown!"
+
+	para "Ready for the"
+	line "rematch of a"
+	cont "lifetime?"
+	done
+
+_CeruleanGymRematchAcceptedText::
+	text "Alright, Let's "
+	line "battle!"
+	done
+
+_CeruleanGymRematchRefusedText::
+	text "Maybe some other"
+	line "time."
+	done
+
+_CeruleanGymRematchDefeatedText::
+	text "Damn! I lost,"
+	line "not again!"
+	cont "HHMMPPHH..."
+	prompt
+
+_CeruleanGymRematchPostBattleText::
+	text "I cant believe"
+
+	para "it, I lost"
+	line "again!"
+
+	para "When ever you"
+	line "ready lets do"
+	cont "this again."
+	done

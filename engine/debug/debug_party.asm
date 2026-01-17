@@ -112,6 +112,7 @@ IF DEF(_DEBUG)
 	ld hl, wPokedexSeen
 	call DebugSetPokedexEntries
 	SetEvent EVENT_GOT_POKEDEX
+	SetEvent EVENT_PLAYER_IS_CHAMPION
 
 	; Rival chose Squirtle,
 	; Player chose Charmander.
@@ -155,6 +156,8 @@ DebugNewGameItemsList:
 	db TM_THUNDERPUNCH, 1
 	db TM_STEEL_WING, 1
 	db -1 ; end
+
+
 
 DebugUnusedList: ; unreferenced
 	db -1 ; end

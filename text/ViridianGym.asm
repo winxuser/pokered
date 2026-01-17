@@ -238,3 +238,53 @@ _ViridianGymGuidePostBattleText::
 	line "GIOVANNI was the"
 	cont "GYM LEADER here?"
 	done
+
+_ViridianGymRematchPreBattleText::
+	text "Since our last"
+	line "battle, my"
+
+	para "#MON have"
+	line "grown!"
+
+	para "ROCK-hard will"
+	line "meets peak skill"
+	cont "today!"
+
+	para "Ready for the"
+	line "rematch of a"
+	cont "lifetime?"
+	done
+
+_ViridianGymRematchAcceptedText::
+	text "Stones sharpen!"
+	line "Let's battle!"
+	done
+
+_ViridianGymRematchRefusedText::
+	text "Maybe some other"
+	line "time."
+	done
+
+_ViridianGymRematchDefeatedText::
+	text "I knew"
+	line "you were strong,"
+	cont "but this..."
+	prompt
+
+_ViridianGymRematchPostBattleText::
+	text "Incredible!"
+
+	para "Your strength"
+	line "is unmatched!"
+
+	para "True to your"
+	line "title, CHAMPION."
+
+	para "Continue to lead"
+	line "#MON with"
+	cont "honor and"
+	cont "courage!"
+
+	para "New challenges"
+	line "await."
+	done

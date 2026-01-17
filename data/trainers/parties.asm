@@ -1784,6 +1784,21 @@ GiovanniData:
 		tr_moves STOMP, TAIL_WHIP, FISSURE, HORN_DRILL
  	end_trainer
 
+	def_trainer 4, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 56, PIDGEOT
+		tr_moves QUICK_ATTACK, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
+ 	tr_mon 54, ALAKAZAM
+		tr_moves DISABLE, RECOVER, PSYCHIC_M, REFLECT
+ 	tr_mon 56, RHYDON
+		tr_moves FURY_ATTACK, ROCK_SLIDE, EARTHQUAKE
+ 	tr_mon 58, GYARADOS
+		tr_moves TWISTER, HYDRO_PUMP, HYPER_BEAM
+ 	tr_mon 58, EXEGGUTOR
+		tr_moves STOMP, TAIL_WHIP, FISSURE, SOLARBEAM
+ 	tr_mon 58, ARCANINE
+		tr_moves ROAR, SWIFT, FLAMETHROWER
+ 	end_trainer
+
 
 RocketData:
 	def_trainer_class ROCKET
@@ -2172,12 +2187,25 @@ BrunoData:
  BrockData:
  	def_trainer_class BROCK
  	def_trainer 1, TRAINERTYPE_MULTI_LEVELS
- 	tr_mon  9, ZUBAT
+ 	tr_mon  8, ZUBAT
 		tr_moves LEECH_LIFE, TACKLE
  	tr_mon 10, GEODUDE
 		tr_moves TACKLE, DEFENSE_CURL
  	tr_mon 12, ONIX
 		tr_moves TACKLE, SCREECH, BIDE
+ 	end_trainer
+
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 41, GRAVELER
+		tr_moves DEFENSE_CURL, ROCK_SLIDE, EARTHQUAKE, ROCK_THROW
+ 	tr_mon 41, RHYHORN
+		tr_moves FURY_ATTACK, TAIL_WHIP, EARTHQUAKE, HORN_DRILL
+ 	tr_mon 42, OMASTAR
+		tr_moves BITE, SURF, REFLECT, SPIKE_CANNON
+	tr_mon 44, ONIX
+		tr_moves BIND, BIDE, ROCK_THROW, RAGE
+	tr_mon 42, KABUTOPS
+		tr_moves SLASH, LEER, SURF, HYDRO_PUMP
  	end_trainer
 
  MistyData:
@@ -2191,18 +2219,39 @@ BrunoData:
 		tr_moves TACKLE, WATER_GUN, BUBBLEBEAM
  	end_trainer
 
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+	tr_mon 42, GOLDUCK
+		tr_moves SURF, DISABLE, TAIL_WHIP, CONFUSION
+ 	tr_mon 42, QUAGSIRE
+		tr_moves SURF, AMNESIA, EARTHQUAKE, SLAM
+ 	tr_mon 44, LAPRAS
+		tr_moves SURF, ICE_BEAM, MIST, CONFUSE_RAY
+ 	tr_mon 47, STARMIE
+		tr_moves SURF, CONFUSE_RAY, RECOVER, ICE_BEAM
+ 	end_trainer
 
  LtSurgeData:
  	def_trainer_class LT_SURGE
  	def_trainer 1, TRAINERTYPE_MULTI_LEVELS
- 	tr_mon 17, PICHU
-		tr_moves THUNDERSHOCK, GROWL, THUNDER_WAVE, QUICK_ATTACK
  	tr_mon 18, PIKACHU
 		tr_moves THUNDERSHOCK, GROWL, THUNDER_WAVE, QUICK_ATTACK
 	tr_mon 21, VOLTORB
 		tr_moves TACKLE, SCREECH, SONICBOOM
  	tr_mon 24, RAICHU
 		tr_moves THUNDERSHOCK, GROWL, THUNDERBOLT
+ 	end_trainer
+
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 44, RAICHU
+		tr_moves THUNDERBOLT, THUNDER, THUNDER_WAVE, QUICK_ATTACK
+	tr_mon 40, MAGNETON
+		tr_moves ZAP_CANNON, SONICBOOM, THUNDERSHOCK, SWIFT
+ 	tr_mon 40, ELECTRODE
+		tr_moves SCREECH, DOUBLE_TEAM, SWIFT, EXPLOSION
+ 	tr_mon 40, ELECTRODE
+		tr_moves SCREECH, DOUBLE_TEAM, SWIFT, EXPLOSION
+ 	tr_mon 46, ELECTABUZZ
+		tr_moves THUNDERPUNCH, THUNDER, LIGHT_SCREEN, QUICK_ATTACK
  	end_trainer
 
 
@@ -2219,6 +2268,17 @@ BrunoData:
 		tr_moves ABSORB, STUN_SPORE, PETAL_DANCE, SLEEP_POWDER
  	end_trainer
 
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 42, TANGELA
+		tr_moves VINE_WHIP, BIND, GIGA_DRAIN, SLEEP_POWDER
+ 	tr_mon 41, JUMPLUFF
+		tr_moves MEGA_DRAIN, LEECH_SEED, COTTON_SPORE, GIGA_DRAIN
+ 	tr_mon 46, VICTREEBEL
+		tr_moves RAZOR_LEAF, ACID, SYNTHESIS, SLEEP_POWDER
+ 	tr_mon 46, BELLOSSOM
+		tr_moves SYNTHESIS, SOLARBEAM, PETAL_DANCE, SLEEP_POWDER
+ 	end_trainer
+
 
  KogaData:
  	def_trainer_class KOGA
@@ -2231,6 +2291,19 @@ BrunoData:
 		tr_moves TACKLE, HORN_ATTACK, POISON_STING, TOXIC
  	tr_mon 43, WEEZING
 		tr_moves SMOG, SLUDGE, TOXIC, SELFDESTRUCT
+ 	end_trainer
+
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 36, CROBAT
+		tr_moves WING_ATTACK, CONFUSE_RAY, SUPERSONIC, SCREECH
+ 	tr_mon 36, WEEZING
+		tr_moves SLUDGE_BOMB, SMOG, TOXIC, EXPLOSION
+ 	tr_mon 36, WEEZING
+		tr_moves SLUDGE_BOMB, SMOG, TOXIC, EXPLOSION
+ 	tr_mon 33, ARIADOS
+		tr_moves STRING_SHOT, NIGHT_SHADE, GIGA_DRAIN
+ 	tr_mon 39, VENOMOTH
+		tr_moves TOXIC, PSYCHIC_M, DOUBLE_TEAM, SUPERSONIC
  	end_trainer
 
 
@@ -2249,6 +2322,15 @@ BrunoData:
 		tr_moves ROAR, EMBER, FIRE_BLAST, TAKE_DOWN
  	end_trainer
 
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 45, MAGCARGO
+		tr_moves SMOG, FLAMETHROWER, ROCK_SLIDE
+ 	tr_mon 45, MAGMAR
+		tr_moves THUNDERPUNCH, FIRE_PUNCH, CONFUSE_RAY
+ 	tr_mon 50, RAPIDASH
+		tr_moves QUICK_ATTACK, FIRE_SPIN, FURY_ATTACK, FIRE_BLAST
+ 	end_trainer
+
 
  SabrinaData:
  	def_trainer_class SABRINA
@@ -2261,6 +2343,15 @@ BrunoData:
 		tr_moves POISONPOWDER, LEECH_LIFE, STUN_SPORE, PSYBEAM
  	tr_mon 43, ALAKAZAM
 		tr_moves PSYBEAM, RECOVER, PSYWAVE, REFLECT
+ 	end_trainer
+
+ 	def_trainer 2, TRAINERTYPE_MULTI_LEVELS
+ 	tr_mon 46, ESPEON
+		tr_moves SAND_ATTACK, QUICK_ATTACK, SWIFT, PSYCHIC_M
+ 	tr_mon 46, MR_MIME
+		tr_moves PSYCHIC_M, BARRIER, REFLECT
+ 	tr_mon 48, ALAKAZAM
+		tr_moves PSYCHIC_M, RECOVER, PSYWAVE, REFLECT
  	end_trainer
 
 
