@@ -129,8 +129,8 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const ICE_CAVERN,                    15,  9 ; $6B (UNUSED MAP 6B)
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
 	map_const POKE_CENTER,                    5,  4 ; $6D (UNUSED_MAP_6D)
-	map_const UNUSED_MAP_6E,                 20, 27 ; $6E (UNUSED_MAP_6E)
-	map_const UNUSED_MAP_6F,                  0,  0 ; $6F
+	map_const FARAWAY_ISLAND_OUTSIDE,        15, 20 ; $6E (UNUSED_MAP_6E)
+	map_const FARAWAY_ISLAND_INSIDE,         15, 11 ; $6F (UNUSED_MAP_6F)
 	map_const UNUSED_MAP_70,                  0,  0 ; $70
 	map_const LANCES_ROOM,                   13, 13 ; $71
 	map_const UNUSED_MAP_72,                  0,  0 ; $72

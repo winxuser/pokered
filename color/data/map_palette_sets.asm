@@ -29,8 +29,10 @@ MapPaletteSets:
 	dw MartUpdatePalSet  ; MART UPDATE
 	dw LeaguePalSet      ; LEAGUE
 	dw OaklabPalSet      ; OAKLAB
+	dw FarawayIslandPalSet ; FARAWAYISLAND
 	assert_table_length NUM_TILESETS
 
+FarawayIslandPalSet:
 OverworldPalSet:
 PlateauPalSet:
 	db OUTDOOR_GRAY

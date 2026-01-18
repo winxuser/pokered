@@ -113,8 +113,8 @@ MapHSPointers:
 	dw NoHS           ; ICE_CAVERN UNUSED_MAP_6B
 	dw VictoryRoad1FHS
 	dw NoHS           ; Pokecenter
-	dw NoHS 	      ;UNUSED_MAP_6E
-	dw NoHS
+	dw NoHS           ; faraway island UNUSED_MAP_6E
+	dw NoHS           ; faraway island UNUSED_MAP_6F
 	dw NoHS
 	dw NoHS
 	dw NoHS
@@ -568,8 +568,7 @@ VermilionDockHS:
 	db VERMILION_DOCK, $01, HIDE
 YellowsHouseHS:
 	db YELLOWS_HOUSE, YELLOWSHOUSE_YELLOW, SHOW
-;NationalParkHS:
-;	db NATIONAL_PARK, NATIONAL_PARK_?, SHOW ; change question mark to an item
+
 
 	assert_table_length NUM_HS_OBJECTS
 	db -1, 1, SHOW ; end

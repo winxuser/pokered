@@ -215,6 +215,8 @@ ItemDescriptionPointers:
 	text_end
 	text_far _SwegBerryDescription
 	text_end
+	text_far _OldSeaChartDescription
+	text_end
 	text_far _HM01Description
 	text_end
 	text_far _HM02Description
