@@ -2,7 +2,7 @@
 
 Pokémon Red/Blue overhauled with full GBC support. Made by FroggestSpirit, Drenn, and dannye. Also check out the crysaudio branch.
 
-Winxusers Changes and fixes
+Winxuser's Changes and Fixes
 
 - Multi-player battle engine:
 
@@ -55,6 +55,7 @@ Winxusers Changes and fixes
 
 - Audio:
 
+    - Added Gen 2 Audio Engine from Dannye's CRYSAUDIO branch
     - The battle victory music can sometimes play at the wrong time
     - Prof. Oak's lab music can sometimes play with a channel cut off
     - The 'acquired an item' jingle can sometimes be cut off
@@ -74,7 +75,7 @@ Winxusers Changes and fixes
     - Trader NPC in Celedon City
     - Merge all version exclusives
     - Add some previously unobtainable pokemon to the wild
-    - Overworld HM useage
+    - Overworld HM useage (Also adds "Press A to use pokeflute on Snorlax")
     - Taking both Fossils
     - Add MAP to start menu
     - Able to change pokemon in the status screen
@@ -83,6 +84,7 @@ Winxusers Changes and fixes
     - Added a new trainer YELLOW and her house in Pallet Town
     - Port over some Gen 2 tileset graphics
     - Add a PC into the Daycare
+    - Split the special stat into Special Attack/Special Defence also adds ZINC to raise Special Defence
 
 - Battle Engine Changes:
     
@@ -107,6 +109,10 @@ Winxusers Changes and fixes
     - Add gender selection
     - Add base stats into dex 
     - Added breeding mechanic
+    - Added gym rematches
+    - Adding Berry Trees
+    - Added Shinies (unsure if palettes work but the indicator works)
+    - Added Pokemon Genders
 
 Original README follows...
 
