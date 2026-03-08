@@ -111,7 +111,7 @@ WildDataPointers:
 	dw VictoryRoad1FWildMons
 	dw NothingWildMons       ; (Pokecenter)
 	dw NothingWildMons
-	dw NothingWildMons
+	dw FarawayIslandInsideMons
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -322,3 +322,4 @@ INCLUDE "data/wild/maps/VictoryRoad3F.asm"
 INCLUDE "data/wild/maps/VictoryRoad1F.asm"
 INCLUDE "data/wild/maps/DiglettsCave.asm"
 INCLUDE "data/wild/maps/IceCavern.asm"
+INCLUDE "data/wild/maps/FarawayIslandInside.asm"

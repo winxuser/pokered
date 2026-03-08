@@ -1245,3 +1245,13 @@ INCLUDE "data/maps/headers/Pokecenter.asm"
 INCLUDE "scripts/Pokecenter.asm"
 INCLUDE "data/maps/objects/Pokecenter.asm"
 Pokecenter_Blocks: INCBIN "maps/Pokecenter.blk"
+
+INCLUDE "data/maps/headers/FarawayIslandOutside.asm"
+INCLUDE "scripts/FarawayIslandOutside.asm"
+INCLUDE "data/maps/objects/FarawayIslandOutside.asm"
+FarawayIslandOutside_Blocks: INCBIN "maps/FarawayIslandOutside.blk"
+
+INCLUDE "data/maps/headers/FarawayIslandInside.asm"
+INCLUDE "scripts/FarawayIslandInside.asm"
+INCLUDE "data/maps/objects/FarawayIslandInside.asm"
+FarawayIslandInside_Blocks: INCBIN "maps/FarawayIslandInside.blk"

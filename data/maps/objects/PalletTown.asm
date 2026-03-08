@@ -9,7 +9,7 @@ PalletTown_Object:
 	def_warp_events
 	warp_event  5,  5, REDS_HOUSE_1F, 1
 	warp_event 13,  5, BLUES_HOUSE, 1
-	warp_event  5, 11, YELLOWS_HOUSE, 1
+	warp_event  5, 11, FARAWAY_ISLAND_OUTSIDE, 1 ; YELLOWS_HOUSE
 	warp_event 12, 11, OAKS_LAB, 2
 
 	def_bg_events
