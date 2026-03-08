@@ -113,7 +113,6 @@ DEF SAFARI_ROCK EQU CASCADEBADGE ; overload
 	const CHERI_BERRY
 	const LUM_BERRY
 	const SWEG_BERRY
-	const OLDSEACHART
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs

@@ -34,8 +34,6 @@ MapPaletteAssignments:
 	dw MartUpdatePalMap  ; MART UPDATE
 	dw LeaguePalMap      ; LEAGUE
 	dw OaklabPalMap      ; OAKLAB
-	dw FarawayIslandPalMap ; FARAWAYISLAND
-
 	assert_table_length NUM_TILESETS
 
 OverworldPalMap:
@@ -111,6 +109,3 @@ LeaguePalMap:
 
 OaklabPalMap:
     INCLUDE "color/tilesets/oaklab.asm"
-
-FarawayIslandPalMap:
-	INCLUDE "color/tilesets/farawayisland.asm"

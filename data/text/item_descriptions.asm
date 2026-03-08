@@ -389,11 +389,6 @@ _SwegBerryDescription::
 	next "#MON by one."
 	prompt
 
-_OldSeaChartDescription::
-	text "An old map that"
-	next "an extra island."
-	prompt
-
 _HM01Description::
 	text "Cuts using claws,"
 	next "scythes, etc."

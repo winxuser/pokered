@@ -37,5 +37,4 @@ Tilesets:
 	tileset MartUpdate,   $20,$21,$30,  -1, TILEANIM_NONE
 	tileset League,       $18,$19,$1E,  -1, TILEANIM_NONE
 	tileset Oaklab,        -1, -1, -1,  -1, TILEANIM_NONE
-	tileset FarawayIsland, -1, -1, -1, $20, TILEANIM_WATER_FLOWER
 	assert_table_length NUM_TILESETS

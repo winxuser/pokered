@@ -103,5 +103,4 @@ KeyItemFlags:
 	dbit FALSE ; CHERI_BERRY
 	dbit FALSE ; LUM_BERRY
 	dbit FALSE ; SWEG_BERRY
-	dbit TRUE  ; OLDSEACHART
 	end_bit_array NUM_ITEMS

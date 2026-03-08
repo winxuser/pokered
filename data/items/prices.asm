@@ -103,7 +103,6 @@ ItemPrices::
 	bcd3 10    ; CHERI_BERRY
 	bcd3 10    ; LUM_BERRY
 	bcd3 10    ; SWEG_BERRY
-	bcd3 0     ; OLD SEA CHART
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F

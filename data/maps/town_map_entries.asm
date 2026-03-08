@@ -100,13 +100,13 @@ InternalMapEntries:
 	internal_map ROUTE_12_SUPER_ROD_HOUSE,      14, 10, Route12Name
 	internal_map ROUTE_18_GATE_2F,               7, 13, Route18Name
 	internal_map SEAFOAM_ISLANDS_1F,             5, 15, SeafoamIslandsName
-;	internal_map FARAWAY_ISLAND_OUTSIDE,         8, 15, FarawayIslandName
 	internal_map ROUTE_22_GATE,                  0,  7, Route22Name
 	internal_map VICTORY_ROAD_2F,                0,  4, VictoryRoadName
 	internal_map ROUTE_12_GATE_2F,              14,  7, Route12Name
 	internal_map VERMILION_TRADE_HOUSE,         10,  9, VermilionCityName
 	internal_map DIGLETTS_CAVE,                  3,  4, DiglettsCaveName
 	internal_map VICTORY_ROAD_3F,                0,  4, VictoryRoadName
+;	internal_map UNUSED_MAP_CE,                  7,  5, RocketHQName ;removed this entry in order to fit TRADER_HOUSE (below) in the table
 	internal_map TRADER_HOUSE,                   7,  5, CeladonCityName
 	internal_map SILPH_CO_8F,                   10,  5, SilphCoName
 	internal_map POKEMON_MANSION_B1F,            2, 15, PokemonMansionName

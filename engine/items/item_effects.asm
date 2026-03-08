@@ -120,7 +120,6 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; CHERI_BERRY
 	dw ItemUseMedicine   ; LUM_BERRY
 	dw ItemUseVitamin    ; SWEG_BERRY
-	dw UnusableItem      ; OLD SEA CHART
 
 ItemUseBall:
 
