@@ -80,3 +80,6 @@ League_Coll::
 
 Oaklab_Coll::
     coll_tiles $04, $05, $13
+
+FarawayIsland_Coll::
+    coll_tiles $00, $20, $2e, $40, $41, $52, $5e

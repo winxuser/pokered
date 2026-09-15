@@ -29,4 +29,5 @@
 	const MARTUPDATE
 	const LEAGUE
 	const OAKLAB
+	const FARAWAYISLAND
 DEF NUM_TILESETS EQU const_value

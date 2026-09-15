@@ -28,6 +28,7 @@ WarpTileIDPointers:
 	dw .MartUpdateWarpTileIDs
 	dw .LeagueWarpTileIDs
 	dw .OaklabWarpTileIDs
+	dw .FarawayIslandWarpTileIDs
 	assert_table_length NUM_TILESETS
 
 MACRO warp_tiles
@@ -98,6 +99,9 @@ ENDM
 
 .OaklabWarpTileIDs:
 	warp_tiles $04, $05
+
+.FarawayIslandWarpTileIDs:
+	warp_tiles $00, $52
 
 .ShipPortWarpTileIDs:
 .ClubWarpTileIDs:
