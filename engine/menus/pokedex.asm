@@ -782,12 +782,15 @@ IndexToPokedex:
 	push bc
 	push hl
 	ld a, [wPokedexNum]
+	cp 0
+	jr z, .playerBack
 	dec a
 	ld hl, PokedexOrder
 	ld b, 0
 	ld c, a
 	add hl, bc
 	ld a, [hl]
+.playerBack
 	ld [wPokedexNum], a
 	pop hl
 	pop bc

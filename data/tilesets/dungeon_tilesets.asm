@@ -11,4 +11,5 @@ DungeonTilesets:
 	db CEMETERY
 	db GYM
 	db ICECAVERN
+	db FARAWAYISLAND
 	db -1 ; end
