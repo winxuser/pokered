@@ -13,6 +13,7 @@ RedisplayStartMenu::
 	call UpdateSprites
 .loop
 	farcall DrawMenuAccount
+	farcall PrintStartMenuClock
 	call HandleMenuInput
 	ld b, a
 .checkIfUpPressed

@@ -1,12 +1,18 @@
 INCLUDE "color/data/map_palettes.asm"
+INCLUDE "color/data/map_palettes_morning.asm"
+INCLUDE "color/data/map_palettes_afternoon.asm"
+INCLUDE "color/data/map_palettes_night.asm"
 INCLUDE "color/data/map_palette_sets.asm"
 INCLUDE "color/data/map_palette_assignments.asm"
 INCLUDE "color/data/roofpalettes.asm"
+INCLUDE "color/data/roofpalettes_morning.asm"
+INCLUDE "color/data/roofpalettes_afternoon.asm"
+INCLUDE "color/data/roofpalettes_night.asm"
 
 DEF TILESET_SIZE EQU $60
 
 ; Load colors for new map and tile placement
-LoadTilesetPalette:
+LoadTilesetPalette::
 	push bc
 	push de
 	push hl
@@ -50,7 +56,53 @@ LoadTilesetPalette:
 	sla e
 	rl d
 	push hl
+; Only swap tables for specific tilesets
+	xor a
+	ldh [rWBK], a
+	ld a, [wCurMapTileset]
+	ld h, a
+	ld a, 2
+	ldh [rWBK], a
+	ld a, h
+
+	and a             ; Is it tileset 0 (OVERWORLD)?
+	jr z, .checkTime
+	cp PLATEAU
+	jr z, .checkTime
+	cp FOREST
+	jr z, .nightPalettes
+
+	; If it isn't any of the above, skip to day palettes
+	jr .dayPalettes
+
+.checkTime
+	call GetTimeOfDayStage
+	cp 1
+	jr z, .morningPalettes
+	cp 2
+	jr z, .nightPalettes
+	cp 3
+	jr z, .afternoonPalettes
+	jr .dayPalettes
+
+.dayPalettes
+	; Day (0)
 	ld hl, MapPalettes
+	jr .applyOffset
+
+.morningPalettes
+	ld hl, MapPalettesMorning
+	jr .applyOffset
+
+.nightPalettes
+	ld hl, MapPalettesNight
+	jr .applyOffset
+
+.afternoonPalettes
+	ld hl, MapPalettesAfternoon
+	jr .applyOffset
+
+.applyOffset
 	add hl, de
 	ld d, h
 	ld e, l ; de now points to map's palette data
@@ -180,7 +232,27 @@ LoadTownPalette:
 
 	push de
 	push hl
+	call GetTimeOfDayStage
+	cp 1
+	jr z, .morningRoofs
+	cp 2
+	jr z, .nightRoofs
+	cp 3
+	jr z, .afternoonRoofs
+
+	; Day (0)
 	ld hl, RoofPalettes
+	jr .applyRoofOffset
+.morningRoofs
+	ld hl, RoofPalettesMorning
+	jr .applyRoofOffset
+.afternoonRoofs
+	ld hl, RoofPalettesAfternoon
+	jr .applyRoofOffset
+.nightRoofs
+	ld hl, RoofPalettesNight
+	jr .applyRoofOffset
+.applyRoofOffset
 	ld b, 0
 	add hl, bc
 	ld e, [hl]
@@ -202,4 +274,74 @@ LoadTownPalette:
 
 	pop af
 	ldh [rWBK], a ; Restore wram bank
+	ret
+
+GetTimeOfDayStage::
+	push bc
+;	jr z, .morning ; to test the maps for palette changes
+	ldh a, [rWBK]
+	ld b, a
+	xor a
+	ldh [rWBK], a
+	ld a, [wRTCHours]
+	ld c, a
+	ld a, b
+	ldh [rWBK], a
+	ld a, c
+.check_time
+	cp 4
+	jr c, .night        ; 00:00 - 03:59 -> Night (2)
+	cp 9
+	jr c, .morning      ; 04:00 - 08:59 -> Morning (1)
+	cp 16
+	jr c, .day          ; 09:00 - 15:59 -> Day (0)
+	cp 18
+	jr c, .afternoon    ; 16:00 - 17:59 -> Afternoon (3)
+	jr .night           ; 18:00 - 23:59 -> Night (2)
+
+.night
+    pop bc
+    ld a, 2
+    ret
+.morning
+    pop bc
+    ld a, 1
+    ret
+.day
+	pop bc
+	xor a               ; 0 = Day
+	ret
+.afternoon
+	pop bc
+	ld a, 3             ; 3 = Afternoon
+	ret
+
+RefreshMapPalettesLive::
+	push af
+	push bc
+	push de
+	push hl
+	call LoadTilesetPalette
+	ldh a, [rWBK]
+	push af
+	ld a, 2
+	ldh [rWBK], a
+	; Copy 64 bytes (8 BG palettes x 8 bytes) from W2_BgPaletteData to GBC BG Palette RAM
+	ld hl, W2_BgPaletteData
+	ld a, $80                ; Index 0 with auto-increment enabled
+	ldh [rBGPI], a
+	ld c, 64
+.copyHW
+	ld a, [hli]
+	ldh [rBGPD], a
+	dec c
+	jr nz, .copyHW
+
+	pop af
+	ldh [rWBK], a            ; Restore previous WRAM bank
+
+	pop hl
+	pop de
+	pop bc
+	pop af
 	ret

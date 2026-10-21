@@ -2286,7 +2286,7 @@ ENDU
 
 wTrainerHeaderPtr:: dw
 
-	ds 6
+	ds 1
 
 ; the trainer the player must face after getting a wrong answer in the Cinnabar
 ; gym quiz
@@ -2296,7 +2296,6 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-	ds 7
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db
@@ -2317,6 +2316,15 @@ wDayCareMonName:: ds NAME_LENGTH
 wDayCareMonOT::   ds NAME_LENGTH
 
 wDayCareMon:: box_struct wDayCareMon
+
+wRTCSeconds:: db
+wRTCMinutes:: db
+wRTCHours::   db
+wRTCDays::    db
+wTimeOfDayPalettesNeedUpdate:: db
+wRTCSubFrames::                db
+wRTCFrames::                   db
+wLastTimeOfDayStage:: db
 
 wMainDataEnd::
 
